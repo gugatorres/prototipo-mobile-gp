@@ -62,6 +62,12 @@ body {
     position: absolute;
 }
 
+.sync {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
+
 .menu-close {
     position: absolute;
     right: 0;
