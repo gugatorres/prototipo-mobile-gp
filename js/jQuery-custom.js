@@ -25,6 +25,7 @@ $(".menu-principal a").click(function(){
     $("#mySidenav").css("left","-310px");
     $(".menu-open").css("display","block");
     $(".back-menu").css("display","none");
+    $("body").css("overflow-y", "auto");
 });
 
 $(".float-button-clientes").click(function(){
