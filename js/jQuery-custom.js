@@ -7,19 +7,19 @@ $(".menu-open").click(function(){
 });
 
 $(".menu-close").click(function(){
-	$("#mySidenav").css("left","-330px");
+	$("#mySidenav").css("left","-310px");
     $(".back-menu").css("display","none");
     $(".menu-open").css("display","block");
 });
 
 $(".back-menu").click(function(){
-	$("#mySidenav").css("left","-330px");
+	$("#mySidenav").css("left","-310px");
     $(this).css("display","none");
     $(".menu-open").css("display","block");
 });
 
 $(".menu-principal a").click(function(){
-    $("#mySidenav").css("left","-330px");
+    $("#mySidenav").css("left","-310px");
     $(".menu-open").css("display","block");
     $(".back-menu").css("display","none");
 });
