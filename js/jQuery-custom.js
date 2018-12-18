@@ -4,12 +4,14 @@ $(".menu-open").click(function(){
     $("#mySidenav").css("left","0px");
     $(".back-menu").css("display","block");
     $(this).css("display","none");
+    $("body").css("overflow-y", "hidden");
 });
 
 $(".menu-close").click(function(){
 	$("#mySidenav").css("left","-310px");
     $(".back-menu").css("display","none");
     $(".menu-open").css("display","block");
+    $("body").css("overflow-y", "auto");
 });
 
 $(".back-menu").click(function(){
