@@ -18,6 +18,7 @@ $(".back-menu").click(function(){
 	$("#mySidenav").css("left","-310px");
     $(this).css("display","none");
     $(".menu-open").css("display","block");
+    $("body").css("overflow-y", "auto");
 });
 
 $(".menu-principal a").click(function(){
