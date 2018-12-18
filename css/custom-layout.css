@@ -1,0 +1,305 @@
+* { transition: all 200ms linear 0s; }
+
+body {
+    background: #c62222;
+    transition: background-color .5s;
+}
+
+.white{background: #FFFFFF}
+.red{background: #F44336}
+.red-dark-alpha{background: #5a040491}
+.blue{background: #00BCD4}
+.green{background: #4CAF50}
+.yellow{background: #FC0}
+.gray{background: #CCCCCC}
+
+.title-app{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #881111;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    width: 300px !important;
+    left:-330px;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 10px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-open {
+    top: 17px;
+    position: absolute;
+}
+
+.menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #2f2f2f;
+    padding: 5px 20px !important;
+    color: #FFF !important;
+    font-size: 40px !important;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.menu-principal ul li a{font-size: 14px; color: #000;}
+
+.header-nav h3 {
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.navbar-collapse {
+    padding-left: 0px !important;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+nav.navbar {
+    border-radius: 0;
+    border: none;
+    background: #FC0;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 55px;
+}
+
+.back-menu {
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+.graficos .col-md-3,.col-md-4,.col-xs-6,.col-xs-12 {
+    margin-bottom: 15px;
+}
+
+.box-tile {
+    height: 150px;
+   /* box-shadow: rgba(0,0,0,0.2) 0px 0px 20px;*/
+}
+
+.route-customer {
+    height: 90px;
+    color:#FFFFFF;
+}
+
+.route-customer h3 {
+    margin-bottom: 5px;
+}
+
+.customers-served {
+    text-align: center;
+    padding: 15px;
+    height: 120px;
+    color: #FFF;
+}
+
+.loading-customers {
+    width: 100%;
+    height: 8px;
+    background: #c32222;
+    position: relative;
+    margin-top: 10px;
+    color: #FFF;
+}
+
+.bar-loading {
+    width: 30%;
+    height: 8px;
+    background: #FC0;
+}
+
+.next-customer {
+    display: block;
+    margin-top: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.catalog-products {
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.catalog-products img{
+    width: 50px;
+    margin: auto;
+    padding-top: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stock-price{
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.stock-price img{
+    width: 50px;
+    margin: auto;
+    padding-top: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.charts-reports{
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.charts-reports img{
+    width: 50px;
+    margin: auto;
+    padding-top: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.float-button-clientes {
+    background: #FC0;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    border-radius: 40px;
+}
+
+.float-button-clientes img{
+    width: 40px;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.nav>li {
+    position: relative;
+    display: inline-block;
+}
+
+.header-nav {
+    background: #c62222;
+    height: 145px;
+    color: #FFF;
+    padding: 70px 25px 0px 25px;
+}
+
+.menu-principal img {
+    margin-right: 5px;
+}
+
+.overlay-add-customer {
+    position: fixed;
+    background: #000000b3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+.buttons-add {
+    position: absolute;
+    bottom: 95px;
+    right: 30px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    list-style: none;
+    font-weight: bold;
+}
+
+.buttons-add a{color:#FFF;}
+
+
+/* MEUS CLIENTES */
+
+.box-customer {
+    padding: 15px;
+    height: 80px;
+    position: relative;
+}
+
+.box-customer .col-xs-9 {
+    padding: 0;
+}
+
+.box-customer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.box-customer .name {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.box-indic {
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.box-indic span {
+    display: inline-block;
+    height: 80px;
+    float: left;
+    padding: 0 3px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 80px;
+    color: #FFF;
+}
+
