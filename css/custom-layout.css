@@ -124,6 +124,10 @@ nav.navbar {
    /* box-shadow: rgba(0,0,0,0.2) 0px 0px 20px;*/
 }
 
+.box-tile:hover {
+    box-shadow: inset rgba(0,0,0,0.5) 0px 0px 80px;
+}
+
 .route-customer {
     height: 90px;
     color:#FFFFFF;
