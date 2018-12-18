@@ -2,7 +2,7 @@ var app = angular.module("appDash", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/home", {
-        templateUrl : "/templates/home.html",
+        templateUrl : "./templates/home.html",
         controller: "defaultController"
     })
     .when("/minha_rota", {
