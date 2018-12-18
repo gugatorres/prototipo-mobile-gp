@@ -3,6 +3,7 @@
 body {
     background: #c62222;
     transition: background-color .5s;
+    font-family: 'Roboto', sans-serif;
 }
 
 .white{background: #FFFFFF}
