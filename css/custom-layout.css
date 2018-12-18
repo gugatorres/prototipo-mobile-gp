@@ -58,13 +58,13 @@ body {
 }
 
 .menu-open {
-    top: 17px;
+    top: 14px;
     position: absolute;
 }
 
 .sync {
     position: absolute;
-    top: 17px;
+    top: 13px;
     right: 15px;
 }
 
@@ -131,7 +131,7 @@ nav.navbar {
 }
 
 .box-tile:hover {
-    box-shadow: inset rgba(0,0,0,0.5) 0px 0px 80px;
+    box-shadow: inset rgba(0,0,0,0.1) 0px 0px 80px;
 }
 
 .route-customer {
