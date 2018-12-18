@@ -94,7 +94,6 @@ body {
     transition: margin-left .5s;
 }
 
-
 nav.navbar {
     border-radius: 0;
     border: none;
@@ -165,42 +164,45 @@ nav.navbar {
 
 .catalog-products {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
+    height: 120px;
 }
 
 .catalog-products img{
     width: 50px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
     display: block;
     margin-bottom: 10px;
 }
 
 .stock-price{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
+    height: 120px;
 }
 
 .stock-price img{
     width: 50px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
     display: block;
     margin-bottom: 10px;
 }
 
 .charts-reports{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
+    height: 120px;
 }
 
 .charts-reports img{
     width: 50px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
     display: block;
     margin-bottom: 10px;
 }
