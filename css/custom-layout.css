@@ -273,6 +273,11 @@ nav.navbar {
     list-style: none;
 }
 
+.buttons-add img {
+    width: 25px;
+    margin-left: 5px;
+}
+
 .buttons-add a{color:#FFF;}
 
 /* MEUS CLIENTES */
