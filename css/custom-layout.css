@@ -152,17 +152,17 @@ nav.navbar {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes animabar {
     from {width: 0;}
-    to {width: 33%;}
+    to {width: 50%;}
   }
   
   /* Standard syntax */
   @keyframes animabar {
    from {width: 0;}
-    to {width: 33%;}
+    to {width: 50%;}
   }
 
 .bar-loading {
-    width: 33%;
+    width: 50%;
     height: 8px;
     background: #c62222;
     -webkit-animation-name: animabar; /* Safari 4.0 - 8.0 */
