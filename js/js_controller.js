@@ -10,6 +10,10 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Meus Clientes"
 
+}).controller("detalheClientesController", function($scope){
+	
+	$scope.titulo="Detalhe de Clientes"
+
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
