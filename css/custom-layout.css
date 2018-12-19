@@ -348,23 +348,11 @@ nav.navbar {
 
 /* Detalhes Clientes - Tabs */
 
-.inadimplencia-acumulada {
-    height: 90px;
-    padding: 15px;
-}
-
-.limite-disponivel.white {
-    padding: 15px;
-}
-
-.label-lbl {
-    margin: 0;
-}
-
-
-.value {
-    font-size: 26px;
-}
+.inadimplencia-acumulada {height: 90px; padding: 15px;}
+.limite-disponivel,.items-medio-pedido,.formas-pagamento {padding: 15px;}
+.items-medio-pedido .value {margin-top: 20px;}
+.label-lbl {margin: 0;}
+.value {font-size: 26px;}
 
 .other-values {
     clear: both;
@@ -372,6 +360,4 @@ nav.navbar {
     padding-top: 10px;
 }
 
-.other-values .value {
-    font-size: 15px;
-}
+.other-values .value {font-size: 15px;}
