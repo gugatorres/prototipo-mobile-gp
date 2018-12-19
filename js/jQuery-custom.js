@@ -28,16 +28,16 @@ $(".menu-principal a").click(function(){
     $("body").css("overflow-y", "auto");
 });
 
-$(".float-button-clientes").click(function(){
+/*$(".float-button-clientes").click(function(){
 	$(".overlay-add-customer").css("display","block");
 });
 
 $(".overlay-add-customer").click(function(){
 	$(this).css("display","none");
-});
+});*/
 
 
-/* Tabs Detail Customer */
+/* Tabs Detail Customer 
 
 $(".tab-1").click(function(){
     $(this).addClass("active");
@@ -78,7 +78,7 @@ $(".tab-4").click(function(){
     $(".tab-page-2").css("display","none");
     $(".tab-page-3").css("display","none");
 });
-
+*/
 
 
 });
