@@ -345,3 +345,18 @@ nav.navbar {
 .tab-page-2{display: none;}
 .tab-page-3{display: none;}
 .tab-page-4{display: none;}
+
+/* Detalhes Clientes - Tabs */
+
+.inadimplencia-acumulada {
+    height: 90px;
+    padding: 15px;
+}
+
+.label-lbl {
+    margin: 0;
+}
+
+.value {
+    font-size: 26px;
+}
