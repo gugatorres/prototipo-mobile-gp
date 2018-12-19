@@ -1,4 +1,4 @@
-(function(){
+$(document).ready(function(){
 
 $(".menu-open").click(function(){
     $("#mySidenav").css("left","0px");
@@ -81,4 +81,4 @@ $(".tab-4").click(function(){
 
 
 
-})(jQuery);
+});
