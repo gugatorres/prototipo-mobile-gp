@@ -117,7 +117,7 @@ nav.navbar {
 
 .box-tile {
     height: 150px;
-   /* box-shadow: rgba(0,0,0,0.2) 0px 0px 20px;*/
+   box-shadow: rgba(0,0,0,0.2) 0px 0px 15px;
 }
 
 .box-tile:hover {
