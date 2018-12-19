@@ -350,6 +350,7 @@ nav.navbar {
 
 .inadimplencia-acumulada {height: 90px; padding: 15px;}
 .limite-disponivel,.items-medio-pedido,.formas-pagamento,.ultima-entrega {padding: 15px;}
+.limite-disponivel {height: 160px;}
 .items-medio-pedido .value {margin-top: 20px;}
 .ultima-entrega img {margin: 10px 0;}
 .label-lbl {margin: 0;}
@@ -358,7 +359,7 @@ nav.navbar {
 .other-values {
     clear: both;
     border-top: solid 1px #CCC;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .other-values .value {font-size: 15px;}
