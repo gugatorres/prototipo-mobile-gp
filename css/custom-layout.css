@@ -349,8 +349,9 @@ nav.navbar {
 /* Detalhes Clientes - Tabs */
 
 .inadimplencia-acumulada {height: 90px; padding: 15px;}
-.limite-disponivel,.items-medio-pedido,.formas-pagamento {padding: 15px;}
+.limite-disponivel,.items-medio-pedido,.formas-pagamento,.ultima-entrega {padding: 15px;}
 .items-medio-pedido .value {margin-top: 20px;}
+.ultima-entrega img {margin: 10px 0;}
 .label-lbl {margin: 0;}
 .value {font-size: 26px;}
 
