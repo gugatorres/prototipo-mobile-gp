@@ -324,3 +324,31 @@ nav.navbar {
     color: #FFF;
 }
 
+/* Detalhe de Clientes */
+
+.nav-tab-custom {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-tab-custom li {
+    display: inline-block;
+    color: #FFF;
+    font-size: 14px;
+    padding: 0px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.nav-tab-custom li.active {
+    border-bottom: solid 2px #FFF;
+}
+
+.tab-content {
+    padding: 0px 10px;
+}
+
+.tab-page-1{display: block;}
+.tab-page-2{display: none;}
+.tab-page-3{display: none;}
+.tab-page-4{display: none;}
