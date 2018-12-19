@@ -353,10 +353,25 @@ nav.navbar {
     padding: 15px;
 }
 
+.limite-disponivel.white {
+    padding: 15px;
+}
+
 .label-lbl {
     margin: 0;
 }
 
+
 .value {
     font-size: 26px;
+}
+
+.other-values {
+    clear: both;
+    border-top: solid 1px #CCC;
+    padding-top: 10px;
+}
+
+.other-values .value {
+    font-size: 15px;
 }
