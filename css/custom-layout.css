@@ -117,12 +117,12 @@ nav.navbar {
 
 .box-tile {
     height: 150px;
-   box-shadow: rgba(0,0,0,0.2) 0px 0px 15px;
+    box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
 }
 
-.box-tile:hover {
+/*.box-tile:hover {
     box-shadow: inset rgba(0,0,0,0.1) 0px 0px 80px;
-}
+}*/
 
 .route-customer {
     height: 90px;
