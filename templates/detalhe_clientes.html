@@ -2,24 +2,37 @@
 
     <h2>{{titulo}}</h2>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-      </ul>
-      
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>Some content.</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Some content in menu 1.</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Some content in menu 2.</p>
+    <div class="container" ng-app="tabApp">
+        <div class="row" ng-controller="TabController">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                 <li ng-class="{ active: isSet(1) }">
+                    <a href ng-click="setTab(1)">Home</a>
+                 </li>
+                 <li ng-class="{ active: isSet(2) }">
+                    <a href ng-click="setTab(2)">Profile</a>
+                 </li>
+                 <li ng-class="{ active: isSet(3) }">
+                    <a href ng-click="setTab(3)">Messages</a>
+                 </li>
+               </ul>
+            </div>
+          <div class="col-md-8">
+                <div class="jumbotron">
+                 <div ng-show="isSet(1)">
+                    <h1>Home page</h1>
+                    <p>Welcome to the website!</p>
+                    <p><a class="btn btn-primary btn-lg" 			role="button">Learn more</a></p>
+                  </div>
+                  <div ng-show="isSet(2)">
+                <h1>Profile page</h1>
+                <p>Profile information</p>
+               </div>
+              <div ng-show="isSet(3)">
+                <h1>Messages</h1>
+                <p> Some messages </p>
+               </div>
+            </div>
         </div>
       </div>
 
