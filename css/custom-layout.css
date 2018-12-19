@@ -324,7 +324,7 @@ nav.navbar {
 
 .nav-tab-custom a {
     display: inline-block;
-    color: #FFF;
+    color: #c62222;
     font-size: 14px;
     padding: 5px 10px 5px 10px;
     height: 35px;
@@ -334,7 +334,7 @@ nav.navbar {
 }
 
 .nav-tab-custom a.active {
-    border-bottom: solid 2px #FFF;
+    border-bottom: solid 2px #c62222;
 }
 
 .tab-content {
