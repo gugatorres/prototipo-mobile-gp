@@ -336,8 +336,10 @@ nav.navbar {
     display: inline-block;
     color: #FFF;
     font-size: 14px;
-    padding: 0px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    height: 35px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .nav-tab-custom li.active {
