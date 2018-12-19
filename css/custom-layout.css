@@ -332,7 +332,7 @@ nav.navbar {
     margin: 0;
 }
 
-.nav-tab-custom li {
+.nav-tab-custom a {
     display: inline-block;
     color: #FFF;
     font-size: 14px;
@@ -340,9 +340,10 @@ nav.navbar {
     height: 35px;
     margin-bottom: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.nav-tab-custom li.active {
+.nav-tab-custom a.active {
     border-bottom: solid 2px #FFF;
 }
 
