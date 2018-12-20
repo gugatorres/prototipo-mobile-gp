@@ -21,6 +21,17 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Meus Clientes"
 
+	angular.element(".float-button-clientes").click(function(){
+		angular.element(".overlay-add-customer").css("display","block");
+		angular.element(this).css("z-index","999");
+	});
+	
+	angular.element(".overlay-add-customer").click(function(){
+		angular.element(this).css("display","none");
+		angular.element(".float-button-clientes").css("z-index","2");
+	});
+
+
 }).controller("detalheClientesController", function($scope){
 	
 	$scope.titulo="Detalhe de Clientes"
@@ -66,6 +77,49 @@ app.controller("defaultController", function($scope){
 	});
 	
 
+}).controller("cadastroClientesController", function($scope){
+	
+	$scope.titulo="Cadastro de Clientes"
+
+	angular.element(".tab-1").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-page-1").css("display","block");
+		angular.element(".tab-page-2").css("display","none");
+		angular.element(".tab-page-3").css("display","none");
+		angular.element(".tab-page-4").css("display","none");
+	});
+	
+	angular.element(".tab-2").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-page-2").css("display","block");
+		angular.element(".tab-page-1").css("display","none");
+		angular.element(".tab-page-3").css("display","none");
+		angular.element(".tab-page-4").css("display","none");
+	});
+	
+	angular.element(".tab-3").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-1,.tab-2,.tab-4").removeClass("active");
+		angular.element(".tab-page-3").css("display","block");
+		angular.element(".tab-page-1").css("display","none");
+		angular.element(".tab-page-2").css("display","none");
+		angular.element(".tab-page-4").css("display","none");
+	});
+	
+	angular.element(".tab-4").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-1,.tab-2,.tab-3").removeClass("active");
+		angular.element(".tab-page-4").css("display","block");
+		angular.element(".tab-page-1").css("display","none");
+		angular.element(".tab-page-2").css("display","none");
+		angular.element(".tab-page-3").css("display","none");
+	});
 
 
 }).controller("catalogoProdutosController", function($scope){

@@ -355,6 +355,11 @@ nav.navbar {
     text-decoration: none;
 }
 
+.cadastro-customers .nav-tab-custom a {
+    width: 32%;
+    text-align: center;
+}
+
 .nav-tab-custom a.active {
     border-bottom: solid 2px #c62222;
 }
