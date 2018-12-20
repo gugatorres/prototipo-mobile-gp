@@ -25,7 +25,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     top: 0;
     left: 0;
     background-color: #FFF;
@@ -111,7 +111,7 @@ nav.navbar {
     background: #000000b3;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     height: 100%;
     top: 0;
     display: none;
@@ -237,7 +237,7 @@ nav.navbar {
     position: fixed;
     right: 15px;
     bottom: 15px;
-    z-index: 999;
+    z-index: 2;
     border-radius: 40px;
     box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
 }
