@@ -342,6 +342,7 @@ nav.navbar {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .nav-tab-custom a {
@@ -356,7 +357,7 @@ nav.navbar {
 }
 
 .cadastro-customers .nav-tab-custom a {
-    width: 32%;
+    width: 30%;
     text-align: center;
 }
 
