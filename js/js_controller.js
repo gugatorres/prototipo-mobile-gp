@@ -5,11 +5,13 @@ app.controller("defaultController", function($scope){
 	angular.element(".float-button-clientes").click(function(){
 		angular.element(".overlay-add-customer").css("display","block");
 		angular.element(this).css("z-index","999");
+		angular.element("body").css("overflow-y", "hidden");
 	});
 	
 	angular.element(".overlay-add-customer").click(function(){
 		angular.element(this).css("display","none");
 		angular.element(".float-button-clientes").css("z-index","2");
+		angular.element("body").css("overflow-y", "hidden");
 	});
 	
 
@@ -24,11 +26,13 @@ app.controller("defaultController", function($scope){
 	angular.element(".float-button-clientes").click(function(){
 		angular.element(".overlay-add-customer").css("display","block");
 		angular.element(this).css("z-index","999");
+		angular.element("body").css("overflow-y", "hidden");
 	});
 	
 	angular.element(".overlay-add-customer").click(function(){
 		angular.element(this).css("display","none");
 		angular.element(".float-button-clientes").css("z-index","2");
+		angular.element("body").css("overflow-y", "auto");
 	});
 
 }).controller("cepCadastroClientesController", function($scope){
