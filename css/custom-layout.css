@@ -407,3 +407,16 @@ nav.navbar {
     position: fixed;
     right: 0;
 }
+
+.link-btn {
+    background: #c62222;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    color: #FFF;
+    padding: 15px;
+    font-size: 20px;
+    left: 0;
+}

@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
         templateUrl : "./templates/cadastro_clientes.html",
         controller:   "cadastroClientesController"
     })
+    .when("/cep_cadastro_clientes", {
+        templateUrl : "./templates/cep_cadastro_clientes.html",
+        controller:   "cepCadastroClientesController"
+    })
     .when("/catalogo_produtos", {
         templateUrl : "./templates/catalogo_produtos.html",
         controller:   "catalogoProdutosController"

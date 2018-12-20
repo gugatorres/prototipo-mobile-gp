@@ -31,6 +31,9 @@ app.controller("defaultController", function($scope){
 		angular.element(".float-button-clientes").css("z-index","2");
 	});
 
+}).controller("cepCadastroClientesController", function($scope){
+	
+	$scope.titulo="CEP Cadastro de Clientes"
 
 }).controller("detalheClientesController", function($scope){
 	
@@ -120,7 +123,6 @@ app.controller("defaultController", function($scope){
 		angular.element(".tab-page-2").css("display","none");
 		angular.element(".tab-page-3").css("display","none");
 	});
-
 
 }).controller("catalogoProdutosController", function($scope){
 	
