@@ -158,7 +158,7 @@ nav.navbar {
 
 .box-tile:hover {
     background: #fffbda;
-    box-shadow: inset rgba(0,0,0,0.1) 0px 0px 80px;
+    box-shadow: rgba(0,0,0,0.1) 5px 5px 10px;
 }
 
 /*.box-tile:hover {
