@@ -1,3 +1,4 @@
+/* default Controller */
 app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Home"
@@ -16,11 +17,12 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","none");
 	
-
+/* minha Rota Controller */
 }).controller("minhaRotaController", function($scope){
 	
 	$scope.titulo="Minha Rota"
 
+/* meus Clientes Controller */
 }).controller("meusClientesController", function($scope){
 	
 	$scope.titulo="Meus Clientes"
@@ -39,14 +41,14 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","none");
 
-
+/* cep Cadastro Clientes Controller */
 }).controller("cepCadastroClientesController", function($scope){
 	
 	$scope.titulo="CEP Cadastro de Clientes"
 
 	angular.element(".bar-customer-back").css("display","block");
 
-
+/* detalhe Clientes Controller */
 }).controller("detalheClientesController", function($scope){
 	
 	$scope.titulo="Detalhe de Clientes"
@@ -93,7 +95,8 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","block");
 	
-
+	
+/* cadastro Clientes Controller */
 }).controller("cadastroClientesController", function($scope){
 	
 	$scope.titulo="Cadastro de Clientes"
@@ -138,7 +141,6 @@ app.controller("defaultController", function($scope){
 		angular.element(".tab-page-3").css("display","none");
 	});
 
-
 	angular.element(".link-btn-tab2").click(function(){
 		angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
 		angular.element(".tab-2").addClass("active");
@@ -167,23 +169,25 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","block");
 
+/* catalogo Produtos Controller */
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
-
 	angular.element(".bar-customer-back").css("display","block");
 
-
-
-
+/* estoque Precos Controller */
 }).controller("estoquePrecosController", function($scope){
 	
 	$scope.titulo="Estoque Preços"
 
+
+/* relatorios Controller */
 }).controller("relatoriosController", function($scope){
 	
 	$scope.titulo="Relatórios"
 
+
+/* agendar Visita Controller */
 }).controller("agendarVisitaController", function($scope){
 	
 	$scope.titulo="Agendar Visita"
