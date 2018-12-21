@@ -71,6 +71,27 @@ a:hover{text-decoration: none;}
     right: 15px;
 }
 
+.bar-customer-back {
+    border-radius: 0;
+    border: none;
+    background: #c62222;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 55px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.menu-back {
+    top: 14px;
+    position: absolute;
+    left: 14px;
+}
+
+
 .menu-principal ul li {
     display: block;
     width: 100%;

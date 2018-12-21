@@ -82,3 +82,7 @@ $(".tab-4").click(function(){
 
 
 });
+
+function goBack() {
+    window.history.back();
+  }
