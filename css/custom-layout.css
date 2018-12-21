@@ -454,6 +454,8 @@ a .card-product {
     top: 0;
     left: 0;
     z-index: 9;
+    -webkit-transition: display 2s; /* For Safari 3.1 to 6.0 */
+    transition: display 2s;
     display: none;
 }
 
@@ -464,6 +466,11 @@ a .card-product {
     background: #FFF;
     margin: 150px auto;
     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+}
+
+.header-modal {
+    text-align: center;
+    font-size: 22px;
 }
 
 
