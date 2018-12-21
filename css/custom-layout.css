@@ -91,6 +91,12 @@ a:hover{text-decoration: none;}
     left: 14px;
 }
 
+.menu-photo {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
 
 .menu-principal ul li {
     display: block;

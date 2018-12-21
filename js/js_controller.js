@@ -39,7 +39,7 @@ app.controller("defaultController", function($scope){
 		angular.element("body").css("overflow-y", "auto");
 	});
 
-	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".bar-customer-back").css("display","block");
 
 /* cep Cadastro Clientes Controller */
 }).controller("cepCadastroClientesController", function($scope){
