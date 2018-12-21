@@ -6,6 +6,9 @@ body {
     overflow-x: hidden;
 }
 
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
 .white{background: #FFFFFF}
 .red{background: #F44336}
 .red-dark-alpha{background: #5a040491}
