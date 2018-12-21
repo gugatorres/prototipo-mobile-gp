@@ -44,7 +44,7 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="CEP Cadastro de Clientes"
 
-	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".bar-customer-back").css("display","block");
 
 
 }).controller("detalheClientesController", function($scope){
@@ -170,7 +170,7 @@ app.controller("defaultController", function($scope){
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
-	
+
 	angular.element(".bar-customer-back").css("display","block");
 
 
