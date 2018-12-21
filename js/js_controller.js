@@ -128,6 +128,40 @@ app.controller("defaultController", function($scope){
 		angular.element(".tab-page-3").css("display","none");
 	});
 
+
+	angular.element(".link-btn-tab2").click(function(){
+		angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-2").addClass("active");
+		angular.element(".tab-page-2").css("display","block");
+		angular.element(".tab-page-1").css("display","none");
+		angular.element(".tab-page-3").css("display","none");
+		angular.element(".tab-page-4").css("display","none");
+	});
+
+	angular.element(".link-btn-tab3").click(function(){
+		angular.element(".tab-1,.tab-2,.tab-4").removeClass("active");
+		angular.element(".tab-3").addClass("active");
+		angular.element(".tab-page-3").css("display","block");
+		angular.element(".tab-page-2").css("display","none");
+		angular.element(".tab-page-1").css("display","none");
+		angular.element(".tab-page-4").css("display","none");
+	});
+
+	angular.element(".btn-finalizar").click(function(){
+		angular.element(".overlay-modal").css("display","block");
+	});
+
+	angular.element(".overlay-modal").click(function(){
+		angular.element(this).css("display","none");
+	});
+
+	
+
+	
+
+
+
+
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
