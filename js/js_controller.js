@@ -16,11 +16,14 @@ app.controller("defaultController", function($scope){
 	});
 
 	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".sync img").attr("src","images/cloud.svg");
 	
 /* minha Rota Controller */
 }).controller("minhaRotaController", function($scope){
 	
 	$scope.titulo="Minha Rota"
+	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".sync img").attr("src","images/search_w.svg");
 
 /* meus Clientes Controller */
 }).controller("meusClientesController", function($scope){
@@ -40,13 +43,16 @@ app.controller("defaultController", function($scope){
 	});
 
 	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".sync img").attr("src","images/search_w.svg");
+	
 
 /* cep Cadastro Clientes Controller */
 }).controller("cepCadastroClientesController", function($scope){
 	
 	$scope.titulo="CEP Cadastro de Clientes"
 
-	angular.element(".bar-customer-back").css("display","block");
+	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".sync img").attr("src","images/search_w.svg");
 
 /* detalhe Clientes Controller */
 }).controller("detalheClientesController", function($scope){
@@ -173,6 +179,7 @@ app.controller("defaultController", function($scope){
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
+	angular.element(".sync img").attr("src","images/search_w.svg");
 	angular.element(".bar-customer-back").css("display","none");
 
 /* estoque Precos Controller */
