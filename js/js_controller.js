@@ -39,7 +39,7 @@ app.controller("defaultController", function($scope){
 		angular.element("body").css("overflow-y", "auto");
 	});
 
-	angular.element(".bar-customer-back").css("display","block");
+	angular.element(".bar-customer-back").css("display","none");
 
 /* cep Cadastro Clientes Controller */
 }).controller("cepCadastroClientesController", function($scope){
@@ -173,7 +173,7 @@ app.controller("defaultController", function($scope){
 }).controller("catalogoProdutosController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
-	angular.element(".bar-customer-back").css("display","block");
+	angular.element(".bar-customer-back").css("display","none");
 
 /* estoque Precos Controller */
 }).controller("estoquePrecosController", function($scope){
