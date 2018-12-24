@@ -507,6 +507,26 @@ a .card-product {
     font-size: 22px;
 }
 
+.float-button-grid {
+    background: #666666;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 70px;
+    z-index: 2;
+    border-radius: 40px;
+    box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
+}
+.float-button-grid img{
+    width: 30px;
+    margin-left: 19px;
+    margin-top: 18px;
+}
+
+.box-product-grid{}
+
 
 
 
