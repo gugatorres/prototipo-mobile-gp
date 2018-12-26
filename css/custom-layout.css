@@ -71,6 +71,12 @@ a:hover{text-decoration: none;}
     right: 15px;
 }
 
+.search{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
 .bar-customer-back {
     border-radius: 0;
     border: none;

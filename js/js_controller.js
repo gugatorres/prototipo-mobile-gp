@@ -14,9 +14,11 @@ app.controller("defaultController", function($scope){
 		angular.element(".float-button-clientes").css("z-index","2");
 		angular.element("body").css("overflow-y", "hidden");
 	});
-
+	angular.element(".search").addClass("sync");
+	angular.element(".sync").removeClass("search");
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".sync img").attr("src","images/cloud.svg");
+	
 	
 /* minha Rota Controller */
 }).controller("minhaRotaController", function($scope){
@@ -44,6 +46,8 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".sync img").attr("src","images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
 	
 
 /* cep Cadastro Clientes Controller */
@@ -53,6 +57,8 @@ app.controller("defaultController", function($scope){
 
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".sync img").attr("src","images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
 
 /* detalhe Clientes Controller */
 }).controller("detalheClientesController", function($scope){
@@ -180,6 +186,9 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Catalogo de Produtos"
 	angular.element(".sync img").attr("src","images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
+
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".float-button-grid").addClass("image-grid");
 
