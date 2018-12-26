@@ -362,7 +362,6 @@ nav.navbar {
 .box-indic span {
     display: inline-block;
     height: 80px;
-    float: left;
     padding: 0 4px;
     font-size: 10px;
     font-weight: bold;
@@ -478,6 +477,7 @@ a .card-product {
     margin-top: 25px;
     margin-bottom: 0;
     font-size: 16px;
+    color: #c62222;
 }
 
 .overlay-modal {
@@ -525,7 +525,29 @@ a .card-product {
     margin-top: 18px;
 }
 
-.box-product-grid{}
+.product-grid {
+    padding: 15px;
+    height: auto;
+    position: relative;
+}
+
+.product-grid .col-xs-4 {
+    width: 100% !important;
+}
+
+.product-grid .col-xs-8 {
+    width: 100% !important;
+    text-align: center;
+}
+
+.product-grid .name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product-grid .col-xs-4 img {
+    width: 100% !important;
+}
 
 
 

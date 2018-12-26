@@ -182,6 +182,28 @@ app.controller("defaultController", function($scope){
 	angular.element(".sync img").attr("src","images/search_w.svg");
 	angular.element(".bar-customer-back").css("display","none");
 
+
+	angular.element(".button-grid").click(function(){
+
+		//angular.element(".button-grid img").attr("src","../images/list_w.svg");
+		//angular.element(this).addClass("button-list");
+		//angular.element(this).removeClass("button-grid");
+		//angular.element(".box-product").addClass("product-grid");
+		angular.element(".box-product").toggleClass("product-grid");
+		
+		})
+
+	
+
+		angular.element(".button-list").click(function(){
+			angular.element(".box-product").removeClass("product-grid");
+			angular.element(".button-list img").attr("src","../images/grid_w.svg");
+			angular.element(this).addClass("button-grid");
+			angular.element(this).removeClass("button-list");
+			})
+
+
+
 /* estoque Precos Controller */
 }).controller("estoquePrecosController", function($scope){
 	
