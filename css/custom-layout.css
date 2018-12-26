@@ -109,6 +109,10 @@ a:hover{text-decoration: none;}
     right: 15px;
 }
 
+.search img {
+    width: 25px !important;
+}
+
 .bar-customer-back {
     border-radius: 0;
     border: none;
