@@ -531,6 +531,20 @@ a .card-product {
     position: relative;
 }
 
+.image-grid {
+    background: #666666 url(../images/grid_w.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 19px 20px;
+}
+
+.image-list {
+    background: #666666 url(../images/list_w.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 19px 20px;
+}
+
 .product-grid .col-xs-4 {
     width: 100% !important;
 }

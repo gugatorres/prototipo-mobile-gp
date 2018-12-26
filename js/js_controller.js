@@ -181,11 +181,13 @@ app.controller("defaultController", function($scope){
 	$scope.titulo="Catalogo de Produtos"
 	angular.element(".sync img").attr("src","images/search_w.svg");
 	angular.element(".bar-customer-back").css("display","none");
+	angular.element(".float-button-grid").addClass("image-grid");
 
 
-	angular.element(".button-grid").click(function(){
 
-		//angular.element(".button-grid img").attr("src","../images/list_w.svg");
+	angular.element(".float-button-grid").click(function(){
+
+		angular.element(this).toggleClass("image-list");
 		//angular.element(this).addClass("button-list");
 		//angular.element(this).removeClass("button-grid");
 		//angular.element(".box-product").addClass("product-grid");
