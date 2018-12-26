@@ -183,26 +183,11 @@ app.controller("defaultController", function($scope){
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".float-button-grid").addClass("image-grid");
 
-
-
 	angular.element(".float-button-grid").click(function(){
-
 		angular.element(this).toggleClass("image-list");
-		//angular.element(this).addClass("button-list");
-		//angular.element(this).removeClass("button-grid");
-		//angular.element(".box-product").addClass("product-grid");
 		angular.element(".box-product").toggleClass("product-grid");
 		
 		})
-
-	
-
-		angular.element(".button-list").click(function(){
-			angular.element(".box-product").removeClass("product-grid");
-			angular.element(".button-list img").attr("src","../images/grid_w.svg");
-			angular.element(this).addClass("button-grid");
-			angular.element(this).removeClass("button-list");
-			})
 
 
 
