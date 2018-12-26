@@ -226,4 +226,9 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Agendar Visita"
 
+	/* Splash Controller */
+}).controller("splashController", function($scope){
+	
+	$scope.titulo="Splash"
+
 });

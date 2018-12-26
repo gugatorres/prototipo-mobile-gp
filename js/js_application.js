@@ -41,5 +41,10 @@ app.config(function($routeProvider) {
         templateUrl : "./templates/agendar_visita.html",
         controller:   "agendarVisitaController"
     })
+    .when("/splash", {
+        templateUrl : "./templates/splash.html",
+        controller:   "agendarVisitaController"
+    })
+
     .otherwise({redirectTo:"/home"});
 });
