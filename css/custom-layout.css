@@ -8,7 +8,7 @@
     left: 0;
     top: 0;
     z-index: 999;
-    background-size: contain;
+    background-size: cover;
 }
 
 * { transition: all 200ms linear 0s; }
