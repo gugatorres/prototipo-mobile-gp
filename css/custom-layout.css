@@ -17,6 +17,19 @@ a:hover{text-decoration: none;}
 .yellow{background: #FC0}
 .gray{background: #CCCCCC}
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #FFFFFF;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #FFFFFF;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #FFFFFF;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+  }
+
 .title-app{
     font-size: 16px;
     text-align: center;
@@ -141,6 +154,26 @@ nav.navbar {
     width: 100%;
     z-index: 1;
     height: 55px;
+}
+
+.box-search {
+    background: #c62222;
+    padding: 10px;
+    z-index: 9999999;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top: 0px;
+    display: none;
+}
+
+.box-search input[type="text"] {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #FFFFFF;
+    color:#FFFFFF;
 }
 
 .back-menu {

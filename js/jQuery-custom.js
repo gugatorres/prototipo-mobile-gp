@@ -80,6 +80,17 @@ $(".tab-4").click(function(){
 });
 */
 
+$(".search").click(function(){
+    $(".box-search").css("display","block");
+    $(".box-search input").focus();
+
+    });
+
+$(".close-search").click(function(){
+
+    $(".box-search").css("display","none");
+    
+    })
 
 });
 
