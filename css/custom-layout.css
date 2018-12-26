@@ -360,7 +360,7 @@ nav.navbar {
 }
 
 .box-indic span {
-    display: inline-block;
+    float: left;
     height: 80px;
     padding: 0 4px;
     font-size: 10px;
