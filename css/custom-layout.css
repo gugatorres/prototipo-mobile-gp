@@ -8,6 +8,13 @@ body {
 
 textarea, input { outline: none; }
 
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
 a{text-decoration: none;}
 a:hover{text-decoration: none;}
 
@@ -502,6 +509,11 @@ nav.navbar {
     padding-top: 20px;
 }
 
+.cep-cadastro input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 0;
+}
+
 /* Produtos */
 
 .box-product {
@@ -654,8 +666,8 @@ a .card-product {
     transition: all 0.15s ease;
   }
   .inp input:hover {
-    background: rgba(34,50,84,0.03);
-  }
+    background: transparent;
+}
   .inp input:not(:placeholder-shown) + span {
     color: #c62222;
     transform: translateY(-26px) scale(0.75);
