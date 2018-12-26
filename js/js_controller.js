@@ -59,6 +59,7 @@ app.controller("defaultController", function($scope){
 	angular.element(".sync img").attr("src","images/search_w.svg");
 	angular.element(".sync").addClass("search");
 	angular.element(".sync").removeClass("sync");
+	//angular.element(".search img").removeAttr("src");
 
 /* detalhe Clientes Controller */
 }).controller("detalheClientesController", function($scope){
@@ -180,6 +181,14 @@ app.controller("defaultController", function($scope){
 	});
 
 	angular.element(".bar-customer-back").css("display","block");
+
+	angular.element(".menu-photo").click(function(){
+		angular.element(".screen-photo").css("display","block");
+		});
+
+	angular.element(".close-screen-photo").click(function(){
+		angular.element(".screen-photo").css("display","none");
+		});
 
 /* catalogo Produtos Controller */
 }).controller("catalogoProdutosController", function($scope){

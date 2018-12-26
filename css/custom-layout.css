@@ -18,7 +18,7 @@ label {
 .btn-default {
     text-align: center;
     display: block;
-    background: #F44336;
+    background: #c62222;
     padding: 15px 5px;
     margin-top: 20px;
     color: #FFF;
@@ -29,7 +29,7 @@ a{text-decoration: none;}
 a:hover{text-decoration: none;}
 
 .white{background: #FFFFFF}
-.red{background: #F44336}
+.red{background: #c62222}
 .red-dark-alpha{background: #5a040491}
 .blue{background: #00BCD4}
 .green{background: #4CAF50}
@@ -526,6 +526,66 @@ nav.navbar {
 .cep-cadastro input[type="radio"] {
     margin-right: 5px;
     margin-top: 0;
+}
+
+.screen-photo {
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display:none;
+}
+
+.screen-photo h3 {
+    text-align: center;
+    margin: 0px 0px 20px 0;
+    background: #e6e6e6;
+    padding: 15px 0;
+    font-size: 18px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+    position: relative;
+}
+
+.close-screen-photo {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: #FFF;
+    background: #CCC;
+    display: inline-block;
+    width: 50px !important;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.screen-photo .box-tile {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding-top: 15px;
+}
+.screen-photo a {
+    margin-top: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.screen-photo .box-tile .col-xs-6 span {
+    background: #CCC;
+    height: 140px;
+    display: block;
+}
+
+.screen-photo .box-tile .col-xs-6 span img {
+    width: 70px;
+    margin: auto;
+    display: block;
+    padding-top: 30px;
 }
 
 /* Produtos */
