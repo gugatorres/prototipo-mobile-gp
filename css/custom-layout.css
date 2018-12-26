@@ -15,6 +15,16 @@ label {
     font-weight: normal;
 }
 
+.btn-default {
+    text-align: center;
+    display: block;
+    background: #F44336;
+    padding: 15px 5px;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 16px;
+}
+
 a{text-decoration: none;}
 a:hover{text-decoration: none;}
 
