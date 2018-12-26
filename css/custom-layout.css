@@ -565,14 +565,9 @@ nav.navbar {
 .screen-photo .box-tile {
     width: 90%;
     margin: auto;
-    height: auto;
+    height: 550px;
     padding-top: 15px;
-}
-.screen-photo a {
-    margin-top: 0;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+    overflow-y: auto;
 }
 
 .screen-photo .box-tile .col-xs-6 span {
