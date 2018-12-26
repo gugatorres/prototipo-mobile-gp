@@ -558,7 +558,7 @@ a .card-product {
 
 .modal-custom {
     width: 85%;
-    height: 250px;
+    min-height: 250px;
     padding: 20px;
     background: #FFF;
     margin: 150px auto;
