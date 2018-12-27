@@ -11,6 +11,13 @@
     background-size: cover;
 }
 
+.header-login {
+    background: #c62222ed;
+    top: 0;
+    height: 200px;
+    padding-top: 50px;
+}
+
 .splash .logo {
     width: 70%;
     margin: 40% auto 20px;
@@ -20,13 +27,13 @@
 .box-login {
     width: 90%;
     padding: 20px;
-    background: #ffffffe6;
+    background: #FFF;
     box-shadow: rgba(0,0,0,0.1) 0px 0px 5px;
-    margin: 50px auto 0;
+    margin: -30px auto 0;
 }
 
 .login .logo {
-    margin: 40px auto !important;
+    margin: auto !important;
     width: 65%;
 }
 
