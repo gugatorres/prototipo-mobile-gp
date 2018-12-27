@@ -41,6 +41,16 @@
     width: 65%;
 }
 
+.copyright {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    padding: 10px;
+    background: #dedede;
+}
+
 * { transition: all 200ms linear 0s; }
 
 body {
