@@ -32,6 +32,22 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Meus Clientes"
 
+	angular.element(".tab-1").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-page-1").css("display","block");
+		angular.element(".tab-page-2").css("display","none");
+	});
+	
+	angular.element(".tab-2").click(function(){
+		angular.element(this).addClass("active");
+		angular.element(this).css("display","inline-block");
+		angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-page-2").css("display","block");
+		angular.element(".tab-page-1").css("display","none");
+	});
+
 	angular.element(".float-button-clientes").click(function(){
 		angular.element(".overlay-add-customer").css("display","block");
 		angular.element(this).css("z-index","999");
