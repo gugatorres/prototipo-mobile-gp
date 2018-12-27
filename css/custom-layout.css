@@ -17,6 +17,19 @@
     display: block;
 }
 
+.box-login {
+    width: 90%;
+    padding: 20px;
+    background: #fff9;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
+    margin: 150px auto 0;
+}
+
+.login .logo {
+    margin: 40px auto !important;
+    width: 50%;
+}
+
 * { transition: all 200ms linear 0s; }
 
 body {
@@ -42,6 +55,8 @@ label {
     margin-top: 20px;
     color: #FFF;
     font-size: 16px;
+    border: none;
+    width: 100%;
 }
 
 a{text-decoration: none;}

@@ -43,7 +43,11 @@ app.config(function($routeProvider) {
     })
     .when("/splash", {
         templateUrl : "./templates/splash.html",
-        controller:   "agendarVisitaController"
+        controller:   "splashController"
+    })
+    .when("/login", {
+        templateUrl : "./templates/login.html",
+        controller:   "loginController"
     })
 
     .otherwise({redirectTo:"/home"});

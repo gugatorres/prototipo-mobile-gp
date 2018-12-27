@@ -231,4 +231,9 @@ app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Splash"
 
+   /* Splash Controller */
+}).controller("loginController", function($scope){
+	
+	$scope.titulo="Login"
+
 });
