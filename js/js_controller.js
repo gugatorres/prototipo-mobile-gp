@@ -26,6 +26,8 @@ app.controller("defaultController", function($scope){
 	$scope.titulo="Minha Rota"
 	angular.element(".bar-customer-back").css("display","none");
 	angular.element(".sync img").attr("src","images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
 
 /* meus Clientes Controller */
 }).controller("meusClientesController", function($scope){

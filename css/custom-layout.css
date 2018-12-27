@@ -445,7 +445,7 @@ nav.navbar {
 
 /* MEUS CLIENTES */
 
-.grid-customers a {
+.grid-customers,.my-route a {
     color: #000;
 }
 
