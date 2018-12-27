@@ -32,6 +32,10 @@
     margin: -30px auto 0;
 }
 
+.login {
+    background: #f5f5f5;
+}
+
 .login .logo {
     margin: auto !important;
     width: 65%;
