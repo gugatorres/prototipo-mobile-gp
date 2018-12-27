@@ -48,6 +48,8 @@ app.controller("defaultController", function($scope){
 		angular.element(".tab-page-1").css("display","none");
 	});
 
+	angular.element(".tab-page-2 .card-customer").addClass("customer-pend");
+
 	angular.element(".float-button-clientes").click(function(){
 		angular.element(".overlay-add-customer").css("display","block");
 		angular.element(this).css("z-index","999");
