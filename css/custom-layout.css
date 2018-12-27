@@ -14,7 +14,7 @@
 .header-login {
     background: #c62222ed;
     top: 0;
-    height: 200px;
+    height: 300px;
     padding-top: 50px;
 }
 
@@ -29,7 +29,7 @@
     padding: 20px;
     background: #FFF;
     box-shadow: rgba(0,0,0,0.1) 0px 0px 5px;
-    margin: -30px auto 0;
+    margin: -130px auto 0;
 }
 
 .login {
