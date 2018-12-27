@@ -528,6 +528,10 @@ nav.navbar {
 .tab-page-3{display: none;}
 .tab-page-4{display: none;}
 
+.customer-pend {
+    opacity: 0.4;
+}
+
 /* Detalhes Clientes - Tabs */
 
 .inadimplencia-acumulada {height: 90px; padding: 15px;}
