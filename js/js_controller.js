@@ -2,7 +2,6 @@
 app.controller("defaultController", function($scope){
 	
 	$scope.titulo="Home"
-
 	angular.element(".float-button-clientes").click(function(){
 		angular.element(".overlay-add-customer").css("display","block");
 		angular.element(this).css("z-index","999");
