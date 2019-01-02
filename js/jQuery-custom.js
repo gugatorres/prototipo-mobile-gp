@@ -90,8 +90,7 @@ $(".close-search").click(function(){
 
     $(".box-search").css("display","none");
     
-    })
-
+    });
 });
 
 function goBack() {

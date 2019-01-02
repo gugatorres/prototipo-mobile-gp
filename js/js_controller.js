@@ -125,6 +125,14 @@ app.controller("defaultController", function($scope){
 		angular.element(".tab-page-3").css("display","none");
 	});
 
+	angular.element(".menu-photo").click(function(){
+		angular.element(".screen-photo").css("display","block");
+		});
+
+	angular.element(".close-screen-photo").click(function(){
+		angular.element(".screen-photo").css("display","none");
+		});
+
 	angular.element(".bar-customer-back").css("display","block");
 	
 	
