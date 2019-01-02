@@ -408,7 +408,10 @@ nav.navbar {
 }
 
 .header-nav {
-    background: #c62222;
+    background: url(../images/bg03.jpg);
+    background-position: 0px -160px;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 120px;
     color: #FFF;
     padding: 50px 25px 0px 25px;
