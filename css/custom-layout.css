@@ -12,7 +12,10 @@
 }
 
 .header-login {
-    background: #c62222ed;
+    background: #c62222ed url(../images/bg03.jpg);
+    background-position: 0px -160px;
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 0;
     height: 300px;
     padding-top: 50px;
