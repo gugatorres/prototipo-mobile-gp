@@ -476,6 +476,16 @@ nav.navbar {
     top:0;
 }
 
+.tab-page-1 a{color:#000000;}
+
+.tab-page-2 .box-indic {
+    display: none;
+}
+
+.tab-page-2 .box-customer {
+    opacity: 0.5;
+}
+
 .box-indic span {
     float: left;
     height: 80px;
