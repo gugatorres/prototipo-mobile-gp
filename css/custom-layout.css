@@ -671,7 +671,7 @@ nav.navbar {
 
 .box-product {
     padding: 15px;
-    height: 135px;
+    height: 100px;
     position: relative;
 }
 
@@ -680,7 +680,7 @@ a .card-product {
 }
 
 .box-product .name {
-    margin-top: 25px;
+    margin-top: 12px;
     margin-bottom: 0;
     font-size: 16px;
     color: #c62222;
@@ -731,6 +731,10 @@ a .card-product {
     margin-top: 18px;
 }
 
+.card-product {
+    margin-bottom: 10px;
+}
+
 .product-grid {
     padding: 15px;
     height: auto;
@@ -751,11 +755,11 @@ a .card-product {
     background-position: 19px 20px;
 }
 
-.product-grid .col-xs-4 {
+.product-grid .col-xs-3 {
     width: 100% !important;
 }
 
-.product-grid .col-xs-8 {
+.product-grid .col-xs-9 {
     width: 100% !important;
     text-align: center;
 }
@@ -765,7 +769,7 @@ a .card-product {
     margin-top: 10px;
 }
 
-.product-grid .col-xs-4 img {
+.product-grid .col-xs-3 img {
     width: 100% !important;
 }
 
