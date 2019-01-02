@@ -51,7 +51,7 @@
     background: #dedede;
 }
 
-* { transition: all 200ms linear 0s; }
+/** { transition: all 200ms linear 0s; }*/
 
 body {
     background: #f5f5f5;
