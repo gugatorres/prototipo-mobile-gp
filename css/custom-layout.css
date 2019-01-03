@@ -797,12 +797,12 @@ a .card-product {
   
   .card {
     border: none;
-    width: 150px;
+    width: 120px;
     height: 100px;
+    margin-left: 10px;
+    background: #FFFFFF;
     text-align: center;
     line-height: 95px;
-    margin-right: 10px;
-    background: #FFFFFF;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
   }
   
