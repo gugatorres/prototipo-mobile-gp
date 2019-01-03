@@ -792,18 +792,22 @@ a .card-product {
   }
   .scrolling-wrapper-flexbox .card {
     flex: 0 0 auto;
-    margin-right: 3px;
+    margin-right: 10px;
   }
   
   .card {
-    border: 1px solid white;
+    border: none;
     width: 150px;
-    height: 75px;
-    background: black;
+    height: 100px;
+    text-align: center;
+    line-height: 95px;
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
   }
   
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
-    height: 75px;
+    height: 120px;
     width: 100%;
     -webkit-overflow-scrolling: touch;
   }
