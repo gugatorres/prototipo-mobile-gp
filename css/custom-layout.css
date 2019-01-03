@@ -797,8 +797,8 @@ a .card-product {
   
   .card {
     border: none;
-    width: 160px;
-    height: 480px;
+    width: 100%;
+    height: 460px;
     margin-right: 15px;
     background: #FFFFFF;
     text-align: center;
@@ -811,7 +811,7 @@ a .card-product {
 }
   
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
-    height: 500px;
+    height: 480px;
     width: 100%;
     -webkit-overflow-scrolling: touch;
   }
