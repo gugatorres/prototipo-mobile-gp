@@ -772,8 +772,8 @@ a .card-product {
 .product-grid .col-xs-3 img {
     width: 100% !important;
 }
-.branding .col-xs-3 {height: 80px;}
-.branding .col-xs-3 img{width: 100%;}
+.branding .col-xs-2 {height: 80px;}
+.branding .col-xs-2 img{width: 100%;}
 
 
 /* Element input Mobile */
