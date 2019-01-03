@@ -802,9 +802,11 @@ a .card-product {
     margin-right: 15px;
     background: #FFFFFF;
     text-align: center;
-    line-height: 270px;
+    line-height: 410px;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
   }
+
+  .card:nth-child(1) img{width: 80%;}
 
   .card:last-child {
     margin-right: 0;
