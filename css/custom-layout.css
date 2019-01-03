@@ -772,8 +772,44 @@ a .card-product {
 .product-grid .col-xs-3 img {
     width: 100% !important;
 }
-.branding .col-xs-3 {height: 80px;}
-.branding .col-xs-3 img{width: 100%;}
+
+
+/* Card Branding */
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .scrolling-wrapper .card {
+    display: inline-block;
+  }
+  
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .scrolling-wrapper-flexbox .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+  
+  .card {
+    border: 1px solid white;
+    width: 150px;
+    height: 75px;
+    background: black;
+  }
+  
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+    height: 75px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+  }
 
 
 /* Element input Mobile */
