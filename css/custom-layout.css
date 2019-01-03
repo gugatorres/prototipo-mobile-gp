@@ -805,6 +805,10 @@ a .card-product {
     line-height: 270px;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
   }
+
+  .card:last-child {
+    margin-right: 0;
+}
   
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
     height: 300px;
