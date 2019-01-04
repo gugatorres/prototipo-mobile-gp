@@ -267,5 +267,17 @@ app.controller("defaultController", function ($scope) {
 }).controller("lpItaipavaController", function ($scope) {
 
 	$scope.titulo = "lp Itaipava Controller"
+	angular.element(".sync img").attr("src", "images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
+
+	angular.element(".bar-customer-back").css("display", "none");
+	angular.element(".float-button-grid").addClass("image-grid");
+
+	angular.element(".float-button-grid").click(function () {
+		angular.element(this).toggleClass("image-list");
+		angular.element(".box-product").toggleClass("product-grid");
+
+	})
 
 });
