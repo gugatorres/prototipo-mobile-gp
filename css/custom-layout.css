@@ -783,6 +783,7 @@ a .card-product {
   }
   .scrolling-wrapper .card {
     display: inline-block;
+    background: #eeeeee;
   }
   
   .scrolling-wrapper-flexbox {
@@ -806,11 +807,7 @@ a .card-product {
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
   }
 
-  .card:nth-child(1) img{width: 80%;}
-
-  .card:last-child {
-    margin-right: 0;
-}
+  .card img{width: 80%;}
   
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
     height: 480px;
