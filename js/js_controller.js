@@ -286,7 +286,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(window).scroll(function() {    
 			var scroll = angular.element(window).scrollTop();
 		
-			if (scroll >= 1450) {
+			if (scroll >= 1100) {
 				floatbutton.css('display','block');
 			} else {
 				floatbutton.css('display','none');
