@@ -273,11 +273,25 @@ app.controller("defaultController", function ($scope) {
 
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".float-button-grid").addClass("image-grid");
+	angular.element(".float-button-grid").css('display','none');
 
 	angular.element(".float-button-grid").click(function () {
 		angular.element(this).toggleClass("image-list");
 		angular.element(".box-product").toggleClass("product-grid");
 
 	})
+
+	angular.element(function() {
+		var floatbutton = $(".float-button-grid");
+		angular.element(window).scroll(function() {    
+			var scroll = angular.element(window).scrollTop();
+		
+			if (scroll >= 1450) {
+				floatbutton.css('display','block');
+			} else {
+				floatbutton.css('display','none');
+			}
+		});
+	});
 
 });
