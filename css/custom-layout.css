@@ -810,7 +810,7 @@ a .card-product {
   .card img{width: 80%;}
   
   .scrolling-wrapper, .scrolling-wrapper-flexbox {
-    height: 480px;
+    height: 520px;
     width: 100%;
     -webkit-overflow-scrolling: touch;
   }
