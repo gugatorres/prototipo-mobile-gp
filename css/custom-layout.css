@@ -831,6 +831,22 @@ a .card-product {
     width: 100%;
 }
 
+.lp-itaipava a:nth-child(6) {
+    display: none;
+}
+
+.lp-itaipava a:nth-child(7) {
+    display: none;
+}
+
+.lp-itaipava a:nth-child(13) {
+    display: none;
+}
+
+.lp-itaipava a:nth-child(14) {
+    display: none;
+}
+
 
 /* Element input Mobile */
 
