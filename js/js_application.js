@@ -29,6 +29,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/catalogo_produtos.html",
             controller: "catalogoProdutosController"
         })
+        .when("/lp_itaipava", {
+            templateUrl: "./templates/lp_itaipava.html",
+            controller: "lpItaipavaController"
+        })
         .when("/estoque_precos", {
             templateUrl: "./templates/estoque_precos.html",
             controller: "estoquePrecosController"

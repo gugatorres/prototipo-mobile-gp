@@ -821,6 +821,19 @@ a .card-product {
     display: none;
   }
 
+  /* LP Itaipava */
+
+  .lp-itaipava {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 3200px;
+    background: #ce9b4c;
+}
+
+.lp-itaipava img {
+    width: 100%;
+}
+
 
 /* Element input Mobile */
 

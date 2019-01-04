@@ -263,4 +263,9 @@ app.controller("defaultController", function ($scope) {
 
 	$scope.titulo = "Login"
 
+	/* lp Itaipava Controller */
+}).controller("lpItaipavaController", function ($scope) {
+
+	$scope.titulo = "lp Itaipava Controller"
+
 });
