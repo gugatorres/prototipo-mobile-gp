@@ -273,7 +273,7 @@ app.controller("defaultController", function ($scope) {
 
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".float-button-grid").addClass("image-grid");
-	angular.element(".float-button-grid").css('display','none');
+	angular.element(".float-button-grid").css('display', 'none');
 
 	angular.element(".float-button-grid").click(function () {
 		angular.element(this).toggleClass("image-list");
@@ -281,17 +281,18 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
-	angular.element(function() {
+	angular.element(function () {
 		var floatbutton = $(".float-button-grid");
-		angular.element(window).scroll(function() {    
+		angular.element(window).scroll(function () {
 			var scroll = angular.element(window).scrollTop();
-		
+
 			if (scroll >= 1100) {
-				floatbutton.css('display','block');
+				floatbutton.css('display', 'block');
 			} else {
-				floatbutton.css('display','none');
+				floatbutton.css('display', 'none');
 			}
 		});
 	});
+
 
 });
