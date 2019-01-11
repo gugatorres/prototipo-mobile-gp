@@ -37,16 +37,24 @@ app.controller("defaultController", function ($scope) {
 		angular.element(this).addClass("active");
 		angular.element(this).css("display", "inline-block");
 		angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-content > div").css("display", "none");
 		angular.element(".tab-page-1").css("display", "block");
-		angular.element(".tab-page-2").css("display", "none");
 	});
 
 	angular.element(".tab-2").click(function () {
 		angular.element(this).addClass("active");
 		angular.element(this).css("display", "inline-block");
 		angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+		angular.element(".tab-content > div").css("display", "none");
 		angular.element(".tab-page-2").css("display", "block");
-		angular.element(".tab-page-1").css("display", "none");
+	});
+
+	angular.element(".tab-3").click(function () {
+		angular.element(this).addClass("active");
+		angular.element(this).css("display", "inline-block");
+		angular.element(".tab-1,.tab-2,.tab-4").removeClass("active");
+		angular.element(".tab-content > div").css("display", "none");
+		angular.element(".tab-page-3").css("display", "block");
 	});
 
 	angular.element(".tab-page-2 .card-customer").addClass("customer-pend");
