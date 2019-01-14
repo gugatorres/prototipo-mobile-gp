@@ -28,7 +28,7 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync").addClass("search");
 	angular.element(".sync").removeClass("sync");
 
-		/* meu Pedidos Controller */
+	/* meu Pedidos Controller */
 }).controller("meusPedidosController", function ($scope) {
 
 	$scope.titulo = "Meus Pedidos"
@@ -36,6 +36,19 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync img").attr("src", "images/search_w.svg");
 	angular.element(".sync").addClass("search");
 	angular.element(".sync").removeClass("sync");
+
+	angular.element(".button-pedidos").click(function () {
+
+		angular.element(".overlay-modal").css("display", "block");
+
+	})
+
+	/*angular.element(".overlay-modal").click(function () {
+		angular.element(this).css("display", "none");
+		angular.element(".open-modal-clientes").css("z-index", "2");
+		angular.element("body").css("overflow-y", "hidden");
+	});*/
+
 
 	/* meus Clientes Controller */
 }).controller("meusClientesController", function ($scope) {

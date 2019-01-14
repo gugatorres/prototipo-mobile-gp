@@ -901,6 +901,23 @@ a .card-product {
     padding: 0;
 }
 
+.modal-select-pedidos {
+    min-height: auto;
+}
+
+.select-customer p {
+    text-align: center;
+}
+
+.select-customer select {
+    background: #f5f5f5;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    text-align-last: center;
+}
+
 
 /* Element input Mobile */
 
