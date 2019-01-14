@@ -53,6 +53,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/login.html",
             controller: "loginController"
         })
+        .when("/meus_pedidos", {
+            templateUrl: "./templates/meus_pedidos.html",
+            controller: "meusPedidosController"
+        })
 
         .otherwise({ redirectTo: "/home" });
 });

@@ -406,7 +406,7 @@ nav.navbar {
     margin-bottom: 10px;
 }
 
-.float-button-clientes {
+.float-button{
     background: #c62222;
     width: 70px;
     height: 70px;
@@ -419,7 +419,7 @@ nav.navbar {
     box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
 }
 
-.float-button-clientes img{
+.float-button img{
     width: 40px;
     margin-left: 14px;
     margin-top: 12px;
@@ -873,6 +873,28 @@ a .card-product {
 
 .lp-itaipava a:nth-child(14) {
     display: none;
+}
+
+/* Meus Pedidos */
+
+.grid-requests a {
+    color: #000;
+}
+
+.box-pedidos .cod-pedido {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.box-pedidos {
+    padding: 15px;
+    height: 80px;
+    position: relative;
+    border-left: solid 4px #c62222;
+}
+
+.box-pedidos .col-xs-9 {
+    padding: 0;
 }
 
 

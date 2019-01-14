@@ -2,7 +2,7 @@
 app.controller("defaultController", function ($scope) {
 
 	$scope.titulo = "Home"
-	angular.element(".float-button-clientes").click(function () {
+	angular.element(".open-modal-clientes").click(function () {
 		angular.element(".overlay-add-customer").css("display", "block");
 		angular.element(this).css("z-index", "999");
 		angular.element("body").css("overflow-y", "hidden");
@@ -10,7 +10,7 @@ app.controller("defaultController", function ($scope) {
 
 	angular.element(".overlay-add-customer").click(function () {
 		angular.element(this).css("display", "none");
-		angular.element(".float-button-clientes").css("z-index", "2");
+		angular.element(".open-modal-clientes").css("z-index", "2");
 		angular.element("body").css("overflow-y", "hidden");
 	});
 	angular.element(".search").addClass("sync");
@@ -23,6 +23,15 @@ app.controller("defaultController", function ($scope) {
 }).controller("minhaRotaController", function ($scope) {
 
 	$scope.titulo = "Minha Rota"
+	angular.element(".bar-customer-back").css("display", "none");
+	angular.element(".sync img").attr("src", "images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
+
+		/* meu Pedidos Controller */
+}).controller("meusPedidosController", function ($scope) {
+
+	$scope.titulo = "Meus Pedidos"
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".sync img").attr("src", "images/search_w.svg");
 	angular.element(".sync").addClass("search");
@@ -59,7 +68,7 @@ app.controller("defaultController", function ($scope) {
 
 	angular.element(".tab-page-2 .card-customer").addClass("customer-pend");
 
-	angular.element(".float-button-clientes").click(function () {
+	angular.element(".open-modal-clientes").click(function () {
 		angular.element(".overlay-add-customer").css("display", "block");
 		angular.element(this).css("z-index", "999");
 		angular.element("body").css("overflow-y", "hidden");
@@ -67,7 +76,7 @@ app.controller("defaultController", function ($scope) {
 
 	angular.element(".overlay-add-customer").click(function () {
 		angular.element(this).css("display", "none");
-		angular.element(".float-button-clientes").css("z-index", "2");
+		angular.element(".open-modal-clientes").css("z-index", "2");
 		angular.element("body").css("overflow-y", "auto");
 	});
 
