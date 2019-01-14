@@ -28,10 +28,31 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync").addClass("search");
 	angular.element(".sync").removeClass("sync");
 
-	/* meu Pedidos Controller */
+	/* meus Pedidos Controller */
 }).controller("meusPedidosController", function ($scope) {
 
 	$scope.titulo = "Meus Pedidos"
+	angular.element(".bar-customer-back").css("display", "none");
+	angular.element(".sync img").attr("src", "images/search_w.svg");
+	angular.element(".sync").addClass("search");
+	angular.element(".sync").removeClass("sync");
+
+	angular.element(".button-pedidos").click(function () {
+
+		angular.element(".overlay-modal").css("display", "block");
+
+	});
+
+	angular.element(".close-modal").click(function () {
+
+		angular.element(".overlay-modal").css("display", "none");
+
+	});
+
+   /* Gerar Pedidos Controller */
+}).controller("gerarPedidosController", function ($scope) {
+
+	$scope.titulo = "Gerar Pedidos"
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".sync img").attr("src", "images/search_w.svg");
 	angular.element(".sync").addClass("search");

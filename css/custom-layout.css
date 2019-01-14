@@ -921,8 +921,6 @@ a .card-product {
     background: transparent;
 }
 
-
-
 .select-customer p {
     text-align: center;
 }
@@ -934,6 +932,26 @@ a .card-product {
     font-size: 16px;
     text-align: center;
     text-align-last: center;
+}
+
+.gerar-pedido .box-product {
+    padding: 15px;
+    height: 75px;
+    position: relative;
+}
+
+.gerar-pedido .name {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.gerar-pedido .cnpj {
+    font-size: 11px;
+}
+
+.add-product {
+    margin-top: 7px;
+    display: block;
 }
 
 
