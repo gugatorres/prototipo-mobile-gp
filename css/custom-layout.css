@@ -884,16 +884,20 @@ a .card-product {
 .box-pedidos .cod-pedido {
     font-size: 16px;
     margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .box-pedidos {
     padding: 15px;
     height: 80px;
     position: relative;
-    border-left: solid 4px #c62222;
+    border-left: solid 4px #CCCCCC;
 }
 
-.box-pedidos .col-xs-9 {
+.status-pago{border-left: solid 4px #7fc317;}
+.status-nao-pago{border-left: solid 4px #cc0808;}
+
+.box-pedidos .col-xs-8 {
     padding: 0;
 }
 
