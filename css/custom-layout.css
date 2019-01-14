@@ -936,14 +936,6 @@ a .card-product {
     text-align-last: center;
 }
 
-.bar-bottom {
-    position: fixed;
-    bottom: 0;
-    height: 80px;
-    background: #333333;
-    width: 100%;
-}
-
 
 /* Element input Mobile */
 
