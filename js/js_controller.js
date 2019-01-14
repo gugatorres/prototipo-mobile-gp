@@ -49,7 +49,7 @@ app.controller("defaultController", function ($scope) {
 
 	});
 
-   /* Gerar Pedidos Controller */
+	/* Gerar Pedidos Controller */
 }).controller("gerarPedidosController", function ($scope) {
 
 	$scope.titulo = "Gerar Pedidos"
@@ -67,6 +67,12 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".close-modal").click(function () {
 
 		angular.element(".overlay-modal").css("display", "none");
+
+	});
+
+	angular.element(".add-product").click(function () {
+
+		angular.element(".overlay-modal").css("display", "block");
 
 	});
 
