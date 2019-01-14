@@ -935,22 +935,37 @@ a .card-product {
 }
 
 .gerar-pedido .box-product {
-    padding: 15px;
+    padding: 5px 15px;
     height: 75px;
     position: relative;
 }
 
+.gerar-pedido .col-xs-2 img {
+    margin-top: 6px;
+}
+
 .gerar-pedido .name {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .gerar-pedido .cnpj {
     font-size: 11px;
+    margin-bottom: 0;
+}
+
+.gerar-pedido .preco {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.gerar-pedido .estoque {
+    font-size: 11px;
+    margin-bottom: 0;
 }
 
 .add-product {
-    margin-top: 7px;
+    margin-top: 15px;
     display: block;
 }
 
