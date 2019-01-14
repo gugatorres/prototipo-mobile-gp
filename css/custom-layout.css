@@ -921,6 +921,8 @@ a .card-product {
     background: transparent;
 }
 
+
+
 .select-customer p {
     text-align: center;
 }
@@ -932,6 +934,14 @@ a .card-product {
     font-size: 16px;
     text-align: center;
     text-align-last: center;
+}
+
+.bar-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background: #333333;
+    width: 100%;
 }
 
 
