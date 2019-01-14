@@ -41,13 +41,13 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".overlay-modal").css("display", "block");
 
-	})
+	});
 
-	/*angular.element(".overlay-modal").click(function () {
-		angular.element(this).css("display", "none");
-		angular.element(".open-modal-clientes").css("z-index", "2");
-		angular.element("body").css("overflow-y", "hidden");
-	});*/
+	angular.element(".close-modal").click(function () {
+
+		angular.element(".overlay-modal").css("display", "none");
+
+	});
 
 
 	/* meus Clientes Controller */

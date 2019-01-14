@@ -903,6 +903,22 @@ a .card-product {
 
 .modal-select-pedidos {
     min-height: auto;
+    position: relative;
+}
+
+.modal-select-pedidos .close-modal {
+    position: absolute;
+    top: -80px;
+    border: solid 2px #FFFFFF;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    border-radius: 100px;
+    right: 0;
+    background: transparent;
 }
 
 .select-customer p {
