@@ -939,7 +939,7 @@ a .card-product {
 .bar-bottom {
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: 80px;
     background: #333333;
     width: 100%;
 }
