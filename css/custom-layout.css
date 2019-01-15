@@ -1025,6 +1025,37 @@ p.txt-min2 {
     color: #333;
 }
 
+.info-cliente {
+    background: #dad9d9;
+    margin: 0 -15px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.info-cliente p{
+    margin-bottom: 0px;
+}
+
+.info-cliente p:nth-child(2){
+    font-size: 14px;
+}
+
+.meta-faturamento {
+    border-top: solid 1px #CCC;
+    margin-top: 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.info-cliente .loading-customers {
+    margin-top: 4px;
+}
+
+.info-cliente .loading-customers {
+    background: #cccccc;
+}
+
 
 /* Element input Mobile */
 
