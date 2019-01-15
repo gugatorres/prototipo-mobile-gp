@@ -603,8 +603,8 @@ nav.navbar {
 .cadastro {
     padding: 30px 15px 0 30px;
     background: #FFF;
-    height: 100%;
-    position: fixed;
+   /* height: 100%;
+    position: fixed;*/
     right: 0;
 }
 
