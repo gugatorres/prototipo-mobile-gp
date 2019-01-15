@@ -63,6 +63,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");
+		
 	
 		angular.element(".add-product").click(function() {
 			angular.element(".overlay-modal").css("display", "block");
@@ -74,8 +75,14 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product-sum").click(function(){
 			angular.element(".overlay-modal").css("display","none");
-			angular.element(".total-box").css("bottom","0");	
-			})
+			angular.element(".total-box").css("bottom","0");
+			angular.element(".overlay-total").css("display","block");	
+			});
+
+			angular.element(".overlay-total").click(function(){
+				angular.element(this).css("display","none");
+				angular.element(".total-box").css("bottom","-100px");	
+				})	
 	
 	
 	})
