@@ -1027,10 +1027,13 @@ p.txt-min2 {
 
 .info-cliente {
     background: #dad9d9;
+    width: 100%;
     margin: 0 -15px;
     padding: 10px 15px;
     text-align: center;
     font-size: 12px;
+    position: fixed;
+    z-index: 9;
 }
 
 .info-cliente p{
