@@ -40,12 +40,7 @@ $(document).ready(function () {
         $(".box-search").css("display", "none");
 
     });
-
-/* Charts */
-
-
-
-
+    
 
 });
 

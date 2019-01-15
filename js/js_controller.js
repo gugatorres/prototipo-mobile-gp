@@ -38,15 +38,11 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync").removeClass("sync");
 
 	angular.element(".button-pedidos").click(function () {
-
 		angular.element(".overlay-modal").css("display", "block");
-
 	});
 
 	angular.element(".close-modal").click(function () {
-
 		angular.element(".overlay-modal").css("display", "none");
-
 	});
 
 	/* Gerar Pedidos Controller */
@@ -58,22 +54,8 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync").addClass("search");
 	angular.element(".sync").removeClass("sync");
 
-	angular.element(".button-pedidos").click(function () {
-
+	angular.element(".add-product").click(function() {
 		angular.element(".overlay-modal").css("display", "block");
-
-	});
-
-	angular.element(".close-modal").click(function () {
-
-		angular.element(".overlay-modal").css("display", "none");
-
-	});
-
-	angular.element(".add-product").click(function () {
-
-		angular.element(".overlay-modal").css("display", "block");
-
 	});
 
 

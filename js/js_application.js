@@ -61,6 +61,5 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/gerar_pedidos.html",
             controller: "gerarPedidosController"
         })
-
         .otherwise({ redirectTo: "/home" });
 });
