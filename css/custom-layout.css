@@ -407,7 +407,7 @@ nav.navbar {
 }
 
 .float-button{
-    background: #c62222;
+    background: #69a50d;
     width: 70px;
     height: 70px;
     display: block;
@@ -419,8 +419,27 @@ nav.navbar {
     box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
 }
 
+.float-button-second {
+    background: #c62222;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 2;
+    border-radius: 40px;
+    box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
+}
+
 .float-button img{
     width: 40px;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.float-button-second img{
+    width: 30px;
     margin-left: 14px;
     margin-top: 12px;
 }
