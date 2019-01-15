@@ -81,7 +81,7 @@ app.controller("defaultController", function ($scope) {
 
 			angular.element(".overlay-total").click(function(){
 				angular.element(this).css("display","none");
-				angular.element(".total-box").css("bottom","-100px");	
+				angular.element(".total-box").css("bottom","-53px");	
 				})	
 	
 	

@@ -1065,7 +1065,7 @@ p.txt-min2 {
 
 .total-box {
     margin: 0 -15px;
-    padding: 15px;
+    padding: 10px 15px;
     background: #c62222;
     position: fixed;
     bottom: -100px;
