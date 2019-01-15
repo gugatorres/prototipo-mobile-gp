@@ -71,6 +71,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 		});
+
+		angular.element(".add-product-sum").click(function(){
+			angular.element(".overlay-modal").css("display","none");
+			angular.element(".total-box").css("bottom","0");	
+			})
 	
 	
 	})
