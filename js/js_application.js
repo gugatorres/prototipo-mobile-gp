@@ -57,9 +57,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/meus_pedidos.html",
             controller: "meusPedidosController"
         })
-        .when("/gerar_pedidos", {
-            templateUrl: "./templates/gerar_pedidos.html",
-            controller: "gerarPedidosController"
+        .when("/new_pedido", {
+            templateUrl: "./templates/new_pedido.html",
+            controller: "newPedidoController"
         })
         .otherwise({ redirectTo: "/home" });
 });
