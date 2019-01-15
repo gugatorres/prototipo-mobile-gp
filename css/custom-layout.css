@@ -974,7 +974,8 @@ a .card-product {
     padding: 5px;
     font-size: 22px;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: center;
+    border: solid 1px #999999;
 }
 
 .config-product p {
