@@ -969,6 +969,42 @@ a .card-product {
     display: block;
 }
 
+.config-product input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.config-product p {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.config-product p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+p.txt-min {
+    font-weight: normal;
+    font-size: 10px;
+    color: #999;
+}
+
+p.txt-estoque {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #c62222;
+}
+
+p.txt-min2 {
+    font-size: 10px;
+    color: #333;
+}
+
 
 /* Element input Mobile */
 
