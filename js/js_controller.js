@@ -338,8 +338,8 @@ app.controller("defaultController", function ($scope) {
 
 		$scope.titulo = "Carrinho de Compras"
 
-		angular.element(".bar-customer-back").css("display", "none");
-		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-photo img, .search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "");
