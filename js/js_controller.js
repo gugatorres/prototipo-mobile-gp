@@ -87,7 +87,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-total").click(function () {
 			angular.element(this).css("display", "none");
 			angular.element("body").addClass("close-total-sales");
-			angular.element(".total-box").css("bottom", "-150px");
+			angular.element(".total-box").css("bottom", "-238px");
 			angular.element("body").css("overflow-y", "auto");
 			angular.element(".total-box").addClass("open-total");
 		});
