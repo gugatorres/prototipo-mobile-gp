@@ -167,6 +167,12 @@ a:hover{text-decoration: none;}
     right: 15px;
 }
 
+.cart {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
 .search img {
     width: 25px !important;
 }

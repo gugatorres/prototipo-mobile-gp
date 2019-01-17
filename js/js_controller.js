@@ -13,8 +13,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".open-modal-clientes").css("z-index", "2");
 		angular.element("body").css("overflow-y", "hidden");
 	});
-	angular.element(".search").addClass("sync");
-	angular.element(".sync").removeClass("search");
+	angular.element(".search, .cart").addClass("sync");
+	angular.element(".sync").removeClass("search, cart");
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".sync img").attr("src", "images/cloud.svg");
 
@@ -60,9 +60,10 @@ app.controller("defaultController", function ($scope) {
 
 		$scope.titulo = "Gerar Pedidos New"
 		angular.element(".bar-customer-back").css("display", "none");
-		angular.element(".sync img").attr("src", "images/search_w.svg");
-		angular.element(".sync").addClass("search");
-		angular.element(".sync").removeClass("sync");
+		angular.element( ".search img, .sync img" ).attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "!#carrinho");
 		
 	
 		angular.element(".add-product").click(function() {
@@ -131,9 +132,9 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".bar-customer-back").css("display", "none");
-		angular.element(".sync img").attr("src", "images/search_w.svg");
-		angular.element(".sync").addClass("search");
-		angular.element(".sync").removeClass("sync");
+		angular.element(".sync img, .cart img").attr("src", "images/search_w.svg");
+		angular.element(".sync, .cart").addClass("search");
+		angular.element(".sync").removeClass("sync, cart");
 
 	})
 
@@ -298,9 +299,9 @@ app.controller("defaultController", function ($scope) {
 	.controller("catalogoProdutosController", function ($scope) {
 
 		$scope.titulo = "Catalogo de Produtos"
-		angular.element(".sync img").attr("src", "images/search_w.svg");
-		angular.element(".sync").addClass("search");
-		angular.element(".sync").removeClass("sync");
+		angular.element(".sync img, .cart img").attr("src", "images/search_w.svg");
+		angular.element(".sync, .cart").addClass("search");
+		angular.element(".sync").removeClass("sync, cart");
 
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".float-button-grid").addClass("image-grid");
@@ -308,7 +309,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".float-button-grid").click(function () {
 			angular.element(this).toggleClass("image-list");
 			angular.element(".box-product").toggleClass("product-grid");
-
 		})
 
 	})
