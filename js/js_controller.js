@@ -14,9 +14,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element("body").css("overflow-y", "hidden");
 	});
 	angular.element(".search, .cart").addClass("sync");
-	angular.element(".sync").removeClass("search, cart");
+	angular.element(".sync").removeClass("cart");
+	angular.element(".sync").removeClass("search");
 	angular.element(".bar-customer-back").css("display", "none");
 	angular.element(".sync img").attr("src", "images/cloud.svg");
+	angular.element(".search, .sync, .cart").removeAttr("href");
 
 })
 
@@ -41,7 +43,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");
 
-		angular.element(".add-product").click(function() {
+		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
 		});
 
@@ -60,13 +62,13 @@ app.controller("defaultController", function ($scope) {
 
 		$scope.titulo = "Gerar Pedidos New"
 		angular.element(".bar-customer-back").css("display", "none");
-		angular.element( ".search img, .sync img" ).attr("src", "images/cart_w.svg");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "#!carrinho");
-		
-	
-		angular.element(".add-product").click(function() {
+
+
+		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
 		});
 
@@ -74,28 +76,28 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-modal").css("display", "none");
 		});
 
-		angular.element(".add-product-sum").click(function(){
-			angular.element(".overlay-modal").css("display","none");
-			angular.element(".total-box").css("bottom","0");
-			angular.element(".overlay-total").css("display","block");
+		angular.element(".add-product-sum").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".total-box").css("bottom", "0");
+			angular.element(".overlay-total").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element("body").addClass("close-total-sales");
-			});
+		});
 
-			angular.element(".overlay-total").click(function(){
-				angular.element(this).css("display","none");
-				angular.element("body").addClass("close-total-sales");
-				angular.element(".total-box").css("bottom","-150px");
-				angular.element("body").css("overflow-y", "auto");
-				angular.element(".total-box").addClass("open-total");	
-				});	
+		angular.element(".overlay-total").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("body").addClass("close-total-sales");
+			angular.element(".total-box").css("bottom", "-150px");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".total-box").addClass("open-total");
+		});
 
-				angular.element(".open-total").click(function(){
-					angular.element(".total-box").css("bottom","0px");
-					angular.element(".total-box").removeClass("open-total");	
-					})
-	
-	
+		angular.element(".open-total").click(function () {
+			angular.element(".total-box").css("bottom", "0px");
+			angular.element(".total-box").removeClass("open-total");
+		})
+
+
 	})
 
 	/* Meus Clientes Controller */
@@ -335,6 +337,24 @@ app.controller("defaultController", function ($scope) {
 	.controller("carrinhoController", function ($scope) {
 
 		$scope.titulo = "Carrinho de Compras"
+
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "");
+
+		angular.element(".edit-product").click(function () {
+			angular.element(".overlay-modal-edit").css("display", "block");
+		});
+
+		angular.element(".delete-product").click(function(){
+			angular.element(".overlay-modal-delete").css("display","block");
+		});
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
 
 	})
 

@@ -369,7 +369,7 @@ nav.navbar {
 
 .catalog-products {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: #000000;
     height: 120px;
 }
@@ -379,12 +379,12 @@ nav.navbar {
     margin: auto;
     padding-top: 20px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .stock-price{
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: #000000;
     height: 120px;
 }
@@ -394,12 +394,12 @@ nav.navbar {
     margin: auto;
     padding-top: 20px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .charts-reports{
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: #000000;
     height: 120px;
 }
@@ -409,7 +409,7 @@ nav.navbar {
     margin: auto;
     padding-top: 20px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .float-button{
@@ -1039,7 +1039,7 @@ p.txt-min2 {
     text-align: center;
     font-size: 12px;
     position: fixed;
-    z-index: 9;
+    z-index: 8;
 }
 
 .info-cliente p{
@@ -1095,8 +1095,31 @@ p.txt-min2 {
     z-index: 9;
 }
 
+/* Carrinho */
+
+.edit-product,.delete-product {
+    margin-top: 15px;
+    display: block;
+}
+
+.edit-product {
+    margin-top: 15px;
+    display: block;
+}
+
+.btn-actions a {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.btn-actions a:nth-child(1) {
+    background: #999;
+}
+
 
 /* Element input Mobile */
+
 
 .inp {
     position: relative;
