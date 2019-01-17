@@ -63,7 +63,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element( ".search img, .sync img" ).attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
-		angular.element(".cart").attr("href", "!#carrinho");
+		angular.element(".cart").attr("href", "#!carrinho");
 		
 	
 		angular.element(".add-product").click(function() {
@@ -77,13 +77,23 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".add-product-sum").click(function(){
 			angular.element(".overlay-modal").css("display","none");
 			angular.element(".total-box").css("bottom","0");
-			angular.element(".overlay-total").css("display","block");	
+			angular.element(".overlay-total").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").addClass("close-total-sales");
 			});
 
 			angular.element(".overlay-total").click(function(){
 				angular.element(this).css("display","none");
-				angular.element(".total-box").css("bottom","-53px");	
-				})	
+				angular.element("body").addClass("close-total-sales");
+				angular.element(".total-box").css("bottom","-150px");
+				angular.element("body").css("overflow-y", "auto");
+				angular.element(".total-box").addClass("open-total");	
+				});	
+
+				angular.element(".open-total").click(function(){
+					angular.element(".total-box").css("bottom","0px");
+					angular.element(".total-box").removeClass("open-total");	
+					})
 	
 	
 	})
@@ -318,6 +328,13 @@ app.controller("defaultController", function ($scope) {
 	.controller("estoquePrecosController", function ($scope) {
 
 		$scope.titulo = "Estoque Preços"
+
+	})
+
+	/* Carrinho Controller */
+	.controller("carrinhoController", function ($scope) {
+
+		$scope.titulo = "Carrinho de Compras"
 
 	})
 
