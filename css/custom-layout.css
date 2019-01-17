@@ -1121,7 +1121,7 @@ p.txt-min2 {
 }
 
 .delete-product {
-    margin-top: 25px;
+    margin-top: 22px;
     display: block;
 }
 
@@ -1140,6 +1140,26 @@ p.txt-min2 {
 
 .btn-actions a:nth-child(1) {
     background: #999;
+}
+
+.input-group .form-control {
+    position: initial;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-group-addon{border-radius: 0;}
+
+.input-group-addon:first-child {
+    border-right: 0;
+    width: 40px;
+}
+
+.input-group-addon:last-child {
+    border-left: 0;
+    width: 40px;
 }
 
 
