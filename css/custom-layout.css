@@ -1109,14 +1109,27 @@ p.txt-min2 {
 
 /* Carrinho */
 
-.edit-product,.delete-product {
-    margin-top: 15px;
-    display: block;
+.carrinho .box-product {
+    padding: 5px 15px;
+    height: 140px !important;
+    position: relative;
 }
 
 .edit-product {
     margin-top: 15px;
     display: block;
+}
+
+.delete-product {
+    margin-top: 25px;
+    display: block;
+}
+
+.edit-product input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #CCC;
+    text-align: center;
 }
 
 .btn-actions a {

@@ -344,10 +344,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "");
 
-		angular.element(".edit-product").click(function () {
-			angular.element(".overlay-modal-edit").css("display", "block");
-		});
-
 		angular.element(".delete-product").click(function(){
 			angular.element(".overlay-modal-delete").css("display","block");
 		});
