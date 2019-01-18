@@ -1040,6 +1040,7 @@ p.txt-min2 {
     font-size: 12px;
     position: fixed;
     z-index: 8;
+    border-bottom: solid 2px #f5f5f5;
 }
 
 .info-cliente p{
@@ -1174,6 +1175,13 @@ p.txt-min2 {
 }
 
 .cart .ind-number {display: block}
+
+.btn-formas-pagto {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+}
 
 
 /* Element input Mobile */

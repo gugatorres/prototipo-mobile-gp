@@ -359,8 +359,8 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".menu-photo img, .search img, .sync img").attr("src", "images/cart_w.svg");
-		angular.element(".search, .sync").addClass("cart");
-		angular.element(".cart").removeClass("search, sync");
+		angular.element(".search, .sync, .menu-photo").addClass("cart");
+		angular.element(".cart").removeClass("search, sync, menu-photo");
 		angular.element(".cart").attr("href", "");
 		angular.element(".cart").append("<span class='ind-number'></span>");
 
