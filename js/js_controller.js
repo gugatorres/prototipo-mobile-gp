@@ -310,11 +310,16 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".input-pj").click(function(){
 			angular.element("body").addClass("pessoa-juridica");
 			angular.element("body").removeClass("pessoa-fisica");
+			angular.element(".tab-page-2 .link-btn-tab3").css("display","none");
+			angular.element(".tab-page-2 .btn-finalizar").css("display","block");
 		});
 		
 		angular.element(".input-pf").click(function(){
 			angular.element("body").addClass("pessoa-fisica");
 			angular.element("body").removeClass("pessoa-juridica");
+			angular.element(".tab-page-2 .link-btn-tab3").css("display","block");
+			angular.element(".tab-page-2 .btn-finalizar").css("display","none");
+
 		});
 
 
