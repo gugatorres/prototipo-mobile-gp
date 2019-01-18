@@ -20,6 +20,14 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".sync img").attr("src", "images/cloud.svg");
 	angular.element(".search, .sync, .cart").removeAttr("href");
 
+	angular.element(".btn-novo-pedido").click(function () {
+		angular.element(".overlay-modal").css("display", "block");
+	});
+
+	angular.element(".close-modal").click(function () {
+		angular.element(".overlay-modal").css("display", "none");
+	});
+
 })
 
 	/* minha Rota Controller */
@@ -78,10 +86,12 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product-sum").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".cart").append("<span class='ind-number'></span>");
 			angular.element(".total-box").css("bottom", "0");
 			angular.element(".overlay-total").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element("body").addClass("close-total-sales");
+
 		});
 
 		angular.element(".overlay-total").click(function () {
@@ -147,6 +157,15 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync img, .cart img").attr("src", "images/search_w.svg");
 		angular.element(".sync, .cart").addClass("search");
 		angular.element(".sync").removeClass("sync, cart");
+
+		angular.element(".btn-novo-pedido").click(function () {
+			angular.element(".overlay-modal").css("display", "block");
+		});
+	
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
+	
 
 	})
 
@@ -343,6 +362,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "");
+		angular.element(".cart").append("<span class='ind-number'></span>");
 
 		angular.element(".delete-product").click(function(){
 			angular.element(".overlay-modal-delete").css("display","block");
@@ -351,6 +371,10 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 		});
+
+		angular.element(".btn-actions a").click(function(){
+			angular.element(".overlay-modal-delete").css("display","none");
+		})
 
 	})
 

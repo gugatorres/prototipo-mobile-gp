@@ -115,7 +115,7 @@
 
 <a class="float-button open-modal-clientes">
 
-	<img src="images/add-customer.svg" alt="">
+	<img src="images/add.svg" alt="" style="margin-left: 15px; margin-top: 15px;">
 
 </a>
 
@@ -123,12 +123,41 @@
 
 	<ul class="buttons-add">
 		<li> <a href="#!cep_cadastro_clientes">Novo Cliente <img src="images/add.svg" alt=""> </a> </li>
+		<li> <a class="btn-novo-pedido">Novo Pedido <img src="images/add.svg" alt=""> </a> </li>
 		<!--<li>  <a href="#">Novo Pedido <img src="images/add.svg" alt="" > </a> </li>-->
 		<li> <a href="#">Solic. visita do gestor <img src="images/add.svg" alt=""> </a> </li>
 
 	</ul>
 
 </div>
+
+<div class="overlay-modal">
+	<div class="modal-custom modal-select-pedidos">
+
+		<a class="close-modal"> X</a>
+
+		<div class="select-customer">
+
+			<p>Selecione um cliente abaixo para realizar o pedido.</p>
+
+			<select name="clientes" id="clientes">
+				<option value="ABC Lanches LTDA - 32554">ABC Lanches LTDA - 32554</option>
+				<option value="MARCIO GONÇALVES DE QUEIROZ - 35403">MARCIO GONÇALVES DE QUEIROZ - 35403</option>
+				<option value="ADEMAR FRANCISCO HEMSING - 312300">ADEMAR FRANCISCO HEMSING - 312300</option>
+				<option value="VALTER SOUZA SANTOS - 944143">VALTER SOUZA SANTOS - 944143</option>
+				<option value="ABC LANCHES LTDA - 32554">ABC LANCHES LTDA - 32554</option>
+				<option value="MARCIO GONÇALVES DE QUEIROZ - 35403">MARCIO GONÇALVES DE QUEIROZ - 35403</option>
+				<option value="ADEMAR FRANCISCO HEMSING - 312300">ADEMAR FRANCISCO HEMSING - 312300</option>
+				<option value="VALTER SOUZA SANTOS - 944143">VALTER SOUZA SANTOS - 944143</option>
+			</select>
+
+			<a href="#!new_pedido" class="btn-default"> SELECIONAR CLIENTE </a>
+
+		</div>
+
+	</div>
+</div>
+
 <br>
 <br><br>
 <script src="js/jQuery-custom.js"></script>
