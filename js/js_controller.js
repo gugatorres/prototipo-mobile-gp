@@ -306,6 +306,18 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-page-4").css("display", "none");
 		});
 
+
+		angular.element(".input-pj").click(function(){
+			angular.element("body").addClass("pessoa-juridica");
+			angular.element("body").removeClass("pessoa-fisica");
+		});
+		
+		angular.element(".input-pf").click(function(){
+			angular.element("body").addClass("pessoa-fisica");
+			angular.element("body").removeClass("pessoa-juridica");
+		});
+
+
 		angular.element(".btn-finalizar").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
 		});
@@ -376,6 +388,20 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".btn-actions a").click(function(){
 			angular.element(".overlay-modal-delete").css("display","none");
 		})
+
+	})
+
+	/* Formas de Pagamento Controller */
+	.controller("formasPagamentoController", function ($scope) {
+
+		$scope.titulo = "Formas de Pagamento"
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-photo img, .search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync, .menu-photo").addClass("cart");
+		angular.element(".cart").removeClass("search, sync, menu-photo");
+		angular.element(".cart").attr("href", "");
+		angular.element(".cart").append("<span class='ind-number'></span>");
 
 	})
 

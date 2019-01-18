@@ -301,6 +301,10 @@ nav.navbar {
     box-shadow: inset rgba(0,0,0,0.1) 0px 0px 80px;
 }*/
 
+.pessoa-juridica .tab-3 {
+    display: none;
+}
+
 .route-customer {
     height: 90px;
     color:#c62222;
