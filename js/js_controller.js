@@ -11,7 +11,7 @@ app.controller("defaultController", function ($scope) {
 	angular.element(".overlay-add-customer").click(function () {
 		angular.element(this).css("display", "none");
 		angular.element(".open-modal-clientes").css("z-index", "2");
-		angular.element("body").css("overflow-y", "hidden");
+		angular.element("body").css("overflow-y", "auto");
 	});
 	angular.element(".search, .cart").addClass("sync");
 	angular.element(".sync").removeClass("cart");
