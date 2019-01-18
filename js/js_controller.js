@@ -69,6 +69,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("newPedidoController", function ($scope) {
 
 		$scope.titulo = "Gerar Pedidos New"
+		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
@@ -356,7 +357,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("carrinhoController", function ($scope) {
 
 		$scope.titulo = "Carrinho de Compras"
-
+		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".menu-photo img, .search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync, .menu-photo").addClass("cart");
