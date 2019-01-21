@@ -1197,7 +1197,7 @@ p.txt-min2 {
 }
 
 .data-input .col-xs-6, .col-xs-12 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 #myInput {
