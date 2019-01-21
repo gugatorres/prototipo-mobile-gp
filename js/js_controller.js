@@ -388,6 +388,12 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").attr("href", "");
 		angular.element(".cart").append("<span class='ind-number'></span>");
 
+		angular.element(".btn-finalizar-pedido").click(function(){
+			angular.element(".overlay-finalizar-pedido").css("display","block");
+			});
+
+			
+
 	})
 
 	/* relatorios Controller */
