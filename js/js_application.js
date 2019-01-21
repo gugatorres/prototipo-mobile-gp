@@ -69,5 +69,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/formas_pagamento.html",
             controller: "formasPagamentoController"
         })
+        .when("/detalhes_fechamento_pedido", {
+            templateUrl: "./templates/detalhes_fechamento_pedido.html",
+            controller: "detalhesFechamentoPedidoController"
+        })
         .otherwise({ redirectTo: "/home" });
 });

@@ -389,6 +389,20 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").removeClass("search, sync, menu-photo");
 		angular.element(".cart").attr("href", "");
 		angular.element(".cart").append("<span class='ind-number'></span>");
+	})
+
+	/* Detalhes Fechamento Pedido Controller */
+	.controller("detalhesFechamentoPedidoController", function ($scope) {
+
+		$scope.titulo = "Detalhes Fechamento Pedido"
+
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-photo img, .search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync, .menu-photo").addClass("cart");
+		angular.element(".cart").removeClass("search, sync, menu-photo");
+		angular.element(".cart").attr("href", "");
+		angular.element(".cart").append("<span class='ind-number'></span>");
 
 		angular.element(".btn-finalizar-pedido").click(function () {
 			angular.element(".overlay-finalizar-pedido").css("display", "block");
@@ -397,8 +411,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-finalizar-pedido").click(function () {
 			angular.element(this).css("display", "none");
 		});
-
-
 
 	})
 
