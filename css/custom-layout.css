@@ -1239,6 +1239,7 @@ p.txt-min2 {
 .data-entrega .data-input {
     padding: 15px;
     text-align: center;
+    font-size: 12px;
 }
 
 /* Detalhes do Pedido Finalização */
