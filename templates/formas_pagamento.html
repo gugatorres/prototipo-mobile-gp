@@ -15,10 +15,11 @@
 
     <div class="row">
         <div class="box-tile white data-entrega" style="height:auto; margin-bottom: 15px;">
-            
-            
+
+
             <div class="data-input">
-                <label>Data de entrega:</label> <input class="form-control" type="date" value="2011-08-19" id="example-date-input"> </div>
+                <label>Data de entrega:</label> <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
 
         </div>
     </div>
@@ -29,15 +30,22 @@
 
             <div class="row tipos-pagamento">
 
-                <div class="col-xs-6"> <span>Dinheiro</span> </div>
-                <div class="col-xs-6"> <span>Boleto à Vista</span> </div>
-                <div class="col-xs-6"> <span>Boleto para 30 ddl</span> </div>
-                <div class="col-xs-6"> <span>Cartão de Débito</span> </div>
-                <div class="col-xs-6"> <span>Cartão de Crédito</span> </div>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+                <ul id="tipos-pagamento">
+                    <li><a>Dinheiro</a></li>
+                    <li><a>Dinheiro + Boleto</a></li>
+                    <li><a>Dinheiro + Débito</a></li>
+                    <li><a>Dinheiro + Crédito</a></li>
+                    <li><a>Boleto à Vista</a></li>
+                    <li><a>Boleto para 30 ddl</a></li>
+                    <li><a>Cartão de Débito</a></li>
+
+                </ul>
 
             </div>
 
-          
+
         </div>
     </div>
 </div>
@@ -45,11 +53,11 @@
 <a class="btn-default btn-formas-pagto btn-finalizar-pedido">FINALIZAR PEDIDO</a>
 
 <div class="overlay-modal overlay-finalizar-pedido">
-        <div class="modal-custom">
-            <h3 class="header-modal">Pedido Realizado com Sucesso!</h3>
-            <img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
-            <div class="modal-conteudo">
-                <a href="#!meus_pedidos" class="btn-default">Ir para os meus pedidos</a>
-            </div>
+    <div class="modal-custom">
+        <h3 class="header-modal">Pedido Realizado com Sucesso!</h3>
+        <img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
+        <div class="modal-conteudo">
+            <a href="#!meus_pedidos" class="btn-default">Ir para os meus pedidos</a>
         </div>
     </div>
+</div>

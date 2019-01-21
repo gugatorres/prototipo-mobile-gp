@@ -162,11 +162,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".btn-novo-pedido").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
 		});
-	
+
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 		});
-	
+
 
 	})
 
@@ -287,18 +287,18 @@ app.controller("defaultController", function ($scope) {
 		});
 
 
-		angular.element(".input-pj").click(function(){
+		angular.element(".input-pj").click(function () {
 			angular.element("body").addClass("pessoa-juridica");
 			angular.element("body").removeClass("pessoa-fisica");
-			angular.element(".pessoa-juridica .tab-page-2 .link-btn-tab3").css("display","none");
-			angular.element(".pessoa-juridica .tab-page-2 .btn-finalizar").css("display","block");
+			angular.element(".pessoa-juridica .tab-page-2 .link-btn-tab3").css("display", "none");
+			angular.element(".pessoa-juridica .tab-page-2 .btn-finalizar").css("display", "block");
 		});
-		
-		angular.element(".input-pf").click(function(){
+
+		angular.element(".input-pf").click(function () {
 			angular.element("body").addClass("pessoa-fisica");
 			angular.element("body").removeClass("pessoa-juridica");
-			angular.element(".pessoa-fisica .tab-page-2 .link-btn-tab3").css("display","block");
-			angular.element(".pessoa-fisica .tab-page-2 .btn-finalizar").css("display","none");
+			angular.element(".pessoa-fisica .tab-page-2 .link-btn-tab3").css("display", "block");
+			angular.element(".pessoa-fisica .tab-page-2 .btn-finalizar").css("display", "none");
 
 		});
 
@@ -362,17 +362,19 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").attr("href", "");
 		angular.element(".cart").append("<span class='ind-number'></span>");
 
-		angular.element(".delete-product").click(function(){
-			angular.element(".overlay-modal-delete").css("display","block");
+		angular.element(".delete-product").click(function () {
+			angular.element(".overlay-modal-delete").css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 		});
 
-		angular.element(".btn-actions a").click(function(){
-			angular.element(".overlay-modal-delete").css("display","none");
+		angular.element(".btn-actions a").click(function () {
+			angular.element(".overlay-modal-delete").css("display", "none");
 		})
+
+
 
 	})
 
@@ -388,11 +390,15 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").attr("href", "");
 		angular.element(".cart").append("<span class='ind-number'></span>");
 
-		angular.element(".btn-finalizar-pedido").click(function(){
-			angular.element(".overlay-finalizar-pedido").css("display","block");
-			});
+		angular.element(".btn-finalizar-pedido").click(function () {
+			angular.element(".overlay-finalizar-pedido").css("display", "block");
+		});
 
-			
+		angular.element(".overlay-finalizar-pedido").click(function () {
+			angular.element(this).css("display", "none");
+		});
+
+
 
 	})
 
