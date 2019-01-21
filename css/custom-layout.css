@@ -1196,17 +1196,8 @@ p.txt-min2 {
     margin-bottom: 150px;
 }
 
-.tipos-pagamento .col-xs-6 span {
-    background: #efefef;
-    width: 100%;
-    display: block;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
-    font-size: 12px;
-    color: #666;
-    cursor: pointer;
-    transition: background 0.5s;
+.data-input .col-xs-6 {
+    margin-bottom: 0;
 }
 
 #myInput {
@@ -1235,6 +1226,7 @@ p.txt-min2 {
     font-size: 18px; 
     color: black; 
     display: block; 
+    transition: background 0.5s;
   }
   
   #tipos-pagamento li a:hover:not(.header) {
