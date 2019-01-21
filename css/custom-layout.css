@@ -1193,7 +1193,7 @@ p.txt-min2 {
     list-style: none;
     margin: 0;
     padding: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .data-input .col-xs-6 {
@@ -1215,7 +1215,9 @@ p.txt-min2 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+    max-height: 350px;
+    overflow-y: auto;
+}
   
   #tipos-pagamento li a {
     border: 1px solid #ddd; 
