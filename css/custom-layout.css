@@ -311,7 +311,7 @@ nav.navbar {
 }
 
 .route-customer {
-    height: 90px;
+    height: 80px;
     color:#c62222;
     padding-top: 10px;
 }
@@ -437,6 +437,7 @@ nav.navbar {
 
 .float-button:hover {
     transform: scale(1.2);
+  /*transform: rotate(360deg);*/
 }
 
 .float-button-second {
@@ -450,6 +451,12 @@ nav.navbar {
     z-index: 2;
     border-radius: 40px;
     box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
+    transition: transform 0.5s;
+}
+
+.float-button-second:hover {
+    transform: scale(1.2);
+  /*transform: rotate(360deg);*/
 }
 
 .float-button img{
@@ -1270,6 +1277,22 @@ p.txt-min2 {
     border-top: 1px solid #CCC;
 }
 
+
+/* Chart Metas */
+
+.meta-total-mensal {
+    font-size: 8px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #c62222;
+}
+
+.meta-mensal {
+    font-size: 9px;
+    display: block;
+    margin-top: 10px;
+}
 
 /* Element input Mobile */
 
