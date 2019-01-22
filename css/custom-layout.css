@@ -432,6 +432,11 @@ nav.navbar {
     z-index: 2;
     border-radius: 40px;
     box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
+    transition: transform 0.5s;
+}
+
+.float-button:hover {
+    transform: scale(1.1);
 }
 
 .float-button-second {
