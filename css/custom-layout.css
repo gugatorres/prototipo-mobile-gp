@@ -114,6 +114,11 @@ a:hover{text-decoration: none;}
     color: #FFFFFF;
 }
 
+.menu-principal .nav {
+    height: 320px;
+    overflow-y: auto;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
