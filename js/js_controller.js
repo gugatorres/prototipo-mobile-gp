@@ -338,7 +338,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".float-button-grid").click(function () {
 			angular.element(this).toggleClass("image-list");
 			angular.element(".box-product").toggleClass("product-grid");
-		})
+		});
 
 	})
 

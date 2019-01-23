@@ -294,10 +294,6 @@ nav.navbar {
     display: none;
 }
 
-.graficos .col-md-3,.col-md-4,.col-xs-6,.col-xs-12 {
-    margin-bottom: 15px;
-}
-
 .box-tile {
     height: 150px;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
@@ -559,6 +555,7 @@ nav.navbar {
 
 .box-customer .col-xs-9 {
     padding: 0;
+    width: 100%;
 }
 
 .box-customer p {
@@ -569,13 +566,14 @@ nav.navbar {
 .box-customer .name {
     margin-top: 4px;
     margin-bottom: 2px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .box-indic {
     position: absolute;
-    right: 0;
-    top:0;
+    left: 15px;
+    bottom: 15px;
+    height: 20px;
 }
 
 .tab-page-1 a{color:#000000;}
@@ -596,11 +594,11 @@ nav.navbar {
 
 .box-indic span {
     float: left;
-    height: 80px;
+    height: 20px;
     padding: 0 4px;
     font-size: 10px;
     font-weight: bold;
-    line-height: 80px;
+    line-height: 21px;
     color: #FFF;
 }
 
@@ -1171,7 +1169,7 @@ p.txt-min2 {
 
 .delete-product {
     margin-top: 18px;
-    display: block;
+    display: inline-block;
 }
 
 .edit-product input {
@@ -1240,8 +1238,28 @@ p.txt-min2 {
     margin-bottom: 50px;
 }
 
-.data-input .col-xs-6, .col-xs-12 {
+.grid-requests .col-xs-12 {
     margin-bottom: 10px;
+}
+
+.screen-home .col-md-12.col-xs-12 {
+    margin-top: 15px;
+}
+
+.screen-home .col-md-6.col-xs-6 {
+    margin-bottom: 15px;
+}
+
+.grid-customers .col-xs-12 {
+    margin-bottom: 10px;
+}
+
+.my-route .col-xs-12 {
+    margin-bottom: 10px;
+}
+
+.grid-produtos .col-md-6.col-xs-6 {
+    margin-bottom: 15px;
 }
 
 #myInput {
