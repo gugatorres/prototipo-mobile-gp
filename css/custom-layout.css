@@ -1317,6 +1317,11 @@ p.txt-min2 {
     display: block; 
     transition: background 0.5s;
   }
+
+  .modal-select-pedidos #tipos-pagamento li a {
+    padding: 10px 5px;
+    font-size: 10px;
+}
   
   #tipos-pagamento li a:hover:not(.header) {
     background-color: #c62222;

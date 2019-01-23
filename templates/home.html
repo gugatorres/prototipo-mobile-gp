@@ -146,16 +146,22 @@
 
 			<p>Selecione um cliente abaixo para realizar o pedido.</p>
 
-			<select name="clientes" id="clientes">
-				<option value="ABC Lanches LTDA - 32554">ABC Lanches LTDA - 32554</option>
-				<option value="MARCIO GONÇALVES DE QUEIROZ - 35403">MARCIO GONÇALVES DE QUEIROZ - 35403</option>
-				<option value="ADEMAR FRANCISCO HEMSING - 312300">ADEMAR FRANCISCO HEMSING - 312300</option>
-				<option value="VALTER SOUZA SANTOS - 944143">VALTER SOUZA SANTOS - 944143</option>
-				<option value="ABC LANCHES LTDA - 32554">ABC LANCHES LTDA - 32554</option>
-				<option value="MARCIO GONÇALVES DE QUEIROZ - 35403">MARCIO GONÇALVES DE QUEIROZ - 35403</option>
-				<option value="ADEMAR FRANCISCO HEMSING - 312300">ADEMAR FRANCISCO HEMSING - 312300</option>
-				<option value="VALTER SOUZA SANTOS - 944143">VALTER SOUZA SANTOS - 944143</option>
-			</select>
+			<div class="row tipos-pagamento" style="padding: 0;">
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquise a forma de pagamento...">
+
+                <ul id="tipos-pagamento">
+                    <li><a>ABC Lanches LTDA - 32554</a></li>
+                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+                    <li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+                    <li><a>VALTER SOUZA SANTOS - 944143</a></li>
+                    <li><a>ABC LANCHES LTDA - 32554</a></li>
+                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+                    <li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+
+                </ul>
+
+            </div>
 
 			<a href="#!new_pedido" class="btn-default"> SELECIONAR CLIENTE </a>
 
