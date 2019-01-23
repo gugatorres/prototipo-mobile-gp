@@ -93,6 +93,11 @@ a:hover{text-decoration: none;}
 .green{background: #4CAF50}
 .yellow{background: #FC0}
 .gray{background: #CCCCCC}
+.gray-brand{background: #eeeeee;}
+
+.gray-brand img {
+    margin-top: 15px;
+}
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #FFFFFF;
