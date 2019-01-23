@@ -1262,6 +1262,10 @@ p.txt-min2 {
     margin-bottom: 15px;
 }
 
+.detail-customers .col-md-12.col-xs-12 {
+    margin-bottom: 10px;
+}
+
 #myInput {
     background-image: url('../images/searchicon.png');
     background-position: 10px 12px; 
