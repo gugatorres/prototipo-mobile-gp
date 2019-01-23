@@ -495,7 +495,7 @@ nav.navbar {
     background-repeat: no-repeat;
     height: 120px;
     color: #FFF;
-    padding: 50px 25px 0px 25px;
+    padding: 35px 25px 0px 25px;
     position: relative;
 }
 
@@ -1263,6 +1263,10 @@ p.txt-min2 {
 }
 
 .detail-customers .col-md-12.col-xs-12 {
+    margin-bottom: 10px;
+}
+
+.col-xs-12.card-pedidos {
     margin-bottom: 10px;
 }
 
