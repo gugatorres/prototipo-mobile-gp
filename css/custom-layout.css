@@ -1319,8 +1319,20 @@ p.txt-min2 {
   }
 
   .modal-select-pedidos #tipos-pagamento li a {
-    padding: 10px 5px;
+    padding: 15px 5px;
     font-size: 10px;
+}
+
+.modal-select-pedidos .tipos-pagamento {
+    margin-bottom: 5px;
+}
+
+.modal-select-pedidos .btn-default {
+    margin-top: 0;
+}
+
+.modal-select-pedidos #tipos-pagamento {
+    max-height: 139px;
 }
   
   #tipos-pagamento li a:hover:not(.header) {
