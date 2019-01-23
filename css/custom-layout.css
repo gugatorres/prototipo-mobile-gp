@@ -159,10 +159,11 @@ a:hover{text-decoration: none;}
     position: absolute;
     bottom: 0;
     background: #f5f5f5;
-    font-size: 11px;
+    font-size: 10px;
     width: 100%;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
+    color: #999;
 }
 
 .menu-open {
@@ -499,7 +500,7 @@ nav.navbar {
 
 .btn-logout {
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 10px;
 }
 
