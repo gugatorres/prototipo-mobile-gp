@@ -494,6 +494,17 @@ nav.navbar {
     height: 120px;
     color: #FFF;
     padding: 50px 25px 0px 25px;
+    position: relative;
+}
+
+.btn-logout {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.btn-logout img {
+    width: 25px;
 }
 
 .menu-principal img {

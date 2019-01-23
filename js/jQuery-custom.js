@@ -40,6 +40,13 @@ $(document).ready(function () {
         $(".box-search").css("display", "none");
 
     });
+
+    $(".btn-logout").click(function () {
+        $("#mySidenav").css("left", "-310px");
+        $(".back-menu").css("display", "none");
+        $(".menu-open").css("display", "block");
+        $("body").css("overflow-y", "auto");
+    });
     
 
 });
