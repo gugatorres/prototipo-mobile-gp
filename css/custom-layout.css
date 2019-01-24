@@ -1335,7 +1335,7 @@ p.txt-min2 {
 }
 
 .modal-select-pedidos #tipos-pagamento {
-    max-height: 400px;
+    max-height: 370px;
 }
   
   #tipos-pagamento li a:hover:not(.header) {
