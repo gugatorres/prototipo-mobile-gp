@@ -992,17 +992,18 @@ a .card-product {
 .modal-select-pedidos {
     min-height: auto;
     position: relative;
+    margin: 50px auto;
 }
 
 .modal-select-pedidos .close-modal {
     position: absolute;
-    top: -80px;
+    top: -47px;
     border: solid 2px #FFFFFF;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #FFF;
     border-radius: 100px;
     right: 0;
@@ -1319,8 +1320,8 @@ p.txt-min2 {
   }
 
   .modal-select-pedidos #tipos-pagamento li a {
-    padding: 15px 5px;
-    font-size: 10px;
+    padding: 20px 8px;
+    font-size: 11px;
 }
 
 .modal-select-pedidos .tipos-pagamento {
@@ -1328,11 +1329,11 @@ p.txt-min2 {
 }
 
 .modal-select-pedidos .btn-default {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .modal-select-pedidos #tipos-pagamento {
-    max-height: 139px;
+    max-height: 260px;
 }
   
   #tipos-pagamento li a:hover:not(.header) {
