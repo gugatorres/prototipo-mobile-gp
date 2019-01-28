@@ -1000,13 +1000,28 @@ a .card-product {
 .modal-select-pedidos .close-modal {
     position: absolute;
     bottom: 20px;
-    border: solid 2px #000000;
+    border: solid 2px #000000 !important;
     height: 40px;
     width: 40px;
     line-height: 38px;
     text-align: center;
     font-size: 20px;
-    color: #000;
+    color: #000 !important;
+    border-radius: 100px;
+    left: 45%;
+    background: transparent;
+}
+
+.modal-custom .close-modal {
+    position: absolute;
+    bottom: 20px;
+    border: solid 2px #FFF;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
     border-radius: 100px;
     left: 45%;
     background: transparent;
@@ -1129,7 +1144,7 @@ p.txt-min2 {
 }
 
 .info-cliente .loading-customers {
-    background: #cccccc;
+    background: #f5f5f5;
 }
 
 .total-box .col-xs-6 {
