@@ -239,7 +239,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("cadastroClientesController", function ($scope) {
 
 		$scope.titulo = "Cadastro de Clientes"
-
+		
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(this).css("display", "inline-block");
@@ -286,7 +286,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-page-2, .tab-page-1, .tab-page-4").css("display", "none");
 		});
 
-
 		angular.element(".input-pj").click(function () {
 			angular.element("body").addClass("pessoa-juridica");
 			angular.element("body").removeClass("pessoa-fisica");
@@ -295,9 +294,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-cnpj-cpf").text("CNPJ");
 			angular.element(".razao-nome").text("Razão Social");
 			angular.element(".inscri-rg").text("Inscrição Estadual");
-			
-			
-			
 		});
 
 		angular.element(".input-pf").click(function () {
