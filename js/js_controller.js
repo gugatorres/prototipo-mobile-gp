@@ -292,6 +292,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").removeClass("pessoa-fisica");
 			angular.element(".pessoa-juridica .tab-page-2 .link-btn-tab3").css("display", "none");
 			angular.element(".pessoa-juridica .tab-page-2 .btn-finalizar").css("display", "block");
+			angular.element(".txt-cnpj-cpf").text("CNPJ");
+			angular.element(".razao-nome").text("Razão Social");
+			angular.element(".inscri-rg").text("Inscrição Estadual");
+			
+			
+			
 		});
 
 		angular.element(".input-pf").click(function () {
@@ -299,6 +305,9 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").removeClass("pessoa-juridica");
 			angular.element(".pessoa-fisica .tab-page-2 .link-btn-tab3").css("display", "block");
 			angular.element(".pessoa-fisica .tab-page-2 .btn-finalizar").css("display", "none");
+			angular.element(".txt-cnpj-cpf").text("CPF");
+			angular.element(".razao-nome").text("Nome Completo");
+			angular.element(".inscri-rg").text("RG");
 
 		});
 
