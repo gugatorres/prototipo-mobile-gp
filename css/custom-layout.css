@@ -711,6 +711,18 @@ nav.navbar {
 
 /* Cadastro Clientes */
 
+.buttons-pessoas button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 10px 5px;
+}
+
+.buttons-pessoas button.active {
+    background: #999999;
+    color:#FFFFFF;
+}
+
 .cep-cadastro {
     padding-top: 20px;
 }
@@ -820,7 +832,7 @@ a .card-product {
     min-height: 250px;
     padding: 20px;
     background: #FFF;
-    margin: 150px auto;
+    margin: 80px auto;
     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
 }
 

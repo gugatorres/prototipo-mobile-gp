@@ -288,6 +288,8 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".input-pj").click(function () {
 			angular.element("body").addClass("pessoa-juridica");
+			angular.element(this).addClass("active");
+			angular.element(".input-pf").removeClass("active");
 			angular.element("body").removeClass("pessoa-fisica");
 			angular.element(".pessoa-juridica .tab-page-2 .link-btn-tab3").css("display", "none");
 			angular.element(".pessoa-juridica .tab-page-2 .btn-finalizar").css("display", "block");
@@ -298,6 +300,8 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".input-pf").click(function () {
 			angular.element("body").addClass("pessoa-fisica");
+			angular.element(this).addClass("active");
+			angular.element(".input-pj").removeClass("active");
 			angular.element("body").removeClass("pessoa-juridica");
 			angular.element(".pessoa-fisica .tab-page-2 .link-btn-tab3").css("display", "block");
 			angular.element(".pessoa-fisica .tab-page-2 .btn-finalizar").css("display", "none");
