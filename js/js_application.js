@@ -14,7 +14,7 @@ app.config(function ($routeProvider) {
             controller: "meusClientesController"
         })
         .when("/detalhe_clientes", {
-            templateUrl: "./templates/detalhe_clientes2.html",
+            templateUrl: "./templates/detalhe_clientes.html",
             controller: "detalheClientesController"
         })
         .when("/cadastro_clientes", {
