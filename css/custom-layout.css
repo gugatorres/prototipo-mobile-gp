@@ -1435,7 +1435,7 @@ p.txt-min2 {
     background: #e6e6e6;
     border: none;
     padding: 10px 20px;
-    width: 100px;
+    width: 48%;
 }
 
 .btn-resposta.active{background: #222222; color:#FFFFFF;}
