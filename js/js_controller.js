@@ -446,7 +446,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".cam-produto").click(function(){
-			angular.element(".img-produto-photo").attr("src","../images/caixa-itaipava.jpg").css("display","block").css("width","80%").css("margin","auto");
+			angular.element(".img-produto-photo").attr("src","images/caixa-itaipava.jpg").css("display","block").css("width","80%").css("margin","auto");
 			});
 
 	})
