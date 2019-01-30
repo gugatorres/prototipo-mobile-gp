@@ -1411,6 +1411,35 @@ p.txt-min2 {
     margin-top: 8px;
 }
 
+/* Perguntas */
+
+.tile-perguntas {
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tile-respostas {
+    height: 250px;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tile-respostas .btn-resposta {
+    margin-top: 90px;
+}
+
+.btn-resposta {
+    background: #e6e6e6;
+    border: none;
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.btn-resposta.active{background: #222222; color:#FFFFFF;}
+
 /* Element input Mobile */
 
 

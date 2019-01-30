@@ -239,7 +239,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("cadastroClientesController", function ($scope) {
 
 		$scope.titulo = "Cadastro de Clientes"
-		
+
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(this).css("display", "inline-block");
@@ -427,6 +427,23 @@ app.controller("defaultController", function ($scope) {
 	.controller("relatoriosController", function ($scope) {
 
 		$scope.titulo = "Relatórios"
+
+	})
+
+	/* Pesquisa Controller */
+	.controller("pesquisaController", function ($scope) {
+
+		$scope.titulo = "Pesquisas"
+
+		angular.element(".btn-sim").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-nao").removeClass("active");
+		});
+
+		angular.element(".btn-nao").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-sim").removeClass("active");
+		});
 
 	})
 

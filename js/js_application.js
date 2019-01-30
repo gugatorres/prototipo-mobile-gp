@@ -73,5 +73,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/detalhes_fechamento_pedido.html",
             controller: "detalhesFechamentoPedidoController"
         })
+        .when("/pesquisa", {
+            templateUrl: "./templates/pesquisa.html",
+            controller: "pesquisaController"
+        })
         .otherwise({ redirectTo: "/home" });
 });
