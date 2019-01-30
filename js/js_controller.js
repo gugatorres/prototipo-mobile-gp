@@ -445,9 +445,40 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".btn-sim").removeClass("active");
 		});
 
-		angular.element(".cam-produto").click(function(){
-			angular.element(".img-produto-photo").attr("src","images/caixa-itaipava.jpg").css("display","block").css("width","80%").css("margin","auto");
-			});
+		angular.element(".page-pesquisa01 .cam-produto").click(function () {
+			angular.element(".page-pesquisa01 .img-produto-photo").attr("src", "images/caixa-itaipava.jpg").css("display", "block").css("width", "50%").css("margin", "auto");
+		});
+
+		angular.element(".page-pesquisa02 .cam-produto").click(function () {
+			angular.element(".page-pesquisa02 .img-produto-photo").attr("src", "images/caixa-itaipava.jpg").css("display", "block").css("width", "50%").css("margin", "auto");
+		});
+
+		angular.element(".page-pesquisa03 .cam-produto").click(function () {
+			angular.element(".page-pesquisa03 .img-produto-photo").attr("src", "images/caixa-itaipava.jpg").css("display", "block").css("width", "50%").css("margin", "auto");
+		});
+
+		angular.element(".page-pesquisa01 .btn-default").click(function () {
+
+			angular.element(".page-pesquisa02").css("display", "block");
+			angular.element(".page-pesquisa01, .page-pesquisa03").css("display", "none");
+
+		});
+
+		
+
+		angular.element(".page-pesquisa02 .btn-default").click(function () {
+
+			angular.element(".page-pesquisa03").css("display", "block");
+			angular.element(".page-pesquisa02, .page-pesquisa01").css("display", "none");
+
+		});
+
+		angular.element(".page-pesquisa03 .btn-default").click(function () {
+
+			angular.element(".page-pesquisa03").css("display", "block");
+			angular.element(".page-pesquisa01, .page-pesquisa02").css("display", "none");
+
+		});
 
 	})
 
