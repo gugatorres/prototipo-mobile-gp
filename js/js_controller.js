@@ -430,10 +430,10 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
-	/* Pesquisa Controller */
-	.controller("pesquisaController", function ($scope) {
+	/* Questionario Controller */
+	.controller("questionarioController", function ($scope) {
 
-		$scope.titulo = "Pesquisas"
+		$scope.titulo = "questionario"
 		angular.element(".sync img, .menu-photo img").attr("src","");
 
 		angular.element(".btn-sim").click(function () {
@@ -459,26 +459,26 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".page-pesquisa01 .btn-default").click(function () {
-
 			angular.element(".page-pesquisa02").css("display", "block");
 			angular.element(".page-pesquisa01, .page-pesquisa03").css("display", "none");
-
 		});
 
-		
-
 		angular.element(".page-pesquisa02 .btn-default").click(function () {
-
 			angular.element(".page-pesquisa03").css("display", "block");
 			angular.element(".page-pesquisa02, .page-pesquisa01").css("display", "none");
-
 		});
 
 		angular.element(".page-pesquisa03 .btn-default").click(function () {
-
 			angular.element(".page-pesquisa03").css("display", "block");
 			angular.element(".page-pesquisa01, .page-pesquisa02").css("display", "none");
+		});
 
+		angular.element(".finalizar-questionario").click(function () {
+			angular.element(".overlay-finalizar-questionario").css("display", "block");
+		});
+
+		angular.element(".overlay-finalizar-questionario").click(function () {
+			angular.element(this).css("display", "none");
 		});
 
 	})
