@@ -434,6 +434,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("pesquisaController", function ($scope) {
 
 		$scope.titulo = "Pesquisas"
+		angular.element(".sync img, .menu-photo img").attr("src","");
 
 		angular.element(".btn-sim").click(function () {
 			angular.element(this).addClass("active");
