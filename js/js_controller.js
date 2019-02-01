@@ -112,6 +112,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products").css("right","0");
 			angular.element(".overlay-filter").css("display","block");
 			angular.element("body").css("overflow-y","hidden");
+			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom","100px");
 
 		});
 		
@@ -119,6 +120,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products").css("right","-250px");
 			angular.element(this).css("display","none");
 			angular.element("body").css("overflow-y","auto");
+			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom","initial");
 		});
 
 
