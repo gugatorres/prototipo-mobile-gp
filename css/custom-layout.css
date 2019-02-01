@@ -1443,6 +1443,50 @@ button[disabled] {
     background: #CCC;
 }
 
+::placeholder{color: #999999;}
+
+.search-cart input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.navigation-bottom {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: green;
+    left: 0;
+    height: 50px;
+}
+
+.navigation-bottom ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-bottom ul li {
+    list-style: none;
+    display: inline-block;
+    width: 23%;
+}
+
+.navigation-bottom ul li a {
+    color: #FFFFFF;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+}
+
+.navigation-bottom ul li a img {
+    width: 20px;
+    display: block;
+    margin: 8px auto 4px;
+}
+
 .btn-resposta.active{background: #222222; color:#FFFFFF;}
 
 /* Element input Mobile */
