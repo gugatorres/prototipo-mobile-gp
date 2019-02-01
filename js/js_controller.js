@@ -106,7 +106,17 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".open-total").click(function () {
 			angular.element(".total-box").css("bottom", "0px");
 			angular.element(".total-box").removeClass("open-total");
-		})
+		});
+
+		angular.element(".btn-filter").click(function(){
+			angular.element(".filter-products").css("right","0");
+			angular.element(".overlay-filter").css("display","block");
+		});
+		
+		angular.element(".overlay-filter").click(function(){
+			angular.element(".filter-products").css("right","-250px");
+			angular.element(this).css("display","none");
+		});
 
 
 	})
