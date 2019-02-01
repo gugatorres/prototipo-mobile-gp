@@ -1461,7 +1461,7 @@ button[disabled] {
     width: 100%;
     background: #111111;
     left: 0;
-    height: 50px;
+    height: 60px;
 }
 
 .navigation-bottom ul {
@@ -1472,7 +1472,8 @@ button[disabled] {
 .navigation-bottom ul li {
     list-style: none;
     display: inline-block;
-    width: 23%;
+    width: 24%;
+    height: 60px;
 }
 
 .navigation-bottom ul li a {
@@ -1485,7 +1486,7 @@ button[disabled] {
 .navigation-bottom ul li a img {
     width: 20px;
     display: block;
-    margin: 8px auto 4px;
+    margin: 12px auto 5px;
 }
 
 .btn-resposta.active{background: #222222; color:#FFFFFF;}
