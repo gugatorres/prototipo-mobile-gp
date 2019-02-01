@@ -446,6 +446,19 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".btn-sim").removeClass("active");
 		});
 
+		angular.element(".page-pesquisa01 .btn-resposta").click(function(){
+			angular.element(".page-pesquisa01 .btn-default").removeAttr("disabled");
+		});
+
+		angular.element(".page-pesquisa02 .btn-resposta").click(function(){
+			angular.element(".page-pesquisa02 .btn-default").removeAttr("disabled");
+		});
+
+		angular.element(".page-pesquisa03 .btn-resposta").click(function(){
+			angular.element(".page-pesquisa03 .btn-default").removeAttr("disabled");
+		});
+			
+
 		angular.element(".page-pesquisa01 .cam-produto").click(function () {
 			angular.element(".page-pesquisa01 .img-produto-photo").attr("src", "images/caixa-itaipava.jpg").css("display", "block").css("width", "50%").css("margin", "auto");
 		});

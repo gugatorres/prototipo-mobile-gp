@@ -1438,6 +1438,11 @@ p.txt-min2 {
     width: 48%;
 }
 
+button[disabled] {
+    cursor: default;
+    background: #CCC;
+}
+
 .btn-resposta.active{background: #222222; color:#FFFFFF;}
 
 /* Element input Mobile */
