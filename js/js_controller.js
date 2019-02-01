@@ -111,11 +111,14 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".btn-filter").click(function(){
 			angular.element(".filter-products").css("right","0");
 			angular.element(".overlay-filter").css("display","block");
+			angular.element("body").css("overflow-y","hidden");
+
 		});
 		
 		angular.element(".overlay-filter").click(function(){
 			angular.element(".filter-products").css("right","-250px");
 			angular.element(this).css("display","none");
+			angular.element("body").css("overflow-y","auto");
 		});
 
 
