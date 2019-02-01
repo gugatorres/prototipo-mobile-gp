@@ -88,7 +88,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".add-product-sum").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 			angular.element(".cart").append("<span class='ind-number'></span>");
-			angular.element(".total-box").css("bottom", "50px");
+			angular.element(".total-box").css("bottom", "60px");
 			angular.element(".overlay-total").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element("body").addClass("close-total-sales");
@@ -98,7 +98,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-total").click(function () {
 			angular.element(this).css("display", "none");
 			angular.element("body").addClass("close-total-sales");
-			angular.element(".total-box").css("bottom", "-188px");
+			angular.element(".total-box").css("bottom", "-178px");
 			angular.element("body").css("overflow-y", "auto");
 			angular.element(".total-box").addClass("open-total");
 		});
