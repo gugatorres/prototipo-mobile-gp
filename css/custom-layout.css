@@ -1443,7 +1443,7 @@ button[disabled] {
     background: #CCC;
 }
 
-::placeholder{color: #999999;}
+::placeholder{color: #c62222;}
 
 .search-cart input[type="text"] {
     width: 100%;
@@ -1451,14 +1451,15 @@ button[disabled] {
     margin: 5px 0;
     text-align: center;
     font-size: 14px;
+    border: solid 1px #CCC;
 }
 
 .navigation-bottom {
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     bottom: 0;
     width: 100%;
-    background: green;
+    background: #111111;
     left: 0;
     height: 50px;
 }
