@@ -1140,10 +1140,6 @@ p.txt-min2 {
     margin-bottom: 0px;
 }
 
-.info-cliente p:nth-child(2){
-    font-size: 14px;
-}
-
 .meta-faturamento {
     border-top: solid 1px #CCC;
     margin-top: 5px;
