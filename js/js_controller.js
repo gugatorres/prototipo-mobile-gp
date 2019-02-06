@@ -87,9 +87,10 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product-sum").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
-			angular.element(".cart").append("<span class='ind-number'></span>");
-			angular.element(".total-box").css("bottom", "60px");
-			angular.element(".overlay-total").css("display", "block");
+			angular.element(".ind-number").css("display","block");
+			angular.element(".ind-number").addClass("anima-circle");
+			//angular.element(".total-box").css("bottom", "60px");
+			//angular.element(".overlay-total").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element("body").addClass("close-total-sales");
 
@@ -114,6 +115,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y","hidden");
 			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom","100px");
 			angular.element(".total-box").css("z-index","9");
+			angular.element(".brand-itaipava").removeAttr("href","");
 			
 
 		});
@@ -124,6 +126,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y","auto");
 			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom","initial");
 			angular.element(".total-box").css("z-index","999");
+			angular.element(".brand-itaipava").attr("href","#!lp_itaipava");
 		});
 
 
