@@ -77,5 +77,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/questionario.html",
             controller: "questionarioController"
         })
+        .when("/pesquisa", {
+            templateUrl: "./templates/pesquisa.html",
+            controller: "pesquisaController"
+        })
         .otherwise({ redirectTo: "/home" });
 });

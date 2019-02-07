@@ -451,8 +451,8 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
-	/* Questionario Controller */
-	.controller("questionarioController", function ($scope) {
+	/* Pesquisa Controller */
+	.controller("pesquisaController", function ($scope) {
 
 		$scope.titulo = "questionario"
 		angular.element(".sync img, .menu-photo img").attr("src","");
@@ -517,6 +517,18 @@ app.controller("defaultController", function ($scope) {
 		});
 
 	})
+
+	/* Qustionário Controller */
+	.controller("questionarioController", function ($scope) {
+
+		$scope.titulo = "Pesquisa"
+		angular.element(".sync img, .menu-photo img").attr("src","");
+		angular.element(".bar-customer-back").css("display", "block");		
+
+		
+
+	})
+
 
 	/* agendar Visita Controller */
 	.controller("agendarVisitaController", function ($scope) {
