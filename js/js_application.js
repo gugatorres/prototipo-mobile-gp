@@ -3,7 +3,7 @@ app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
         .when("/home", {
-            templateUrl: "./templates/home.html",
+            templateUrl: "/templates/home.html",
             controller: "defaultController"
         })
         .when("/minha_rota", {
