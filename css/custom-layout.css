@@ -1662,6 +1662,14 @@ button[disabled] {
     width: 100%;
 }
 
+.header-table {
+    position: absolute;
+    z-index: 9;
+    top: 15px;
+    left: 0;
+    background: whitesmoke;
+}
+
 .questionarios thead tr th {
     background: #212121;
     height: 50px;
@@ -1673,6 +1681,7 @@ button[disabled] {
 .questionarios thead tr th:nth-child(1) {
     background: transparent;
     border: none;
+    width: 120px;
 }
 
 .questionarios tbody tr td {
@@ -1685,17 +1694,20 @@ button[disabled] {
 .questionarios tbody tr td img {
     width: 25px;
     filter: grayscale(1);
+    opacity: 0.5;
 }
 
 .questionarios tbody tr td img.true {
     filter: grayscale(0);
+    opacity: 1;
 }
 
-.questionarios tbody tr td:nth-child(1) {
+.questionarios table tbody tr td:nth-child(1) {
     text-align: left;
     background: #d4d1d1;
     border-bottom: solid 1px #FFF;
     color: #666666;
+    width: 120px;
 }
 
 /* Element input Mobile */

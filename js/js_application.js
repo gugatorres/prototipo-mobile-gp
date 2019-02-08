@@ -1,5 +1,6 @@
 var app = angular.module("appDash", ["ngRoute"]);
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
         .when("/home", {
             templateUrl: "./templates/home.html",
@@ -76,10 +77,6 @@ app.config(function ($routeProvider) {
         .when("/questionario", {
             templateUrl: "./templates/questionario.html",
             controller: "questionarioController"
-        })
-        .when("/pesquisa", {
-            templateUrl: "./templates/pesquisa.html",
-            controller: "pesquisaController"
         })
         .otherwise({ redirectTo: "/home" });
 });
