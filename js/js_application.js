@@ -1,6 +1,5 @@
 var app = angular.module("appDash", ["ngRoute"]);
-app.config(function ($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
+app.config(function ($routeProvider) {
     $routeProvider
         .when("/home", {
             templateUrl: "/templates/home.html",
