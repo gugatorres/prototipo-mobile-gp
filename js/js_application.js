@@ -81,5 +81,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/questionario.html",
             controller: "questionarioController"
         })
+        .when("/quest_detalhe", {
+            templateUrl: "./templates/quest_detalhe.html",
+            controller: "questDetalheController"
+        })
         .otherwise({ redirectTo: "/home" });
 });

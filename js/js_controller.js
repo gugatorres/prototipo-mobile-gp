@@ -537,6 +537,13 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* agendar Quest Detalhe Controller */
+	.controller("questDetalheController", function ($scope) {
+
+		$scope.titulo = "quest_detalhe"
+
+	})
+
 
 	/* agendar Visita Controller */
 	.controller("agendarVisitaController", function ($scope) {

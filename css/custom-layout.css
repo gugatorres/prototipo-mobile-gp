@@ -1737,6 +1737,7 @@ button[disabled] {
 .questionarios thead tr th {
     background: #212121;
     height: 50px;
+    width: 35x;
     text-align: center;
     border-right: solid 1px #FFF;
     color: #FFF;
@@ -1752,6 +1753,7 @@ button[disabled] {
     border-right: solid 1px #CCC;
     border-bottom: solid 1px #CCC;
     padding: 10px 5px;
+    width: 35px;
     text-align: center;
 }
 
@@ -1772,6 +1774,19 @@ button[disabled] {
     border-bottom: solid 1px #FFF;
     color: #666666;
     width: 120px;
+}
+
+.questionarios thead tr th img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.questionarios thead tr th span {
+    font-size: 7px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: normal;
 }
 
 /* Element input Mobile */
