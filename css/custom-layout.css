@@ -1746,7 +1746,7 @@ button[disabled] {
 .questionarios thead tr th:nth-child(1) {
     background: transparent;
     border: none;
-    width: 120px;
+    width: 155px;
 }
 
 .questionarios tbody tr td {
