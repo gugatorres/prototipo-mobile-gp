@@ -28,6 +28,14 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-modal").css("display", "none");
 	});
 
+	angular.element(".close-alert").click(function(){
+		angular.element(".alerta-home").hide();
+	});
+
+	angular.element("a.carousel-control").click(function(e){
+		e.preventDefault();
+		$(this).parent().carousel($(this).data("slide"));
+	});
 })
 
 	/* minha Rota Controller */
@@ -315,7 +323,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".pessoa-juridica .tab-page-2 .link-btn-tab3").css("display", "none");
 			angular.element(".pessoa-juridica .tab-page-2 .btn-finalizar").css("display", "block");
 			angular.element(".txt-cnpj-cpf").text("CNPJ");
-			angular.element(".razao-nome").text("Razão Social");
+			angular.element(".container-nome-cliente").hide();
 			angular.element(".inscri-rg").text("Inscrição Estadual");
 		});
 
@@ -327,7 +335,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".pessoa-fisica .tab-page-2 .link-btn-tab3").css("display", "block");
 			angular.element(".pessoa-fisica .tab-page-2 .btn-finalizar").css("display", "none");
 			angular.element(".txt-cnpj-cpf").text("CPF");
-			angular.element(".razao-nome").text("Nome Completo");
+			angular.element(".container-nome-cliente").show();
 			angular.element(".inscri-rg").text("RG");
 
 		});
