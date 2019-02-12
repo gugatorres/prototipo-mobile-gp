@@ -1710,6 +1710,10 @@ button[disabled] {
     width: 120px;
 }
 
+.questionarios thead tr th img {
+    width: 40px;
+}
+
 /* Element input Mobile */
 
 
