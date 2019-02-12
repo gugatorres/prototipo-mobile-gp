@@ -120,20 +120,19 @@ a:hover{text-decoration: none;}
 .box-indic .green,
 .box-indic .light-green,
 .box-indic .yellow{
-    border: 1px solid #ccc;
     background-color: #FFF;
 }
 
-.box-indic .white{border-color: #FFFFFF; color: #FFFFFF}
-.box-indic .light-red{color: #721c24; color: #721c24;}
-.box-indic .red{border-color: #c62222; color: #c62222}
-.box-indic .red-dark-alpha{border-color: #97878791; color: #97878791}
-.box-indic .blue{border-color: #00BCD4; color: #00BCD4}
-.box-indic .light-green{border-color: #155724; color: #155724;}
-.box-indic .green{border-color: #4CAF50; color: #4CAF50; }
-.box-indic .yellow{border-color: #FC0; color: #FC0}
-.box-indic .gray{border-color: #CCCCCC; color: #CCCCCC}
-.box-indic .gray-brand{border-color: #eeeeee; color: #eeeeee;}
+.box-indic .white{background-color: #FFFFFF;}
+.box-indic .light-red{color: #721c24;;}
+.box-indic .red{background-color: #c62222;}
+.box-indic .red-dark-alpha{background-color: #97878791;}
+.box-indic .blue{background-color: #00BCD4;}
+.box-indic .light-green{background-color: #155724;}
+.box-indic .green{background-color: #4CAF50;}
+.box-indic .yellow{background-color: #FC0;}
+.box-indic .gray{background-color: #CCCCCC;}
+.box-indic .gray-brand{background-color: #eeeeee;}
 
 .gray-brand img {
     margin-top: 15px;
@@ -609,10 +608,22 @@ nav.navbar {
 }
 
 .box-customer .name {
-        font-weight: bold;
+    font-weight: bold;
     margin-top: 0px;
     margin-bottom: 2px;
     font-size: 12px;
+}
+.box-customer.venda,
+.box-customer.justificativa{
+    background-color: #fafafa;
+}
+
+.box-customer.venda{
+    border-left: 7px solid #90d890;
+}
+
+.box-customer.justificativa{
+    border-left: 7px solid #d89090;
 }
 
 .box-indic {
@@ -637,7 +648,7 @@ nav.navbar {
 }
 
 .my-route .box-indic-rota{display: block}
-.tab-page-1 .box-indic-rota{display: block}
+.grid-customer.tab-page-1 .box-indic-rota{display: block}
 
 
 .tab-page-1 a{color:#000000;}
@@ -648,18 +659,18 @@ nav.navbar {
     display: none;
 }
 
-.tab-page-3 .box-custom {
+.grid-customers .tab-page-3 .box-custom {
     opacity: 0.5;
     display: none;
 }
-.tab-page-3 a{
+.grid-customers .tab-page-3 a{
     display: none;
 }
-.tab-page-1 a:nth-child(3n+2){
+.grid-customers .tab-page-1 a:nth-child(3n+2){
     display: none;
 }
-.tab-page-3 a:nth-child(1),
-.tab-page-3 a:nth-child(3){
+.grid-customers .tab-page-3 a:nth-child(1),
+.grid-customers .tab-page-3 a:nth-child(3){
     opacity: 0.5;
     display: block;
 }
@@ -1036,7 +1047,6 @@ a .card-product {
 }
 
 /* Meus Pedidos */
-
 .grid-requests a {
     color: #000;
 }
@@ -1046,16 +1056,15 @@ a .card-product {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-
-.detail-customers .box-tile.box-pedidos {
+.box-tile.box-pedidos {
     padding: 15px;
     height: 80px;
     position: relative;
     border-left: solid 4px #CCCCCC;
 }
 
-.status-pago{border-left: solid 4px #7fc317;}
-.status-nao-pago{border-left: solid 4px #cc0808;}
+.status-pago{border-left: solid 4px #7fc317 !important;}
+.status-nao-pago{border-left: solid 4px #cc0808 !important;}
 
 .box-pedidos .col-xs-8 {
     padding: 0;
