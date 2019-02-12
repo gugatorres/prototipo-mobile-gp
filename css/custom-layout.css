@@ -1746,7 +1746,7 @@ button[disabled] {
 .questionarios thead tr th:nth-child(1) {
     background: transparent;
     border: none;
-    width: 155px;
+    width: 20%;
 }
 
 .questionarios tbody tr td {
@@ -1773,7 +1773,7 @@ button[disabled] {
     background: #d4d1d1;
     border-bottom: solid 1px #FFF;
     color: #666666;
-    width: 120px;
+    width: 20%;
 }
 
 .questionarios thead tr th img {
