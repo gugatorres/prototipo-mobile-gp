@@ -1,6 +1,11 @@
 dist: trusty
 sudo: required
 
+addons:
+  apt:
+    packages:
+    - lftp
+
 script:
   - cd $TRAVIS_BUILD_DIR
   - chmod +x deploy.sh
