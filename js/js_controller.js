@@ -82,7 +82,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
-		angular.element(".cart").attr("href", "carrinho");
+		angular.element(".cart").attr("href", "#!carrinho");
 
 
 		angular.element(".add-product").click(function () {
@@ -134,7 +134,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y","auto");
 			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom","initial");
 			angular.element(".total-box").css("z-index","999");
-			angular.element(".brand-itaipava").attr("href","lp_itaipava");
+			angular.element(".brand-itaipava").attr("href","#!lp_itaipava");
 		});
 
 
@@ -144,7 +144,6 @@ app.controller("defaultController", function ($scope) {
 	.controller("meusClientesController", function ($scope) {
 
 		$scope.titulo = "Meus Clientes"
-
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(this).css("display", "inline-block");
