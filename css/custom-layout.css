@@ -99,18 +99,38 @@ a:hover{text-decoration: none;}
 
 .box-indic span {
     float: left;
-    height: 20px;
-    padding: 0 7px;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 18px;
+    font-size: 0px;
     color: #FFF;
-    margin: 0px 3px;
-    border-radius: 10px;
+    margin: 0px 5px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 3px solid #FFF;   
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.box-indic span:first-child{
+    margin-left: 0px;
 }
 
-.box-indic span{
-    margin-left: 0px;
+.box-indic span.pesquisa{
+    background-image: url('../images/tag_pesquisa.svg');
+}
+.box-indic span.segmentacao{
+    background-image: url('../images/tag_segmento.svg');
+}
+.box-indic span.acao{
+    background-image: url('../images/tag_acao.svg');
+}
+.box-indic span.gps{
+    background-image: url('../images/tag_gps.svg');
+}
+.box-indic span.gps{
+    background-image: url('../images/tag_gps.svg');
+}
+.box-indic span.comodato{
+    background-image: url('../images/tag_comodato.svg');
 }
 
 .box-indic .white,
@@ -120,8 +140,6 @@ a:hover{text-decoration: none;}
 .box-indic .green,
 .box-indic .light-green,
 .box-indic .yellow{
-    border: 1px solid #ccc;
-    background-color: #FFF;
 }
 
 .box-indic .white{border-color: #FFFFFF; color: #FFFFFF}
@@ -618,7 +636,7 @@ nav.navbar {
 .box-indic {
     position: absolute;
     left: 15px;
-    bottom: 10px;
+    bottom: 15px;
     height: 20px;
 }
 
@@ -1046,16 +1064,15 @@ a .card-product {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-
-.detail-customers .box-tile.box-pedidos {
+.box-tile.box-pedidos {
     padding: 15px;
     height: 80px;
     position: relative;
     border-left: solid 4px #CCCCCC;
 }
 
-.status-pago{border-left: solid 4px #7fc317;}
-.status-nao-pago{border-left: solid 4px #cc0808;}
+.status-pago{border-left: solid 4px #7fc317 !important; }
+.status-nao-pago{border-left: solid 4px #cc0808 !important;}
 
 .box-pedidos .col-xs-8 {
     padding: 0;
@@ -1994,5 +2011,12 @@ button[disabled] {
     background-image: url(/images/gift.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    /*transform: rotate(20deg);*/
+}
+.card-customer .light-green{
+    border-left: 8px solid #4CAF50;
+    color: #000;
+}
+.card-customer .light-red{
+    border-left: 8px solid #c62222;
+    color: #000;
 }
