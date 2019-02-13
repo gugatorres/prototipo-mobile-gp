@@ -1789,6 +1789,41 @@ button[disabled] {
     font-weight: normal;
 }
 
+.qcampos .titulo-produto {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #CCC;
+}
+
+.qcampos table {
+    width: 100%;
+}
+
+.qcampos td {
+    padding: 5px;
+}
+
+.qcampos input[type="text"] {
+    width: 100%;
+    border: solid 1px #CCC;
+    text-align: center;
+    padding: 10px;
+}
+
+.tipo-venda {
+    margin-top: 20px;
+}
+
+.qcampos .tipo-venda a {
+    background: #CCC;
+    display: block;
+    padding: 10px;
+    color: #000;
+}
+
+
+
 /* Element input Mobile */
 
 
