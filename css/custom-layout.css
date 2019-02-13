@@ -115,19 +115,19 @@ a:hover{text-decoration: none;}
 }
 
 .box-indic span.pesquisa{
-    background-image: url('/images/tag_pesquisa.svg');
+    background-image: url('../images/tag_pesquisa.svg');
 }
 .box-indic span.segmentacao{
-    background-image: url('/images/tag_segmento.svg');
+    background-image: url('../images/tag_segmento.svg');
 }
 .box-indic span.acao{
-    background-image: url('/images/tag_acao.svg');
+    background-image: url('../images/tag_acao.svg');
 }
 .box-indic span.gps{
-    background-image: url('/images/tag_gps.svg');
+    background-image: url('../images/tag_gps.svg');
 }
 .box-indic span.gps{
-    background-image: url('/images/tag_gps.svg');
+    background-image: url('../images/tag_gps.svg');
 }
 .box-indic span.comodato{
     background-image: url('/images/tag_comodato.svg');
