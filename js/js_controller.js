@@ -28,11 +28,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-modal").css("display", "none");
 	});
 
-	angular.element(".close-alert").click(function(){
+	angular.element(".close-alert").click(function () {
 		angular.element(".alerta-home").hide();
 	});
 
-	angular.element("a.carousel-control").click(function(e){
+	angular.element("a.carousel-control").click(function (e) {
 		e.preventDefault();
 		$(this).parent().carousel($(this).data("slide"));
 	});
@@ -95,7 +95,7 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product-sum").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
-			angular.element(".ind-number").css("display","block");
+			angular.element(".ind-number").css("display", "block");
 			angular.element(".ind-number").addClass("anima-circle");
 			//angular.element(".total-box").css("bottom", "60px");
 			//angular.element(".overlay-total").css("display", "block");
@@ -117,24 +117,24 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").removeClass("open-total");
 		});
 
-		angular.element(".btn-filter").click(function(){
-			angular.element(".filter-products").css("right","0");
-			angular.element(".overlay-filter").css("display","block");
-			angular.element("body").css("overflow-y","hidden");
-			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom","100px");
-			angular.element(".total-box").css("z-index","9");
-			angular.element(".brand-itaipava").removeAttr("href","");
-			
+		angular.element(".btn-filter").click(function () {
+			angular.element(".filter-products").css("right", "0");
+			angular.element(".overlay-filter").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
+			angular.element(".total-box").css("z-index", "9");
+			angular.element(".brand-itaipava").removeAttr("href", "");
+
 
 		});
-		
-		angular.element(".overlay-filter").click(function(){
-			angular.element(".filter-products").css("right","-250px");
-			angular.element(this).css("display","none");
-			angular.element("body").css("overflow-y","auto");
-			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom","initial");
-			angular.element(".total-box").css("z-index","999");
-			angular.element(".brand-itaipava").attr("href","#!lp_itaipava");
+
+		angular.element(".overlay-filter").click(function () {
+			angular.element(".filter-products").css("right", "-250px");
+			angular.element(this).css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
+			angular.element(".total-box").css("z-index", "999");
+			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
 
 
@@ -462,8 +462,8 @@ app.controller("defaultController", function ($scope) {
 	.controller("pesquisaController", function ($scope) {
 
 		$scope.titulo = "questionario"
-		angular.element(".sync img, .menu-photo img").attr("src","");
-		angular.element(".bar-customer-back").css("display", "block");		
+		angular.element(".sync img, .menu-photo img").attr("src", "");
+		angular.element(".bar-customer-back").css("display", "block");
 
 		angular.element(".btn-sim").click(function () {
 			angular.element(this).addClass("active");
@@ -475,18 +475,18 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".btn-sim").removeClass("active");
 		});
 
-		angular.element(".page-pesquisa01 .btn-resposta").click(function(){
+		angular.element(".page-pesquisa01 .btn-resposta").click(function () {
 			angular.element(".page-pesquisa01 .btn-default").removeAttr("disabled");
 		});
 
-		angular.element(".page-pesquisa02 .btn-resposta").click(function(){
+		angular.element(".page-pesquisa02 .btn-resposta").click(function () {
 			angular.element(".page-pesquisa02 .btn-default").removeAttr("disabled");
 		});
 
-		angular.element(".page-pesquisa03 .btn-resposta").click(function(){
+		angular.element(".page-pesquisa03 .btn-resposta").click(function () {
 			angular.element(".page-pesquisa03 .btn-default").removeAttr("disabled");
 		});
-			
+
 
 		angular.element(".page-pesquisa01 .cam-produto").click(function () {
 			angular.element(".page-pesquisa01 .img-produto-photo").attr("src", "images/caixa-itaipava.jpg").css("display", "block").css("width", "50%").css("margin", "auto");
@@ -529,10 +529,8 @@ app.controller("defaultController", function ($scope) {
 	.controller("questionarioController", function ($scope) {
 
 		$scope.titulo = "Pesquisa"
-		angular.element(".sync img, .menu-photo img").attr("src","");
-		angular.element(".bar-customer-back").css("display", "block");		
-
-		
+		angular.element(".sync img, .menu-photo img").attr("src", "");
+		angular.element(".bar-customer-back").css("display", "block");
 
 	})
 
@@ -540,6 +538,18 @@ app.controller("defaultController", function ($scope) {
 	.controller("questDetalheController", function ($scope) {
 
 		$scope.titulo = "quest_detalhe"
+		angular.element(".sync img, .menu-photo img").attr("src", "");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".vendedor").click(function () {
+			angular.element(this).addClass("active-link");
+			angular.element(".externo").removeClass("active-link");
+		});
+
+		angular.element(".externo").click(function () {
+			angular.element(this).addClass("active-link");
+			angular.element(".vendedor").removeClass("active-link");
+		});
 
 	})
 

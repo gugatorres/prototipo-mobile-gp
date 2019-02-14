@@ -1745,7 +1745,7 @@ button[disabled] {
 
 .header-table {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
     top: 15px;
     left: 0;
     background: whitesmoke;
@@ -1837,6 +1837,11 @@ button[disabled] {
     display: block;
     padding: 10px;
     color: #000;
+}
+
+.active-link {
+    background: #333333 !important;
+    color: #FFF !important;
 }
 
 
