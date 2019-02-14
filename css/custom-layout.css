@@ -1746,7 +1746,7 @@ button[disabled] {
 
 .header-table {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
     top: 15px;
     left: 0;
     background: whitesmoke;
@@ -1831,13 +1831,19 @@ button[disabled] {
 
 .tipo-venda {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .qcampos .tipo-venda a {
-    background: #CCC;
+    background: transparent;
     display: block;
     padding: 10px;
     color: #000;
+}
+
+.active-link {
+    border-bottom: solid 2px #c62222;
+    color:#c62222 !important;
 }
 
 
