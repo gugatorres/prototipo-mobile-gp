@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    $("#mySidenav").css("left", "0px");
+    $(".back-menu").css("display", "block");
+
     $(".menu-open").click(function () {
         $("#mySidenav").css("left", "0px");
         $(".back-menu").css("display", "block");
@@ -27,7 +30,6 @@ $(document).ready(function () {
         $(".back-menu").css("display", "none");
         $("body").css("overflow-y", "auto");
     });
-
    
     $(".search").click(function () {
         $(".box-search").css("display", "block");

@@ -85,5 +85,5 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/quest_detalhe.html",
             controller: "questDetalheController"
         })
-        .otherwise({ redirectTo: "/home" });
+        .otherwise({ redirectTo: "/meus_clientes" });
 });
