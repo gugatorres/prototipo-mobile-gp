@@ -670,14 +670,14 @@ nav.navbar {
     opacity: 0.5;
     display: none;
 }
-.tab-page-3 a{
+.grid-customers .tab-page-3 a{
     display: none;
 }
-.tab-page-1 a:nth-child(3n+2){
+.grid-customers .tab-page-1 a:nth-child(3n+2){
     display: none;
 }
-.tab-page-3 a:nth-child(1),
-.tab-page-3 a:nth-child(3){
+.grid-customers .tab-page-3 a:nth-child(1),
+.grid-customers .tab-page-3 a:nth-child(3){
     opacity: 0.5;
     display: block;
 }
@@ -706,6 +706,7 @@ nav.navbar {
     width: 30%;
     text-align: center;
 }
+
 
 .nav-tab-custom a.active {
     border-bottom: solid 2px #c62222;
