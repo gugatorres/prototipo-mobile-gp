@@ -1831,18 +1831,19 @@ button[disabled] {
 
 .tipo-venda {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .qcampos .tipo-venda a {
-    background: #CCC;
+    background: transparent;
     display: block;
     padding: 10px;
     color: #000;
 }
 
 .active-link {
-    background: #333333 !important;
-    color: #FFF !important;
+    border-bottom: solid 2px #c62222;
+    color:#c62222 !important;
 }
 
 
