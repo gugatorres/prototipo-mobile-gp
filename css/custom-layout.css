@@ -1067,7 +1067,7 @@ a .card-product {
 }
 .box-tile.box-pedidos {
     padding: 15px;
-    height: 80px;
+    height: 80px !important;
     position: relative;
     border-left: solid 4px #CCCCCC;
 }
