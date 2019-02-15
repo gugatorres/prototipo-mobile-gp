@@ -2020,10 +2020,10 @@ button[disabled] {
     background-repeat: no-repeat;
 }
 .card-customer .light-green{
-    border-left: 8px solid #4CAF50;
+    border-left: 5px solid #4CAF50;
     color: #000;
 }
 .card-customer .light-red{
-    border-left: 8px solid #c62222;
+    border-left: 5px solid #c62222;
     color: #000;
 }

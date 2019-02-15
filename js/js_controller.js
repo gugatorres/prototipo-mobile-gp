@@ -531,7 +531,6 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Pesquisa"
 		angular.element(".sync img, .menu-photo img").attr("src", "");
 		angular.element(".bar-customer-back").css("display", "block");
-
 	})
 
 	/* agendar Quest Detalhe Controller */
