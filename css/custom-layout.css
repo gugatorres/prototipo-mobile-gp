@@ -729,6 +729,42 @@ nav.navbar {
     opacity: 0.6;
 }
 
+/* Histórico de pedidos */
+
+.tab-page-hist-1 {display: block}
+.tab-page-hist-1 a{color:#000000;}
+.tab-page-hist-2 a{color:#000000;}
+
+.nav-tab-custom-hist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-tab-custom-hist a {
+    display: inline-block;
+    color: #c62222;
+    font-size: 14px;
+    padding: 5px;
+    height: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-tab-custom-hist a.active {
+    border-bottom: solid 2px #c62222;
+}
+
+.tab-hist-content {
+    padding: 0px 10px;
+}
+
+.tab-page-hist-1{display: block;}
+.tab-page-hist-2{display: none;}
+
+
 /* Detalhes Clientes - Tabs */
  
 .detail-customers .box-tile.inadimplencia-acumulada {height: 90px; padding: 15px;}
@@ -938,6 +974,24 @@ a .card-product {
     margin-top: 18px;
 }
 
+.float-button-grid2 {
+    background: #666666;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 140px;
+    z-index: 2;
+    border-radius: 40px;
+    box-shadow: rgba(0,0,0,0.4) 5px 5px 15px;
+}
+.float-button-grid2 img{
+    width: 30px;
+    margin-left: 19px;
+    margin-top: 18px;
+}
+
 .card-product {
     margin-bottom: 10px;
 }
@@ -956,6 +1010,26 @@ a .card-product {
 }
 
 .image-list {
+    background: #666666 url(../images/list_w.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 19px 20px;
+}
+
+.product-grid2 {
+    padding: 15px;
+    height: auto;
+    position: relative;
+}
+
+.image-grid2 {
+    background: #666666 url(../images/grid_w.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 19px 20px;
+}
+
+.image-list2 {
     background: #666666 url(../images/list_w.svg);
     background-size: 30px;
     background-repeat: no-repeat;
@@ -1051,6 +1125,35 @@ a .card-product {
 }
 
 .lp-itaipava a:nth-child(14) {
+    display: none;
+}
+
+ /* LP Crystal */
+
+ .lp-crystal {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: auto;
+    background: #fbe079;
+}
+
+.lp-crystal img {
+    width: 100%;
+}
+
+.lp-crystal a:nth-child(6) {
+    display: none;
+}
+
+.lp-crystal a:nth-child(7) {
+    display: none;
+}
+
+.lp-crystal a:nth-child(13) {
+    display: none;
+}
+
+.lp-crystal a:nth-child(14) {
     display: none;
 }
 
@@ -1846,8 +1949,6 @@ button[disabled] {
     color:#c62222 !important;
 }
 
-
-
 /* Element input Mobile */
 
 
@@ -2026,4 +2127,30 @@ button[disabled] {
 .card-customer .light-red{
     border-left: 5px solid #c62222;
     color: #000;
+}
+.anim-swipe-left{
+
+    animation: swipe-left 0.3s;
+
+}
+.anim-swipe-right{
+
+    animation: swipe-right 0.3s;
+
+}
+@keyframes swipe-left {
+    0% {
+      transform: translateX(0px);    
+    }
+    100% {
+      transform: translateX(-400px);
+    }
+}
+@keyframes swipe-right {
+    0% {
+      transform: translateX(0px);    
+    }
+    100% {
+      transform: translateX(400px);
+    }
 }
