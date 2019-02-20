@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $("#mySidenav").css("left", "0px");
-    $(".back-menu").css("display", "block");
+    $(".back-menu").css("display","block");
 
     $(".menu-open").click(function () {
         $("#mySidenav").css("left", "0px");

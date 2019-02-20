@@ -33,6 +33,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/lp_itaipava.html",
             controller: "lpItaipavaController"
         })
+        .when("/lp_crystal", {
+            templateUrl: "./templates/lp_crystal.html",
+            controller: "lpCrystalController"
+        })
         .when("/estoque_precos", {
             templateUrl: "./templates/estoque_precos.html",
             controller: "estoquePrecosController"
@@ -84,6 +88,10 @@ app.config(function ($routeProvider) {
         .when("/quest_detalhe", {
             templateUrl: "./templates/quest_detalhe.html",
             controller: "questDetalheController"
+        })
+        .when("/quest_detalhe_2", {
+            templateUrl: "./templates/quest_detalhe_2.html",
+            controller: "questDetalhe2Controller"
         })
         .otherwise({ redirectTo: "/meus_clientes" });
 });
