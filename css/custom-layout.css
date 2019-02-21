@@ -1275,6 +1275,14 @@ p.txt-min2 {
     margin: 40px auto 0;
 }
 
+/*.tab-meus-pedidos .tab-page-2 .box-tile {
+    opacity: 0.5;
+}*/
+
+.cod-pedido .status {
+    color: #c62222;
+}
+
 /* Carrinho */
 
 .carrinho .box-product {
