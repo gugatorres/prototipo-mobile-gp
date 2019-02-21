@@ -1283,6 +1283,10 @@ p.txt-min2 {
     color: #c62222;
 }
 
+.ped-devolvidos div {
+    text-decoration: line-through !important;
+}
+
 /* Carrinho */
 
 .carrinho .box-product {
