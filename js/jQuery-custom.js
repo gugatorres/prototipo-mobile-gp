@@ -6,6 +6,8 @@ $(document).ready(function () {
     $(".menu-open").click(function () {
         $("#mySidenav").css("left", "0px");
         $(".back-menu").css("display", "block");
+        $(".back-menu").css("left", "0px");
+        $(".back-menu").css("background","#000000b3");
         $(this).css("display", "none");
         $("body").css("overflow-y", "hidden");
     });
@@ -21,6 +23,7 @@ $(document).ready(function () {
         $("#mySidenav").css("left", "-310px");
         $(this).css("display", "none");
         $(".menu-open").css("display", "block");
+        $(".back-menu").css("left", "-310px");
         $("body").css("overflow-y", "auto");
     });
 

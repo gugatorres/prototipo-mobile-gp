@@ -1,0 +1,103 @@
+<br>
+<div class="row">
+
+    <div class="col-md-12 col-xs-12">
+        <div class="box-tile limite-disponivel white" style="height: auto;">
+
+            <div class="col-xs-6 text-left" style="padding-left: 5px;">
+                <p style="font-size: 20px;" class="label-lbl">Títulos em aberto</p>
+            </div>
+
+            <div class="col-xs-6 text-right" style="padding-right: 5px;">
+                <img style="left: 5px;top: 5px;width: 60px;" src="images/mercado_black.svg" alt="">
+                <br><br>
+            </div>
+
+            <div class="other-values">
+
+                <div class="row tipos-pagamento" style="margin-top: 10%;" >
+    
+                    <ul id="tipos-pagamento">
+                        <li><a>Título X</a></li>
+                        <li><a>Título Y</a></li>
+                        <li><a>Título Z</a></li>
+                    </ul>
+    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+<br>
+<div class="row">
+
+    <div class="col-md-6 col-xs-6" style="padding-right: 10px;">
+        <div class="box-tile ultima-entrega white text-center">
+            <p class="label-lbl">Possuí comodato em aberto<br></p>
+            <img src="images/not_ok.svg" style="width: 40px" alt="">
+            <p class="label-lbl" style="color: #dd0000;">Não</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xs-6" style="padding-left: 10px;">
+        <div class="box-tile ultima-entrega white text-center">
+            <p class="label-lbl">Status do cliente<br><br></p>
+            <img src="images/not_ok.svg" style="width: 40px" alt="">
+            <p class="label-lbl" style="color: #dd0000;">Em dívida</p>
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="row">
+
+    <div class="col-md-12 col-xs-12">
+        <div class="box-tile limite-disponivel white">
+
+            <div class="col-xs-12 text-left" style="padding-left: 5px;">
+                <p style="font-size: 18px;" class="label-lbl">Motivo da inativação</p>
+            </div>
+
+            <div class="other-values">
+
+                <select class="combo-inativacao">
+                    <option selected disabled>Selecione o motivo</option>
+                    <option value="1">Mal pagador</option>
+                    <option value="2">Cliente solicitou</option>
+                    <option value="3">Cliente fechou</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+<br>
+<div class="row">
+
+    <div class="col-xs-12">
+        <button class="btn-default btn-default-inativar" disabled> INATIVAR CLIENTE </button>
+    </div>
+
+</div>
+
+<div class="overlay-modal overlay-inativacao">
+    <div class="modal-custom">
+        <h3 class="header-modal">Alteração concluída com Sucesso!</h3>
+        <img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
+        <div class="modal-conteudo">
+            <a href="#!detalhe_clientes" class="btn-default">Concluir</a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-requests">
+    
+</div>
+<ul class="buttons-request">
+    <li> <a href="#!solicitar_inativacao">Solic. inativação<img src="images/sales_black.svg" width="10px" alt=""> </a> </li>
+    <li> <a href="#!solicitar_alteracao_financ">Solic. alteração financeira<img src="images/sales_black.svg" width="10px" alt=""> </a> </li>
+    <li> <a href="#">Solic. recolha de comodatos<img src="images/sales_black.svg" width="10px" alt=""> </a> </li>
+</ul>
