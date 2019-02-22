@@ -607,7 +607,7 @@ nav.navbar {
     text-align: right;
     list-style: none;
     background-color: #fff;
-    width: 285px;
+    width: 250px;
     display: none;
     z-index: 100;
     border-radius: 3px;
@@ -622,6 +622,7 @@ nav.navbar {
 
 .buttons-request a{
     color:#000;
+    margin-right: 10px;
 }
 
 @keyframes menu-request{
