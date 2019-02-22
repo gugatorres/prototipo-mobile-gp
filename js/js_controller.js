@@ -64,6 +64,25 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("background","#000000b3");
 
+		angular.element(".tab-1").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-page-1").css("display", "block");
+			angular.element(".tab-page-2, .tab-page-3, .tab-page-4").css("display", "none");
+			angular.element(".tab-meus-pedidos .tab-page-2 .box-tile").removeClass("ped-devolvidos");
+		});
+
+		angular.element(".tab-2").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-page-2").css("display", "block");
+			angular.element(".tab-page-1, .tab-page-3, .tab-page-4").css("display", "none");
+			angular.element(".tab-meus-pedidos .tab-page-2 .box-tile").addClass("ped-devolvidos");
+			angular.element(".ped-devolvidos .cod-pedido strong .status").html("DEVOLVIDO - ");
+		});
+
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
 		});
@@ -144,6 +163,10 @@ app.controller("defaultController", function ($scope) {
 			//angular.element(".overlay-total").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element("body").addClass("close-total-sales");
+
+			setTimeout(function () {
+				angular.element(".ind-number").removeClass("anima-circle");
+			}, 3000);
 
 		});
 
@@ -406,6 +429,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("cadastroClientesController", function ($scope) {
 
 		$scope.titulo = "Cadastro de Clientes"
+		angular.element(".txt-documentos").html("Enviar o seguintes documentos: <br> Pessoa Física: <strong> CPF, RG e Comprovante de endereço </strong>");
 
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
@@ -474,6 +498,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-cnpj-cpf").text("CNPJ");
 			angular.element(".container-nome-cliente").hide();
 			angular.element(".inscri-rg").text("Inscrição Estadual");
+			angular.element(".txt-documentos").html("Enviar o seguintes documentos: <br> Pessoa Jurídica: <br> <strong> Razão Social, Contrato da empresa, RG e CPF dos Sócios, Comprovante de endereço </strong>");
 		});
 
 		angular.element(".input-pf").click(function () {
@@ -486,6 +511,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-cnpj-cpf").text("CPF");
 			angular.element(".container-nome-cliente").show();
 			angular.element(".inscri-rg").text("RG");
+			angular.element(".txt-documentos").html("Enviar o seguintes documentos: <br> Pessoa Física: <strong> CPF, RG e Comprovante de endereço </strong>");
 
 		});
 
