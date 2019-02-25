@@ -206,6 +206,147 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* Tab Bonificação Controller */
+	.controller("tabBonificacaoController", function ($scope) {
+
+		$scope.titulo = "Bonificação"
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "#!carrinho");
+
+
+		angular.element(".add-product").click(function () {
+			angular.element(".overlay-modal").css("display", "block");
+		});
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
+
+		angular.element(".add-product-sum").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".ind-number").css("display", "block");
+			angular.element(".ind-number").addClass("anima-circle");
+			//angular.element(".total-box").css("bottom", "60px");
+			//angular.element(".overlay-total").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").addClass("close-total-sales");
+
+			setTimeout(function () {
+				angular.element(".ind-number").removeClass("anima-circle");
+			}, 3000);
+
+		});
+
+		angular.element(".overlay-total").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("body").addClass("close-total-sales");
+			angular.element(".total-box").css("bottom", "-178px");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".total-box").addClass("open-total");
+		});
+
+		angular.element(".open-total").click(function () {
+			angular.element(".total-box").css("bottom", "0px");
+			angular.element(".total-box").removeClass("open-total");
+		});
+
+		angular.element(".btn-filter").click(function () {
+			angular.element(".filter-products").css("right", "0");
+			angular.element(".overlay-filter").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
+			angular.element(".total-box").css("z-index", "9");
+			angular.element(".brand-itaipava").removeAttr("href", "");
+
+
+		});
+
+		angular.element(".overlay-filter").click(function () {
+			angular.element(".filter-products").css("right", "-250px");
+			angular.element(this).css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
+			angular.element(".total-box").css("z-index", "999");
+			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});	
+		
+
+	})
+
+	/* Tab Combos Controller */
+	.controller("tabCombosController", function ($scope) {
+
+		$scope.titulo = "Combos"
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "#!carrinho");
+
+
+		angular.element(".add-product").click(function () {
+			angular.element(".overlay-modal").css("display", "block");
+		});
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
+
+		angular.element(".add-product-sum").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".ind-number").css("display", "block");
+			angular.element(".ind-number").addClass("anima-circle");
+			//angular.element(".total-box").css("bottom", "60px");
+			//angular.element(".overlay-total").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").addClass("close-total-sales");
+
+			setTimeout(function () {
+				angular.element(".ind-number").removeClass("anima-circle");
+			}, 3000);
+
+		});
+
+		angular.element(".overlay-total").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("body").addClass("close-total-sales");
+			angular.element(".total-box").css("bottom", "-178px");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".total-box").addClass("open-total");
+		});
+
+		angular.element(".open-total").click(function () {
+			angular.element(".total-box").css("bottom", "0px");
+			angular.element(".total-box").removeClass("open-total");
+		});
+
+		angular.element(".btn-filter").click(function () {
+			angular.element(".filter-products").css("right", "0");
+			angular.element(".overlay-filter").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
+			angular.element(".total-box").css("z-index", "9");
+			angular.element(".brand-itaipava").removeAttr("href", "");
+
+
+		});
+
+		angular.element(".overlay-filter").click(function () {
+			angular.element(".filter-products").css("right", "-250px");
+			angular.element(this).css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
+			angular.element(".total-box").css("z-index", "999");
+			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});	
+
+	})
+
 	/* Meus Clientes Controller */
 	.controller("meusClientesController", function ($scope) {
 

@@ -1822,6 +1822,12 @@ button[disabled] {
 
 ::placeholder{color: #c62222;}
 
+.icon-plus {
+    font-size: 15px;
+    color: #c62222;
+    font-weight: bold;
+}
+
 .search-cart input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -1851,6 +1857,10 @@ button[disabled] {
     display: inline-block;
     width: 24%;
     height: 60px;
+}
+
+.navigation-bottom .active {
+    background: #c62222;
 }
 
 .navigation-bottom ul li a {
