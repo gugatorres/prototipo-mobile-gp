@@ -433,6 +433,26 @@ nav.navbar {
     to {width: 100%;}
 }
 
+@keyframes animabar_limite70 {
+    from {width: 0;}
+    to {width: 10%;}
+}
+
+@keyframes animabar_inadimplentes {
+    from {width: 0;}
+    to {width: 3%;}
+}
+
+@keyframes animabar_semcomprar {
+    from {width: 0;}
+    to {width: 18%;}
+}
+
+@keyframes animabar_devolucao {
+    from {width: 0;}
+    to {width: 5%;}
+}
+
 .bar-loading {
     width: 50%;
     height: 8px;
@@ -2128,6 +2148,26 @@ button[disabled] {
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: animabar_giro;
     width: 100%;
+}
+.minha-meta .limite70 .bar-loading{
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: animabar_limite70;
+    width: 10%;
+}
+.minha-meta .inadimplentes .bar-loading{
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: animabar_inadimplentes;
+    width: 3%;
+}
+.minha-meta .semcomprar .bar-loading{
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: animabar_semcomprar;
+    width: 18%;
+}
+.minha-meta .devolucao .bar-loading{
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: animabar_devolucao;
+    width: 5%;
 }
 .minha-meta h6{
     text-align: left;

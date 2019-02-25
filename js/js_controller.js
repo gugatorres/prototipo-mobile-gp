@@ -424,26 +424,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
 			angular.element(".tab-page-1").css("display", "block");
 			angular.element(".tab-page-2, .tab-page-3, .tab-page-4").css("display", "none");
-			// if(angular.element("#pdv").val() == 1){
-			// 	if(navigator.geolocation){
-			// 		navigator.geolocation.getCurrentPosition(loc,error);
-			// 	}else{
-			// 		angular.element("#lat").text("Sem suporte a geolocalização")
-			// 	}
-			// }
-			// function loc(pos){
-			// 	angular.element("#lat").text(pos.coords.latitude);
-			// 	angular.element("#long").text(pos.coords.longitude);
-			// }
-			// function error(errorCode)
-			// {
-			// 	if(errorCode.code == 1)
-			// 		angular.element("#lat").text("Sem permissão para buscar sua localização")
-			// 	else if (errorCode.code==2)
-			// 		angular.element("#lat").text("Posição não disponivel")
-			// 	else
-			// 		angular.element("#lat").text("Erro")
-			// }
 		});
 
 		angular.element(".tab-2").click(function () {
@@ -475,6 +455,33 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-2").addClass("active");
 			angular.element(".tab-page-2").css("display", "block");
 			angular.element(".tab-page-1, .tab-page-3, .tab-page-4").css("display", "none");
+			if(angular.element("#pdv").val() == "1"){
+				if(navigator.geolocation){
+					navigator.geolocation.getCurrentPosition(loc,error);
+				}else{
+					angular.element(".lat").val("Sem suporte a geolocalização");
+					angular.element(".long").val("Sem suporte a geolocalização");
+				}
+			}
+			function loc(pos){
+				var la = pos.coords.latitude;
+				var lo = pos.coords.longitude;
+				angular.element(".lat").val(la);
+				angular.element(".long").val(lo);
+			}
+			function error(errorCode)
+			{
+				if(errorCode.code == 1){
+					angular.element(".lat").val("Sem permissão para buscar sua localização");
+					angular.element(".long").val("Sem permissão para buscar sua localização");
+				}else if (errorCode.code==2){
+					angular.element(".lat").val("Posição não disponivel");
+					angular.element(".long").val("Posição não disponivel");
+				}else{
+					angular.element(".lat").val("Erro");
+					angular.element(".long").val("Erro");
+				}
+			}
 		});
 
 		angular.element(".link-btn-tab3").click(function () {
