@@ -13,6 +13,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".open-modal-clientes").css("z-index", "2");
 		angular.element("body").css("overflow-y", "auto");
 	});
+	
 	angular.element(".sync").addClass("sync");
 	angular.element(".sync").css("display","block");
 	angular.element(".cart").css("display","none");
@@ -47,8 +48,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync").css("display","none");
 		angular.element(".cart").css("display","none");	
 		angular.element(".menu-request").css("display","none");	
-
-
 	})
 
 	/* meus Pedidos Controller */
@@ -78,23 +77,19 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		$scope.tab1 = function() {
-
 			angular.element(".tab-hist-1").addClass("active");
 			angular.element(".tab-hist-1").css("display", "inline-block");
 			angular.element(".tab-hist-2").removeClass("active");
 			angular.element(".tab-page-hist-2").css("display", "none");
 			angular.element(".tab-page-hist-1").css("display", "block");
-
 		}
 
 		$scope.tab2 = function() {
-
 			angular.element(".tab-hist-2").addClass("active");
 			angular.element(".tab-hist-2").css("display", "inline-block");
 			angular.element(".tab-hist-1").removeClass("active");
 			angular.element(".tab-page-hist-1").css("display", "none");
 			angular.element(".tab-page-hist-2").css("display", "block");
-
 		}
 
 		/*
@@ -128,24 +123,43 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync").css("display","none");
 		angular.element(".search").css("display","none");
 		angular.element(".cart").attr("href", "#!carrinho");
+		angular.element(".overlay-quest").css("display","block");
+
+		angular.element(".cam-produto").click(function(){
+			angular.element(".overlay-quest .img-produto-photo").attr("src", "images/cupom.jpeg").css("display", "block").css("width", "50%").css("margin", "auto");
+		});
+
+		angular.element(".btn-sim").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-nao").removeClass("active");
+		});
+
+		angular.element(".btn-comprovante").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".overlay-quest").css("display","none");
+		});
+
+		angular.element(".btn-nao").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-sim").removeClass("active");
+		});
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-modal").css("display", "block");
+			angular.element(".overlay-product").css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
-			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".overlay-product").css("display", "none");
 		});
 
 		angular.element(".add-product-sum").click(function () {
-			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".overlay-product").css("display", "none");
 			angular.element(".ind-number").css("display", "block");
 			angular.element(".ind-number").addClass("anima-circle");
 			//angular.element(".total-box").css("bottom", "60px");
 			//angular.element(".overlay-total").css("display", "block");
-			angular.element("body").css("overflow-y", "hidden");
-			angular.element("body").addClass("close-total-sales");
-
+			//angular.element("body").css("overflow-y", "hidden");
+			//angular.element("body").addClass("close-total-sales");
 		});
 
 		angular.element(".overlay-total").click(function () {
@@ -168,8 +182,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
 			angular.element(".total-box").css("z-index", "9");
 			angular.element(".brand-itaipava").removeAttr("href", "");
-
-
 		});
 
 		angular.element(".overlay-filter").click(function () {
@@ -180,8 +192,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
-
-
 	})
 
 	/* Meus Clientes Controller */
@@ -244,22 +254,17 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
 		});
-
-
 	})
 
 
 	/* cep Cadastro Clientes Controller */
 	.controller("cepCadastroClientesController", function ($scope) {
-
 		$scope.titulo = "CEP Cadastro de Clientes"
-
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");
 		//angular.element(".search img").removeAttr("src");
-
 	})
 
 
@@ -301,23 +306,19 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		$scope.tab1 = function() {
-
 			angular.element(".tab-hist-1").addClass("active");
 			angular.element(".tab-hist-1").css("display", "inline-block");
 			angular.element(".tab-hist-2").removeClass("active");
 			angular.element(".tab-page-hist-2").css("display", "none");
 			angular.element(".tab-page-hist-1").css("display", "block");
-
 		}
 
 		$scope.tab2 = function() {
-
 			angular.element(".tab-hist-2").addClass("active");
 			angular.element(".tab-hist-2").css("display", "inline-block");
 			angular.element(".tab-hist-1").removeClass("active");
 			angular.element(".tab-page-hist-1").css("display", "none");
 			angular.element(".tab-page-hist-2").css("display", "block");
-
 		}
 
 		/*
@@ -359,7 +360,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync").css("display","none");
 		angular.element(".cart").css("display","none");	
 		angular.element(".menu-requests").css("display","block");
-
 	})
 
 	/* Solicitar alteração financeira Controller */
@@ -424,6 +424,26 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
 			angular.element(".tab-page-1").css("display", "block");
 			angular.element(".tab-page-2, .tab-page-3, .tab-page-4").css("display", "none");
+			// if(angular.element("#pdv").val() == 1){
+			// 	if(navigator.geolocation){
+			// 		navigator.geolocation.getCurrentPosition(loc,error);
+			// 	}else{
+			// 		angular.element("#lat").text("Sem suporte a geolocalização")
+			// 	}
+			// }
+			// function loc(pos){
+			// 	angular.element("#lat").text(pos.coords.latitude);
+			// 	angular.element("#long").text(pos.coords.longitude);
+			// }
+			// function error(errorCode)
+			// {
+			// 	if(errorCode.code == 1)
+			// 		angular.element("#lat").text("Sem permissão para buscar sua localização")
+			// 	else if (errorCode.code==2)
+			// 		angular.element("#lat").text("Posição não disponivel")
+			// 	else
+			// 		angular.element("#lat").text("Erro")
+			// }
 		});
 
 		angular.element(".tab-2").click(function () {
@@ -485,6 +505,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-cnpj-cpf").text("CNPJ");
 			angular.element(".container-nome-cliente").hide();
 			angular.element(".inscri-rg").text("Inscrição Estadual");
+			angular.element(".tab-3").css("display","none");
 		});
 
 		angular.element(".input-pf").click(function () {
@@ -497,13 +518,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-cnpj-cpf").text("CPF");
 			angular.element(".container-nome-cliente").show();
 			angular.element(".inscri-rg").text("RG");
-
+			angular.element(".tab-3").css("display","inline-block");
 		});
 
 
 		angular.element(".btn-finalizar").click(function () {
 			angular.element(".overlay").css("display", "block");
-
 		});
 
 		angular.element(".overlay-modal").click(function () {
@@ -725,7 +745,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".menu-back").removeAttr("onclick");
 		angular.element(".menu-back").attr("href","#!/detalhe_clientes");
-
 		angular.element(".menu-requests").css("display","none");
 		
 	})
@@ -818,7 +837,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".float-button-grid").click(function () {
 			angular.element(this).toggleClass("image-list");
 			angular.element(".box-product").toggleClass("product-grid");
-
 		})
 
 		angular.element(function () {
