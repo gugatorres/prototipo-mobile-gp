@@ -1654,8 +1654,7 @@ p.txt-min2 {
 .tipos-pagamento {
     list-style: none;
     margin: 0;
-    padding: 15px;
-    margin-bottom: 50px;
+    padding: 0px;
 }
 
 .grid-requests .col-xs-12 {
