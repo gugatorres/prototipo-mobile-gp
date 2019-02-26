@@ -6,10 +6,23 @@
 
     <div class="search-cart">
 
-        <input type="text" placeholder="O que vamos vender hoje?">
-
-    </div>
-
+            <div class="row">
+    
+                <div class="col-xs-8">
+                    <input type="text" placeholder="O que vender hoje?">
+                </div>
+                <div class="col-xs-4" style="padding-left: 0;">
+                    <select onchange="location = this.value;">
+                        <option>Operação:</option>
+                        <option value="#!new_pedido">Venda</option>
+                        <option value="">Comodato</option>
+                        <option value="#!combos">Combo</option>
+                        <option value="#!bonificacao">Bonificação</option>
+    
+                    </select> </div>
+            </div>
+    
+        </div>
     <div class="meta-faturamento" style="display:none;">
         <div>Limite de crédito: R$ 1.245,00</div>
         <div class="loading-customers">

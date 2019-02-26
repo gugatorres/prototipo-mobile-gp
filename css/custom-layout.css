@@ -993,8 +993,9 @@ a .card-product {
     min-height: 250px;
     padding: 20px;
     background: #FFF;
-    margin: 80px auto;
+    margin: 20px auto;
     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+    position: relative;
 }
 
 .header-modal {
@@ -1253,7 +1254,7 @@ a .card-product {
 
 .modal-custom .close-modal {
     position: absolute;
-    bottom: 20px;
+    bottom: -50px;
     border: solid 2px #FFF;
     height: 40px;
     width: 40px;
@@ -1839,12 +1840,13 @@ button[disabled] {
 
 .search-cart select {
     width: 100%;
-    height: 43px;
+    height: 42px;
     border: solid 1px #cccccc;
     background: white;
     margin-top: 5px;
     color: #c62222;
-    font-size: 14px;
+    font-size: 13px;
+    text-align-last: center;
 }
 
 .navigation-bottom {
@@ -1855,6 +1857,7 @@ button[disabled] {
     background: #111111;
     left: 0;
     height: 60px;
+    display: none;
 }
 
 .navigation-bottom ul {
