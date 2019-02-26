@@ -474,7 +474,7 @@ app.controller("defaultController", function ($scope) {
 				if(errorCode.code == 1){
 					angular.element(".lat").val("Sem permissão para buscar sua localização");
 					angular.element(".long").val("Sem permissão para buscar sua localização");
-				}else if (errorCode.code==2){
+				}else if (errorCode.code == 2){
 					angular.element(".lat").val("Posição não disponivel");
 					angular.element(".long").val("Posição não disponivel");
 				}else{
@@ -527,7 +527,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".inscri-rg").text("RG");
 			angular.element(".tab-3").css("display","inline-block");
 		});
-
 
 		angular.element(".btn-finalizar").click(function () {
 			angular.element(".overlay").css("display", "block");
