@@ -1295,6 +1295,10 @@ a .card-product {
     margin-top: 0px;
 }
 
+.name-bonificacao {
+    margin-top: 15px !important;
+}
+
 .gerar-pedido .cnpj {
     font-size: 11px;
     margin-bottom: 0;
