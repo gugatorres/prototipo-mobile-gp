@@ -109,5 +109,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/tab_combos.html",
             controller: "tabCombosController"
         })
+        .when("/comodato", {
+            templateUrl: "./templates/tab_comodato.html",
+            controller: "tabComodatoController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" });
 });
