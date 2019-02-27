@@ -1043,6 +1043,14 @@ a .card-product {
     margin-bottom: 10px;
 }
 
+.comodato .box-tile {
+    border: dotted 2px #c62222;
+}
+
+.formas-pagamento .comodato {
+    color: #999;
+}
+
 .product-grid {
     padding: 15px;
     height: auto;
