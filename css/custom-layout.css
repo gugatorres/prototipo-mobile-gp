@@ -344,7 +344,7 @@ nav.navbar {
     background: #000000b3;
     width: 100%;
     position: fixed;
-    z-index: 9;
+    z-index: 11;
     height: 100%;
     top: 0;
     display: none;
@@ -616,6 +616,36 @@ nav.navbar {
     left: 0;
     z-index: 99;
     display: none;
+}
+
+.buttons-bonificacao {
+    position: fixed;
+    left: 50px;
+    top: 40%;
+    display: none;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    list-style: none;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 3px;
+    z-index: 100;
+    animation: menu-bonificacao 0.2s;
+}
+
+.buttons-bonificacao a{
+    color:#000;
+    margin-right: 10px;
+}
+
+@keyframes menu-bonificacao{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .buttons-request {
@@ -1008,6 +1038,19 @@ a .card-product {
     display: none;
 }
 
+.overlay-product {
+    background: #000000b3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-transition: display 2s; /* For Safari 3.1 to 6.0 */
+    transition: display 2s;
+    display: none;
+}
+
 .modal-custom {
     width: 85%;
     min-height: 250px;
@@ -1016,6 +1059,7 @@ a .card-product {
     margin: 20px auto;
     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
     position: relative;
+    z-index: 10;
 }
 
 .header-modal {
@@ -1349,6 +1393,63 @@ a .card-product {
 
 .config-product input[type="text"] {
     width: 100%;
+}
+
+.add-product .buttons-bonificacao{
+    display: block;
+}
+
+.select-product{
+    width: 24%;
+    padding: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border: solid 1px #999999;
+    background-color: transparent;
+}
+
+.accordion {
+    color: #000;
+}
+
+.accordion-bonificacao{
+    display: none;
+}
+
+.accordion-comodato{
+    display: none;
+}
+
+.animation-select-open{
+    animation: accordion-select-open 0.5s both;
+}
+
+.animation-select-close{
+    animation: accordion-select-close 0.5s both;
+}
+
+@keyframes accordion-select-open{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes accordion-select-close{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.config-product input[type="text"] {
+    width: 70%;
     padding: 5px;
     font-size: 22px;
     margin-bottom: 10px;
@@ -1847,15 +1948,6 @@ button[disabled] {
     font-size: 15px;
     color: #c62222;
     font-weight: bold;
-}
-
-.search-cart input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    text-align: center;
-    font-size: 14px;
-    border: solid 1px #CCC;
 }
 
 .search-cart select {

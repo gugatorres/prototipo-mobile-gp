@@ -146,10 +146,13 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-product").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".overlay-product").css("overflow-y", "scroll");
 		});
 
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-product").css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
 		});
 
 		angular.element(".add-product-sum").click(function () {
@@ -158,7 +161,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".ind-number").addClass("anima-circle");
 			//angular.element(".total-box").css("bottom", "60px");
 			//angular.element(".overlay-total").css("display", "block");
-			//angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").css("overflow-y", "auto");
 			//angular.element("body").addClass("close-total-sales");
 		});
 
@@ -192,7 +195,40 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
-	})
+				
+		angular.element(".bonificacao").click(function(){
+			if (angular.element(".accordion-bonificacao").css("display") == "block"){
+				angular.element(".img-bonificacao").addClass("animation-select-close");
+				angular.element(".accordion-bonificacao").css("display","none");
+				setTimeout(function () {
+					angular.element(".img-bonificacao").removeClass("animation-select-open");
+				}, 500);
+			}else{
+				angular.element(".img-bonificacao").addClass("animation-select-open");
+				angular.element(".accordion-bonificacao").css("display","block");
+				setTimeout(function () {
+					angular.element(".img-bonificacao").removeClass("animation-select-close");
+				}, 500);
+			}
+		});
+
+		angular.element(".comodato").click(function(){
+			if (angular.element(".accordion-comodato").css("display") == "block"){
+				angular.element(".img-comodato").addClass("animation-select-close");
+				angular.element(".accordion-comodato").css("display","none");
+				setTimeout(function () {
+					angular.element(".img-comodato").removeClass("animation-select-open");
+				}, 500);
+			}else{
+				angular.element(".img-comodato").addClass("animation-select-open");
+				angular.element(".accordion-comodato").css("display","block");
+				setTimeout(function () {
+					angular.element(".img-comodato").removeClass("animation-select-close");
+				}, 500);
+			}
+		});
+
+    })
 
 	/* Tab Bonificação Controller */
 	.controller("tabBonificacaoController", function ($scope) {
@@ -261,7 +297,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});	
-		
 
 	})
 
@@ -467,8 +502,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-modal").css("display", "none");
 		});
 	})
-
-	
 
 
 	/* cep Cadastro Clientes Controller */
