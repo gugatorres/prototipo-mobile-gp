@@ -101,5 +101,17 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/solicitar_inativacao.html",
             controller: "inativacaoController"
         })
+        .when("/bonificacao", {
+            templateUrl: "./templates/tab_bonificacao.html",
+            controller: "tabBonificacaoController"
+        })
+        .when("/combos", {
+            templateUrl: "./templates/tab_combos.html",
+            controller: "tabCombosController"
+        })
+        .when("/comodato", {
+            templateUrl: "./templates/tab_comodato.html",
+            controller: "tabComodatoController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" });
 });

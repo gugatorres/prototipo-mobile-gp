@@ -1013,8 +1013,9 @@ a .card-product {
     min-height: 250px;
     padding: 20px;
     background: #FFF;
-    margin: 80px auto;
+    margin: 20px auto;
     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+    position: relative;
 }
 
 .header-modal {
@@ -1060,6 +1061,14 @@ a .card-product {
 
 .card-product {
     margin-bottom: 10px;
+}
+
+.comodato .box-tile {
+    border: dotted 2px #c62222;
+}
+
+.formas-pagamento .comodato {
+    color: #999;
 }
 
 .product-grid {
@@ -1273,7 +1282,7 @@ a .card-product {
 
 .modal-custom .close-modal {
     position: absolute;
-    bottom: 20px;
+    bottom: -50px;
     border: solid 2px #FFF;
     height: 40px;
     width: 40px;
@@ -1312,6 +1321,10 @@ a .card-product {
 .gerar-pedido .name {
     font-size: 12px;
     margin-top: 0px;
+}
+
+.name-bonificacao {
+    margin-top: 15px !important;
 }
 
 .gerar-pedido .cnpj {
@@ -1662,8 +1675,7 @@ p.txt-min2 {
 .tipos-pagamento {
     list-style: none;
     margin: 0;
-    padding: 15px;
-    margin-bottom: 50px;
+    padding: 0px;
 }
 
 .grid-requests .col-xs-12 {
@@ -1831,6 +1843,12 @@ button[disabled] {
 
 ::placeholder{color: #c62222;}
 
+.icon-plus {
+    font-size: 15px;
+    color: #c62222;
+    font-weight: bold;
+}
+
 .search-cart input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -1838,6 +1856,17 @@ button[disabled] {
     text-align: center;
     font-size: 14px;
     border: solid 1px #CCC;
+}
+
+.search-cart select {
+    width: 100%;
+    height: 42px;
+    border: solid 1px #cccccc;
+    background: white;
+    margin-top: 5px;
+    color: #c62222;
+    font-size: 13px;
+    text-align-last: center;
 }
 
 .navigation-bottom {
@@ -1848,6 +1877,7 @@ button[disabled] {
     background: #111111;
     left: 0;
     height: 60px;
+    display: none;
 }
 
 .navigation-bottom ul {
@@ -1860,6 +1890,10 @@ button[disabled] {
     display: inline-block;
     width: 24%;
     height: 60px;
+}
+
+.navigation-bottom .active {
+    background: #c62222;
 }
 
 .navigation-bottom ul li a {
