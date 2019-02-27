@@ -33,7 +33,7 @@ $(document).ready(function () {
         $(".back-menu").css("display", "none");
         $("body").css("overflow-y", "auto");
     });
-
+   
     $(".search").click(function () {
         $(".box-search").css("display", "block");
         $(".box-search input").focus();
@@ -52,16 +52,7 @@ $(document).ready(function () {
         $(".menu-open").css("display", "block");
         $("body").css("overflow-y", "auto");
     });
-
-    /*$("body").one("mouseleave", function () {
-        $(".overlay-modal").css("display", "block");
-        setTimeout(function () {
-            $(".ind-number").removeClass("anima-circle")
-            alert("ALERT 3 SEGUNDOS");
-        }, 3000);
-    });*/
-
-
+    
 
 });
 
@@ -73,15 +64,15 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
 
 function myFunction() {
@@ -91,15 +82,15 @@ function myFunction() {
     filter = input.value.toUpperCase();
     ul = document.getElementById("tipos-pagamento");
     li = ul.getElementsByTagName('li');
-
+  
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
     }
-}
+  }

@@ -66,8 +66,8 @@
                         <span class="border"></span>
                     </label>
 
-                    <label for="inp" class="inp">
-                        <select>
+                    <label for="inp" class="input-sel">
+                        <select class="input-select">
                             <option value="" disabled selected hidden>Dia de atendimento</option>
                             <option>Segunda-feira</option>
                             <option>Terça-feira</option>
@@ -78,12 +78,32 @@
                         </select>   
                     </label>
 
-                    <label for="inp" class="inp">
-                        <select>
+                    <label for="inp" class="input-sel">
+                        <select class="input-select">
                             <option value="" disabled selected hidden>Frequência de visita</option>
                             <option>Semanal</option>
                             <option>Quinzenal</option>
                         </select>
+                    </label>
+
+                    <label for="inp" class="input-sel">
+                        <select class="input-select" id="pdv">
+                            <option value="" disabled selected hidden>Está fisicamente no PDV?</option>
+                            <option value="1">Sim</option>
+                            <option value="2">Não</option>
+                        </select>
+                    </label>
+
+                    <label for="inp" class="inp">
+                        <input class="lat" type="text" id="inp" placeholder="&nbsp;" disabled>
+                        <span class="label">Latitude</span>
+                        <span class="border"></span>
+                    </label>
+                    
+                    <label for="inp" class="inp">
+                        <input class="long" type="text" id="inp" placeholder="&nbsp;" disabled>
+                        <span class="label">Longitude</span>
+                        <span class="border"></span>
                     </label>
 
                     <label for="inp" class="inp">
@@ -105,8 +125,8 @@
             <div class="row">
 
                 <div class="col-md-12 col-xs-12">
-                    <label for="inp" class="inp">
-                        <select>
+                    <label for="inp" class="input-sel">
+                        <select class="input-select">
                             <option value="" disabled selected hidden>Tipo</option>
                             <option>Proprietário</option>
                             <option>Fiel Depositário</option>
@@ -203,54 +223,7 @@
 
 </div>
 
-<div class="screen-photo">
-    <h3>Documentos e Imagens
-        <a class="close-screen-photo">X</a>
-    </h3>
-    <div class="box-tile white" style="margin-top:50px;">
-
-        <div class="col-xs-12">
-            <p class="txt-documentos"></p>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div class="col-xs-4">
-            <span> <img src="images/document_b.svg" alt=""> </span>
-        </div>
-
-        <div style="clear:both;"></div>
-
-    </div>
-
-    <a class="float-button float-button-clientes">
-
-        <img src="images/camera_w.svg" alt="">
-
-    </a>
-
+<div class="overlay-requests">
 </div>
 <ul class="buttons-request">
     <li> <a href="#">Solic. inativação<img src="images/sales.svg" width="10px" alt=""> </a> &nbsp;&nbsp; </li>
