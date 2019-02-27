@@ -1521,6 +1521,7 @@ p.txt-min2 {
     top: -5px;
     right: -8px;
     display: none;
+    z-index: 999;
 }
 
 .anima-circle{
