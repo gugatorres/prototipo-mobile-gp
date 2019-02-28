@@ -1,10 +1,11 @@
+<script src="js/js_menu_bonificacao.js"></script>
 <div class="info-cliente">
     <div class="row">
         <p class="col-xs-8 text-left"> Nome do Cliente</p>
         <p class="col-xs-4 text-right">012354687</p>
     </div>
 
-    <div class="search-cart">
+        <div class="search-cart">
         <div class="row">
             <div class="col-xs-8">
                 <input type="text" placeholder="O que vender hoje?">
@@ -36,7 +37,7 @@
     <div class="row" style="position:relative">
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -66,7 +67,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -96,7 +97,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -126,7 +127,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -156,7 +157,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -186,7 +187,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -216,7 +217,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -246,7 +247,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -276,7 +277,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -306,7 +307,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -336,7 +337,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -366,7 +367,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -396,7 +397,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -426,7 +427,7 @@
         </a>
 
         <!--  Card Product  -->
-        <a>
+        <a class="carrinho-bonificacao">
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
 
@@ -518,14 +519,14 @@
 </div>
 
 <div class="filter-products">
-    <div ng-include="'include/fragment_branding_new.html'"></div>
+        <div ng-include="'include/fragment_branding_new.html'"></div>
 </div>
 <div class="overlay-filter"></div>
 
 <div class="overlay-total"></div>
 
 
-<div class="overlay-modal overlay-product">
+<div class="overlay-product">
     <div class="modal-custom">
 
         <a class="close-modal"> X</a>
@@ -536,12 +537,44 @@
             <p>Itaipava - Lata</p>
 
             <input type="text" name="qtde" value="40" placeholder="40">
+            <select class="select-product">
+                <option hidden disabled selected>Unid</option>
+                <option>8</option>
+                <option>12</option>
+                <option>16</option>
+                <option>24</option>
+            </select>
             <input type="text" name="value" value="R$ 0,00" placeholder="R$ 0,00">
             <p class="txt-min2">Tabela 0 - AS ROTAS de R$ 80,09 à R$ 144,41</p>
             <p class="txt-estoque">Estoque: 5524</p>
-            <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 <img style="width: 18px; margin-left: 8px;"
-                    src="images/cloud_b.svg" alt=""> </p>
-
+            <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 <img style="width: 18px; margin-left: 8px;" src="images/cloud_b.svg" alt=""> </p>
+            <br>
+            <a class="accordion bonificacao"><img class="img-select img-bonificacao" src="images/select.png" style="width: 40px;"><span style="font-size: 16px;">Bonificação</span></a>
+            <br>
+            <div class="accordion-bonificacao">
+                <input type="text" name="qtde" value="0" placeholder="0">
+                <select class="select-product">
+                    <option hidden disabled selected>Unid</option>
+                    <option>8</option>
+                    <option>12</option>
+                    <option>16</option>
+                    <option>24</option>
+                </select>
+            </div>
+            <br>
+            <a class="accordion comodato"><img class="img-select img-comodato" src="images/select.png" style="width: 40px;"><span style="font-size: 16px;">Comodato</span></a>
+            <br>
+            <div class="accordion-comodato">
+                <input type="text" name="qtde" value="0" placeholder="0">
+                <select class="select-product">
+                    <option hidden disabled selected>Termos</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
             <a class="btn-default add-product-sum"> ADICIONAR </a>
 
         </div>
@@ -564,3 +597,11 @@
 
     </div>
 </div>
+
+<div id="overlay" class="overlay-requests">
+    
+</div>
+<ul id="buttons" class="buttons-bonificacao">
+    <li> <a class="add-product-sum">Adicionar ao carrinho </a> </li>
+    <li> <a class="add-product-sum">Conceder bonificação </a> </li>
+</ul>

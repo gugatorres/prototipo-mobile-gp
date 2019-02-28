@@ -108,6 +108,22 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-page-2").css("display", "block");
 		});
 
+		angular.element(".tab-1").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-1").css("display", "block");
+		});
+
+		angular.element(".tab-2").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-2").css("display", "block");
+		});
+
 	})
 
 	/* Gerar Pedidos Controller */
@@ -122,6 +138,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search").css("display","none");
 		angular.element(".cart").attr("href", "#!carrinho");
 		angular.element(".overlay-quest").css("display","block");
+		angular.element("#mySidenav").css("display","block");
+		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".cam-produto").click(function(){
 			angular.element(".overlay-quest .img-produto-photo").attr("src", "images/cupom.jpeg").css("display", "block").css("width", "50%").css("margin", "auto");
@@ -144,10 +162,13 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-product").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".overlay-product").css("overflow-y", "scroll");
 		});
 
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-product").css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
 		});
 
 		angular.element(".add-product-sum").click(function () {
@@ -156,7 +177,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".ind-number").addClass("anima-circle");
 			//angular.element(".total-box").css("bottom", "60px");
 			//angular.element(".overlay-total").css("display", "block");
-			//angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").css("overflow-y", "auto");
 			//angular.element("body").addClass("close-total-sales");
 
 			setTimeout(function () {
@@ -194,7 +215,40 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
-	})
+				
+		angular.element(".bonificacao").click(function(){
+			if (angular.element(".accordion-bonificacao").css("display") == "block"){
+				angular.element(".img-bonificacao").addClass("animation-select-close");
+				angular.element(".accordion-bonificacao").css("display","none");
+				setTimeout(function () {
+					angular.element(".img-bonificacao").removeClass("animation-select-open");
+				}, 500);
+			}else{
+				angular.element(".img-bonificacao").addClass("animation-select-open");
+				angular.element(".accordion-bonificacao").css("display","block");
+				setTimeout(function () {
+					angular.element(".img-bonificacao").removeClass("animation-select-close");
+				}, 500);
+			}
+		});
+
+		angular.element(".comodato").click(function(){
+			if (angular.element(".accordion-comodato").css("display") == "block"){
+				angular.element(".img-comodato").addClass("animation-select-close");
+				angular.element(".accordion-comodato").css("display","none");
+				setTimeout(function () {
+					angular.element(".img-comodato").removeClass("animation-select-open");
+				}, 500);
+			}else{
+				angular.element(".img-comodato").addClass("animation-select-open");
+				angular.element(".accordion-comodato").css("display","block");
+				setTimeout(function () {
+					angular.element(".img-comodato").removeClass("animation-select-close");
+				}, 500);
+			}
+		});
+
+    })
 
 	/* Tab Bonificação Controller */
 	.controller("tabBonificacaoController", function ($scope) {
@@ -263,7 +317,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});	
-		
 
 	})
 
@@ -470,8 +523,6 @@ app.controller("defaultController", function ($scope) {
 		});
 	})
 
-	
-
 
 	/* cep Cadastro Clientes Controller */
 	.controller("cepCadastroClientesController", function ($scope) {
@@ -568,6 +619,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".menu-back").removeAttr("onclick");
 		angular.element(".menu-back").attr("href","#!/meus_clientes");
 		angular.element("#mySidenav").css("display","none");
+		angular.element("#mySidenav").css("left","-310px");
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("left","-310px");
 		angular.element(".back-menu").css("background","none");
@@ -759,6 +811,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".menu-back").removeAttr("onclick");
 		angular.element(".menu-back").attr("href","#!/meus_clientes");
 		angular.element("#mySidenav").css("display","none");
+		angular.element("#mySidenav").css("left","-310px");
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("left","-310px");
 		angular.element(".back-menu").css("background","none");
@@ -810,10 +863,12 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").css("display","none");	
 		angular.element(".cart").append("<span class='ind-number'></span>");
 		angular.element("#mySidenav").css("display","none");
+		angular.element("#mySidenav").css("left","-310px");
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("left","-310px");
 		angular.element(".back-menu").css("background","none");
 		angular.element(".menu-requests").css("display","none");
+		angular.element(".menu-back").attr("href","#!/new_pedido");
 
 		angular.element(".delete-product").click(function () {
 			angular.element(".overlay-modal-delete").css("display", "block");
@@ -843,9 +898,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").append("<span class='ind-number'></span>");
 		angular.element(".menu-requests").css("display","none");
 		angular.element("#mySidenav").css("display","none");
+		angular.element("#mySidenav").css("left","-310");
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("left","-310px");
 		angular.element(".back-menu").css("background","none");
+		angular.element(".menu-back").attr("href","#!/carrinho");
 	})
 
 	/* Detalhes Fechamento Pedido Controller */
@@ -861,9 +918,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search").css("display","none");
 		angular.element(".cart").append("<span class='ind-number'></span>");
 		angular.element("#mySidenav").css("display","none");
+		angular.element("#mySidenav").css("left","-310px");
 		angular.element(".back-menu").css("display","none");
 		angular.element(".back-menu").css("left","-310px");
 		angular.element(".back-menu").css("background","none");
+		angular.element(".menu-back").attr("href","#!/formas_pagamento");
 
 		angular.element(".btn-finalizar-pedido").click(function () {
 			angular.element(".overlay-finalizar-pedido").css("display", "block");
