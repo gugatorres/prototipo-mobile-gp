@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     $(".menu-open").click(function () {
         $("#mySidenav").css("left", "0px");
+        $("#mySidenav").css("display", "block");
         $(".back-menu").css("display", "block");
         $(".back-menu").css("left", "0px");
         $(".back-menu").css("background","#000000b3");
