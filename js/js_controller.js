@@ -158,6 +158,10 @@ app.controller("defaultController", function ($scope) {
 			//angular.element(".overlay-total").css("display", "block");
 			//angular.element("body").css("overflow-y", "hidden");
 			//angular.element("body").addClass("close-total-sales");
+
+			setTimeout(function () {
+				angular.element(".ind-number").removeClass("anima-circle");
+			}, 3000);
 		});
 
 		angular.element(".overlay-total").click(function () {
