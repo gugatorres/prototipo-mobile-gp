@@ -828,6 +828,16 @@ nav.navbar {
 
 /* Histórico de pedidos */
 
+.tab-page-2 .card-pedidos .col-xs-8 {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.tab-page-2 .card-pedidos .col-xs-4 {
+    text-decoration: line-through;
+    color: #999;
+}
+
 .tab-page-hist-1 {display: block}
 .tab-page-hist-1 a{color:#000000;}
 .tab-page-hist-2 a{color:#000000;}
@@ -1632,7 +1642,7 @@ p.txt-min2 {
     top: -5px;
     right: -8px;
     display: none;
-    z-index: 15;
+    z-index: 999;
 }
 
 .anima-circle{
