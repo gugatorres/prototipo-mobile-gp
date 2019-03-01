@@ -142,7 +142,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".cam-produto").click(function(){
-			angular.element(".overlay-quest .img-produto-photo").attr("src", "images/cupom.jpeg").css("display", "block").css("width", "50%").css("margin", "auto");
+			angular.element(".overlay-quest .img-produto-photo").attr("src", "images/cupom.jpeg").css("display", "block").css("width", "100%").css("margin", "auto");
 		});
 
 		angular.element(".btn-sim").click(function () {
