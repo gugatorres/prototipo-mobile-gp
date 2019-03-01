@@ -915,7 +915,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove3").click(function(){
-			if (angular.element("#exampleInputAmount3").val() == "3"){
+			if (angular.element("#exampleInputAmount3").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount3").val(angular.element("#exampleInputAmount3").val() - 1);
@@ -927,7 +927,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove4").click(function(){
-			if (angular.element("#exampleInputAmount4").val() == "4"){
+			if (angular.element("#exampleInputAmount4").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount4").val(angular.element("#exampleInputAmount4").val() - 1);
@@ -939,7 +939,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove5").click(function(){
-			if (angular.element("#exampleInputAmount5").val() == "5"){
+			if (angular.element("#exampleInputAmount5").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount5").val(angular.element("#exampleInputAmount5").val() - 1);
