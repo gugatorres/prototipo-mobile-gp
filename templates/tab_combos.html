@@ -10,8 +10,8 @@
                     <input type="text" placeholder="O que vender hoje?">
                 </div>
                 <div class="col-xs-4" style="padding-left: 0;">
-                    <select onchange="location = this.value;">
-                        <option>Tipo:</option>
+                    <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
+                        <option hidden disabled selected>Tipo:</option>
                         <option value="#!new_pedido">Venda</option>
                         <option value="#!comodato">Comodato</option>
                         <option value="#!combos">Combo</option>
@@ -306,6 +306,13 @@
             <p>Itaipava - Lata</p>
 
             <input type="text" name="qtde" value="40" placeholder="40">
+            <select class="select-product">
+                <option hidden disabled selected>Unid</option>
+                <option>8</option>
+                <option>12</option>
+                <option>16</option>
+                <option>24</option>
+            </select>
             <input type="text" name="value" value="R$ 0,00" placeholder="R$ 0,00">
             <p class="txt-min2">Tabela 0 - AS ROTAS de R$ 80,09 à R$ 144,41</p>
             <p class="txt-estoque">Estoque: 5524</p>
