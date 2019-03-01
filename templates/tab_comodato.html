@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-xs-4" style="padding-left: 0;">
                         <select onchange="location = this.value;">
-                            <option>Tipo:</option>
+                            <option hidden disabled selected>Tipo:</option>
                             <option value="#!new_pedido">Venda</option>
                             <option value="#!comodato">Comodato</option>
                             <option value="#!combos">Combo</option>
@@ -257,6 +257,13 @@
                 <p>Engradado 600 ml</p>
     
                 <input type="text" name="qtde" value="1" placeholder="1">
+                <select class="select-product">
+                    <option hidden disabled selected>Unid</option>
+                    <option>8</option>
+                    <option>12</option>
+                    <option>16</option>
+                    <option>24</option>
+                </select>
 
                 <p class="txt-estoque">Estoque: 5524</p>
                 <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 <img style="width: 18px; margin-left: 8px;"
