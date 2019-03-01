@@ -10,7 +10,7 @@
                         <input type="text" placeholder="O que vender hoje?">
                     </div>
                     <div class="col-xs-4" style="padding-left: 0;">
-                        <select onchange="location = this.value;">
+                        <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
                             <option hidden disabled selected>Tipo:</option>
                             <option value="#!new_pedido">Venda</option>
                             <option value="#!comodato">Comodato</option>

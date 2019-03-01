@@ -5,13 +5,13 @@
         <p class="col-xs-4 text-right">012354687</p>
     </div>
 
-        <div class="search-cart">
+    <div class="search-cart">
         <div class="row">
             <div class="col-xs-8">
                 <input type="text" placeholder="O que vender hoje?">
             </div>
             <div class="col-xs-4" style="padding-left: 0;">
-                <select onchange="location = this.value;">
+                <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
                     <option hidden disabled selected>Tipo:</option>
                     <option value="#!new_pedido">Venda</option>
                     <option value="#!comodato">Comodato</option>
@@ -19,7 +19,7 @@
                     <option value="#!bonificacao">Bonificação</option>
 
                 </select>
-             </div>
+            </div>
         </div>
     </div>
 
@@ -458,7 +458,7 @@
 
     </div>
 
-    <div style="clear:both"></div>
+    <div style="clear:both; height: 100px;"></div>
 
     <a class="float-button btn-filter">
 
@@ -582,7 +582,7 @@
     </div>
 </div>
 
-<div class="overlay-modal overlay-quest">
+<div id="overlay-quest" class="overlay-modal overlay-quest">
     <div class="modal-custom" style="margin-top:50px;">
 
         <h4>Deseja anexar o comprovante de pagamento?</h4>
