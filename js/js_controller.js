@@ -890,7 +890,65 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-modal-delete").css("display", "none");
 		})
 
+		angular.element(".remove1").click(function(){
+			if (angular.element("#exampleInputAmount1").val() == "1"){
 
+			}else{
+				angular.element("#exampleInputAmount1").val(angular.element("#exampleInputAmount1").val() - 1);
+			}
+		});
+
+		angular.element(".adc1").click(function(){
+			angular.element("#exampleInputAmount1").val(parseInt(angular.element("#exampleInputAmount1").val()) + 1);
+		});
+
+		angular.element(".remove2").click(function(){
+			if (angular.element("#exampleInputAmount2").val() == "1"){
+				
+			}else{
+				angular.element("#exampleInputAmount2").val(angular.element("#exampleInputAmount2").val() - 1);
+			}
+		});
+
+		angular.element(".adc2").click(function(){
+			angular.element("#exampleInputAmount2").val(parseInt(angular.element("#exampleInputAmount2").val()) + 1);
+		});
+
+		angular.element(".remove3").click(function(){
+			if (angular.element("#exampleInputAmount3").val() == "3"){
+				
+			}else{
+				angular.element("#exampleInputAmount3").val(angular.element("#exampleInputAmount3").val() - 1);
+			}
+		});
+
+		angular.element(".adc3").click(function(){
+			angular.element("#exampleInputAmount3").val(parseInt(angular.element("#exampleInputAmount3").val()) + 1);
+		});
+
+		angular.element(".remove4").click(function(){
+			if (angular.element("#exampleInputAmount4").val() == "4"){
+				
+			}else{
+				angular.element("#exampleInputAmount4").val(angular.element("#exampleInputAmount4").val() - 1);
+			}
+		});
+
+		angular.element(".adc4").click(function(){
+			angular.element("#exampleInputAmount4").val(parseInt(angular.element("#exampleInputAmount4").val()) + 1);
+		});
+
+		angular.element(".remove5").click(function(){
+			if (angular.element("#exampleInputAmount5").val() == "5"){
+				
+			}else{
+				angular.element("#exampleInputAmount5").val(angular.element("#exampleInputAmount5").val() - 1);
+			}
+		});
+
+		angular.element(".adc5").click(function(){
+			angular.element("#exampleInputAmount5").val(parseInt(angular.element("#exampleInputAmount5").val()) + 1);
+		});
 
 	})
 

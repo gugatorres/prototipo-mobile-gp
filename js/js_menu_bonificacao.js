@@ -6,7 +6,6 @@ $(function() {
             $("#overlay").css('display','block');
             $("#buttons").css('display','block');
             $("#buttons").addClass("menu-bonificacao");
-            $(".menu-bonificacao").appendTo(".box-product");
         }
     });
     $("#overlay").click(function(){
