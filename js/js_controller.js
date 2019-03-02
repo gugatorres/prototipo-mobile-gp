@@ -623,6 +623,35 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-request").css("display", "none");
 		});
 
+		$scope.contratocomodatos = function() {
+			angular.element(".overlay-comodato").css("display", "block");
+			angular.element(".buttons-comodato").css("display", "block");
+		}
+
+		angular.element(".overlay-comodato").click(function(){
+			angular.element(this).css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
+		});
+
+		angular.element(".btn-comodato").click(function(){
+			if (angular.element(".input-select").val() == "1"){
+				angular.element(".overlay-comodato").css("display","none");
+				angular.element(".buttons-comodato").css("display","none");
+				window.location.href = "#";
+			}else{
+				angular.element(".overlay-comodato").css("display","none");
+				angular.element(".buttons-comodato").css("display","none");
+			}
+		});
+
+		angular.element(".close-alert").click(function(){
+			angular.element(".alerta-home").css("display", "none");
+		});
+
+		angular.element(".alerta-home").click(function(){
+			window.location.href = "#";
+		});
+
 		angular.element(".menu-back").removeAttr("onclick");
 		angular.element(".menu-back").attr("href","#!/meus_clientes");
 		angular.element("#mySidenav").css("display","none");
