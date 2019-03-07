@@ -476,6 +476,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display","none");
 		angular.element(".menu-requests").css("display","none");
+		angular.element(".menu-back").removeAttr("onclick");
+		angular.element(".menu-back").attr("href","#!/detalhe_clientes");
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
