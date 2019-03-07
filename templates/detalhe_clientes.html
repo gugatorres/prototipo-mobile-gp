@@ -1,15 +1,29 @@
 <div class="row detail-customers" style="padding-top: 20px;">
     <div class="nav-tab-custom">
-        <a class="tab-1 active">Minuto de Ouro</a>
+        <a style="margin-left: 10px;" class="tab-1 active">Minuto de Ouro</a>
         <a class="tab-2">Cadastro</a>
         <a class="tab-3">Histórico de pedidos</a>
-
+        <a style="margin-right: 10px;" class="tab-4">Comodatos</a>
     </div>
 
     <div class="tab-content">
 
         <div class="tab-page-1">
 
+            <div class="row alerta-home">
+
+                <div class="col-md-12 col-xs-12">
+            
+                    <div style="height: auto;" class="box-tile white">
+                        <img src="./images/notification.svg" class="alert-icon" />
+                        COMODATOS PENDENTES - 2
+                        
+                    </div>
+            
+                </div>
+            
+            </div>
+            <img src="./images/cancel.svg" class="close-alert" />
             <div class="row">
 
                 <div class="col-md-12 col-xs-12">
@@ -108,6 +122,7 @@
                 </div>
 
             </div>
+
         </div>
 
         <div class="tab-page-2">
@@ -180,6 +195,16 @@
 
         </div>
 
+        <div class="tab-page-4">
+
+            <div class="row">
+
+                <div ng-include="'include/fragment_comodato.html'"></div>
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>
@@ -198,7 +223,20 @@
 <ul class="buttons-request">
     <li> <a href="#!solicitar_inativacao">Solic. inativação </a> </li>
     <li> <a href="#!solicitar_alteracao_financ">Solic. alteração financeira </a> </li>
-    <li> <a href="#">Solic. recolha de comodatos </a> </li>
 </ul>
+
+<div class="overlay-comodato">
+    
+</div>
+<div class="buttons-comodato">
+    <h4 style="margin-left: 10px;">Deseja solicitar a recolha do comodato?</h4>
+<select style="width: 80%;height: 60px;margin-left: 10%" class="input-select">
+    <option hidden disabled selected>Selecione </option>
+    <option value="1">Sim </option>
+    <option value="2">Não </option>
+</select>
+<br>
+<a class="btn-default btn-comodato"> CONFIRMAR </a>
+</div>
 
 <script src="js/jQuery-custom.js"></script>

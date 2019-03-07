@@ -62,7 +62,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element("#mySidenav").css("display","block");
 		angular.element("#mySidenav").css("left","-310");
 		angular.element(".back-menu").css("display","none");
-		angular.element("#mySidenav").css("left","-310");
+		angular.element(".back-menu").css("left","-310");
 		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".add-product").click(function () {
@@ -506,7 +506,8 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Meus Clientes"
 		angular.element("#mySidenav").css("display","block");
 		angular.element("#mySidenav").css("left","-310");
-		angular.element(".back-menu").css("display","none");
+		angular.element(".back-menu").css("display","block");
+		angular.element(".back-menu").hide();
 		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".tab-1").click(function () {
@@ -658,6 +659,38 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-requests").click(function () {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
+		});
+
+		$scope.contratocomodatos = function() {
+			angular.element(".overlay-comodato").css("display", "block");
+			angular.element(".buttons-comodato").css("display", "block");
+		}
+
+		angular.element(".overlay-comodato").click(function(){
+			angular.element(this).css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
+		});
+
+		angular.element(".btn-comodato").click(function(){
+			if (angular.element(".input-select").val() == "1"){
+				angular.element(".overlay-comodato").css("display","none");
+				angular.element(".buttons-comodato").css("display","none");
+				window.location.href = "#";
+			}else{
+				angular.element(".overlay-comodato").css("display","none");
+				angular.element(".buttons-comodato").css("display","none");
+			}
+		});
+
+		angular.element(".close-alert").click(function(){
+			angular.element(".alerta-home").hide();
+		});
+
+		angular.element(".alerta-home").click(function(){
+			window.location.href = "#";
+			angular.element(".back-menu").css("display","block");
+			angular.element(".back-menu").css("left","0px");
+			angular.element(".back-menu").css("background","#000000b3");
 		});
 
 		angular.element(".menu-back").removeAttr("onclick");
@@ -952,7 +985,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove3").click(function(){
-			if (angular.element("#exampleInputAmount3").val() == "3"){
+			if (angular.element("#exampleInputAmount3").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount3").val(angular.element("#exampleInputAmount3").val() - 1);
@@ -964,7 +997,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove4").click(function(){
-			if (angular.element("#exampleInputAmount4").val() == "4"){
+			if (angular.element("#exampleInputAmount4").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount4").val(angular.element("#exampleInputAmount4").val() - 1);
@@ -976,7 +1009,7 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".remove5").click(function(){
-			if (angular.element("#exampleInputAmount5").val() == "5"){
+			if (angular.element("#exampleInputAmount5").val() == "1"){
 				
 			}else{
 				angular.element("#exampleInputAmount5").val(angular.element("#exampleInputAmount5").val() - 1);

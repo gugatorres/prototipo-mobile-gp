@@ -606,18 +606,6 @@ nav.navbar {
     display: none;
 }
 
-.overlay-requests {
-    position: fixed;
-    background: #000;
-    opacity: 0.1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: none;
-}
-
 .buttons-bonificacao {
     position: fixed;
     display: none;
@@ -649,6 +637,46 @@ nav.navbar {
     100%{
         opacity: 1;
     }
+}
+
+/* Recolha de comodato */
+
+.overlay-comodato {
+    position: fixed;
+    background: #000;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+.buttons-comodato {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #fff;
+    width: 80%;
+    display: none;
+    z-index: 100;
+}
+
+/* Menu Request */
+
+.overlay-requests {
+    position: fixed;
+    background: #000;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
 }
 
 .buttons-request {
@@ -789,6 +817,9 @@ nav.navbar {
     padding: 0;
     margin: 0;
     text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .nav-tab-custom a {
@@ -2401,8 +2432,11 @@ button[disabled] {
     padding-right: 10px;
     margin-right: 10px;
 }
-.alerta-home .close-alert{
-    float : right;
+.close-alert{
+    position: absolute;
+    height: 20px;
+    top: 130px;
+    right: 20px;
 }
 
 .card-customer{
