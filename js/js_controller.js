@@ -645,11 +645,11 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".close-alert").click(function(){
-			angular.element(".alerta-home").css("display", "none");
+			angular.element(".alerta-home").hide();
 		});
 
 		angular.element(".alerta-home").click(function(){
-			window.location.href = "#";
+			//window.location.href = "#";
 		});
 
 		angular.element(".menu-back").removeAttr("onclick");
