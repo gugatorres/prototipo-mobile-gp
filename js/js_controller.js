@@ -62,7 +62,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element("#mySidenav").css("display","block");
 		angular.element("#mySidenav").css("left","-310");
 		angular.element(".back-menu").css("display","none");
-		angular.element("#mySidenav").css("left","-310");
+		angular.element(".back-menu").css("left","-310");
 		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".add-product").click(function () {
@@ -469,7 +469,8 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Meus Clientes"
 		angular.element("#mySidenav").css("display","block");
 		angular.element("#mySidenav").css("left","-310");
-		angular.element(".back-menu").css("display","none");
+		angular.element(".back-menu").css("display","block");
+		angular.element(".back-menu").hide();
 		angular.element(".back-menu").css("background","#000000b3");
 
 		angular.element(".tab-1").click(function () {
@@ -649,7 +650,10 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".alerta-home").click(function(){
-			//window.location.href = "#";
+			window.location.href = "#";
+			angular.element(".back-menu").css("display","block");
+			angular.element(".back-menu").css("left","0px");
+			angular.element(".back-menu").css("background","#000000b3");
 		});
 
 		angular.element(".menu-back").removeAttr("onclick");
