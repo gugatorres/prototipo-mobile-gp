@@ -643,8 +643,7 @@ nav.navbar {
 
 .overlay-comodato {
     position: fixed;
-    background: #000;
-    opacity: 0.1;
+    background: #000000b3;
     width: 100%;
     height: 100%;
     top: 0;
@@ -669,7 +668,7 @@ nav.navbar {
 
 .overlay-requests {
     position: fixed;
-    background: #000;
+    background: #000000b3;
     opacity: 0.1;
     width: 100%;
     height: 100%;

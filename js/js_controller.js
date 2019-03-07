@@ -650,10 +650,11 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".alerta-home").click(function(){
-			window.location.href = "#";
-			angular.element(".back-menu").css("display","block");
-			angular.element(".back-menu").css("left","0px");
-			angular.element(".back-menu").css("background","#000000b3");
+			angular.element(".tab-4").addClass("active");
+			angular.element(".tab-4").css("display", "inline-block");
+			angular.element(".tab-1,.tab-2,.tab-3").removeClass("active");
+			angular.element(".tab-page-4").css("display", "block");
+			angular.element(".tab-page-1, .tab-page-2, .tab-page-3").css("display", "none");
 		});
 
 		angular.element(".menu-back").removeAttr("onclick");
