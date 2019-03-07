@@ -2399,7 +2399,10 @@ button[disabled] {
     margin-right: 10px;
 }
 .close-alert{
-    float : right;
+    position: absolute;
+    height: 20px;
+    top: 130px;
+    right: 20px;
 }
 
 .card-customer{
