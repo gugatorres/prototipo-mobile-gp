@@ -462,6 +462,43 @@ app.controller("defaultController", function ($scope) {
 		});	
 
 	})
+	
+
+	/* Comodato Item Notes Controller */
+	.controller("comodatoItemNotesController", function ($scope) {
+
+		$scope.titulo = "comodato Item Notes Controller"
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "#!carrinho");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").css("display","none");
+
+		angular.element(".add-product").click(function () {
+			angular.element(".overlay-modal").css("display", "block");
+		});
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
+
+		angular.element(".btn-remove").click(function(){
+			if (angular.element(".input-value").val() == "0"){
+				
+			}else{
+				angular.element(".input-value").val(angular.element(".input-value").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add").click(function(){
+			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
+		});
+
+		
+	})
 
 	/* Meus Clientes Controller */
 	.controller("meusClientesController", function ($scope) {

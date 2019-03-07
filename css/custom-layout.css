@@ -2174,6 +2174,40 @@ button[disabled] {
     color:#c62222 !important;
 }
 
+.list-notes{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-notes li {
+    border-bottom: solid 1px #e8e8e8;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    background: #f7f7f7;
+    padding: 5px;
+}
+
+.list-notes .col-xs-6 {
+    line-height: 35px;
+}
+
+.list-notes input {
+    text-align: center;
+}
+
+.list-notes .row {
+    height: 35px;
+    display: -webkit-box;
+}
+
+#comentarios-notes {
+    width: 100%;
+    padding: 10px;
+}
+
+#comentarios-notes::placeholder{color:#999999;}
+
 /* Element input Mobile */
 
 
