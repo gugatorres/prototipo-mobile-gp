@@ -53,19 +53,6 @@ $(document).ready(function () {
         $(".menu-open").css("display", "block");
         $("body").css("overflow-y", "auto");
     });
-    
-
-    $(".input-sum").change(function(){
-        var total = 0;
-        $(".input-sum").each(function(index,element){
-           if ($(element).val()) {
-             total+= parseInt($(element).val());
-           }
-       });
-       $(".lbl-total").text(total);
-      });
-
-
 
 });
 

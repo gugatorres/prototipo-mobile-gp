@@ -488,16 +488,29 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-modal").css("display", "none");
 		});
 
+		angular.element(".input-sum").change(function(){
+			var total = 0;
+			angular.element(".input-sum").each(function(index,element){
+			   if (angular.element(element).val()) {
+				 total+= parseInt(angular.element(element).val());
+			   }
+		   });
+		   angular.element(".lbl-total").text(total);
+		  });
+
+
 		angular.element(".btn-remove").click(function(){
 			if (angular.element(".input-value").val() == "0"){
 				
 			}else{
 				angular.element(".input-value").val(angular.element(".input-value").val() - 1);
+				angular.element(".input-value").trigger("change");
 			}
 		});
 
 		angular.element(".btn-add").click(function(){
 			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
+			angular.element(".input-value").trigger("change");
 		});
 
 
@@ -507,11 +520,13 @@ app.controller("defaultController", function ($scope) {
 				
 			}else{
 				angular.element(".input-value2").val(angular.element(".input-value2").val() - 1);
+				angular.element(".input-value2").trigger("change");
 			}
 		});
 
 		angular.element(".btn-add2").click(function(){
 			angular.element(".input-value2").val(parseInt(angular.element(".input-value2").val()) + 1);
+			angular.element(".input-value2").trigger("change");
 		});
 
 
@@ -520,11 +535,13 @@ app.controller("defaultController", function ($scope) {
 				
 			}else{
 				angular.element(".input-value3").val(angular.element(".input-value3").val() - 1);
+				angular.element(".input-value3").trigger("change");
 			}
 		});
 
 		angular.element(".btn-add3").click(function(){
 			angular.element(".input-value3").val(parseInt(angular.element(".input-value3").val()) + 1);
+			angular.element(".input-value3").trigger("change");
 		});
 
 
@@ -533,11 +550,13 @@ app.controller("defaultController", function ($scope) {
 				
 			}else{
 				angular.element(".input-value4").val(angular.element(".input-value4").val() - 1);
+				angular.element(".input-value4").trigger("change");
 			}
 		});
 
 		angular.element(".btn-add4").click(function(){
 			angular.element(".input-value4").val(parseInt(angular.element(".input-value4").val()) + 1);
+			angular.element(".input-value4").trigger("change");
 		});
 
 
