@@ -83,6 +83,18 @@ label {
     width: 100%;
 }
 
+.btn-recolha {
+    text-align: center;
+    padding: 15px 5px;
+    display: block;
+    background: #c62222;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+
 a{text-decoration: none;}
 a:hover{text-decoration: none;}
 
@@ -1338,6 +1350,7 @@ a .card-product {
 }
 
 .status-pago{border-left: solid 4px #7fc317 !important; }
+.status-pendente{border-left: solid 4px #eeee00 !important; }
 .status-nao-pago{border-left: solid 4px #cc0808 !important;}
 
 .box-pedidos .col-xs-8 {
@@ -1412,6 +1425,14 @@ a .card-product {
 
 .name-bonificacao {
     margin-top: 15px !important;
+}
+
+.name-comodato {
+    margin-top: 15px !important;
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #c62222;
 }
 
 .gerar-pedido .cnpj {
@@ -1988,6 +2009,16 @@ p.txt-min2 {
     border: none;
     padding: 10px 20px;
     width: 48%;
+}
+
+.btn-contrato {
+    text-align: center;
+    background: #c62222;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    width: 45%;
+    height: 40px;
 }
 
 button[disabled] {
