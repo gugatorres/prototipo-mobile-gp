@@ -117,5 +117,17 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/comodato_item_notes.html",
             controller: "comodatoItemNotesController"
         })
+        .when("/comodatos_contrato", {
+            templateUrl: "./templates/comodatos_contrato.html",
+            controller: "ComodatosContratoController"
+        })
+        .when("/comodatos_pendentes", {
+            templateUrl: "./templates/comodatos_pendentes.html",
+            controller: "ComodatosPendentesController"
+        })
+        .when("/comodatos_contrato_pend", {
+            templateUrl: "./templates/comodatos_contrato_pend.html",
+            controller: "ComodatosContratoPendentesController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" });
 });
