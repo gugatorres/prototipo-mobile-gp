@@ -2235,6 +2235,14 @@ button[disabled] {
     color:#c62222 !important;
 }
 
+.nav-item a {
+    color: #c62222;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
 .list-notes{
     list-style: none;
     padding: 0;
