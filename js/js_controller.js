@@ -497,44 +497,47 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
 		});
 
-		
-	})
 
-	/* Comodato Item Notes Controller */
-	.controller("comodatoItemNotesController", function ($scope) {
 
-		$scope.titulo = "comodato Item Notes Controller"
-		angular.element("body").css("overflow-y", "auto");
-		angular.element(".bar-customer-back").css("display", "none");
-		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
-		angular.element(".search, .sync").addClass("cart");
-		angular.element(".cart").removeClass("search, sync");
-		angular.element(".cart").attr("href", "#!carrinho");
-		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".search").css("display","none");
-		angular.element(".menu-requests").css("display","none");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href","#!/detalhe_clientes");
-
-		angular.element(".add-product").click(function () {
-			angular.element(".overlay-modal").css("display", "block");
-		});
-
-		angular.element(".close-modal").click(function () {
-			angular.element(".overlay-modal").css("display", "none");
-		});
-
-		angular.element(".btn-remove").click(function(){
-			if (angular.element(".input-value").val() == "0"){
+		angular.element(".btn-remove2").click(function(){
+			if (angular.element(".input-value2").val() == "0"){
 				
 			}else{
-				angular.element(".input-value").val(angular.element(".input-value").val() - 1);
+				angular.element(".input-value2").val(angular.element(".input-value2").val() - 1);
 			}
 		});
 
-		angular.element(".btn-add").click(function(){
-			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
+		angular.element(".btn-add2").click(function(){
+			angular.element(".input-value2").val(parseInt(angular.element(".input-value2").val()) + 1);
 		});
+
+
+		angular.element(".btn-remove3").click(function(){
+			if (angular.element(".input-value3").val() == "0"){
+				
+			}else{
+				angular.element(".input-value3").val(angular.element(".input-value3").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add3").click(function(){
+			angular.element(".input-value3").val(parseInt(angular.element(".input-value3").val()) + 1);
+		});
+
+
+		angular.element(".btn-remove4").click(function(){
+			if (angular.element(".input-value4").val() == "0"){
+				
+			}else{
+				angular.element(".input-value4").val(angular.element(".input-value4").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add4").click(function(){
+			angular.element(".input-value4").val(parseInt(angular.element(".input-value4").val()) + 1);
+		});
+
+
 		
 	})
 
@@ -713,7 +716,7 @@ app.controller("defaultController", function ($scope) {
 			if (angular.element(".input-select").val() == "1"){
 				angular.element(".overlay-comodato").css("display","none");
 				angular.element(".buttons-comodato").css("display","none");
-				window.location.href = "#!/comodato_item_notes";
+				window.location.href = "#";
 			}else{
 				angular.element(".overlay-comodato").css("display","none");
 				angular.element(".buttons-comodato").css("display","none");
@@ -725,11 +728,10 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".alerta-home").click(function(){
-			angular.element(".tab-4").addClass("active");
-			angular.element(".tab-4").css("display", "inline-block");
-			angular.element(".tab-1,.tab-2,.tab-3").removeClass("active");
-			angular.element(".tab-page-4").css("display", "block");
-			angular.element(".tab-page-1, .tab-page-2, .tab-page-3").css("display", "none");
+			window.location.href = "#";
+			angular.element(".back-menu").css("display","block");
+			angular.element(".back-menu").css("left","0px");
+			angular.element(".back-menu").css("background","#000000b3");
 		});
 
 		angular.element(".menu-back").removeAttr("onclick");
