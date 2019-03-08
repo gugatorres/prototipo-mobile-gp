@@ -55,6 +55,18 @@ $(document).ready(function () {
     });
     
 
+    $(".input-sum").change(function(){
+        var total = 0;
+        $(".input-sum").each(function(index,element){
+           if ($(element).val()) {
+             total+= parseInt($(element).val());
+           }
+       });
+       $(".lbl-total").text(total);
+      });
+
+
+
 });
 
 function goBack() {
