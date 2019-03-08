@@ -476,6 +476,9 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").attr("href", "#!carrinho");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display","none");
+		angular.element(".menu-requests").css("display","none");
+		angular.element(".menu-back").removeAttr("onclick");
+		angular.element(".menu-back").attr("href","#!/comodatos_contrato_pend");
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
@@ -615,6 +618,70 @@ app.controller("defaultController", function ($scope) {
 		//angular.element(".search img").removeAttr("src");
 	})
 
+	/* Comodatos Cotrato Controller */
+	.controller("ComodatosContratoController", function ($scope) {
+		$scope.titulo = "Contrato Comodatos"
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-requests").css("display","none");
+		angular.element(".search").css("display","none");
+		angular.element(".sync").css("display","none");
+		angular.element(".cart").css("display","none");
+		angular.element(".menu-back").removeAttr("onclick");
+		angular.element(".menu-back").attr("href","#!/detalhe_clientes");
+
+		angular.element(".btn-recolha").click(function(){
+			angular.element(".overlay-comodato").css("display","block");
+			angular.element(".buttons-comodato").css("display","block");
+		});
+
+		angular.element(".overlay-comodato").click(function(){
+			angular.element(this).css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
+		});
+
+		angular.element(".btn-sim-contrato").click(function(){
+			angular.element(".overlay-comodato").css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
+			window.location.href = "#!/detalhe_clientes";
+		});
+
+		angular.element(".btn-nao-contrato").click(function(){
+			angular.element(".overlay-comodato").css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
+		});
+	})
+
+	/* Comodatos Pendentes Controller */
+	.controller("ComodatosPendentesController", function ($scope) {
+		$scope.titulo = "Comodatos Pendentes"
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-requests").css("display","none");
+		angular.element(".search").css("display","none");
+		angular.element(".sync").css("display","none");
+		angular.element(".cart").css("display","none");
+		angular.element(".menu-back").removeAttr("onclick");
+		angular.element(".menu-back").attr("href","#!/detalhe_clientes");
+
+		$scope.comodatopendente = function() {
+			window.location.href = "#!/comodatos_contrato_pend";
+		}
+	})
+
+	/* Comodatos Contrato Pendentes Controller */
+	.controller("ComodatosContratoPendentesController", function ($scope) {
+		$scope.titulo = "Comodatos Contrato Pendentes"
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-requests").css("display","none");
+		angular.element(".search").css("display","none");
+		angular.element(".sync").css("display","none");
+		angular.element(".cart").css("display","none");
+		angular.element(".menu-back").removeAttr("onclick");
+		angular.element(".menu-back").attr("href","#!/comodatos_pendentes");
+
+		angular.element(".card-product").click(function(){
+			window.location.href = "#!/comodato_item_notes";
+		});
+	})
 
 	/* detalhe Clientes Controller */
 	.controller("detalheClientesController", function ($scope) {
@@ -701,38 +768,18 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
 		});
-
-		$scope.contratocomodatos = function() {
-			angular.element(".overlay-comodato").css("display", "block");
-			angular.element(".buttons-comodato").css("display", "block");
-		}
-
-		angular.element(".overlay-comodato").click(function(){
-			angular.element(this).css("display","none");
-			angular.element(".buttons-comodato").css("display","none");
-		});
-
-		angular.element(".btn-comodato").click(function(){
-			if (angular.element(".input-select").val() == "1"){
-				angular.element(".overlay-comodato").css("display","none");
-				angular.element(".buttons-comodato").css("display","none");
-				window.location.href = "#";
-			}else{
-				angular.element(".overlay-comodato").css("display","none");
-				angular.element(".buttons-comodato").css("display","none");
-			}
-		});
-
+  
 		angular.element(".close-alert").click(function(){
 			angular.element(".alerta-home").hide();
 		});
 
 		angular.element(".alerta-home").click(function(){
-			window.location.href = "#";
-			angular.element(".back-menu").css("display","block");
-			angular.element(".back-menu").css("left","0px");
-			angular.element(".back-menu").css("background","#000000b3");
+			window.location.href = "#!/comodatos_pendentes";
 		});
+
+		$scope.contratocomodatos = function() {
+			window.location.href = "#!/comodatos_contrato";
+		}
 
 		angular.element(".menu-back").removeAttr("onclick");
 		angular.element(".menu-back").attr("href","#!/meus_clientes");
