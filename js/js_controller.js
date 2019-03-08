@@ -462,6 +462,7 @@ app.controller("defaultController", function ($scope) {
 		});	
 
 	})
+	
 
 	/* Comodato Item Notes Controller */
 	.controller("comodatoItemNotesController", function ($scope) {
@@ -498,6 +499,48 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".btn-add").click(function(){
 			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
 		});
+
+
+
+		angular.element(".btn-remove2").click(function(){
+			if (angular.element(".input-value2").val() == "0"){
+				
+			}else{
+				angular.element(".input-value2").val(angular.element(".input-value2").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add2").click(function(){
+			angular.element(".input-value2").val(parseInt(angular.element(".input-value2").val()) + 1);
+		});
+
+
+		angular.element(".btn-remove3").click(function(){
+			if (angular.element(".input-value3").val() == "0"){
+				
+			}else{
+				angular.element(".input-value3").val(angular.element(".input-value3").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add3").click(function(){
+			angular.element(".input-value3").val(parseInt(angular.element(".input-value3").val()) + 1);
+		});
+
+
+		angular.element(".btn-remove4").click(function(){
+			if (angular.element(".input-value4").val() == "0"){
+				
+			}else{
+				angular.element(".input-value4").val(angular.element(".input-value4").val() - 1);
+			}
+		});
+
+		angular.element(".btn-add4").click(function(){
+			angular.element(".input-value4").val(parseInt(angular.element(".input-value4").val()) + 1);
+		});
+
+
 		
 	})
 
@@ -725,7 +768,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
 		});
-
+  
 		angular.element(".close-alert").click(function(){
 			angular.element(".alerta-home").hide();
 		});
