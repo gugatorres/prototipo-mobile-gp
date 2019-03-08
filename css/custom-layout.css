@@ -2211,8 +2211,6 @@ button[disabled] {
 }
 
 .list-notes li {
-    border-bottom: solid 1px #e8e8e8;
-    margin-bottom: 5px;
     padding-bottom: 5px;
     background: #f7f7f7;
     padding: 5px;
