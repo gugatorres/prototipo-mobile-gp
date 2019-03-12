@@ -14,8 +14,8 @@
                 <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
                     <option hidden disabled selected>Tipo:</option>
                     <option value="#!new_pedido">Venda</option>
+                    <option value="#!new_pedido">Consignação</option>                    
                     <option value="#!comodato">Comodato</option>
-                    <option value="#!combos">Combo</option>
                     <option value="#!bonificacao">Bonificação</option>
 
                 </select>
@@ -35,6 +35,69 @@
 <div class="gerar-pedido" style="padding-top:95px;">
 
     <div class="row" style="position:relative">
+
+        <!--  Card Combo  -->
+        <a class="carrinho-bonificacao">
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-4" style="padding:0; margin-top: 10px;">
+
+                        <img src="produtos/01.jpg" style="width: 40px;" alt="">
+                        <span class="icon-plus">+</span>
+                        <img src="produtos/06.jpg" style="width: 40px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-5">
+                        <p class="name" style="margin-top: 8px;">Itaipava + TNT</p>
+                        <p class="cnpj">001234458741</p>
+                        <p class="preco">R$ 0,00</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
+         <!--  Card Combo  -->
+         <a class="carrinho-bonificacao">
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-4" style="padding:0; margin-top: 10px;">
+
+                        <img src="produtos/04.jpg" style="width: 40px;" alt="">
+                        <span class="icon-plus">+</span>
+                        <img src="produtos/06.jpg" style="width: 40px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-5">
+                        <p class="name" style="margin-top: 8px;">GO Draft + TNT</p>
+                        <p class="cnpj">001234458741</p>
+                        <p class="preco">R$ 0,00</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
 
         <!--  Card Product  -->
         <a class="carrinho-bonificacao">
@@ -538,7 +601,7 @@
 
             <input type="text" name="qtde" value="40" placeholder="40">
             <select class="select-product">
-                <option hidden disabled selected>Unid</option>
+                <option hidden disabled selected>UN</option>
                 <option>8</option>
                 <option>12</option>
                 <option>16</option>
