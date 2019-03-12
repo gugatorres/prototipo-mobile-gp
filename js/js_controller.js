@@ -653,20 +653,15 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-comodato").css("display","block");
 		});
 
-		angular.element(".overlay-comodato").click(function(){
-			angular.element(this).css("display","none");
-			angular.element(".buttons-comodato").css("display","none");
-		});
-
 		angular.element(".btn-sim-contrato").click(function(){
-			angular.element(".overlay-comodato").css("display","none");
+			//angular.element(".overlay-comodato").css("display","block");
 			angular.element(".buttons-comodato").css("display","none");
-			window.location.href = "#!/detalhe_clientes";
+			angular.element(".modal-custom").css("display","block");
 		});
 
 		angular.element(".btn-nao-contrato").click(function(){
-			angular.element(".overlay-comodato").css("display","none");
-			angular.element(".buttons-comodato").css("display","none");
+			//angular.element(".overlay-comodato").css("display","none");
+			//angular.element(".buttons-comodato").css("display","none");
 		});
 	})
 
