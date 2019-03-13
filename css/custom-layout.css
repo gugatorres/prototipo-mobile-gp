@@ -331,7 +331,7 @@ nav.navbar {
     box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: 1;
     height: 55px;
 }
 
