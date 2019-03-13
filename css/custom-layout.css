@@ -2242,8 +2242,9 @@ button[disabled] {
     color: #c62222;
     font-size: 12px;
     text-align: center;
-    display: block;
+    display: inline-block;
     font-weight: bold;
+    vertical-align: top;
 }
 
 .list-notes{
@@ -2256,7 +2257,7 @@ button[disabled] {
     margin-bottom: 5px;
     padding-bottom: 5px;
     background: #f7f7f7;
-    padding: 5px;
+    padding: 10px;
 }
 
 .list-notes .col-xs-6 {
