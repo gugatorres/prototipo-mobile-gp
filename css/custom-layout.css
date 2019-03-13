@@ -2276,6 +2276,7 @@ button[disabled] {
 #comentarios-notes {
     width: 100%;
     padding: 10px;
+    border: solid 1px #999;
 }
 
 #comentarios-notes::placeholder{color:#999999;}
