@@ -331,7 +331,7 @@ nav.navbar {
     box-shadow: rgba(0,0,0,0.2) 0px 0px 10px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
     height: 55px;
 }
 
@@ -2222,7 +2222,7 @@ button[disabled] {
 }
 
 .tipo-venda {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -2398,19 +2398,19 @@ button[disabled] {
     height: 85px;
     text-transform: uppercase;
 }
-.minha-meta .bar-loading{
-    height: 4px;
-    top: 0px;
-    left: 1px;
+.minha-meta .bar-loading {
+    height: 12px;
+    top: -2px;
+    left: 0px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
 }
-.minha-meta .loading-customers{
-    border-radius: 5px;
+.minha-meta .loading-customers {
     margin-top: 3px;
-    height: 7px;
+    height: 10px;
     border-top: 1px solid #ccc;
     border-radius: 10px;
+    overflow: hidden;
 }
 .minha-meta .renda-variavel .bar-loading{
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -2452,9 +2452,12 @@ button[disabled] {
     animation-name: animabar_devolucao;
     width: 5%;
 }
-.minha-meta h6{
+.minha-meta h6 {
     text-align: left;
-    margin: 5px 0px;    
+    margin: 5px 0px;
+    font-size: 8px;
+    color: #666;
+    line-height: 10px;
 }
 
 .alerta-home .box-tile{
