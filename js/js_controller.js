@@ -791,6 +791,14 @@ app.controller("defaultController", function ($scope) {
 			window.location.href = "#!/comodatos_pendentes";
 		});
 
+		angular.element(".btn-sim").click(function(){
+			angular.element(".checkin-cliente").css("display","none");
+		});
+
+		angular.element(".btn-nao").click(function(){
+			angular.element(".checkin-cliente").css("display","none");
+		});
+
 		$scope.contratocomodatos = function() {
 			window.location.href = "#!/comodatos_contrato";
 		}
