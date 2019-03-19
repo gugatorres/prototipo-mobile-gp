@@ -1,19 +1,58 @@
-<div class="col-md-12">
-	<h1>{{ titulo }}</h1>
-</div>
+<div class="row visita-gestor" style="padding-top:20px;">
 
-<div class="col-md-6">
+	<div class="col-md-12 col-xs-12">
+		<div class="box-tile white" style="padding:15px;">
 
-	<div class="box-chart">
+			<div class="row">
 
+				<div class="col-xs-12" style="margin-bottom: 10px;">
+					<input type="text" placeholder="Nome do contato">
+				</div>
+
+				<div class="col-xs-6">
+					<input type="text" placeholder="CEP">
+				</div>
+
+				<div class="col-xs-12">
+					<input type="text" placeholder="Rua">
+				</div>
+				<div class="col-xs-12">
+					<input type="text" placeholder="Numero">
+				</div>
+
+				<div class="col-xs-12">
+					<input type="text" placeholder="Bairro">
+				</div>
+
+				<div class="col-xs-9">
+					<input type="text" placeholder="Cidade">
+				</div>
+
+				<div class="col-xs-3">
+					<input type="text" placeholder="UF">
+				</div>
+
+				<div class="col-xs-12" style="margin-top: 10px;">
+					<textarea rows="3" placeholder="Comentários"></textarea>
+				</div>
+
+				<div class="col-xs-12" style="margin-top: 10px;">
+					<a class="btn-default enviar-solicitacao" style="margin-top: 0;">SALVAR</a>
+				</div>
+
+			</div>
+
+		</div>
 	</div>
 
 </div>
 
-<div class="col-md-6">
-
-	<div class="box-chart">
-
+<div class="overlay-modal overlay-solicitacao-enviada">
+		<div class="modal-custom">
+			<h3 class="header-modal">Solicitação Enviada com Sucesso!</h3>
+			<img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
+			<div class="modal-conteudo">
+				<a class="btn-default solicitacao-voltar">Voltar</a>
+			</div>
+		</div>
 	</div>
-
-</div>

@@ -2625,3 +2625,25 @@ button[disabled] {
     bottom: 0;
     left: 0;
 }
+
+/* Visita do Gestor */
+
+.visita-gestor input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+.visita-gestor textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+.visita-gestor input::placeholder {
+    color:#999999;
+}
+
+.visita-gestor textarea::placeholder {
+    color:#999999;
+}
