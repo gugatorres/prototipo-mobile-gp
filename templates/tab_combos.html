@@ -11,7 +11,6 @@
                 </div>
                 <div class="col-xs-4" style="padding-left: 0;">
                     <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
-                        <option hidden disabled selected>Operação:</option>
                         <option value="#!new_pedido">Venda</option>
                         <option value="#!new_pedido">Consignação</option> 
                         <option value="#!new_pedido">Troca</option>        
@@ -232,21 +231,16 @@
 
     <div style="clear:both"></div>
 
-    <a class="float-button btn-filter">
+        <div class="navigation-bottom">
+                <ul>
+                    <li class="col-xs-4"><a href="#!new_pedido" class="link-mercado"> <img src="images/mercado.svg" alt=""> <span>Mercado</span>
+                        </a></li>
+                 
+                    <li class="col-xs-4 active"><a href="#!combos" class="link-combo"> <img src="images/combo.svg" alt=""> <span>Combos</span> </a></li>
+                    <li class="col-xs-4"><a class="btn-filter"> <img src="images/filter.svg" alt=""> <span>Filtro</span> </a></li>
+                </ul>
+            </div>
 
-            <img src="images/filter.svg" alt="" style="margin-left: 22px; margin-top: 23px; width: 25px;">
-        
-        </a>
-<!--
-    <div class="navigation-bottom">
-        <ul>
-            <li><a href="#!new_pedido" class="link-mercado"> <img src="images/mercado.svg" alt=""> <span>Mercado</span> </a></li>
-            <li><a href="#!bonificacao" class="link-bonificacao"> <img src="images/bonificacao.svg" alt=""> <span>Bonificações</span> </a></li>
-            <li class="active"><a href="#!combos" class="link-combo"> <img src="images/combo.svg" alt=""> <span>Combos</span> </a></li>
-            <li><a class="btn-filter"> <img src="images/filter.svg" alt=""> <span>Filtro</span> </a></li>
-        </ul>
-    </div>
--->
 
 </div>
 
