@@ -1262,6 +1262,51 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 		});
 
+		angular.element(".btn-add-01").click(function () {
+			angular.element(".add-new-pack-01").css("display", "block");
+		});
+
+		angular.element(".modal-btn-add-01").click(function(){
+			var valorPack1 = angular.element(".valor-pack1").val();
+			angular.element("#prod-itaipava tbody").append("<tr><td>" + valorPack1 + "</td><td><input type=text></td><td><input type=text>	</td><td><input type=text></td></tr>");
+			angular.element(".add-new-pack-01").css("display","none");
+			angular.element(".valor-pack1").val("");
+		});
+
+		angular.element(".btn-add-02").click(function () {
+			angular.element(".add-new-pack-02").css("display", "block");
+		});
+
+		angular.element(".modal-btn-add-02").click(function(){
+			var valorPack2 = angular.element(".valor-pack2").val();
+			angular.element("#prod-crystal tbody").append("<tr><td>" + valorPack2 + "</td><td><input type=text></td><td><input type=text>	</td><td><input type=text></td></tr>");
+			angular.element(".add-new-pack-02").css("display","none");
+			angular.element(".valor-pack2").val("");
+		});
+
+
+		angular.element(".btn-add-03").click(function () {
+			angular.element(".add-new-pack-03").css("display", "block");
+		});
+
+		angular.element(".modal-btn-add-03").click(function(){
+			var valorPack3 = angular.element(".valor-pack3").val();
+			angular.element("#prod-go-draft tbody").append("<tr><td>" + valorPack3 + "</td><td><input type=text></td><td><input type=text>	</td><td><input type=text></td></tr>");
+			angular.element(".add-new-pack-03").css("display","none");
+			angular.element(".valor-pack3").val("");
+		});
+
+		angular.element(".btn-add-04").click(function () {
+			angular.element(".add-new-pack-04").css("display", "block");
+		});
+
+		angular.element(".modal-btn-add-04").click(function(){
+			var valorPack4 = angular.element(".valor-pack4").val();
+			angular.element("#prod-premium tbody").append("<tr><td>" + valorPack4 + "</td><td><input type=text></td><td><input type=text>	</td><td><input type=text></td></tr>");
+			angular.element(".add-new-pack-04").css("display","none");
+			angular.element(".valor-pack4").val("");
+		});
+
 	})
 
 	/* Qustionário Controller */

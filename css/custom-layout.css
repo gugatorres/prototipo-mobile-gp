@@ -2205,6 +2205,67 @@ button[disabled] {
     border-bottom: solid 1px #CCC;
 }
 
+.questionarios-detalhe .titulo-produto {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #c62222;
+    color: #FFF;
+    position: relative;
+}
+
+.tipo-venda label {
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.tipo-venda select {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 10px;
+    border: solid 1px #CCC;
+}
+
+.add-new-pack-01 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.add-new-pack-02 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.add-new-pack-03 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.add-new-pack-04 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.btn-add-line {
+    background: #650404;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-weight: bold;
+}
+
 .qcampos table {
     width: 100%;
 }

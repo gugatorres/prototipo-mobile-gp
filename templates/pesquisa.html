@@ -1,132 +1,191 @@
-<div class="pesquisas" style="padding-top:15px;">
+<script src="js/js_swipe_detalhe.js"></script>
 
-    <div class="page-pesquisa01">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box-tile tile-perguntas white">
+<div id="quest" class="questionarios-detalhe" style="position: relative;">
 
-                   01 - Loren ipsum dolar asset amet?
-                </div>
-            </div>
-        </div>
+    <div class="qcampos">
 
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile tile-respostas white">
+        <div class="tipo-venda text-center">
 
-                    <button class="btn-resposta btn-sim">SIM</button>
-                    <button class="btn-resposta btn-nao">NÃO</button>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile white" style="height:auto;">
-                    <img src="" class="img-produto-photo" alt="" style="display:none;">
-                    <img src="images/camera.svg" class="cam-produto" alt="" style="width: 50px; display: block; margin: auto; padding-top: 20px; padding-bottom: 20px;">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-xs-12">
-                <button class="btn-default" disabled="disabled"> PRÓXIMO > </button>
-            </div>
+            <label for="embalagem">Embalagem:</label>
+            <select name="embalagem">
+                <option>CERVEJA GARRAFA 300ML</option>
+                <option>CERVEJA GARRAFA 600ML</option>
+                <option>CERVEJA LATA 350ML, CX 12</option>
+            </select>
+            <label for="origem">Origem:</label>
+            <select name="origem">
+                <option>Vendedor</option>
+                <option>Externo</option>
+            </select>
 
         </div>
 
-    </div>
-
-    <div class="page-pesquisa02" style="display:none;">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box-tile tile-perguntas white">
-
-                    02 - Loren ipsum dolar asset amet?
-                </div>
-            </div>
+        <div class="titulo-produto">
+            ITAIPAVA
+            <button class="btn-add-line btn-add-01">+</button>
         </div>
+        <table id="prod-itaipava">
+            <thead>
+                <tr>
+                    <th class="text-center">Pack</th>
+                    <th class="text-center">Volume</th>
+                    <th class="text-center">PP UN</th>
+                    <th class="text-center">PV CX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Packs -->
+                <tr>
+                    <td>14</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <!-- Packs -->
 
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile tile-respostas white">
 
-                    <button class="btn-resposta btn-sim">SIM</button>
-                    <button class="btn-resposta btn-nao">NÃO</button>
+            </tbody>
+        </table>
 
-                </div>
-            </div>
+        <div class="titulo-produto">
+            CRYSTAL
+            <button class="btn-add-line btn-add-02">+</button>
         </div>
+        <table id="prod-crystal" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th class="text-center">Pack</th>
+                    <th class="text-center">Volume</th>
+                    <th class="text-center">PP UN</th>
+                    <th class="text-center">PV CX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Packs -->
+                <tr>
+                    <td>24</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile white" style="height:auto;">
-                    <img src="" class="img-produto-photo" alt="" style="display:none;">
-                    <img src="images/camera.svg" class="cam-produto" alt="" style="width: 50px; display: block; margin: auto; padding-top: 20px; padding-bottom: 20px;">
-                </div>
-            </div>
+        <div class="titulo-produto">
+            ITAIPAVA GO DRAFT
+            <button class="btn-add-line btn-add-03">+</button>
         </div>
+        <table id="prod-go-draft" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th class="text-center">Pack</th>
+                    <th class="text-center">Volume</th>
+                    <th class="text-center">PP UN</th>
+                    <th class="text-center">PV CX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Packs -->
+                <tr>
+                    <td>24</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="row">
-
-            <div class="col-xs-12">
-                <button class="btn-default" disabled="disabled"> PRÓXIMO > </button>
-            </div>
-
+        <div class="titulo-produto">
+            ITAIPAVA PREMIUM
+            <button class="btn-add-line btn-add-04">+</button>
         </div>
-
-    </div>
-
-    <div class="page-pesquisa03" style="display:none;">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box-tile tile-perguntas white">
-
-                    03 - Loren ipsum dolar asset amet? </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile tile-respostas white">
-
-                    <button class="btn-resposta btn-sim">SIM</button>
-                    <button class="btn-resposta btn-nao">NÃO</button>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <div class="box-tile white" style="height:auto;">
-                    <img src="" class="img-produto-photo" alt="" style="display:none;">
-                    <img src="images/camera.svg" class="cam-produto" alt="" style="width: 50px; display: block; margin: auto; padding-top: 20px; padding-bottom: 20px;">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-xs-12">
-                <button class="btn-default finalizar-questionario" disabled="disabled"> FINALIZAR > </button>
-            </div>
-
-        </div>
-
+        <table id="prod-premium" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th class="text-center">Pack</th>
+                    <th class="text-center">Volume</th>
+                    <th class="text-center">PP UN</th>
+                    <th class="text-center">PV CX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Packs -->
+                <tr>
+                    <td>24</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </div>
 
-<div class="overlay-modal overlay-finalizar-questionario">
-    <div class="modal-custom">
-        <h3 class="header-modal">Questionário Respondido com Sucesso!</h3>
-        <img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
-        <div class="modal-conteudo">
-            <a href="#!detalhe_clientes" class="btn-default">Detalhes do Cliente</a>
+<div class="overlay-modal add-new-pack-01">
+    <div class="modal-custom" style="margin-top:100px;">
+        <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+
+        <div class="text-center">
+            <p>Quantidade:</p>
+            <input type="number" class="valor-pack1" type="text">
         </div>
+
+        <div class="row">
+            <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-01">Add</button></div>
+            <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+        </div>
+
     </div>
 </div>
+
+<div class="overlay-modal add-new-pack-02">
+        <div class="modal-custom" style="margin-top:100px;">
+            <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+    
+            <div class="text-center">
+                <p>Quantidade:</p>
+                <input type="number" class="valor-pack2" type="text">
+            </div>
+    
+            <div class="row">
+                <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-02">Add</button></div>
+                <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="overlay-modal add-new-pack-03">
+            <div class="modal-custom" style="margin-top:100px;">
+                <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+        
+                <div class="text-center">
+                    <p>Quantidade:</p>
+                    <input type="number" class="valor-pack3" type="text">
+                </div>
+        
+                <div class="row">
+                    <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-03">Add</button></div>
+                    <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="overlay-modal add-new-pack-04">
+                <div class="modal-custom" style="margin-top:100px;">
+                    <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+            
+                    <div class="text-center">
+                        <p>Quantidade:</p>
+                        <input type="number" class="valor-pack4" type="text">
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-04">Add</button></div>
+                        <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+                    </div>
+            
+                </div>
+            </div>
