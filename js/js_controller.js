@@ -1262,6 +1262,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 		});
 
+		angular.element(".btn-nao").click(function(){
+			angular.element(".overlay-modal").css("display","none");
+		})
+
 		angular.element(".btn-add-01").click(function () {
 			angular.element(".add-new-pack-01").css("display", "block");
 		});
