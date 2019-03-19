@@ -1430,6 +1430,10 @@ a .card-product {
     margin-top: 15px !important;
 }
 
+.carrinho-bonificacao .name {
+    margin-top: 8px;
+}
+
 .name-comodato {
     margin-top: 15px !important;
     margin-top: 12px;

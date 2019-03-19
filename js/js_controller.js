@@ -129,6 +129,13 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* Detalhes Pedido Controller */
+	.controller("DetalhesPedidoController", function ($scope) {
+
+		$scope.titulo = "Detalhes Pedido"
+		angular.element(".bar-customer-back").css("display", "block");
+	})
+
 	/* Gerar Pedidos Controller */
 	.controller("newPedidoController", function ($scope) {
 

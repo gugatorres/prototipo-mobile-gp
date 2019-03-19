@@ -65,6 +65,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/new_pedido.html",
             controller: "newPedidoController"
         })
+        .when("/detalhes_pedido", {
+            templateUrl: "./templates/detalhes_pedido.html",
+            controller: "DetalhesPedidoController"
+        })
         .when("/carrinho", {
             templateUrl: "./templates/carrinho.html",
             controller: "carrinhoController"
