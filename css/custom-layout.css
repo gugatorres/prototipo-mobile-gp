@@ -695,6 +695,7 @@ nav.navbar {
     position: fixed;
     top: 55px;
     right: 0px;
+    padding: 10px;
     font-size: 16px;
     line-height: 40px;
     text-align: right;
@@ -1467,6 +1468,7 @@ a .card-product {
 
 .select-product{
     width: 24%;
+    height: 43px;
     padding: 5px;
     font-size: 22px;
     margin-bottom: 10px;
@@ -1914,7 +1916,7 @@ p.txt-min2 {
   #tipos-pagamento li a {
     /*border: 1px solid #ddd;*/
     margin-top: 0px; 
-    background-color: #f6f6f6; 
+    background-color: #FFFFFF; 
     padding: 12px; 
     text-decoration: none; 
     font-size: 18px; 
@@ -2228,32 +2230,44 @@ button[disabled] {
     border: solid 1px #CCC;
 }
 
-.add-new-pack-01 input {
+.add-new-pack-01 select {
     width: 100%;
     padding: 5px;
     font-size: 18px;
     text-align: center;
+    background: #FFF;
+    border: solid 1px #CCC;
+    text-align-last: center;
 }
 
-.add-new-pack-02 input {
+.add-new-pack-02 select {
     width: 100%;
     padding: 5px;
     font-size: 18px;
     text-align: center;
+    background: #FFF;
+    border: solid 1px #CCC;
+    text-align-last: center;
 }
 
-.add-new-pack-03 input {
+.add-new-pack-03 select {
     width: 100%;
     padding: 5px;
     font-size: 18px;
     text-align: center;
+    background: #FFF;
+    border: solid 1px #CCC;
+    text-align-last: center;
 }
 
-.add-new-pack-04 input {
+.add-new-pack-04 select {
     width: 100%;
     padding: 5px;
     font-size: 18px;
     text-align: center;
+    background: #FFF;
+    border: solid 1px #CCC;
+    text-align-last: center;
 }
 
 
@@ -2604,4 +2618,10 @@ button[disabled] {
     margin-top: 10%;
     height: 40px;
 
+}
+
+.btn-default-inativar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

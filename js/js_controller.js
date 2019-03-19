@@ -866,6 +866,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-request").css("display", "none");
 		});
 
+		angular.element(".combo-inativacao").change(function(){
+			angular.element(".btn-default-inativar").removeAttr("disabled");
+		});
+
 	})
 
 
