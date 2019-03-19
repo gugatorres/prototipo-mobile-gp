@@ -13,8 +13,8 @@
                 <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
                     <option hidden disabled selected>Operação:</option>
                     <option value="#!new_pedido">Venda</option>
-                    <option value="#!new_pedido">Consignação</option>  
-                    <option value="#!new_pedido">Troca</option>       
+                    <option value="#!new_pedido">Consignação</option>
+                    <option value="#!new_pedido">Troca</option>
                     <option value="#!comodato">Comodato sem venda</option>
                     <option value="#!bonificacao">Bonificação sem venda</option>
 
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-        
+
     <div class="meta-faturamento" style="display:none;">
         <div>Limite de crédito: R$ 1.245,00</div>
         <div class="loading-customers">
@@ -462,9 +462,9 @@
 
     <a class="float-button btn-filter">
 
-            <img src="images/filter.svg" alt="" style="margin-left: 22px; margin-top: 23px; width: 25px;">
-        
-        </a>
+        <img src="images/filter.svg" alt="" style="margin-left: 22px; margin-top: 23px; width: 25px;">
+
+    </a>
 
     <div class="navigation-bottom">
         <ul>
@@ -536,14 +536,17 @@
             <p> <strong>001234458741</strong> </p>
             <p>Refrigerador XYZ</p>
 
-            <input type="text" name="qtde" value="1" placeholder="1">
-            <select class="select-product">
-                <option hidden disabled selected>UN</option>
-                <option>8</option>
-                <option>12</option>
-                <option>16</option>
-                <option>24</option>
-            </select>
+            <div class="row">
+                <div class="col-xs-7">
+                    <input type="text" name="qtde" value="1" placeholder="1">
+                </div>
+                <div class="col-xs-5">
+                    <select class="select-product">
+                        <option>PC 12</option>
+                        <option>UN</option>
+                    </select>
+                </div>
+            </div>
             <p class="txt-estoque">Estoque: 5524</p>
             <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 <img style="width: 18px; margin-left: 8px;"
                     src="images/cloud_b.svg" alt=""> </p>
