@@ -827,6 +827,12 @@ nav.navbar {
     display: block;
 }
 
+.modal-nome-cliente {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
 /* Detalhe de Clientes */
 
 .nav-tab-custom {
@@ -1948,7 +1954,7 @@ p.txt-min2 {
 }
 
 .modal-select-pedidos .btn-default {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
@@ -2659,4 +2665,42 @@ button[disabled] {
 
 .visita-gestor textarea::placeholder {
     color:#999999;
+}
+
+/* Acompanhar Pedido */
+
+.traking {
+    margin-top: 10px;
+    position: relative;
+    height: 80px;
+}
+
+.line-tracking {
+    width: 100%;
+    height: 5px;
+    background: #c62222;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+.traking ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    width: 310px;
+}
+
+.traking li {
+    width: 80px;
+    background: red;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    position: relative;
 }

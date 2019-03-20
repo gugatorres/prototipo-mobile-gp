@@ -141,5 +141,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/comodatos_contrato_pend.html",
             controller: "ComodatosContratoPendentesController"
         })
+        .when("/acompanhar_pedido", {
+            templateUrl: "./templates/acompanhar_pedido.html",
+            controller: "AcompanharPedidoController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" });
 });
