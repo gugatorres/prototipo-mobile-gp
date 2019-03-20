@@ -681,8 +681,7 @@ nav.navbar {
 
 .overlay-requests {
     position: fixed;
-    background: #000000b3;
-    opacity: 0.1;
+    background: #0000006b;
     width: 100%;
     height: 100%;
     top: 0;
@@ -854,6 +853,11 @@ nav.navbar {
 
 .nav-tab-custom a.active {
     border-bottom: solid 2px #c62222;
+}
+
+.active_hist {
+    background: #c62222;
+    color: #FFF !important;
 }
 
 .cadastro .label-lbl {

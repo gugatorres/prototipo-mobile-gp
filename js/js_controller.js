@@ -78,17 +78,17 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		$scope.tab1 = function () {
-			angular.element(".tab-hist-1").addClass("active");
+			angular.element(".tab-hist-1").addClass("active_hist");
 			angular.element(".tab-hist-1").css("display", "inline-block");
-			angular.element(".tab-hist-2").removeClass("active");
+			angular.element(".tab-hist-2").removeClass("active_hist");
 			angular.element(".tab-page-hist-2").css("display", "none");
 			angular.element(".tab-page-hist-1").css("display", "block");
 		}
 
 		$scope.tab2 = function () {
-			angular.element(".tab-hist-2").addClass("active");
+			angular.element(".tab-hist-2").addClass("active_hist");
 			angular.element(".tab-hist-2").css("display", "inline-block");
-			angular.element(".tab-hist-1").removeClass("active");
+			angular.element(".tab-hist-1").removeClass("active_hist");
 			angular.element(".tab-page-hist-1").css("display", "none");
 			angular.element(".tab-page-hist-2").css("display", "block");
 		}
@@ -135,6 +135,79 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Detalhes Pedido"
 		angular.element(".bar-customer-back").css("display", "block");
 	})
+
+	/* Histórico Pedidos Controller */
+	.controller("HistoricoPedidosController", function ($scope) {
+
+		$scope.titulo = "Histórico de pedidos"
+		angular.element(".bar-customer-back").css("display", "block");
+
+
+		$scope.tab1 = function () {
+			angular.element(".tab-hist-1").addClass("active_hist");
+			angular.element(".tab-hist-1").css("display", "inline-block");
+			angular.element(".tab-hist-2").removeClass("active_hist");
+			angular.element(".tab-page-hist-2").css("display", "none");
+			angular.element(".tab-page-hist-1").css("display", "block");
+		}
+
+		$scope.tab2 = function () {
+			angular.element(".tab-hist-2").addClass("active_hist");
+			angular.element(".tab-hist-2").css("display", "inline-block");
+			angular.element(".tab-hist-1").removeClass("active_hist");
+			angular.element(".tab-page-hist-1").css("display", "none");
+			angular.element(".tab-page-hist-2").css("display", "block");
+		}
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+	})
+
+	/* Lista de Comodatos Controller */
+	.controller("ComodatosController", function ($scope) {
+
+		$scope.titulo = "Lista de Comodatos"
+		angular.element(".bar-customer-back").css("display", "block");
+
+
+		$scope.tab1 = function () {
+			angular.element(".tab-hist-1").addClass("active_hist");
+			angular.element(".tab-hist-1").css("display", "inline-block");
+			angular.element(".tab-hist-2").removeClass("active_hist");
+			angular.element(".tab-page-hist-2").css("display", "none");
+			angular.element(".tab-page-hist-1").css("display", "block");
+		}
+
+		$scope.tab2 = function () {
+			angular.element(".tab-hist-2").addClass("active_hist");
+			angular.element(".tab-hist-2").css("display", "inline-block");
+			angular.element(".tab-hist-1").removeClass("active_hist");
+			angular.element(".tab-page-hist-1").css("display", "none");
+			angular.element(".tab-page-hist-2").css("display", "block");
+		}
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+
+		$scope.contratocomodatos = function () {
+			window.location.href = "#!/comodatos_contrato";
+		}
+	})
+
 
 	/* Gerar Pedidos Controller */
 	.controller("newPedidoController", function ($scope) {
@@ -667,8 +740,8 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".btn-nao-contrato").click(function () {
-			//angular.element(".overlay-comodato").css("display","none");
-			//angular.element(".buttons-comodato").css("display","none");
+			angular.element(".overlay-comodato").css("display","none");
+			angular.element(".buttons-comodato").css("display","none");
 		});
 	})
 
@@ -742,17 +815,17 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		$scope.tab1 = function () {
-			angular.element(".tab-hist-1").addClass("active");
+			angular.element(".tab-hist-1").addClass("active_hist");
 			angular.element(".tab-hist-1").css("display", "inline-block");
-			angular.element(".tab-hist-2").removeClass("active");
+			angular.element(".tab-hist-2").removeClass("active_hist");
 			angular.element(".tab-page-hist-2").css("display", "none");
 			angular.element(".tab-page-hist-1").css("display", "block");
 		}
 
 		$scope.tab2 = function () {
-			angular.element(".tab-hist-2").addClass("active");
+			angular.element(".tab-hist-2").addClass("active_hist");
 			angular.element(".tab-hist-2").css("display", "inline-block");
-			angular.element(".tab-hist-1").removeClass("active");
+			angular.element(".tab-hist-1").removeClass("active_hist");
 			angular.element(".tab-page-hist-1").css("display", "none");
 			angular.element(".tab-page-hist-2").css("display", "block");
 		}
@@ -780,14 +853,14 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-request").css("display", "block");
 		});
 
-		angular.element(".button-pedidos").click(function () {
-			angular.element(".back-menu").css("display", "block");
-			angular.element(".back-menu").css("left", "0px");
-		});
-
 		angular.element(".overlay-requests").click(function () {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
+		});
+
+		angular.element(".button-pedidos").click(function () {
+			angular.element(".back-menu").css("display", "block");
+			angular.element(".back-menu").css("left", "0px");
 		});
 
 		angular.element(".close-alert").click(function () {
@@ -1159,6 +1232,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
 		angular.element(".menu-back").attr("href", "#!/carrinho");
+
+		angular.element(".lbl-pedido-cliente").click(function () {
+			angular.element(".form-pedido-cliente").toggle();
+		})
+
 	})
 
 	/* Detalhes Fechamento Pedido Controller */

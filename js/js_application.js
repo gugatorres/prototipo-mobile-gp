@@ -113,9 +113,17 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/tab_combos.html",
             controller: "tabCombosController"
         })
+        .when("/historico_pedidos", {
+            templateUrl: "./templates/historico_pedidos.html",
+            controller: "HistoricoPedidosController"
+        })
         .when("/comodato", {
             templateUrl: "./templates/tab_comodato.html",
             controller: "tabComodatoController"
+        })
+        .when("/lista_comodatos", {
+            templateUrl: "./templates/comodatos.html",
+            controller: "ComodatosController"
         })
         .when("/comodato_item_notes", {
             templateUrl: "./templates/comodato_item_notes.html",
