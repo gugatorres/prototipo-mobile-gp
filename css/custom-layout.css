@@ -2187,6 +2187,11 @@ button[disabled] {
     text-align: center;
 }
 
+.questionarios tbody tr td:hover {
+    background: #e4e4e4;
+    /*transform: scale(1.2);*/
+}
+
 .questionarios tbody tr td img {
     width: 18px;
     filter: grayscale(1);
@@ -2230,7 +2235,7 @@ button[disabled] {
     text-align: center;
     padding: 10px;
     margin: 10px 0px;
-    background-color: #c62222;
+    background-color: #999999;
     color: #FFF;
     position: relative;
 }
@@ -2291,7 +2296,7 @@ button[disabled] {
 
 
 .btn-add-line {
-    background: #650404;
+    background: #333333;
     border: none;
     position: absolute;
     right: 10px;
