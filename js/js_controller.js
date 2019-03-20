@@ -884,8 +884,6 @@ app.controller("defaultController", function ($scope) {
 			window.location.href = "#!/comodatos_contrato";
 		}
 
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/meus_clientes");
 		angular.element("#mySidenav").css("display", "none");
 		angular.element("#mySidenav").css("left", "-310px");
 		angular.element(".back-menu").css("display", "none");
