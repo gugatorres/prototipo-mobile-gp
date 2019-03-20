@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="gerar-pedido formas-pagamento" style="padding-top:70px;">
+<div class="gerar-pedido formas-pagamento" style="padding-top:80px;">
 
     <div class="row">
         <div class="box-tile white data-entrega" style="height:auto; margin-bottom: 15px;">
@@ -28,25 +28,9 @@
     </div>
 
     <div class="row">
-        <div class="box-tile white data-entrega" style="height:auto; margin-bottom: 15px;">
-
-            <div class="data-input">
-                <div class="row">
-                    <div class="col-xs-12 text-center"><label class="lbl-pedido-cliente">Número Pedido (cliente):</label></div>
-                    <div class="col-xs-12"><input class="form-control form-pedido-cliente" type="text"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="box-tile white" style="height:auto; margin-bottom: 100px;">
-
+        <div class="box-tile white" style="height:auto; margin-bottom: 15px;">
             <div class="row tipos-pagamento">
-
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquise a forma de pagamento...">
-
                 <ul id="tipos-pagamento">
                     <li><a>Dinheiro</a></li>
                     <li><a>Cheque à Vista</a></li>
@@ -55,11 +39,21 @@
                     <li><a>Boleto 14 dias</a></li>
                     <li><a>Nota assinada 21 dias</a></li>
                 </ul>
-
             </div>
-
-
         </div>
     </div>
+
+    <div class="row">
+        <div class="box-tile white data-entrega" style="height:auto; margin-bottom: 100px;">
+            <div class="data-input">
+                <div class="row">
+                    <div class="col-xs-12 text-center"><label class="lbl-pedido-cliente">Número Pedido (cliente):</label></div>
+                    <div class="col-xs-12"><input class="form-control form-pedido-cliente" type="text" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
 </div>
 <a href="#!detalhes_fechamento_pedido" class="btn-default btn-formas-pagto btn-finalizar-pedido">REVISAR PEDIDO</a>
