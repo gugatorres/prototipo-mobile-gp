@@ -2,6 +2,7 @@
 app.controller("defaultController", function ($scope) {
 
 	$scope.titulo = "Home"
+	angular.element(".title-app").html("Home");
 	angular.element(".open-modal-clientes").click(function () {
 		angular.element(".overlay-add-customer").css("display", "block");
 		angular.element(this).css("z-index", "999");
@@ -42,6 +43,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("minhaRotaController", function ($scope) {
 
 		$scope.titulo = "Minha Rota"
+		angular.element(".title-app").html("Minha Rota");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search").addClass("search");
 		angular.element(".search").css("display", "block");
@@ -54,6 +56,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("meusPedidosController", function ($scope) {
 
 		$scope.titulo = "Meus Pedidos"
+		angular.element(".title-app").html("Meus Pedidos");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search").addClass("search");
 		angular.element(".search").css("display", "block");
@@ -133,6 +136,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("DetalhesPedidoController", function ($scope) {
 
 		$scope.titulo = "Detalhes Pedido"
+		angular.element(".title-app").html("Detalhes do Pedido");
 		angular.element(".bar-customer-back").css("display", "block");
 	})
 
@@ -140,6 +144,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("HistoricoPedidosController", function ($scope) {
 
 		$scope.titulo = "Histórico de pedidos"
+		angular.element(".title-app").html("Histórico de Pedidos");
 		angular.element(".bar-customer-back").css("display", "block");
 
 
@@ -174,6 +179,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("ComodatosController", function ($scope) {
 
 		$scope.titulo = "Lista de Comodatos"
+		angular.element(".title-app").html("Lista de Comodatos");
 		angular.element(".bar-customer-back").css("display", "block");
 
 
@@ -213,6 +219,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("newPedidoController", function ($scope) {
 
 		$scope.titulo = "Gerar Pedidos New"
+		angular.element(".title-app").html("Gerar Pedido");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".cart").addClass("cart");
@@ -336,6 +343,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("tabBonificacaoController", function ($scope) {
 
 		$scope.titulo = "Bonificação"
+		angular.element(".title-app").html("Bonificação");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
@@ -406,6 +414,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("tabCombosController", function ($scope) {
 
 		$scope.titulo = "Combos"
+		angular.element(".title-app").html("Combos");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
@@ -477,6 +486,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("tabComodatoController", function ($scope) {
 
 		$scope.titulo = "Comodato"
+		angular.element(".title-app").html("Comodato");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
@@ -548,6 +558,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("comodatoItemNotesController", function ($scope) {
 
 		$scope.titulo = "comodato Item Notes Controller"
+		angular.element(".title-app").html("Avaliação dos Comodatos");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
@@ -557,8 +568,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display", "none");
 		angular.element(".menu-requests").css("display", "none");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/comodatos_contrato_pend");
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
@@ -647,6 +656,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("meusClientesController", function ($scope) {
 
 		$scope.titulo = "Meus Clientes"
+		angular.element(".title-app").html("Meus Clientes");
 		angular.element("#mySidenav").css("display", "block");
 		angular.element("#mySidenav").css("left", "-310");
 		angular.element(".back-menu").css("display", "block");
@@ -711,12 +721,14 @@ app.controller("defaultController", function ($scope) {
 	/* Acompanhar Pedido Controller */
 	.controller("AcompanharPedidoController", function ($scope) {
 		$scope.titulo = "Acompanhar Pedido"
+		angular.element(".title-app").html("Acompanhar Pedido");
 
 	})
 
 	/* cep Cadastro Clientes Controller */
 	.controller("cepCadastroClientesController", function ($scope) {
 		$scope.titulo = "CEP Cadastro de Clientes"
+		angular.element(".title-app").html("CEP Cadastro de Clientes");
 		angular.element(".bar-customer-back").css("display", "none");
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
@@ -727,13 +739,12 @@ app.controller("defaultController", function ($scope) {
 	/* Comodatos Cotrato Controller */
 	.controller("ComodatosContratoController", function ($scope) {
 		$scope.titulo = "Contrato Comodatos"
+		angular.element(".title-app").html("Contrato de Comodatos");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".menu-requests").css("display", "none");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/detalhe_clientes");
 
 		angular.element(".btn-recolha").click(function () {
 			angular.element(".overlay-comodato").css("display", "block");
@@ -755,13 +766,12 @@ app.controller("defaultController", function ($scope) {
 	/* Comodatos Pendentes Controller */
 	.controller("ComodatosPendentesController", function ($scope) {
 		$scope.titulo = "Comodatos Pendentes"
+		angular.element(".title-app").html("Comodatos Pendentes");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".menu-requests").css("display", "none");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/detalhe_clientes");
 
 		$scope.comodatopendente = function () {
 			window.location.href = "#!/comodatos_contrato_pend";
@@ -776,8 +786,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/comodatos_pendentes");
 
 		angular.element(".card-product").click(function () {
 			window.location.href = "#!/comodato_item_notes";
@@ -788,6 +796,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("detalheClientesController", function ($scope) {
 
 		$scope.titulo = "Detalhe de Clientes"
+		angular.element(".title-app").html("Detalhe de Clientes");
 
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
@@ -901,6 +910,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("alteracaoFinancController", function ($scope) {
 
 		$scope.titulo = "Solicitar Alteração Financeira"
+		angular.element(".title-app").html("Solicitar Alt. Financeira");
 		angular.element("overlay-alteracao-financ").css("display", "none");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
@@ -926,6 +936,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("inativacaoController", function ($scope) {
 
 		$scope.titulo = "Solicitar Inativação"
+		angular.element(".title-app").html("Solicitar Inativação");
 		angular.element("overlay-inativacao").css("display", "none");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
@@ -956,6 +967,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("cadastroClientesController", function ($scope) {
 
 		$scope.titulo = "Cadastro de Clientes"
+		angular.element(".title-app").html("Cadastro de Clientes");
 
 		angular.element(".tab-1").click(function () {
 			angular.element(this).addClass("active");
@@ -1078,8 +1090,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 		});
 
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/meus_clientes");
 		angular.element("#mySidenav").css("display", "none");
 		angular.element("#mySidenav").css("left", "-310px");
 		angular.element(".back-menu").css("display", "none");
@@ -1095,6 +1105,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("catalogoProdutosController", function ($scope) {
 
 		$scope.titulo = "Catalogo de Produtos"
+		angular.element(".title-app").html("Catálogo de Produtos");
 		angular.element(".search").addClass("search");
 		angular.element(".search").css("display", "block");
 		angular.element(".sync").css("display", "none");
@@ -1115,6 +1126,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("estoquePrecosController", function ($scope) {
 
 		$scope.titulo = "Estoque Preços"
+		angular.element(".title-app").html("Consulta de Estoque");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
@@ -1126,6 +1138,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("carrinhoController", function ($scope) {
 
 		$scope.titulo = "Carrinho de Compras"
+		angular.element(".title-app").html("Carrinho de Compras");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display", "none");
@@ -1138,7 +1151,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
 		angular.element(".menu-requests").css("display", "none");
-		angular.element(".menu-back").attr("href", "#!/new_pedido");
 
 		angular.element(".delete-product").click(function () {
 			angular.element(".overlay-modal-delete").css("display", "block");
@@ -1218,6 +1230,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("formasPagamentoController", function ($scope) {
 
 		$scope.titulo = "Formas de Pagamento"
+		angular.element(".title-app").html("Formas de Pagamento");
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display", "none");
@@ -1230,7 +1243,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display", "none");
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
-		angular.element(".menu-back").attr("href", "#!/carrinho");
 
 		angular.element(".lbl-pedido-cliente").click(function () {
 			angular.element(".form-pedido-cliente").toggle();
@@ -1242,6 +1254,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("detalhesFechamentoPedidoController", function ($scope) {
 
 		$scope.titulo = "Detalhes Fechamento Pedido"
+		angular.element(".title-app").html("Detalhe Fechamento - Pedido");
 
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
@@ -1255,7 +1268,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display", "none");
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
-		angular.element(".menu-back").attr("href", "#!/formas_pagamento");
 
 		angular.element(".btn-finalizar-pedido").click(function () {
 			angular.element(".overlay-finalizar-pedido").css("display", "block");
@@ -1271,6 +1283,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("relatoriosController", function ($scope) {
 
 		$scope.titulo = "Relatórios"
+		angular.element(".title-app").html("Relatórios");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
@@ -1282,12 +1295,11 @@ app.controller("defaultController", function ($scope) {
 	.controller("pesquisaController", function ($scope) {
 
 		$scope.titulo = "questionario"
+		angular.element(".title-app").html("Questionário");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
 		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/detalhe_clientes");
 
 		angular.element(".menu-requests").css("display", "none");
 
@@ -1404,10 +1416,9 @@ app.controller("defaultController", function ($scope) {
 	.controller("questionarioController", function ($scope) {
 
 		$scope.titulo = "Pesquisa"
+		angular.element(".title-app").html("Pesquisa");
 		angular.element(".sync img, .menu-photo img").attr("src", "");
 		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/detalhe_clientes");
 		angular.element(".menu-requests").css("display", "none");
 
 	})
@@ -1416,12 +1427,11 @@ app.controller("defaultController", function ($scope) {
 	.controller("questDetalheController", function ($scope) {
 
 		$scope.titulo = "quest_detalhe"
+		angular.element(".title-app").html("Detalhe da Pesquisa");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
 		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/questionario");
 		angular.element(".vendedor").click(function () {
 			angular.element(this).addClass("active-link");
 			angular.element(".externo").removeClass("active-link");
@@ -1440,12 +1450,11 @@ app.controller("defaultController", function ($scope) {
 	.controller("questDetalhe2Controller", function ($scope) {
 
 		$scope.titulo = "quest_detalhe_2"
+		angular.element(".title-app").html("Detalhe da Pesquisa");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
 		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".menu-back").removeAttr("onclick");
-		angular.element(".menu-back").attr("href", "#!/questionario");
 		angular.element(".vendedor").click(function () {
 			angular.element(this).addClass("active-link");
 			angular.element(".externo").removeClass("active-link");
@@ -1464,6 +1473,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("agendarVisitaController", function ($scope) {
 
 		$scope.titulo = "Agendar Visita"
+		angular.element(".title-app").html("Agendar Visita");
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
@@ -1497,6 +1507,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("lpItaipavaController", function ($scope) {
 
 		$scope.titulo = "lp Itaipava Controller"
+		angular.element(".title-app").html("Itaipava");
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");
@@ -1528,6 +1539,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("lpCrystalController", function ($scope) {
 
 		$scope.titulo = "lp Crystal Controller"
+		angular.element(".title-app").html("Crystal");
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");
