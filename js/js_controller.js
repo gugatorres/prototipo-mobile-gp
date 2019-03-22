@@ -337,6 +337,48 @@ app.controller("defaultController", function ($scope) {
 			}
 		});
 
+
+		angular.element(".link_venda").click(function(){
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_new_pedido").click(function(){
+			angular.element(".txt-selected").html("Consignação");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_troca").click(function(){
+			angular.element(".txt-selected").html("Troca");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_comodato").click(function(){
+			angular.element(".txt-selected").html("Comodato sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
+			
+		});
+
+		angular.element(".link_bonificacao").click(function(){
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+		});
+
+		angular.element(".cart-clean .btn-nao").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".cart-clean .btn-sim").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
+		});
+
 	})
 
 	/* Tab Bonificação Controller */
@@ -406,6 +448,47 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});
+
+		angular.element(".link_venda").click(function(){
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_new_pedido").click(function(){
+			angular.element(".txt-selected").html("Consignação");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_troca").click(function(){
+			angular.element(".txt-selected").html("Troca");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_comodato").click(function(){
+			angular.element(".txt-selected").html("Comodato sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
+			
+		});
+
+		angular.element(".link_bonificacao").click(function(){
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+		});
+
+		angular.element(".cart-clean .btn-nao").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".cart-clean .btn-sim").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
 		});
 
 	})
@@ -549,6 +632,47 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});
+
+		angular.element(".link_venda").click(function(){
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_new_pedido").click(function(){
+			angular.element(".txt-selected").html("Consignação");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_troca").click(function(){
+			angular.element(".txt-selected").html("Troca");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+		});
+
+		angular.element(".link_comodato").click(function(){
+			angular.element(".txt-selected").html("Comodato sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
+			
+		});
+
+		angular.element(".link_bonificacao").click(function(){
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display","block");
+			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+		});
+
+		angular.element(".cart-clean .btn-nao").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".cart-clean .btn-sim").click(function(){
+			angular.element(".cart-clean").css("display","none");
+			angular.element(this).removeClass("active");
 		});
 
 	})
@@ -716,7 +840,7 @@ app.controller("defaultController", function ($scope) {
 		});
 	})
 
-	
+
 
 	/* Acompanhar Pedido Controller */
 	.controller("AcompanharPedidoController", function ($scope) {
@@ -758,8 +882,8 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".btn-nao-contrato").click(function () {
-			angular.element(".overlay-comodato").css("display","none");
-			angular.element(".buttons-comodato").css("display","none");
+			angular.element(".overlay-comodato").css("display", "none");
+			angular.element(".buttons-comodato").css("display", "none");
 		});
 	})
 
@@ -887,7 +1011,7 @@ app.controller("defaultController", function ($scope) {
 			window.location.href = "#!/comodatos_pendentes";
 		});
 
-		
+
 
 		$scope.contratocomodatos = function () {
 			window.location.href = "#!/comodatos_contrato";

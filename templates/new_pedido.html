@@ -11,15 +11,20 @@
                 <input type="text" placeholder="O que vamos vender hoje?">
             </div>
             <div class="col-xs-4" style="padding-left: 0;">
-                <select onchange="location = this.value; $('#overlay-quest').css('display','none');">
-                    <!-- <option hidden disabled selected>Operação:</option>-->
-                    <option value="#!new_pedido">Venda</option>
-                    <option value="#!new_pedido">Consignação</option>
-                    <option value="#!new_pedido">Troca</option>
-                    <option value="#!comodato">Comodato sem venda</option>
-                    <option value="#!bonificacao">Bonificação sem venda</option>
 
-                </select>
+                <div class="dropdown" id="operation">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="txt-selected">Operação:</span> 
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li class="link_venda">Venda</li>
+                        <li class="link_new_pedido">Consignação</li>
+                        <li class="link_troca">Troca</li>
+                        <li class="link_comodato">Comodato sem venda</li>
+                        <li class="link_bonificacao">Bonificação sem venda</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -37,8 +42,8 @@
 
     <div class="row" style="position:relative">
 
-       
-         <!--  Card Product  -->
+
+        <!--  Card Product  -->
         <a>
             <div class="col-xs-12 card-product">
                 <div class="box-tile box-product white">
@@ -620,3 +625,17 @@
     <li> <a class="add-product-sum">Adicionar ao carrinho </a> </li>
     <li> <a class="add-product-sum">Conceder bonificação </a> </li>
 </ul>
+
+<div class="overlay-modal cart-clean">
+        <div class="modal-custom" style="margin-top:100px;">
+            <img src="images/cart_black.svg" alt="" style="width: 20%; margin: 10px auto 10px; display: block;">
+            <h3 class="text-center">Atenção!</h3>
+            <h5 class="text-center"> Essa operação limpará o seu carrinho. </h5>
+            <p class="text-center">deseja realmente executar esse procedimento?</p>
+            <div class="row">
+                <div class="col-xs-6"><a class="btn-default btn-sim">SIM</a></div>
+                <div class="col-xs-6"><a class="btn-default btn-nao">NÃO</a></div>
+            </div>
+    
+        </div>
+    </div>
