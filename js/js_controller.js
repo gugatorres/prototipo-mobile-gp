@@ -288,11 +288,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-product").css("overflow-y", "scroll");
 		});
 
-		angular.element(".close-modal").click(function () {
-			angular.element(".overlay-product").css("display", "none");
-			angular.element("body").css("overflow-y", "auto");
-		});
-
 		angular.element(".add-product-sum").click(function () {
 			angular.element(".overlay-product").css("display", "none");
 			angular.element(".ind-number").css("display", "block");
@@ -440,6 +435,15 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".txt-selected-comodato").html("5");
 			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","block");
 		});
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-product").css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","none");
+
+		});
+
+		
 
 		
 
