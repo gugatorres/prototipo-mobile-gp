@@ -1,8 +1,9 @@
 <div class="row grid-requests" style="padding-top: 20px;">
 
 	<div class="nav-tab-custom">
-		<a class="tab-1 active">Histórico de Pedidos</a>
-		<a class="tab-2">Pedidos Devolvidos</a>
+		<a class="tab-1 active">Entregue</a>
+		<a class="tab-2">Devolvidos</a>
+		<a class="tab-3">Em Transito</a>
 	</div>
 
 	<div class="tab-content tab-meus-pedidos">
@@ -25,6 +26,17 @@
 			</div>
 
 		</div>
+
+		<div class="tab-page-3">
+
+				<div class="row">
+	
+					<div ng-include="'include/fragment_requests.html'"></div>
+	
+				</div>
+	
+			</div>
+
 	</div>
 
 </div>

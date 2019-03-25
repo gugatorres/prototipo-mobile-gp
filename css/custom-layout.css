@@ -937,6 +937,22 @@ nav.navbar {
 .tab-page-hist-1{display: block;}
 .tab-page-hist-2{display: none;}
 
+.mode-status {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 8px;
+    font-weight: bold;
+    background: #f9f9a7;
+    padding: 3px 0px 0px 0px;
+    min-width: 85px;
+    border-radius: 0px;
+    text-align: center;
+    border: solid 1px yellow;
+    text-transform: uppercase;
+    display: none;
+}
+
 /* Detalhes Clientes - Tabs */
  
 .detail-customers .box-tile.inadimplencia-acumulada {height: 90px; padding: 15px;}

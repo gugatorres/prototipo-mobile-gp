@@ -130,6 +130,14 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-page-2").css("display", "block");
 		});
 
+		angular.element(".tab-3").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-2").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-3").css("display", "block");
+		});
+
 	})
 
 	/* Detalhes Pedido Controller */
@@ -407,7 +415,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".link_5").click(function(){
 			angular.element(".txt-selected-comodato").html("5");
 			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","block");
-		})
+		});
 
 		
 
