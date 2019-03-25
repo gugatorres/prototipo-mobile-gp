@@ -1716,6 +1716,10 @@ p.txt-min2 {
     line-height: 43px;
 }
 
+.meus-pedidos-show .nav-tab-custom-hist {
+    display: none;
+}
+
 
 
 /* Carrinho */
