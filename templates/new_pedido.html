@@ -14,7 +14,7 @@
 
                 <div class="dropdown" id="operation">
                     <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <span class="txt-selected">Operação:</span> 
+                        <span class="txt-selected">Operação:</span>
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -578,22 +578,79 @@
                     style="font-size: 16px;">Comodato</span></a>
             <br>
             <div class="accordion-comodato">
-
-
                 <div class="row">
                     <div class="col-xs-7">
                         <input type="text" name="qtde" value="0" placeholder="0">
                     </div>
                     <div class="col-xs-5">
-                        <select class="select-product">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+
+                        <div class="dropdown" id="num_comodato">
+                            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="txt-selected-comodato"></span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li class="link_1">1</li>
+                                <li class="link_2">2</li>
+                                <li class="link_3">3</li>
+                                <li class="link_4">4</li>
+                                <li class="link_5">5</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="row result-num-comodato">
+                    <ul>
+                        <li class="result1" style="display:none">
+                            <div class="col-xs-7">
+                                <span class="termo">Termo 01</span>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text" name="qtde" value="0" placeholder="0">
+                            </div>
+                        </li>
+
+                        <li class="result2" style="display:none">
+                            <div class="col-xs-7">
+                                <span class="termo">Termo 02</span>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text" name="qtde" value="0" placeholder="0">
+                            </div>
+                        </li>
+
+                        <li class="result3" style="display:none">
+                            <div class="col-xs-7">
+                                <span class="termo">Termo 03</span>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text" name="qtde" value="0" placeholder="0">
+                            </div>
+                        </li>
+
+                        <li class="result4" style="display:none">
+                            <div class="col-xs-7">
+                                <span class="termo">Termo 04</span>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text" name="qtde" value="0" placeholder="0">
+                            </div>
+                        </li>
+
+                        <li class="result5" style="display:none">
+                            <div class="col-xs-7">
+                                <span class="termo">Termo 05</span>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text" name="qtde" value="0" placeholder="0">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
             </div>
             <a class="btn-default add-product-sum"> ADICIONAR </a>
 
@@ -627,15 +684,15 @@
 </ul>
 
 <div class="overlay-modal cart-clean">
-        <div class="modal-custom" style="margin-top:100px;">
-            <img src="images/cart_black.svg" alt="" style="width: 20%; margin: 10px auto 10px; display: block;">
-            <h3 class="text-center">Atenção!</h3>
-            <h5 class="text-center"> Essa operação limpará o seu carrinho. </h5>
-            <p class="text-center">deseja realmente executar esse procedimento?</p>
-            <div class="row">
-                <div class="col-xs-6"><a class="btn-default btn-sim">SIM</a></div>
-                <div class="col-xs-6"><a class="btn-default btn-nao">NÃO</a></div>
-            </div>
-    
+    <div class="modal-custom" style="margin-top:100px;">
+        <img src="images/cart_black.svg" alt="" style="width: 20%; margin: 10px auto 10px; display: block;">
+        <h3 class="text-center">Atenção!</h3>
+        <h5 class="text-center"> Essa operação limpará o seu carrinho. </h5>
+        <p class="text-center">deseja realmente executar esse procedimento?</p>
+        <div class="row">
+            <div class="col-xs-6"><a class="btn-default btn-sim">SIM</a></div>
+            <div class="col-xs-6"><a class="btn-default btn-nao">NÃO</a></div>
         </div>
+
     </div>
+</div>

@@ -379,6 +379,38 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).removeClass("active");
 		});
 
+		angular.element(".link_1").click(function(){
+			angular.element(".txt-selected-comodato").html("1");
+			angular.element(".result1").css("display","block");
+			angular.element(".result2, .result3, .result4, .result5").css("display","none");
+		});
+
+		angular.element(".link_2").click(function(){
+			angular.element(".txt-selected-comodato").html("2");
+			angular.element(".result1, .result2").css("display","block");
+			angular.element(".result3, .result4, .result5").css("display","none");
+		});
+
+		angular.element(".link_3").click(function(){
+			angular.element(".txt-selected-comodato").html("3");
+			angular.element(".result1, .result2, .result3").css("display","block");
+			angular.element(".result4, .result5").css("display","none");
+		});
+
+		angular.element(".link_4").click(function(){
+			angular.element(".txt-selected-comodato").html("4");
+			angular.element(".result1, .result2, .result3, .result4").css("display","block");
+			angular.element(".result5").css("display","none");
+			
+		});
+
+		angular.element(".link_5").click(function(){
+			angular.element(".txt-selected-comodato").html("5");
+			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","block");
+		})
+
+		
+
 	})
 
 	/* Tab Bonificação Controller */
