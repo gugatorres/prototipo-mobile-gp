@@ -365,87 +365,96 @@ app.controller("defaultController", function ($scope) {
 		});
 
 
-		angular.element(".link_venda").click(function(){
+		angular.element(".link_venda").click(function () {
 			angular.element(".txt-selected").html("Venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_new_pedido").click(function(){
+		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_troca").click(function(){
+		angular.element(".link_troca").click(function () {
 			angular.element(".txt-selected").html("Troca");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_comodato").click(function(){
+		angular.element(".link_comodato").click(function () {
 			angular.element(".txt-selected").html("Comodato sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
-			
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato");
+
 		});
 
-		angular.element(".link_bonificacao").click(function(){
+		angular.element(".link_bonificacao").click(function () {
 			angular.element(".txt-selected").html("Bonificação sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
 		});
 
-		angular.element(".cart-clean .btn-nao").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-nao").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".cart-clean .btn-sim").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-sim").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".link_1").click(function(){
+		angular.element(".link_1").click(function () {
 			angular.element(".txt-selected-comodato").html("1");
-			angular.element(".result1").css("display","block");
-			angular.element(".result2, .result3, .result4, .result5").css("display","none");
+			angular.element(".result1").css("display", "block");
+			angular.element(".result2, .result3, .result4, .result5").css("display", "none");
 		});
 
-		angular.element(".link_2").click(function(){
+		angular.element(".link_2").click(function () {
 			angular.element(".txt-selected-comodato").html("2");
-			angular.element(".result1, .result2").css("display","block");
-			angular.element(".result3, .result4, .result5").css("display","none");
+			angular.element(".result1, .result2").css("display", "block");
+			angular.element(".result3, .result4, .result5").css("display", "none");
 		});
 
-		angular.element(".link_3").click(function(){
+		angular.element(".link_3").click(function () {
 			angular.element(".txt-selected-comodato").html("3");
-			angular.element(".result1, .result2, .result3").css("display","block");
-			angular.element(".result4, .result5").css("display","none");
+			angular.element(".result1, .result2, .result3").css("display", "block");
+			angular.element(".result4, .result5").css("display", "none");
 		});
 
-		angular.element(".link_4").click(function(){
+		angular.element(".link_4").click(function () {
 			angular.element(".txt-selected-comodato").html("4");
-			angular.element(".result1, .result2, .result3, .result4").css("display","block");
-			angular.element(".result5").css("display","none");
-			
+			angular.element(".result1, .result2, .result3, .result4").css("display", "block");
+			angular.element(".result5").css("display", "none");
+
 		});
 
-		angular.element(".link_5").click(function(){
+		angular.element(".link_5").click(function () {
 			angular.element(".txt-selected-comodato").html("5");
-			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","block");
+			angular.element(".result1, .result2, .result3, .result4, .result5").css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-product").css("display", "none");
 			angular.element("body").css("overflow-y", "auto");
-			angular.element(".result1, .result2, .result3, .result4, .result5").css("display","none");
+			angular.element(".result1, .result2, .result3, .result4, .result5").css("display", "none");
 
 		});
 
-		
+		angular.element(".img-sync").click(function () {
+			$(this).attr("src", "images/loading.gif");
+			setTimeout(function () {
+				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724"); 
+			}, 3000);
 
-		
+		});
+
+
+
+
 
 	})
 
@@ -518,45 +527,54 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
 
-		angular.element(".link_venda").click(function(){
+		angular.element(".link_venda").click(function () {
 			angular.element(".txt-selected").html("Venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_new_pedido").click(function(){
+		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_troca").click(function(){
+		angular.element(".link_troca").click(function () {
 			angular.element(".txt-selected").html("Troca");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_comodato").click(function(){
+		angular.element(".link_comodato").click(function () {
 			angular.element(".txt-selected").html("Comodato sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
-			
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato");
+
 		});
 
-		angular.element(".link_bonificacao").click(function(){
+		angular.element(".link_bonificacao").click(function () {
 			angular.element(".txt-selected").html("Bonificação sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
 		});
 
-		angular.element(".cart-clean .btn-nao").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-nao").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".cart-clean .btn-sim").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-sim").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".img-sync").click(function(){
+			$(this).attr("src","images/loading.gif");
+			setTimeout(function () {
+				angular.element(".img-sync").attr("src","images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724"); 
+					}, 3000);
+		
 		});
 
 	})
@@ -628,6 +646,15 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
 			angular.element(".total-box").css("z-index", "999");
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});
+
+		angular.element(".img-sync").click(function(){
+			$(this).attr("src","images/loading.gif");
+			setTimeout(function () {
+				angular.element(".img-sync").attr("src","images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724"); 
+					}, 3000);
+		
 		});
 
 	})
@@ -702,45 +729,54 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
 
-		angular.element(".link_venda").click(function(){
+		angular.element(".link_venda").click(function () {
 			angular.element(".txt-selected").html("Venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_new_pedido").click(function(){
+		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_troca").click(function(){
+		angular.element(".link_troca").click(function () {
 			angular.element(".txt-selected").html("Troca");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/new_pedido");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
-		angular.element(".link_comodato").click(function(){
+		angular.element(".link_comodato").click(function () {
 			angular.element(".txt-selected").html("Comodato sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/comodato");
-			
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato");
+
 		});
 
-		angular.element(".link_bonificacao").click(function(){
+		angular.element(".link_bonificacao").click(function () {
 			angular.element(".txt-selected").html("Bonificação sem venda");
-			angular.element(".cart-clean").css("display","block");
-			angular.element(".cart-clean .btn-sim").attr("href","#!/bonificacao");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
 		});
 
-		angular.element(".cart-clean .btn-nao").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-nao").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".cart-clean .btn-sim").click(function(){
-			angular.element(".cart-clean").css("display","none");
+		angular.element(".cart-clean .btn-sim").click(function () {
+			angular.element(".cart-clean").css("display", "none");
 			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".img-sync").click(function(){
+			$(this).attr("src","images/loading.gif");
+			setTimeout(function () {
+				angular.element(".img-sync").attr("src","images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724"); 
+					}, 3000);
+		
 		});
 
 	})
