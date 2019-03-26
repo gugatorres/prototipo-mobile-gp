@@ -1795,3 +1795,112 @@ app.controller("defaultController", function ($scope) {
 			});
 		});
 	})
+
+	/* Consignações Controller */
+	.controller("consignacoesController", function ($scope) {
+
+		$scope.titulo = "Consignações"
+		angular.element(".title-app").html("Consignações");
+		angular.element(".sync img").attr("src", "images/search_w.svg");
+		angular.element(".sync").addClass("search");
+		angular.element(".sync").removeClass("sync");
+		angular.element(".back-menu").css("display", "none");
+
+
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".float-button-grid2").addClass("image-grid2");
+		angular.element(".float-button-grid2").css('display', 'none');
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+
+		
+	})
+
+	/* Lista de Consignações Controller */
+	.controller("listaConsignacoesController", function ($scope) {
+
+		$scope.titulo = "Itens Consignados"
+		angular.element(".title-app").html("Itens Consignados");
+		angular.element(".sync img").attr("src", "images/search_w.svg");
+		angular.element(".sync").addClass("search");
+		angular.element(".sync").removeClass("sync");
+		angular.element("#mySidenav").css("display", "none");
+		angular.element(".back-menu").css("display", "none");
+
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+		
+	})
+
+	/* Detalhe Consignados Controller */
+	.controller("detalheConsignadosController", function ($scope) {
+
+		$scope.titulo = "Detalhe Consignados"
+		angular.element(".title-app").html("Detalhe Consignados");
+		angular.element(".sync img").attr("src", "images/search_w.svg");
+		angular.element(".sync").addClass("search");
+		angular.element(".sync").removeClass("sync");
+
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+
+		angular.element(".close-faturar").click(function(){
+			angular.element(".modal-faturar").css("display","none");
+		});
+
+		angular.element(".btn-consignados-faturar").click(function(){
+			angular.element(".modal-faturar").css("display","block");
+		})
+
+		angular.element(".close-recolher").click(function(){
+			angular.element(".modal-recolher").css("display","none");
+		});
+
+		angular.element(".btn-consignados-recolher").click(function(){
+			angular.element(".modal-recolher").css("display","block");
+		});
+
+		angular.element(".btn-recolher").click(function(){
+			angular.element(".modal-recolher").css("display","none");
+			angular.element(".overlay-finalizar").css("display","block");
+			angular.element(".overlay-finalizar .header-modal").html("Recolha Solicitada com Sucesso!");
+		});
+		
+		angular.element(".btn-faturar").click(function(){
+			angular.element(".modal-faturar").css("display","none");
+			angular.element(".overlay-finalizar").css("display","block");
+			angular.element(".overlay-finalizar .header-modal").html("Fatura realizada com Sucesso!");
+		});
+
+		
+	})
+	
+	
+
+	

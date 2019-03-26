@@ -1,0 +1,156 @@
+<div>
+	<div class="nav-tab-custom-hist">
+		<a ng-click="tab1()" class="tab-hist-1 active_hist">&nbsp;1&nbsp;</a>
+		<a ng-click="tab2()" class="tab-hist-2">&nbsp;2&nbsp;</a>
+	</div>
+
+	<div class="tab-hist-content">
+
+		<div class="tab-page-hist-1">
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Ausente</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							21/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Estoque cheio</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							21/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Ausente</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							21/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos" style="margin-bottom: 200px;">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Estoque cheio</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							20/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="tab-page-hist-2">
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Sem Dinheiro</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							20/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Ausente</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							20/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Estoque cheio</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							20/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!--  Card Pedido  -->
+			<a href="#!lista_consignados">
+				<div class="col-xs-12 card-pedidos" style="margin-bottom: 200px;">
+					<div class="box-tile box-pedidos white status-pago">
+							<div class="mode-status">Sem dinheiro</div>
+						<div class="col-xs-8">
+							<p class="cod-pedido"> <strong>012345678</strong> </p>
+							<p class="nome-cliente">MARCIO GONÇALVES DE...</p>
+
+						</div>
+						<div class="col-xs-4 text-right" style="padding-right: 0;">
+							20/01/2019<br>R$ 125,15
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".tab-page-2 .box-pedidos").removeClass("status-pago");
+	$(".tab-page-2 .box-pedidos").addClass("status-nao-pago");
+	$(".tab-page-2 .box-pedidos").css("position","relative");
+	$(".tab-page-2 .box-pedidos .mode-status").css("display","block");
+</script>

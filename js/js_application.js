@@ -145,5 +145,17 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/acompanhar_pedido.html",
             controller: "AcompanharPedidoController"
         })
+        .when("/consignacoes", {
+            templateUrl: "./templates/consignacoes.html",
+            controller: "consignacoesController"
+        })
+        .when("/lista_consignados", {
+            templateUrl: "./templates/lista_consignados.html",
+            controller: "listaConsignacoesController"
+        })
+        .when("/detalhe_consignados", {
+            templateUrl: "./templates/detalhe_consignados.html",
+            controller: "detalheConsignadosController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" });
 });

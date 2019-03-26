@@ -115,6 +115,15 @@ a:hover{text-decoration: none;}
 .gray_cl {background: #999 !important;}
 .red_cl{background: #c62222 !important;}
 
+.truncate {
+	width: 95%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .box-indic span {
     float: left;
     font-size: 0px;
@@ -2883,4 +2892,70 @@ button[disabled] {
     border-radius: 50px;
     margin: 0px 10px;
     position: relative;
+}
+
+/* Consignados */
+
+.consignados-itens {
+    padding: 15px;
+    border-left: solid 5px #4CAF50;
+    font-size: 12px;
+}
+
+.consignados-itens ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.consignados-itens li {
+    margin-bottom: 5px;
+}
+
+.consignados-itens li:last-child {
+    margin-bottom: 0;
+}
+
+.consignados-itens input {
+    width: 100%;
+    border: solid 1px #999;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.consignados-itens span {
+    line-height: 32px;
+}
+
+.buttons-action-consignados {
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+    width: 100%;
+}
+
+.buttons-action-consignados .col-xs-6{padding: 0;}
+
+.buttons-action-consignados .btn-consignados-recolher {
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    background: #999;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.buttons-action-consignados .btn-consignados-faturar {
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    background: #c62222;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.modal-faturar input {
+    width: 100%;
 }
