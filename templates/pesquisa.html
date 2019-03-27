@@ -6,8 +6,14 @@
 
         <div class="tipo-venda text-center">
 
-            <label for="embalagem">Embalagem:</label>
-            <select name="embalagem">
+            <span for="embalagem">Embalagem:</span>
+           
+            <span style="margin-left: 30px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <span> <span class="form-check-label" for="exampleCheck1">Mostrar todas</span></span>
+            </span>
+                
+                <select name="embalagem"> 
                 <option>CERVEJA GARRAFA 300ML</option>
                 <option>CERVEJA GARRAFA 600ML</option>
                 <option>CERVEJA LATA 350ML, CX 12</option>
@@ -15,12 +21,12 @@
             <label for="origem">Origem:</label>
             <select name="origem">
                 <option>Vendedor</option>
-                <option>Externo</option>
+                <option>Terceiro</option>
             </select>
 
         </div>
 
-        <div class="titulo-produto">
+        <div class="titulo-produto" style="margin-top: 170px;">
             ITAIPAVA
             <button class="btn-add-line btn-add-01">+</button>
         </div>
@@ -31,6 +37,7 @@
                     <th class="text-center">Volume</th>
                     <th class="text-center">PP UN</th>
                     <th class="text-center">PV CX</th>
+                    <th class="text-center"></th>
                 </tr>
             </thead>
             <tbody>
@@ -40,6 +47,7 @@
                     <td><input type="text"></td>
                     <td><input type="text"></td>
                     <td><input type="text"></td>
+                    <td></td>
                 </tr>
                 <!-- Packs -->
 
@@ -58,6 +66,7 @@
                     <th class="text-center">Volume</th>
                     <th class="text-center">PP UN</th>
                     <th class="text-center">PV CX</th>
+                    <th class="text-center"></th>
                 </tr>
             </thead>
             <tbody>
@@ -67,6 +76,7 @@
                     <td><input type="text"></td>
                     <td><input type="text"></td>
                     <td><input type="text"></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -82,6 +92,7 @@
                     <th class="text-center">Volume</th>
                     <th class="text-center">PP UN</th>
                     <th class="text-center">PV CX</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -91,6 +102,7 @@
                     <td><input type="text"></td>
                     <td><input type="text"></td>
                     <td><input type="text"></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -106,6 +118,7 @@
                     <th class="text-center">Volume</th>
                     <th class="text-center">PP UN</th>
                     <th class="text-center">PV CX</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -115,6 +128,7 @@
                     <td><input type="text"></td>
                     <td><input type="text"></td>
                     <td><input type="text"></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -146,70 +160,70 @@
 </div>
 
 <div class="overlay-modal add-new-pack-02">
-        <div class="modal-custom" style="margin-top:100px;">
-            <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
-    
-            <div class="text-center">
-                <p>Quantidade:</p>
-                <select name="valor-pack2" class="valor-pack2" id="">
-                    <option hidden disabled selected>Selecione:</option>
-                    <option value="12">12</option>
-                    <option value="24">24</option>
-                    <option value="36">36</option>
-                    <option value="48">48</option>
-                </select>
-            </div>
-    
-            <div class="row">
-                <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-02">Add</button></div>
-                <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
-            </div>
-    
+    <div class="modal-custom" style="margin-top:100px;">
+        <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+
+        <div class="text-center">
+            <p>Quantidade:</p>
+            <select name="valor-pack2" class="valor-pack2" id="">
+                <option hidden disabled selected>Selecione:</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+            </select>
         </div>
+
+        <div class="row">
+            <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-02">Add</button></div>
+            <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+        </div>
+
     </div>
+</div>
 
-    <div class="overlay-modal add-new-pack-03">
-            <div class="modal-custom" style="margin-top:100px;">
-                <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
-        
-                <div class="text-center">
-                    <p>Quantidade:</p>
-                    <select name="valor-pack3" class="valor-pack3" id="">
-                        <option hidden disabled selected>Selecione:</option>
-                        <option value="12">12</option>
-                        <option value="24">24</option>
-                        <option value="36">36</option>
-                        <option value="48">48</option>
-                    </select>
-                </div>
-        
-                <div class="row">
-                    <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-03">Add</button></div>
-                    <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
-                </div>
-        
-            </div>
+<div class="overlay-modal add-new-pack-03">
+    <div class="modal-custom" style="margin-top:100px;">
+        <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+
+        <div class="text-center">
+            <p>Quantidade:</p>
+            <select name="valor-pack3" class="valor-pack3" id="">
+                <option hidden disabled selected>Selecione:</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+            </select>
         </div>
 
-        <div class="overlay-modal add-new-pack-04">
-                <div class="modal-custom" style="margin-top:100px;">
-                    <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
-            
-                    <div class="text-center">
-                        <p>Quantidade:</p>
-                        <select name="valor-pack4" class="valor-pack4" id="">
-                            <option hidden disabled selected>Selecione:</option>
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                        </select>
-                    </div>
-            
-                    <div class="row">
-                        <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-04">Add</button></div>
-                        <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
-                    </div>
-            
-                </div>
-            </div>
+        <div class="row">
+            <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-03">Add</button></div>
+            <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="overlay-modal add-new-pack-04">
+    <div class="modal-custom" style="margin-top:100px;">
+        <h4 class="text-center">Deseja adicionar um novo Pack?</h4>
+
+        <div class="text-center">
+            <p>Quantidade:</p>
+            <select name="valor-pack4" class="valor-pack4" id="">
+                <option hidden disabled selected>Selecione:</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-7"><button class="btn-default btn-sim modal-btn-add-04">Add</button></div>
+            <div class="col-xs-5"><button class="btn-default btn-nao">Cancelar</button></div>
+        </div>
+
+    </div>
+</div>
