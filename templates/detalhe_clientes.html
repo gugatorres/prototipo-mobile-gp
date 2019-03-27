@@ -228,5 +228,42 @@
     <li> <a href="#!consignacoes">Consignações em Aberto</a> </li>
 </ul>
 
+<!-- MODAL Justificativa -->
+
+<div class="overlay-modal modal-justificativa">
+        <div class="modal-custom" style="margin-top:50px;">
+            <a class="close-modal close-justificar"> X</a>
+    
+            <h4 class="text-center">Justificativa</h4>
+            <p class="text-center">Selecione o motivo abaixo:</p>
+            <select id="justificativa-select">
+                <option>ENCERROU ATIVIDADES</option>
+                <option>AUSENTE</option>
+                <option>DOC IRREGULAR</option>
+                <option>INADIMPLENTE</option>
+                <option>TROCA DE ROTA</option>
+                <option>ESTOQUE CHEIO</option>
+                <option>SEM DINHEIRO</option>
+                <option>FECHADO</option>
+                <option>ATRASO NAS ENTREGAS</option>
+            </select>
+
+            <textarea id="" rows="3"></textarea>
+           
+    
+            <a class="btn-default btn-justificar-ok"> JUSTIFICAR </a>
+    
+        </div>
+    </div>
+
+    <div class="overlay-modal overlay-finalizar">
+            <div class="modal-custom">
+                <h3 class="header-modal">Justificativa realizada com sucesso</h3>
+                <img src="images/verified.svg" alt="" style="width: 80px; margin: 20px auto 0; display: block;">
+                <div class="modal-conteudo">
+                    <a class="btn-default close-finalizar" style="margin-top: 20px;">Fechar</a>
+                </div>
+            </div>
+        </div>
 
 <script src="js/jQuery-custom.js"></script>

@@ -286,6 +286,17 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-product").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 			angular.element(".overlay-product").css("overflow-y", "scroll");
+			angular.element(".tabela-valores").css("display", "none");
+			angular.element(".txt-min2").css("display", "block");
+		});
+
+		angular.element(".ex-price").click(function () {
+			angular.element(".overlay-product").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".overlay-product").css("overflow-y", "scroll");
+			angular.element(".tabela-valores").css("display", "block");
+			angular.element(".txt-min2").css("display", "none");
+
 		});
 
 		angular.element(".add-product-sum").click(function () {
@@ -447,7 +458,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-				angular.element(".txt-estoque span").html("Estoque: 58724"); 
+				angular.element(".txt-estoque span").html("Estoque: 58724");
 			}, 3000);
 
 		});
@@ -568,13 +579,13 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".img-sync").click(function(){
-			$(this).attr("src","images/loading.gif");
+		angular.element(".img-sync").click(function () {
+			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
-				angular.element(".img-sync").attr("src","images/cloud_b.svg");
-				angular.element(".txt-estoque span").html("Estoque: 58724"); 
-					}, 3000);
-		
+				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724");
+			}, 3000);
+
 		});
 
 	})
@@ -648,13 +659,13 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
 		});
 
-		angular.element(".img-sync").click(function(){
-			$(this).attr("src","images/loading.gif");
+		angular.element(".img-sync").click(function () {
+			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
-				angular.element(".img-sync").attr("src","images/cloud_b.svg");
-				angular.element(".txt-estoque span").html("Estoque: 58724"); 
-					}, 3000);
-		
+				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724");
+			}, 3000);
+
 		});
 
 	})
@@ -770,13 +781,13 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).removeClass("active");
 		});
 
-		angular.element(".img-sync").click(function(){
-			$(this).attr("src","images/loading.gif");
+		angular.element(".img-sync").click(function () {
+			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
-				angular.element(".img-sync").attr("src","images/cloud_b.svg");
-				angular.element(".txt-estoque span").html("Estoque: 58724"); 
-					}, 3000);
-		
+				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724");
+			}, 3000);
+
 		});
 
 	})
@@ -1023,7 +1034,7 @@ app.controller("defaultController", function ($scope) {
 	/* detalhe Clientes Controller */
 	.controller("detalheClientesController", function ($scope) {
 
-		$scope.titulo = "Detalhe de Clientes"
+		$scope.titulo = "Detalhe do Cliente"
 		angular.element(".title-app").html("Detalhe de Clientes");
 
 		angular.element(".tab-1").click(function () {
@@ -1132,6 +1143,24 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").css("display", "none");
 		angular.element(".menu-requests").css("display", "block");
 		angular.element(".button-pedidos").attr("href", "#!/new_pedido");
+
+		angular.element(".button-feedback").click(function () {
+			angular.element(".modal-justificativa").css("display", "block");
+		});
+
+		angular.element(".close-justificar").click(function () {
+			angular.element(".modal-justificativa").css("display", "none");
+		});
+
+		angular.element(".btn-justificar-ok").click(function () {
+			angular.element(".modal-justificativa").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
+		});
+
+		angular.element(".close-finalizar").click(function () {
+			angular.element(".overlay-finalizar").css("display", "none");
+		});
+
 	})
 
 	/* Solicitar alteração financeira Controller */
@@ -1821,7 +1850,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-request").css("display", "none");
 		});
 
-		
+
 	})
 
 	/* Lista de Consignações Controller */
@@ -1846,7 +1875,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
 		});
-		
+
 	})
 
 	/* Detalhe Consignados Controller */
@@ -1870,37 +1899,37 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".buttons-request").css("display", "none");
 		});
 
-		angular.element(".close-faturar").click(function(){
-			angular.element(".modal-faturar").css("display","none");
+		angular.element(".close-faturar").click(function () {
+			angular.element(".modal-faturar").css("display", "none");
 		});
 
-		angular.element(".btn-consignados-faturar").click(function(){
-			angular.element(".modal-faturar").css("display","block");
+		angular.element(".btn-consignados-faturar").click(function () {
+			angular.element(".modal-faturar").css("display", "block");
 		})
 
-		angular.element(".close-recolher").click(function(){
-			angular.element(".modal-recolher").css("display","none");
+		angular.element(".close-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "none");
 		});
 
-		angular.element(".btn-consignados-recolher").click(function(){
-			angular.element(".modal-recolher").css("display","block");
+		angular.element(".btn-consignados-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "block");
 		});
 
-		angular.element(".btn-recolher").click(function(){
-			angular.element(".modal-recolher").css("display","none");
-			angular.element(".overlay-finalizar").css("display","block");
+		angular.element(".btn-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
 			angular.element(".overlay-finalizar .header-modal").html("Recolha Solicitada com Sucesso!");
 		});
-		
-		angular.element(".btn-faturar").click(function(){
-			angular.element(".modal-faturar").css("display","none");
-			angular.element(".overlay-finalizar").css("display","block");
+
+		angular.element(".btn-faturar").click(function () {
+			angular.element(".modal-faturar").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
 			angular.element(".overlay-finalizar .header-modal").html("Fatura realizada com Sucesso!");
 		});
 
-		
-	})
-	
-	
 
-	
+	})
+
+
+
+
