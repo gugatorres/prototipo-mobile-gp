@@ -121,6 +121,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/tab_comodato.html",
             controller: "tabComodatoController"
         })
+        .when("/venda_material_promo", {
+            templateUrl: "./templates/tab_venda_promo.html",
+            controller: "tabVendaPromoController"
+        })
         .when("/lista_comodatos", {
             templateUrl: "./templates/comodatos.html",
             controller: "ComodatosController"

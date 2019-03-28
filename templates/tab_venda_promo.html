@@ -1,0 +1,284 @@
+<div class="info-cliente">
+    <div class="row">
+        <p class="col-xs-8 text-left"> Nome do Cliente</p>
+        <p class="col-xs-4 text-right">012354687</p>
+    </div>
+
+    <div class="search-cart">
+        <div class="row">
+            <div class="col-xs-8">
+                <input type="text" placeholder="O que vamos vender hoje?">
+            </div>
+            <div class="col-xs-4" style="padding-left: 0;">
+
+                <div class="dropdown" id="operation">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="txt-selected">Operação:</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li class="link_venda">Venda</li>
+                        <li class="link_venda_promo">Venda de Material Promocional</li>
+                        <li class="link_new_pedido">Consignação</li>
+                        <li class="link_troca">Troca</li>
+                        <li class="link_comodato">Comodato sem venda</li>
+                        <li class="link_bonificacao">Bonificação de Material</li>
+                        <li class="link_bonificacao_avarias">Bonificação para Avarias</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="meta-faturamento" style="display:none;">
+        <div>Limite de crédito: R$ 1.245,00</div>
+        <div class="loading-customers">
+            <div class="bar-loading"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gerar-pedido" style="padding-top:95px;">
+
+    <div class="row" style="position:relative">
+
+
+        <!--  Card Brinde  -->
+        <a>
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-2" style="padding:0;">
+
+                        <img src="brindes/brinde1.jpg" style="width: 55px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-7">
+                        <p class="name">Cooler Itaipava Branco</p>
+                        <p class="cnpj">001234458741</p>
+                        <p class="preco">R$ 0,00</p>
+                        <p class="estoque">Estoque: 2145</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
+        <!--  Card Brinde  -->
+        <a>
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-2" style="padding:0;">
+
+                        <img src="brindes/brinde4.jpg" style="width: 55px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-7">
+                        <p class="name">Camiseta Itaipava</p>
+                        <p class="cnpj">001234458743</p>
+                        <p class="preco">R$ 0,00</p>
+                        <p class="estoque">Estoque: 2245</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
+        <!--  Card Brinde  -->
+        <a>
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-2" style="padding:0;">
+
+                        <img src="brindes/brinde5.jpg" style="width: 55px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-7">
+                        <p class="name">Balde Cacildis</p>
+                        <p class="cnpj">001234458741</p>
+                        <p class="preco">R$ 0,00</p>
+                        <p class="estoque">Estoque: 145</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
+        <!--  Card Brinde  -->
+        <a>
+            <div class="col-xs-12 card-product">
+                <div class="box-tile box-product white">
+
+                    <div class="col-xs-2" style="padding:0;">
+
+                        <img src="brindes/brinde7.jpg" style="width: 55px;" alt="">
+
+                    </div>
+
+                    <div class="col-xs-7">
+                        <p class="name">Cooler Itaipava Especial</p>
+                        <p class="cnpj">001234458741</p>
+                        <p class="preco">R$ 0,00</p>
+                        <p class="estoque">Estoque: 2145</p>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <span class="add-product">
+                            <img src="images/cart.svg" alt="" style="width: 30px;">
+                        </span>
+                    </div>
+
+                    <div style="clear:both"></div>
+
+                </div>
+            </div>
+        </a>
+
+
+
+    </div>
+
+    <div style="clear:both; height: 100px;"></div>
+
+    <a class="float-button btn-filter">
+
+        <img src="images/filter.svg" alt="" style="margin-left: 22px; margin-top: 23px; width: 25px;">
+
+    </a>
+    <!--
+    <div class="navigation-bottom">
+        <ul>
+            <li><a href="#!new_pedido" class="link-mercado"> <img src="images/mercado.svg" alt=""> <span>Mercado</span>
+                </a></li>
+            <li class="active"><a href="#!bonificacao" class="link-bonificacao"> <img src="images/bonificacao.svg" alt="">
+                    <span>Bonificações</span> </a></li>
+            <li><a href="#!combos" class="link-combo"> <img src="images/combo.svg" alt=""> <span>Combos</span> </a></li>
+            <li><a class="btn-filter"> <img src="images/filter.svg" alt=""> <span>Filtro</span> </a></li>
+        </ul>
+    </div>
+-->
+
+
+</div>
+
+<div class="total-box">
+
+    <div class="row">
+
+        <div class="col-xs-6"> <strong> Total de Itens: 4</strong></div>
+        <div class="col-xs-6 text-right"> <strong> Valor Total<br>R$ 600,00</strong></div>
+
+        <div style="clear:both; height:5px; border-bottom: solid 2px #b51c1c; margin-bottom: 10px;"></div>
+
+        <div style="overflow: auto; height: 130px;">
+
+            <div class="col-xs-6">Nome do Produto<br>12345678</div>
+            <div class="col-xs-6 text-right"> Valor Un.<br>R$ 150,00</div>
+
+            <div style="clear:both; height:5px; border-bottom: solid 2px #b51c1c; margin-bottom: 10px;"></div>
+
+            <div class="col-xs-6">Nome do Produto<br>12345678</div>
+            <div class="col-xs-6 text-right"> Valor Un.<br>R$ 150,00</div>
+
+            <div style="clear:both; height:5px; border-bottom: solid 2px #b51c1c; margin-bottom: 10px;"></div>
+
+            <div class="col-xs-6">Nome do Produto<br>12345678</div>
+            <div class="col-xs-6 text-right"> Valor Un.<br>R$ 150,00</div>
+
+            <div style="clear:both; height:5px; border-bottom: solid 2px #b51c1c; margin-bottom: 10px;"></div>
+
+            <div class="col-xs-6">Nome do Produto<br>12345678</div>
+            <div class="col-xs-6 text-right"> Valor Un.<br>R$ 150,00</div>
+
+            <div style="clear:both; height:5px;"></div>
+
+        </div>
+
+        <a href="#!carrinho" class="btn-go-cart">IR PARA O CARRINHO</a>
+
+
+    </div>
+
+</div>
+
+<div class="filter-products">
+    <div ng-include="'include/fragment_branding_new.html'"></div>
+</div>
+<div class="overlay-filter"></div>
+
+<div class="overlay-total"></div>
+
+
+<div class="overlay-modal">
+    <div class="modal-custom">
+
+        <a class="close-modal"> X</a>
+
+        <div class="config-product">
+
+            <p> <strong>001234458741</strong> </p>
+            <p>Refrigerador XYZ</p>
+
+            <div class="row">
+                <div class="col-xs-7">
+                    <input type="text" name="qtde" value="1" placeholder="1">
+                </div>
+                <div class="col-xs-5">
+                    <select class="select-product">
+                        <option>PC 12</option>
+                        <option>UN</option>
+                    </select>
+                </div>
+            </div>
+            <p class="txt-estoque"><span>Estoque: 5524</span> <img class="img-sync" style="width: 18px; margin-left: 8px;"
+                src="images/cloud_b.svg" alt=""></p>
+            <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 </p>
+
+            <a class="btn-default add-product-sum"> ADICIONAR </a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-modal cart-clean">
+    <div class="modal-custom" style="margin-top:100px;">
+        <img src="images/cart_black.svg" alt="" style="width: 20%; margin: 10px auto 10px; display: block;">
+        <h3 class="text-center">Atenção!</h3>
+        <h5 class="text-center"> Essa operação limpará o seu carrinho. </h5>
+        <p class="text-center">deseja realmente executar esse procedimento?</p>
+        <div class="row">
+            <div class="col-xs-6"><a class="btn-default btn-sim">SIM</a></div>
+            <div class="col-xs-6"><a class="btn-default btn-nao">NÃO</a></div>
+        </div>
+    </div>
+</div>
