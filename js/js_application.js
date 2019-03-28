@@ -109,6 +109,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/tab_bonificacao.html",
             controller: "tabBonificacaoController"
         })
+        .when("/bonificacao_avarias", {
+            templateUrl: "./templates/tab_bonificacao_avarias.html",
+            controller: "tabBonificacaoAvariasController"
+        })
         .when("/combos", {
             templateUrl: "./templates/tab_combos.html",
             controller: "tabCombosController"
@@ -120,6 +124,10 @@ app.config(function ($routeProvider) {
         .when("/comodato", {
             templateUrl: "./templates/tab_comodato.html",
             controller: "tabComodatoController"
+        })
+        .when("/comodato_regularizacao", {
+            templateUrl: "./templates/tab_comodato_regularizacao.html",
+            controller: "tabComodatoRegularizacaoController"
         })
         .when("/lista_comodatos", {
             templateUrl: "./templates/comodatos.html",
@@ -146,8 +154,12 @@ app.config(function ($routeProvider) {
             controller: "AcompanharPedidoController"
         })
         .when("/consignacoes", {
-            templateUrl: "./templates/consignacoes.html",
-            controller: "consignacoesController"
+            templateUrl: "./templates/tab_troca.html",
+            controller: "trocaController"
+        })
+        .when("/troca", {
+            templateUrl: "./templates/tab_troca.html",
+            controller: "trocaController"
         })
         .when("/lista_consignados", {
             templateUrl: "./templates/lista_consignados.html",
