@@ -382,6 +382,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
+		angular.element(".link_venda_promo").click(function () {
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
 		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
 			angular.element(".cart-clean").css("display", "block");
@@ -406,6 +412,14 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".cart-clean").css("display", "block");
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
 		});
+
+		angular.element(".link_bonificacao_avarias").click(function () {
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
+		});
+
+		
 
 		angular.element(".cart-clean .btn-nao").click(function () {
 			angular.element(".cart-clean").css("display", "none");
@@ -544,6 +558,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
+		angular.element(".link_venda_promo").click(function () {
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
 		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
 			angular.element(".cart-clean").css("display", "block");
@@ -564,6 +584,12 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".link_bonificacao").click(function () {
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
+		});
+
+		angular.element(".link_bonificacao_avarias").click(function () {
 			angular.element(".txt-selected").html("Bonificação sem venda");
 			angular.element(".cart-clean").css("display", "block");
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
@@ -668,6 +694,49 @@ app.controller("defaultController", function ($scope) {
 
 		});
 
+		angular.element(".link_venda").click(function () {
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
+		angular.element(".link_venda_promo").click(function () {
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
+		angular.element(".link_new_pedido").click(function () {
+			angular.element(".txt-selected").html("Consignação");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
+		angular.element(".link_troca").click(function () {
+			angular.element(".txt-selected").html("Troca");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
+		angular.element(".link_comodato").click(function () {
+			angular.element(".txt-selected").html("Comodato sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato");
+
+		});
+
+		angular.element(".link_bonificacao").click(function () {
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
+		});
+
+		angular.element(".link_bonificacao_avarias").click(function () {
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
+		});
+
 	})
 
 
@@ -746,6 +815,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 		});
 
+		angular.element(".link_venda_promo").click(function () {
+			angular.element(".txt-selected").html("Venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
+		});
+
 		angular.element(".link_new_pedido").click(function () {
 			angular.element(".txt-selected").html("Consignação");
 			angular.element(".cart-clean").css("display", "block");
@@ -766,6 +841,12 @@ app.controller("defaultController", function ($scope) {
 		});
 
 		angular.element(".link_bonificacao").click(function () {
+			angular.element(".txt-selected").html("Bonificação sem venda");
+			angular.element(".cart-clean").css("display", "block");
+			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
+		});
+
+		angular.element(".link_bonificacao_avarias").click(function () {
 			angular.element(".txt-selected").html("Bonificação sem venda");
 			angular.element(".cart-clean").css("display", "block");
 			angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");

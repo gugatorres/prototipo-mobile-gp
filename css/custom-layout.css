@@ -2173,6 +2173,13 @@ p.txt-min2 {
     height: 40px;
 }
 
+.total-comotado {
+    background: white;
+    margin: 0px auto 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+
 button[disabled] {
     cursor: default;
     background: #CCC;
