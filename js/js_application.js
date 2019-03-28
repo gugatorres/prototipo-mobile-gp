@@ -1,4 +1,5 @@
 var app = angular.module("appDash", ["ngRoute"]);
+
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/home", {
@@ -129,6 +130,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/tab_comodato_regularizacao.html",
             controller: "tabComodatoRegularizacaoController"
         })
+        .when("/venda_material_promo", {
+            templateUrl: "./templates/tab_venda_promo.html",
+            controller: "tabVendaPromoController"
+        })
         .when("/lista_comodatos", {
             templateUrl: "./templates/comodatos.html",
             controller: "ComodatosController"
@@ -169,5 +174,6 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/detalhe_consignados.html",
             controller: "detalheConsignadosController"
         })
-        .otherwise({ redirectTo: "/meus_clientes" });
-});
+        .otherwise({ redirectTo: "/meus_clientes" })
+    
+    })
