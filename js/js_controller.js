@@ -2167,8 +2167,8 @@ app.controller("defaultController", function ($scope) {
 	/* Lista de Consignações Controller */
 	.controller("listaConsignacoesController", function ($scope) {
 
-		$scope.titulo = "Itens Consignados"
-		angular.element(".title-app").html("Itens Consignados");
+		$scope.titulo = "Remessas - Consignados"
+		angular.element(".title-app").html("Remessas - Consignados");
 		angular.element(".sync img").attr("src", "images/search_w.svg");
 		angular.element(".sync").addClass("search");
 		angular.element(".sync").removeClass("sync");

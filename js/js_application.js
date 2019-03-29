@@ -159,8 +159,8 @@ app.config(function ($routeProvider) {
             controller: "AcompanharPedidoController"
         })
         .when("/consignacoes", {
-            templateUrl: "./templates/tab_troca.html",
-            controller: "trocaController"
+            templateUrl: "./templates/consignacoes.html",
+            controller: "listaConsignacoesController"
         })
         .when("/troca", {
             templateUrl: "./templates/tab_troca.html",
