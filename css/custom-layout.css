@@ -1423,6 +1423,7 @@ a .card-product {
 .status-pago{border-left: solid 4px #7fc317 !important; }
 .status-pendente{border-left: solid 4px #eeee00 !important; }
 .status-nao-pago{border-left: solid 4px #cc0808 !important;}
+.status-nao{border-left: solid 4px #999999 !important;}
 
 .box-pedidos .col-xs-7 {
     padding: 0;
