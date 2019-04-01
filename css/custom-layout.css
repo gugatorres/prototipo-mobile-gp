@@ -2137,6 +2137,28 @@ p.txt-min2 {
     color: #c62222;
 }
 
+.entrega-imediata {
+    display: block;
+    text-align: center;
+    background: rgb(134, 134, 134);
+    color: #FFFFFF;
+    padding: 8px;
+    position: relative;
+}
+
+.entrega-imediata.active{
+    background: #4CAF50;
+    color: #FFFFFF;
+}
+
+.img-verify {
+    width: 25px;
+    vertical-align: text-bottom;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
 
 /* Chart Metas */
 
@@ -2300,6 +2322,12 @@ button[disabled] {
     height: 105px;
     margin-bottom: 10px;
     box-shadow: none;
+}
+
+.others-brand {
+    line-height: 95px;
+    font-size: 18px;
+    color: #666666;
 }
 
 /* Questionários */
@@ -2733,6 +2761,11 @@ button[disabled] {
     border-color: #d5ffba !important;
 }
 
+.alerta-yellow {
+    background: #fff54b !important;
+    border-color: #dcd10f !important;
+}
+
 .line-traking{position: relative;}
 
 .line-traking ul {
@@ -2752,6 +2785,14 @@ button[disabled] {
     border-radius: 40px;
 }
 
+.bloq-traking li {
+    background: #fff54b !important;
+}
+
+.value-bloq {
+    background: #eaf381 !important;
+    width: 100% !important;
+}
 
 .line-traking li:last-child {
     margin-right: 0;
@@ -2780,6 +2821,16 @@ button[disabled] {
     background: #aef381;
     width: 36%;
     height: 5px;
+}
+
+.no-x {
+    color: #c62222;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .alerta-home img{

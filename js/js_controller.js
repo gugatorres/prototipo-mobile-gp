@@ -207,6 +207,14 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".bar-customer-back").css("display", "block");
 	})
 
+	/* Detalhes Pedido Bloqueado Controller */
+	.controller("DetalhesPedidoBloqueadoController", function ($scope) {
+
+		$scope.titulo = "Detalhes Pedido"
+		angular.element(".title-app").html("Pedido Bloqueado");
+		angular.element(".bar-customer-back").css("display", "block");
+	})
+
 	/* Histórico Pedidos Controller */
 	.controller("HistoricoPedidosController", function ($scope) {
 
@@ -1815,6 +1823,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-finalizar-pedido").click(function () {
 			angular.element(this).css("display", "none");
 		});
+
+		angular.element(".entrega-imediata").click(function(){
+			angular.element(this).addClass("active");
+			angular.element(this).append("<img class=img-verify src=images/veri_btn.svg/>");
+		})
 
 	})
 

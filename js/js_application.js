@@ -70,6 +70,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/detalhes_pedido.html",
             controller: "DetalhesPedidoController"
         })
+        .when("/detalhes_pedido_bloqueado", {
+            templateUrl: "./templates/detalhes_pedido_bloqueado.html",
+            controller: "DetalhesPedidoBloqueadoController"
+        })
         .when("/carrinho", {
             templateUrl: "./templates/carrinho.html",
             controller: "carrinhoController"
