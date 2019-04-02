@@ -1004,6 +1004,18 @@ app.controller("defaultController", function ($scope) {
 
 		});
 
+		angular.element(".btn-ped-sim").click(function(){
+			angular.element(this).addClass("active");
+			angular.element(".btn-ped-nao").removeClass("active");
+			angular.element(".num-pedido").css("display","block");
+		});
+		
+		angular.element(".btn-ped-nao").click(function(){
+			angular.element(this).addClass("active");
+			angular.element(".btn-ped-sim").removeClass("active");
+			angular.element(".num-pedido").css("display","none");
+		});
+
 	})
 
 	/* Tab Comodato Controller */
@@ -1809,7 +1821,12 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".lbl-pedido-cliente").click(function () {
 			angular.element(".form-pedido-cliente").toggle();
-		})
+		});
+
+		angular.element(".entrega-imediata").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).append("<img class=img-verify src=images/check-mark.svg />");
+		});
 
 	})
 
@@ -1839,11 +1856,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".overlay-finalizar-pedido").click(function () {
 			angular.element(this).css("display", "none");
 		});
-
-		angular.element(".entrega-imediata").click(function () {
-			angular.element(this).addClass("active");
-			angular.element(this).append("<img class=img-verify src=images/check-mark.svg />");
-		})
 
 	})
 

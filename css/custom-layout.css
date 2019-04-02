@@ -1615,6 +1615,28 @@ a .card-product {
 .config-product p:nth-child(2) {
     margin-bottom: 10px;
 }
+.pedido-venda {
+    margin: 10px 0 5px;
+}
+
+.btn-ped-sim.active {
+    background: #c62222;
+    color: #FFF;
+}
+
+.btn-ped-nao.active {
+    background: #c62222;
+    color: #FFF;
+}
+
+.pedido-venda a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #CCC;
+    padding: 10px;
+    color: #000;
+}
 
 p.txt-min {
     font-weight: normal;
