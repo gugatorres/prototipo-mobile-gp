@@ -2133,6 +2133,14 @@ p.txt-min2 {
     background: #CCCCCC;
 }
 
+#operation h4 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px #333;
+}
+
 .txt-selected {
     color: #c62222;
 }
