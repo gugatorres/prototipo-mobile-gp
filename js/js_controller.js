@@ -1,39 +1,44 @@
-/* default Controller */
-
+/* Configura Links */
 function configuraLinks(angular) {
 
 	angular.element(".link_venda").click(function () {
 		angular.element(".txt-selected").html("Venda");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 	});
 
 	angular.element(".link_venda_promo").click(function () {
 		angular.element(".txt-selected").html("Venda");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 	});
 
 	angular.element(".link_new_pedido").click(function () {
 		angular.element(".txt-selected").html("Consignação");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/new_pedido");
 	});
 
 	angular.element(".link_troca").click(function () {
 		angular.element(".txt-selected").html("Troca");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/troca");
 	});
 
 	angular.element(".link_comodato").click(function () {
 		angular.element(".txt-selected").html("Comodato sem venda");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato");
 	});
 
 	angular.element(".link_comodato_regularizacao").click(function () {
 		angular.element(".txt-selected").html("Comodato de regularização");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/comodato_regularizacao");
 
@@ -41,23 +46,97 @@ function configuraLinks(angular) {
 
 	angular.element(".link_bonificacao").click(function () {
 		angular.element(".txt-selected").html("Bonificação de Marketing");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao");
 	});
 
 	angular.element(".link_bonificacao_avarias").click(function () {
 		angular.element(".txt-selected").html("Bonificação para Avarias");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/bonificacao_avarias");
 	});
 
 	angular.element(".link_venda_promo").click(function () {
 		angular.element(".txt-selected").html("Venda");
+		angular.element(".operation-mode").css("display", "none");
 		angular.element(".cart-clean").css("display", "block");
 		angular.element(".cart-clean .btn-sim").attr("href", "#!/venda_material_promo");
 	});
+
+	angular.element("#btn-operation").click(function () {
+		angular.element(".operation-mode").css("display", "block");
+	});
 };
 
+/* More Less Controller */
+function moreLess(angular) {
+
+	angular.element(".remove1").click(function () {
+		if (angular.element("#exampleInputAmount1").val() == "1") {
+
+		} else {
+			angular.element("#exampleInputAmount1").val(angular.element("#exampleInputAmount1").val() - 1);
+		}
+	});
+
+	angular.element(".adc1").click(function () {
+		angular.element("#exampleInputAmount1").val(parseInt(angular.element("#exampleInputAmount1").val()) + 1);
+	});
+
+	angular.element(".remove2").click(function () {
+		if (angular.element("#exampleInputAmount2").val() == "1") {
+
+		} else {
+			angular.element("#exampleInputAmount2").val(angular.element("#exampleInputAmount2").val() - 1);
+		}
+	});
+
+	angular.element(".adc2").click(function () {
+		angular.element("#exampleInputAmount2").val(parseInt(angular.element("#exampleInputAmount2").val()) + 1);
+	});
+
+	angular.element(".remove3").click(function () {
+		if (angular.element("#exampleInputAmount3").val() == "1") {
+
+		} else {
+			angular.element("#exampleInputAmount3").val(angular.element("#exampleInputAmount3").val() - 1);
+		}
+	});
+
+	angular.element(".adc3").click(function () {
+		angular.element("#exampleInputAmount3").val(parseInt(angular.element("#exampleInputAmount3").val()) + 1);
+	});
+
+	angular.element(".remove4").click(function () {
+		if (angular.element("#exampleInputAmount4").val() == "1") {
+
+		} else {
+			angular.element("#exampleInputAmount4").val(angular.element("#exampleInputAmount4").val() - 1);
+		}
+	});
+
+	angular.element(".adc4").click(function () {
+		angular.element("#exampleInputAmount4").val(parseInt(angular.element("#exampleInputAmount4").val()) + 1);
+	});
+
+	angular.element(".remove5").click(function () {
+		if (angular.element("#exampleInputAmount5").val() == "1") {
+
+		} else {
+			angular.element("#exampleInputAmount5").val(angular.element("#exampleInputAmount5").val() - 1);
+		}
+	});
+
+	angular.element(".adc5").click(function () {
+		angular.element("#exampleInputAmount5").val(parseInt(angular.element("#exampleInputAmount5").val()) + 1);
+	});
+
+}
+
+
+/* default Controller */
 app.controller("defaultController", function ($scope) {
 
 	$scope.titulo = "Home"
@@ -924,7 +1003,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
 		angular.element(".search, .sync").addClass("cart");
 		angular.element(".cart").removeClass("search, sync");
-		angular.element(".cart").attr("href", "#!carrinho");
+		angular.element(".cart").attr("href", "#!carrinho_comodato");
 
 
 		angular.element(".add-product").click(function () {
@@ -1004,16 +1083,16 @@ app.controller("defaultController", function ($scope) {
 
 		});
 
-		angular.element(".btn-ped-sim").click(function(){
+		angular.element(".btn-ped-sim").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(".btn-ped-nao").removeClass("active");
-			angular.element(".num-pedido").css("display","block");
+			angular.element(".num-pedido").css("display", "block");
 		});
-		
-		angular.element(".btn-ped-nao").click(function(){
+
+		angular.element(".btn-ped-nao").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(".btn-ped-sim").removeClass("active");
-			angular.element(".num-pedido").css("display","none");
+			angular.element(".num-pedido").css("display", "none");
 		});
 
 	})
@@ -1737,67 +1816,43 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".btn-actions a").click(function () {
 			angular.element(".overlay-modal-delete").css("display", "none");
-		})
-
-		angular.element(".remove1").click(function () {
-			if (angular.element("#exampleInputAmount1").val() == "1") {
-
-			} else {
-				angular.element("#exampleInputAmount1").val(angular.element("#exampleInputAmount1").val() - 1);
-			}
 		});
 
-		angular.element(".adc1").click(function () {
-			angular.element("#exampleInputAmount1").val(parseInt(angular.element("#exampleInputAmount1").val()) + 1);
+		moreLess(angular);
+
+	})
+
+	/* Carrinho Controller */
+	.controller("carrinhoComodatoController", function ($scope) {
+
+		$scope.titulo = "Carrinho Comodato"
+		angular.element(".title-app").html("Carrinho Comodato");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").css("display", "none");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".cart").append("<span class='ind-number'></span>");
+		angular.element("#mySidenav").css("display", "none");
+		angular.element("#mySidenav").css("left", "-310px");
+		angular.element(".back-menu").css("display", "none");
+		angular.element(".back-menu").css("left", "-310px");
+		angular.element(".back-menu").css("background", "none");
+		angular.element(".menu-requests").css("display", "none");
+
+		angular.element(".delete-product").click(function () {
+			angular.element(".overlay-modal-delete").css("display", "block");
 		});
 
-		angular.element(".remove2").click(function () {
-			if (angular.element("#exampleInputAmount2").val() == "1") {
-
-			} else {
-				angular.element("#exampleInputAmount2").val(angular.element("#exampleInputAmount2").val() - 1);
-			}
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
 		});
 
-		angular.element(".adc2").click(function () {
-			angular.element("#exampleInputAmount2").val(parseInt(angular.element("#exampleInputAmount2").val()) + 1);
+		angular.element(".btn-actions a").click(function () {
+			angular.element(".overlay-modal-delete").css("display", "none");
 		});
 
-		angular.element(".remove3").click(function () {
-			if (angular.element("#exampleInputAmount3").val() == "1") {
-
-			} else {
-				angular.element("#exampleInputAmount3").val(angular.element("#exampleInputAmount3").val() - 1);
-			}
-		});
-
-		angular.element(".adc3").click(function () {
-			angular.element("#exampleInputAmount3").val(parseInt(angular.element("#exampleInputAmount3").val()) + 1);
-		});
-
-		angular.element(".remove4").click(function () {
-			if (angular.element("#exampleInputAmount4").val() == "1") {
-
-			} else {
-				angular.element("#exampleInputAmount4").val(angular.element("#exampleInputAmount4").val() - 1);
-			}
-		});
-
-		angular.element(".adc4").click(function () {
-			angular.element("#exampleInputAmount4").val(parseInt(angular.element("#exampleInputAmount4").val()) + 1);
-		});
-
-		angular.element(".remove5").click(function () {
-			if (angular.element("#exampleInputAmount5").val() == "1") {
-
-			} else {
-				angular.element("#exampleInputAmount5").val(angular.element("#exampleInputAmount5").val() - 1);
-			}
-		});
-
-		angular.element(".adc5").click(function () {
-			angular.element("#exampleInputAmount5").val(parseInt(angular.element("#exampleInputAmount5").val()) + 1);
-		});
+		moreLess(angular);
 
 	})
 
@@ -2282,6 +2337,42 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* Fechamento Comodato Controller */
+	.controller("fechamentoComodatoController", function ($scope) {
+
+		$scope.titulo = "Fechamento Comodato"
+		angular.element(".title-app").html("Fechamento Comodato");
+
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".cart").addClass("cart");
+		angular.element(".cart").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".search").css("display", "none");
+		angular.element(".cart").append("<span class='ind-number'></span>");
+		angular.element("#mySidenav").css("display", "none");
+		angular.element("#mySidenav").css("left", "-310px");
+		angular.element(".back-menu").css("display", "none");
+		angular.element(".back-menu").css("left", "-310px");
+		angular.element(".back-menu").css("background", "none");
+		angular.element(".menu-requests").css("display","none");
+
+		angular.element(".lbl-pedido-cliente").click(function () {
+			angular.element(".form-pedido-cliente").toggle();
+		});
+
+		angular.element(".entrega-imediata").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).append("<img class=img-verify src=images/check-mark.svg />");
+		});
 
 
+		angular.element(".btn-finalizar-pedido").click(function () {
+			angular.element(".overlay-finalizar-pedido").css("display", "block");
+		});
 
+		angular.element(".overlay-finalizar-pedido").click(function () {
+			angular.element(this).css("display", "none");
+		});
+
+	})

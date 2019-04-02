@@ -12,19 +12,10 @@
             <div class="col-xs-4" style="padding-left: 0;">
 
                 <div class="dropdown" id="operation">
-                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button id="btn-operation" type="button">
                         <span class="txt-selected">Operação:</span>
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        <li class="link_venda">Venda</li>
-                        <li class="link_venda_promo">Venda de Material Promocional</li>
-                        <li class="link_new_pedido">Consignação</li>
-                        <li class="link_troca">Troca</li>
-                        <li class="link_comodato">Comodato sem venda</li>
-                        <li class="link_bonificacao">Bonificação de Material</li>
-                        <li class="link_bonificacao_avarias">Bonificação para Avarias</li>
-                    </ul>
                 </div>
 
             </div>
@@ -262,7 +253,7 @@
                 </div>
             </div>
             <p class="txt-estoque"><span>Estoque: 5524</span> <img class="img-sync" style="width: 18px; margin-left: 8px;"
-                src="images/cloud_b.svg" alt=""></p>
+                    src="images/cloud_b.svg" alt=""></p>
             <p class="txt-min">Última atualização em: 01/02/2019 às 8h44 </p>
 
             <a class="btn-default add-product-sum"> ADICIONAR </a>
@@ -282,3 +273,18 @@
         </div>
     </div>
 </div>
+
+<div class="overlay-modal operation-mode">
+        <div class="modal-custom" style="margin-top:100px;">
+           
+                <ul class="list-operation" aria-labelledby="dLabel">
+                        <li class="link_venda">Venda</li>
+                        <li class="link_comodato">Comodato</li>
+                        <li class="link_troca">Consignação</li>
+                        <li class="link_troca">Troca</li>
+                        <li class="link_bonificacao">Bonificação de Marketing</li>
+                        <li class="link_bonificacao_avarias">Bonificação para Avarias</li>
+                        <li class="link_comodato_regularizacao">Comodato de regularização</li>
+                    </ul>
+        </div>
+    </div>

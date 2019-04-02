@@ -78,6 +78,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/carrinho.html",
             controller: "carrinhoController"
         })
+        .when("/carrinho_comodato", {
+            templateUrl: "./templates/carrinho_comodato.html",
+            controller: "carrinhoComodatoController"
+        })
         .when("/formas_pagamento", {
             templateUrl: "./templates/formas_pagamento.html",
             controller: "formasPagamentoController"
@@ -177,6 +181,10 @@ app.config(function ($routeProvider) {
         .when("/detalhe_consignados", {
             templateUrl: "./templates/detalhe_consignados.html",
             controller: "detalheConsignadosController"
+        })
+        .when("/fechamento_comodato", {
+            templateUrl: "./templates/fechamento_comodato.html",
+            controller: "fechamentoComodatoController"
         })
         .otherwise({ redirectTo: "/meus_clientes" })
     

@@ -1782,6 +1782,18 @@ p.txt-min2 {
     width: 20px !important;
 }
 
+.list-operation {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-operation li {
+    padding: 5px;
+    font-size: 16px;
+}
+
 /* Carrinho */
 
 .carrinho .box-product {
