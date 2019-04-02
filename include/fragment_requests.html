@@ -4,7 +4,7 @@
 		<div class="tab-page-hist-1">
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-01">
 					<div class="box-tile box-pedidos white status-nao-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -21,7 +21,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido_bloqueado">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-02">
 					<div class="box-tile box-pedidos white status-pendente">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -38,7 +38,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido_bloqueado">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-03">
 					<div class="box-tile box-pedidos white status-pendente">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -55,7 +55,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-04">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -72,7 +72,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-05">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -89,7 +89,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos" style="margin-bottom: 200px;">
+				<div class="col-xs-12 card-pedidos pedido-06" style="margin-bottom: 200px;">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -108,7 +108,7 @@
 		<div class="tab-page-hist-2">
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-07">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -125,7 +125,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-08">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -142,7 +142,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos">
+				<div class="col-xs-12 card-pedidos pedido-09">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -159,7 +159,7 @@
 
 			<!--  Card Pedido  -->
 			<a href="#!detalhes_pedido">
-				<div class="col-xs-12 card-pedidos" style="margin-bottom: 200px;">
+				<div class="col-xs-12 card-pedidos pedido-10" style="margin-bottom: 200px;">
 					<div class="box-tile box-pedidos white status-pago">
 						<div class="col-xs-7">
 							<p class="cod-pedido"> <strong>012345678</strong> </p>
@@ -176,15 +176,3 @@
 		</div>
 	</div>
 </div>
-
-<script>
-	$(".tab-page-3 .box-pedidos").removeClass("status-pago");
-	$(".tab-page-3 .box-pedidos .status-pedido").removeClass("status-pendente");
-	$(".tab-page-3 .box-pedidos .status-pedido").removeClass("status-nao-pago");
-	$(".tab-page-3 .box-pedidos").addClass("status-nao");
-	$(".tab-page-3 .box-pedidos .status-pedido").addClass("bg-gray");
-
-	$(".tab-page-3 .box-pedidos").css("position", "relative");
-	$(".tab-page-3 .box-pedidos .status-pedido").html("PENDENTE");
-	$(".tab-page-3 .box-pedidos img").attr("src", "/images/clock.svg");
-</script>

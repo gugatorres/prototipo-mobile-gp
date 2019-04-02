@@ -2325,8 +2325,11 @@ button[disabled] {
 }
 
 .others-brand {
-    line-height: 95px;
-    font-size: 18px;
+    line-height: 12px;
+    padding-top: 35px;
+    display: block;
+    font-size: 8px;
+    font-weight: bold;
     color: #666666;
 }
 

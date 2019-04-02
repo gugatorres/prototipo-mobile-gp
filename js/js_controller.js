@@ -1,6 +1,6 @@
 /* default Controller */
 
-function configuraLinks(angular){
+function configuraLinks(angular) {
 
 	angular.element(".link_venda").click(function () {
 		angular.element(".txt-selected").html("Venda");
@@ -187,6 +187,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
 			angular.element(".tab-content > div").css("display", "none");
 			angular.element(".tab-page-2").css("display", "block");
+			angular.element(".tab-page-2 .pedido-01 .status-pedido").html("DEVOLVIDO <img src=images/left-arrow.svg>");
+			angular.element(".tab-page-2 .pedido-02 .status-pedido").html("EM TRANSITO <img src=images/delivery-truck.svg>");
+			angular.element(".tab-page-2 .pedido-03 .status-pedido").html("EM TRANSITO <img src=images/delivery-truck.svg>");
+			angular.element(".tab-page-2 .pedido-04 .status-pedido").html("ENTREGUE <img src=images/thumbs-up.svg>");
+			angular.element(".tab-page-2 .pedido-05 .status-pedido").html("ENTREGUE <img src=images/thumbs-up.svg>");
+			angular.element(".tab-page-2 .pedido-06 .status-pedido").html("ENTREGUE <img src=images/thumbs-up.svg>");
 		});
 
 		angular.element(".tab-3").click(function () {
@@ -195,7 +201,17 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-1,.tab-2").removeClass("active");
 			angular.element(".tab-content > div").css("display", "none");
 			angular.element(".tab-page-3").css("display", "block");
+			angular.element(".tab-page-3 .box-pedidos").removeClass("status-pago");
+			angular.element(".tab-page-3 .box-pedidos .status-pedido").removeClass("status-pendente");
+			angular.element(".tab-page-3 .box-pedidos .status-pedido").removeClass("status-nao-pago");
+			angular.element(".tab-page-3 .box-pedidos").addClass("status-nao");
+			angular.element(".tab-page-3 .box-pedidos .status-pedido").addClass("bg-gray");
+
+			angular.element(".tab-page-3 .box-pedidos").css("position", "relative");
+			angular.element(".tab-page-3 .box-pedidos .status-pedido").html("PENDENTE <img src=images/clock.svg>");
 		});
+
+
 
 	})
 
@@ -399,7 +415,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products").css("right", "0");
 			angular.element(".overlay-filter").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
-			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
+			angular.element(".filter-products .col-xs-6:nth-child(15)").css("margin-bottom", "100px");
 			angular.element(".total-box").css("z-index", "9");
 			angular.element(".brand-itaipava").removeAttr("href", "");
 		});
@@ -601,7 +617,7 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
-	
+
 	/* Tab Bonificação Controller */
 	.controller("tabBonificacaoAvariasController", function ($scope) {
 
@@ -898,97 +914,97 @@ app.controller("defaultController", function ($scope) {
 		configuraLinks(angular);
 	})
 
-/* Tab Comodato Controller */
-.controller("tabComodatoController", function ($scope) {
+	/* Tab Comodato Controller */
+	.controller("tabComodatoController", function ($scope) {
 
-	$scope.titulo = "Comodato"
-	angular.element(".title-app").html("Comodato");
-	angular.element("body").css("overflow-y", "auto");
-	angular.element(".bar-customer-back").css("display", "none");
-	angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
-	angular.element(".search, .sync").addClass("cart");
-	angular.element(".cart").removeClass("search, sync");
-	angular.element(".cart").attr("href", "#!carrinho");
-
-
-	angular.element(".add-product").click(function () {
-		angular.element(".overlay-modal").not('.cart-clean').css("display", "block");
-	});
-
-	angular.element(".close-modal").click(function () {
-		angular.element(".overlay-modal").css("display", "none");
-	});
-
-	angular.element(".add-product-sum").click(function () {
-		angular.element(".overlay-modal").css("display", "none");
-		angular.element(".ind-number").css("display", "block");
-		angular.element(".ind-number").addClass("anima-circle");
-		//angular.element(".total-box").css("bottom", "60px");
-		//angular.element(".overlay-total").css("display", "block");
-		angular.element("body").css("overflow-y", "hidden");
-		angular.element("body").addClass("close-total-sales");
-
-		setTimeout(function () {
-			angular.element(".ind-number").removeClass("anima-circle");
-		}, 3000);
-
-	});
-
-	angular.element(".overlay-total").click(function () {
-		angular.element(this).css("display", "none");
-		angular.element("body").addClass("close-total-sales");
-		angular.element(".total-box").css("bottom", "-178px");
+		$scope.titulo = "Comodato"
+		angular.element(".title-app").html("Comodato");
 		angular.element("body").css("overflow-y", "auto");
-		angular.element(".total-box").addClass("open-total");
-	});
-
-	angular.element(".open-total").click(function () {
-		angular.element(".total-box").css("bottom", "0px");
-		angular.element(".total-box").removeClass("open-total");
-	});
-
-	angular.element(".btn-filter").click(function () {
-		angular.element(".filter-products").css("right", "0");
-		angular.element(".overlay-filter").css("display", "block");
-		angular.element("body").css("overflow-y", "hidden");
-		angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
-		angular.element(".total-box").css("z-index", "9");
-		angular.element(".brand-itaipava").removeAttr("href", "");
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "#!carrinho");
 
 
-	});
+		angular.element(".add-product").click(function () {
+			angular.element(".overlay-modal").not('.cart-clean').css("display", "block");
+		});
 
-	angular.element(".overlay-filter").click(function () {
-		angular.element(".filter-products").css("right", "-250px");
-		angular.element(this).css("display", "none");
-		angular.element("body").css("overflow-y", "auto");
-		angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
-		angular.element(".total-box").css("z-index", "999");
-		angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
-	});
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+		});
 
-	configuraLinks(angular);
+		angular.element(".add-product-sum").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".ind-number").css("display", "block");
+			angular.element(".ind-number").addClass("anima-circle");
+			//angular.element(".total-box").css("bottom", "60px");
+			//angular.element(".overlay-total").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element("body").addClass("close-total-sales");
 
-	angular.element(".cart-clean .btn-nao").click(function () {
-		angular.element(".cart-clean").css("display", "none");
-		angular.element(this).removeClass("active");
-	});
+			setTimeout(function () {
+				angular.element(".ind-number").removeClass("anima-circle");
+			}, 3000);
 
-	angular.element(".cart-clean .btn-sim").click(function () {
-		angular.element(".cart-clean").css("display", "none");
-		angular.element(this).removeClass("active");
-	});
+		});
 
-	angular.element(".img-sync").click(function () {
-		$(this).attr("src", "images/loading.gif");
-		setTimeout(function () {
-			angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-			angular.element(".txt-estoque span").html("Estoque: 58724");
-		}, 3000);
+		angular.element(".overlay-total").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("body").addClass("close-total-sales");
+			angular.element(".total-box").css("bottom", "-178px");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".total-box").addClass("open-total");
+		});
 
-	});
+		angular.element(".open-total").click(function () {
+			angular.element(".total-box").css("bottom", "0px");
+			angular.element(".total-box").removeClass("open-total");
+		});
 
-})
+		angular.element(".btn-filter").click(function () {
+			angular.element(".filter-products").css("right", "0");
+			angular.element(".overlay-filter").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
+			angular.element(".total-box").css("z-index", "9");
+			angular.element(".brand-itaipava").removeAttr("href", "");
+
+
+		});
+
+		angular.element(".overlay-filter").click(function () {
+			angular.element(".filter-products").css("right", "-250px");
+			angular.element(this).css("display", "none");
+			angular.element("body").css("overflow-y", "auto");
+			angular.element(".filter-products .col-xs-6:last-child").css("margin-bottom", "initial");
+			angular.element(".total-box").css("z-index", "999");
+			angular.element(".brand-itaipava").attr("href", "#!lp_itaipava");
+		});
+
+		configuraLinks(angular);
+
+		angular.element(".cart-clean .btn-nao").click(function () {
+			angular.element(".cart-clean").css("display", "none");
+			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".cart-clean .btn-sim").click(function () {
+			angular.element(".cart-clean").css("display", "none");
+			angular.element(this).removeClass("active");
+		});
+
+		angular.element(".img-sync").click(function () {
+			$(this).attr("src", "images/loading.gif");
+			setTimeout(function () {
+				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+				angular.element(".txt-estoque span").html("Estoque: 58724");
+			}, 3000);
+
+		});
+
+	})
 
 	/* Tab Comodato Controller */
 	.controller("tabComodatoRegularizacaoController", function ($scope) {
@@ -1824,7 +1840,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 		});
 
-		angular.element(".entrega-imediata").click(function(){
+		angular.element(".entrega-imediata").click(function () {
 			angular.element(this).addClass("active");
 			angular.element(this).append("<img class=img-verify src=images/veri_btn.svg/>");
 		})
