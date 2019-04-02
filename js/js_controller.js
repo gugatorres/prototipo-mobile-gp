@@ -1842,7 +1842,7 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".entrega-imediata").click(function () {
 			angular.element(this).addClass("active");
-			angular.element(this).append("<img class=img-verify src=images/check-mark.svg/>");
+			angular.element(this).append("<img class=img-verify src=images/check-mark.png/>");
 		})
 
 	})
