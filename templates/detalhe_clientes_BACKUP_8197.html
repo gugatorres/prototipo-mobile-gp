@@ -42,16 +42,18 @@
 
             <div class="row">
 
-                    <div class="col-md-12 col-xs-12" style="padding-right: 10px;">
-                            <div class="box-tile white text-center" style="height: 100px;">
-                                <p class="title-box-minuto text-left" style="margin-left: 20px;">Limite de Crédito</p>
-                                <div class="col-xs-12" style="font-size: 12px;">
-                                    <div class="credito-base"> <div class="credito-value"></div> </div>
-                                    <div class="col-xs-6 text-center"> Disponível <br> <strong>R$ 350,00</strong>  </div>
-                                    <div class="col-xs-6 text-center"> Total <br> <strong>R$ 350,00</strong>   </div>
-                                </div>
+                <div class="col-md-12 col-xs-12" style="padding-right: 10px;">
+                    <div class="box-tile white text-center" style="height: 100px;">
+                        <p class="title-box-minuto text-left" style="margin-left: 20px;">Limite de Crédito</p>
+                        <div class="col-xs-12" style="font-size: 12px;">
+                            <div class="credito-base">
+                                <div class="credito-value"></div>
                             </div>
+                            <div class="col-xs-6 text-center"> Disponível <br> <strong>R$ 350,00</strong> </div>
+                            <div class="col-xs-6 text-center"> Total <br> <strong>R$ 350,00</strong> </div>
                         </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -310,41 +312,35 @@
     <li> <a href="#!solicitar_alteracao_financ">Solic. alteração financeira </a> </li>
     <li> <a href="#!historico_pedidos">Histórico de Pedidos</a> </li>
     <li> <a href="#!lista_comodatos">Comodatos em Aberto</a> </li>
+    <li> <a href="#!comodatos_barril">Recolha (Barril e Cilindro) </a> </li>
     <li> <a href="#!consignacoes">Consignações em Aberto</a> </li>
 </ul>
 
 <!-- MODAL Justificativa -->
 
 <div class="overlay-modal modal-justificativa">
-        <div class="modal-custom" style="margin-top:50px;">
-            <a class="close-modal close-justificar"> X</a>
-    
-            <h4 class="text-center">Justificativa</h4>
-            <p class="text-center">Selecione o motivo abaixo:</p>
+    <div class="modal-custom" style="margin-top:50px;">
+        <a class="close-modal close-justificar"> X</a>
 
-            <div class="dropdown" id="operation" style="margin-bottom: 10px;">
-                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="txt-selected">Selecione:</span>
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dLabel" style="width: 100% !important;">
-                    <li>ENCERROU ATIVIDADES</li>
-                    <li>AUSENTE</li>
-                    <li>DOC IRREGULAR</li>
-                    <li>INADIMPLENTE</li>
-                    <li>TROCA DE ROTA</li>
-                    <li>ESTOQUE CHEIO</li>
-                    <li>SEM DINHEIRO</li>
-                    <li>FECHADO</li>
-                    <li>ATRASO NAS ENTREGAS</li>
-                </ul>
-            </div>
+        <h4 class="text-center">Justificativa</h4>
+        <p class="text-center">Selecione o motivo abaixo:</p>
 
-            <textarea id="" rows="3"></textarea>
-           
-    
-            <a class="btn-default btn-justificar-ok"> JUSTIFICAR </a>
-    
+        <div class="dropdown" id="operation" style="margin-bottom: 10px;">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="txt-selected">Selecione:</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel" style="width: 100% !important;">
+                <li>ENCERROU ATIVIDADES</li>
+                <li>AUSENTE</li>
+                <li>DOC IRREGULAR</li>
+                <li>INADIMPLENTE</li>
+                <li>TROCA DE ROTA</li>
+                <li>ESTOQUE CHEIO</li>
+                <li>SEM DINHEIRO</li>
+                <li>FECHADO</li>
+                <li>ATRASO NAS ENTREGAS</li>
+            </ul>
         </div>
 
         <textarea id="" rows="3"></textarea>
@@ -353,6 +349,13 @@
         <a class="btn-default btn-justificar-ok"> JUSTIFICAR </a>
 
     </div>
+
+    <textarea id="" rows="3"></textarea>
+
+
+    <a class="btn-default btn-justificar-ok"> JUSTIFICAR </a>
+
+</div>
 </div>
 
 <div class="overlay-modal overlay-finalizar">

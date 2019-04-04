@@ -166,6 +166,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/comodatos_contrato_pend.html",
             controller: "ComodatosContratoPendentesController"
         })
+        .when("/comodatos_barril", {
+            templateUrl: "./templates/comodato_barril.html",
+            controller: "ComodatosBarrilController"
+        })
         .when("/acompanhar_pedido", {
             templateUrl: "./templates/acompanhar_pedido.html",
             controller: "AcompanharPedidoController"

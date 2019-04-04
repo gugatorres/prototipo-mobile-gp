@@ -1,120 +1,506 @@
-<div class="row nav-item" style="margin-top: 15px;">
-	<div class="col-xs-3 text-left">
-		<a> Anterior </a> 
-	</div> 
-	<div class="col-xs-6">
-				<p class="text-center" style="margin: 0;">Avaliação Item <strong>1/5</strong></p>
-	</div>
-
-	<div class="col-xs-3 text-right">
-			<a> Próximo </a> 
-	</div>
-
-</div>
-
-<div class="row" style="margin-top: 15px;">
-	<div class="col-md-12 col-xs-12">
-		<div class="box-tile white" style="padding: 10px;">
-			<div class="col-xs-6" style="padding-left: 5px; line-height: 38px;">
-				Vasilhame 600 ml
-			</div>
-			<div class="col-xs-6 text-right" style="padding-right: 5px;">
-				<div class="row">
-					<div class="col-xs-8 text-left">Total</div>
-					<div class="col-xs-4 text-right"> <label class="lbl-total"></label> </div>
-					<div class="col-xs-8 text-left">Pendente</div>
-					<div class="col-xs-4 text-right"> <label class="lbl-pendente">10</label></div>
+<div class="item-notes-comodatos">
+	<!-- Item Accordeon -->
+	<div class="row" style="margin-top: 15px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="box-tile white accordeon-default accordeon-01" style="padding: 10px;">
+				<div class="col-xs-6" style="padding-left: 5px; line-height: 38px;">
+					Vasilhame 600 ml
 				</div>
+				<div class="col-xs-6 text-right" style="padding-right: 5px;">
+					<div class="row">
+						<div class="col-xs-8 text-left">Total</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-total"></label> </div>
+						<div class="col-xs-8 text-left">Pendente</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-pendente">10</label></div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+
+				<!-- Painel Bottom -->
+				<div class="row painel-bottom">
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<ul class="list-notes">
+
+								<li style="background: #9fff9f">
+									<div class="row">
+										<div class="col-xs-6">Bom</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove">-</div>
+													<input type="number" class="form-control input-value input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ffff7b;">
+									<div class="row">
+										<div class="col-xs-6">Regular</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove2">-</div>
+													<input type="number" class="form-control input-value2 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add2">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ff7878;">
+									<div class="row">
+										<div class="col-xs-6">Ruim</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove3">-</div>
+													<input type="number" class="form-control input-value3 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add3">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #b1b0b0;">
+									<div class="row">
+										<div class="col-xs-6">Quebrado</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove4">-</div>
+													<input type="number" class="form-control input-value4 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add4">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+
+								<li style="background: #ab897d;">
+									<div class="row">
+										<div class="col-xs-6">Faltante</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove5">-</div>
+													<input type="number" class="form-control input-value5 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add5">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<textarea name="comentarios" id="comentarios-notes" rows="2" placeholder="Comentários"></textarea>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+
+
+
 			</div>
-			<div style="clear:both"></div>
 		</div>
 	</div>
-</div>
 
-<div class="row" style="margin-top: 15px;">
-	<div class="col-md-12 col-xs-12">
-		<div class="box-tile white" style="padding: 10px;">
-
-			<ul class="list-notes">
-
-				<li style="background: #9fff9f">
+	<!-- Item Accordeon -->
+	<div class="row" style="margin-top: 15px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="box-tile white accordeon-default accordeon-02" style="padding: 10px;">
+				<div class="col-xs-6" style="padding-left: 5px; line-height: 38px;">
+					Vasilhame 600 ml
+				</div>
+				<div class="col-xs-6 text-right" style="padding-right: 5px;">
 					<div class="row">
-						<div class="col-xs-6">Bom</div>
-						<div class="col-xs-6">
-							<div class="form-group">
-								<label class="sr-only"></label>
-								<div class="input-group">
-									<div class="input-group-addon btn-remove">-</div>
-									<input type="number" class="form-control input-value input-sum" id="exampleInputAmount5" value="0">
-									<div class="input-group-addon btn-add">+</div>
-								</div>
-							</div>
+						<div class="col-xs-8 text-left">Total</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-total"></label> </div>
+						<div class="col-xs-8 text-left">Pendente</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-pendente">10</label></div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+
+				<!-- Painel Bottom -->
+				<div class="row painel-bottom">
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<ul class="list-notes">
+
+								<li style="background: #9fff9f">
+									<div class="row">
+										<div class="col-xs-6">Bom</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove">-</div>
+													<input type="number" class="form-control input-value input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ffff7b;">
+									<div class="row">
+										<div class="col-xs-6">Regular</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove2">-</div>
+													<input type="number" class="form-control input-value2 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add2">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ff7878;">
+									<div class="row">
+										<div class="col-xs-6">Ruim</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove3">-</div>
+													<input type="number" class="form-control input-value3 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add3">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #b1b0b0;">
+									<div class="row">
+										<div class="col-xs-6">Quebrado</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove4">-</div>
+													<input type="number" class="form-control input-value4 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add4">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+
+								<li style="background: #ab897d;">
+									<div class="row">
+										<div class="col-xs-6">Faltante</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove5">-</div>
+													<input type="number" class="form-control input-value5 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add5">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+							<div style="clear:both"></div>
 						</div>
 					</div>
-				</li>
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
 
-				<li style="background: #ffff7b;">
-					<div class="row">
-						<div class="col-xs-6">Regular</div>
-						<div class="col-xs-6">
-							<div class="form-group">
-								<label class="sr-only"></label>
-								<div class="input-group">
-									<div class="input-group-addon btn-remove2">-</div>
-									<input type="number" class="form-control input-value2 input-sum" id="exampleInputAmount5" value="0">
-									<div class="input-group-addon btn-add2">+</div>
-								</div>
-							</div>
+							<textarea name="comentarios" id="comentarios-notes" rows="2" placeholder="Comentários"></textarea>
+
+							<div style="clear:both"></div>
 						</div>
 					</div>
-				</li>
+				</div>
 
-				<li style="background: #ff7878;">
-					<div class="row">
-						<div class="col-xs-6">Ruim</div>
-						<div class="col-xs-6">
-							<div class="form-group">
-								<label class="sr-only"></label>
-								<div class="input-group">
-									<div class="input-group-addon btn-remove3">-</div>
-									<input type="number" class="form-control input-value3 input-sum" id="exampleInputAmount5" value="0">
-									<div class="input-group-addon btn-add3">+</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
 
-				<li style="background: #b1b0b0;">
-					<div class="row">
-						<div class="col-xs-6">Quebrado</div>
-						<div class="col-xs-6">
-							<div class="form-group">
-								<label class="sr-only"></label>
-								<div class="input-group">
-									<div class="input-group-addon btn-remove4">-</div>
-									<input type="number" class="form-control input-value4 input-sum" id="exampleInputAmount5" value="0">
-									<div class="input-group-addon btn-add4">+</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
 
-			</ul>
-
-			<div style="clear:both"></div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="row" style="margin-top: 15px;">
-	<div class="col-md-12 col-xs-12">
-		<div class="box-tile white" style="padding: 10px;">
+	<!-- Item Accordeon -->
+	<div class="row" style="margin-top: 15px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="box-tile white accordeon-default accordeon-03" style="padding: 10px;">
+				<div class="col-xs-6" style="padding-left: 5px; line-height: 38px;">
+					Vasilhame 600 ml
+				</div>
+				<div class="col-xs-6 text-right" style="padding-right: 5px;">
+					<div class="row">
+						<div class="col-xs-8 text-left">Total</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-total"></label> </div>
+						<div class="col-xs-8 text-left">Pendente</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-pendente">10</label></div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
 
-			<textarea name="comentarios" id="comentarios-notes" rows="2" placeholder="Comentários"></textarea>
+				<!-- Painel Bottom -->
+				<div class="row painel-bottom">
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
 
-			<div style="clear:both"></div>
+							<ul class="list-notes">
+
+								<li style="background: #9fff9f">
+									<div class="row">
+										<div class="col-xs-6">Bom</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove">-</div>
+													<input type="number" class="form-control input-value input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ffff7b;">
+									<div class="row">
+										<div class="col-xs-6">Regular</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove2">-</div>
+													<input type="number" class="form-control input-value2 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add2">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ff7878;">
+									<div class="row">
+										<div class="col-xs-6">Ruim</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove3">-</div>
+													<input type="number" class="form-control input-value3 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add3">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #b1b0b0;">
+									<div class="row">
+										<div class="col-xs-6">Quebrado</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove4">-</div>
+													<input type="number" class="form-control input-value4 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add4">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+
+								<li style="background: #ab897d;">
+									<div class="row">
+										<div class="col-xs-6">Faltante</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove5">-</div>
+													<input type="number" class="form-control input-value5 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add5">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<textarea name="comentarios" id="comentarios-notes" rows="2" placeholder="Comentários"></textarea>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
 		</div>
 	</div>
+
+	<!-- Item Accordeon -->
+	<div class="row" style="margin-top: 15px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="box-tile white accordeon-default accordeon-04" style="padding: 10px;">
+				<div class="col-xs-6" style="padding-left: 5px; line-height: 38px;">
+					Vasilhame 600 ml
+				</div>
+				<div class="col-xs-6 text-right" style="padding-right: 5px;">
+					<div class="row">
+						<div class="col-xs-8 text-left">Total</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-total"></label> </div>
+						<div class="col-xs-8 text-left">Pendente</div>
+						<div class="col-xs-4 text-right"> <label class="lbl-pendente">10</label></div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+
+				<!-- Painel Bottom -->
+				<div class="row painel-bottom">
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<ul class="list-notes">
+
+								<li style="background: #9fff9f">
+									<div class="row">
+										<div class="col-xs-6">Bom</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove">-</div>
+													<input type="number" class="form-control input-value input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ffff7b;">
+									<div class="row">
+										<div class="col-xs-6">Regular</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove2">-</div>
+													<input type="number" class="form-control input-value2 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add2">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #ff7878;">
+									<div class="row">
+										<div class="col-xs-6">Ruim</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove3">-</div>
+													<input type="number" class="form-control input-value3 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add3">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li style="background: #b1b0b0;">
+									<div class="row">
+										<div class="col-xs-6">Quebrado</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove4">-</div>
+													<input type="number" class="form-control input-value4 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add4">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+
+								<li style="background: #ab897d;">
+									<div class="row">
+										<div class="col-xs-6">Faltante</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label class="sr-only"></label>
+												<div class="input-group">
+													<div class="input-group-addon btn-remove5">-</div>
+													<input type="number" class="form-control input-value5 input-sum" id="exampleInputAmount5" value="0">
+													<div class="input-group-addon btn-add5">+</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="white" style="padding: 10px;">
+
+							<textarea name="comentarios" id="comentarios-notes" rows="2" placeholder="Comentários"></textarea>
+
+							<div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
 </div>

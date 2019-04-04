@@ -58,7 +58,8 @@
 
 body {
     background: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
@@ -2639,6 +2640,16 @@ button[disabled] {
 }
 
 #comentarios-notes::placeholder{color:#999999;}
+.accordeon-default{height: 65px; overflow: hidden;}
+
+.item-notes-comodatos .no-active {
+    transition: height 1s;
+    height: 65px;
+}
+.item-notes-comodatos .active {
+    transition: height 1s;
+    height: 465px;
+}
 
 /* Element input Mobile */
 

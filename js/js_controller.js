@@ -1201,6 +1201,42 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* Comodato Barril Controller */
+	.controller("ComodatosBarrilController", function($scope){
+
+		$scope.titulo = "Comodato Barril"
+		angular.element(".title-app").html("Comodato Barril");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "none");
+		angular.element(".search img, .sync img").attr("src", "images/cart_w.svg");
+		angular.element(".search, .sync").addClass("cart");
+		angular.element(".cart").removeClass("search, sync");
+		angular.element(".cart").attr("href", "#!carrinho");
+
+		angular.element(".close-faturar").click(function () {
+			angular.element(".modal-faturar").css("display", "none");
+		});
+
+		angular.element(".btn-consignados-faturar").click(function () {
+			angular.element(".modal-faturar").css("display", "block");
+		})
+
+		angular.element(".close-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "none");
+		});
+
+		angular.element(".btn-consignados-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "block");
+		});
+
+		angular.element(".btn-recolher").click(function () {
+			angular.element(".modal-recolher").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
+			angular.element(".overlay-finalizar .header-modal").html("Recolha Solicitada com Sucesso!");
+		});
+
+	})
+
 
 	/* Comodato Item Notes Controller */
 	.controller("comodatoItemNotesController", function ($scope) {
@@ -1216,6 +1252,27 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").css("display", "none");
 		angular.element(".menu-requests").css("display", "none");
+
+		angular.element(".accordeon-01").addClass("no-active");
+		angular.element(".accordeon-02").addClass("no-active");
+		angular.element(".accordeon-03").addClass("no-active");
+		angular.element(".accordeon-04").addClass("no-active");
+
+		angular.element(".accordeon-01").click(function(){
+			angular.element(this).toggleClass("active");
+		});
+
+		angular.element(".accordeon-02").click(function(){
+			angular.element(this).toggleClass("active");
+		});
+
+		angular.element(".accordeon-03").click(function(){
+			angular.element(this).toggleClass("active");
+		});
+
+		angular.element(".accordeon-04").click(function(){
+			angular.element(this).toggleClass("active");
+		});	
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
@@ -1294,6 +1351,21 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".btn-add4").click(function () {
 			angular.element(".input-value4").val(parseInt(angular.element(".input-value4").val()) + 1);
 			angular.element(".input-value4").trigger("change");
+		});
+
+
+		angular.element(".btn-remove5").click(function () {
+			if (angular.element(".input-value5").val() == "0") {
+
+			} else {
+				angular.element(".input-value5").val(angular.element(".input-value5").val() - 1);
+				angular.element(".input-value5").trigger("change");
+			}
+		});
+
+		angular.element(".btn-add5").click(function () {
+			angular.element(".input-value5").val(parseInt(angular.element(".input-value5").val()) + 1);
+			angular.element(".input-value5").trigger("change");
 		});
 
 
