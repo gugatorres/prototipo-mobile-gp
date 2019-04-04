@@ -593,11 +593,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -693,11 +689,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -790,11 +782,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -873,11 +861,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -1001,11 +985,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -1098,11 +1078,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -1206,11 +1182,7 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
-<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
-=======
-				angular.element(".txt-estoque span").html("Estoque: 422024");
->>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
