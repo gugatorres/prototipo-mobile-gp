@@ -2648,7 +2648,12 @@ button[disabled] {
 }
 .item-notes-comodatos .active {
     transition: height 1s;
-    height: 465px;
+    height: 514px;
+}
+
+.item-notes-comodatos .btn-enviar {
+    display: inline-block;
+    margin: 0;
 }
 
 /* Element input Mobile */
