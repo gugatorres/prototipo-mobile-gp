@@ -900,6 +900,33 @@ nav.navbar {
     opacity: 0.6;
 }
 
+.title-box-minuto {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.number-txt {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.credito-base {
+    height: 3px;
+    background: #CCC;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.credito-value {
+    background: #69a50d;
+    height: 8px;
+    width: 33%;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+}
+
 
 /* Histórico de pedidos */
 
