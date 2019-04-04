@@ -1202,7 +1202,7 @@ app.controller("defaultController", function ($scope) {
 	})
 
 	/* Comodato Barril Controller */
-	.controller("ComodatosBarrilController", function($scope){
+	.controller("ComodatosBarrilController", function ($scope) {
 
 		$scope.titulo = "Comodato Barril"
 		angular.element(".title-app").html("Comodato Barril");
@@ -1258,21 +1258,21 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".accordeon-03").addClass("no-active");
 		angular.element(".accordeon-04").addClass("no-active");
 
-		angular.element(".accordeon-01").click(function(){
-			angular.element(this).toggleClass("active");
+		angular.element(".action-accordeon-01").click(function () {
+			angular.element(".accordeon-01").toggleClass("active");
 		});
 
-		angular.element(".accordeon-02").click(function(){
-			angular.element(this).toggleClass("active");
+		angular.element(".action-accordeon-02").click(function () {
+			angular.element(".accordeon-02").toggleClass("active");
 		});
 
-		angular.element(".accordeon-03").click(function(){
-			angular.element(this).toggleClass("active");
+		angular.element(".action-accordeon-03").click(function () {
+			angular.element(".accordeon-03").toggleClass("active");
 		});
 
-		angular.element(".accordeon-04").click(function(){
-			angular.element(this).toggleClass("active");
-		});	
+		angular.element(".action-accordeon-04").click(function () {
+			angular.element(".accordeon-04").toggleClass("active");
+		});
 
 		angular.element(".add-product").click(function () {
 			angular.element(".overlay-modal").css("display", "block");
@@ -1282,93 +1282,338 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-modal").css("display", "none");
 		});
 
-		angular.element(".input-sum").change(function () {
+		angular.element(".accordeon-01 .input-sum").change(function () {
 			var total = 0;
-			angular.element(".input-sum").each(function (index, element) {
+			angular.element(".accordeon-01 .input-sum").each(function (index, element) {
 				if (angular.element(element).val()) {
 					total += parseInt(angular.element(element).val());
 				}
 			});
-			angular.element(".lbl-total").text(total);
+			angular.element(".accordeon-01 .lbl-total").text(total);
+		});
+
+		angular.element(".accordeon-02 .input-sum").change(function () {
+			var total = 0;
+			angular.element(".accordeon-02 .input-sum").each(function (index, element) {
+				if (angular.element(element).val()) {
+					total += parseInt(angular.element(element).val());
+				}
+			});
+			angular.element(".accordeon-02 .lbl-total").text(total);
+		});
+
+		angular.element(".accordeon-03 .input-sum").change(function () {
+			var total = 0;
+			angular.element(".accordeon-03 .input-sum").each(function (index, element) {
+				if (angular.element(element).val()) {
+					total += parseInt(angular.element(element).val());
+				}
+			});
+			angular.element(".accordeon-03 .lbl-total").text(total);
+		});
+
+		angular.element(".accordeon-04 .input-sum").change(function () {
+			var total = 0;
+			angular.element(".accordeon-04 .input-sum").each(function (index, element) {
+				if (angular.element(element).val()) {
+					total += parseInt(angular.element(element).val());
+				}
+			});
+			angular.element(".accordeon-04 .lbl-total").text(total);
 		});
 
 
-		angular.element(".btn-remove").click(function () {
-			if (angular.element(".input-value").val() == "0") {
+		angular.element(".accordeon-01 .btn-remove").click(function () {
+			if (angular.element(".accordeon-01 .input-value").val() == "0") {
 
 			} else {
-				angular.element(".input-value").val(angular.element(".input-value").val() - 1);
-				angular.element(".input-value").trigger("change");
+				angular.element(".accordeon-01 .input-value").val(angular.element(".accordeon-01 .input-value").val() - 1);
+				angular.element(".accordeon-01 .input-value").trigger("change");
 			}
 		});
 
-		angular.element(".btn-add").click(function () {
-			angular.element(".input-value").val(parseInt(angular.element(".input-value").val()) + 1);
-			angular.element(".input-value").trigger("change");
+		angular.element(".accordeon-01 .btn-add").click(function () {
+			angular.element(".accordeon-01 .input-value").val(parseInt(angular.element(".accordeon-01 .input-value").val()) + 1);
+			angular.element(".accordeon-01 .input-value").trigger("change");
 		});
 
-
-
-		angular.element(".btn-remove2").click(function () {
-			if (angular.element(".input-value2").val() == "0") {
+		angular.element(".accordeon-01 .btn-remove2").click(function () {
+			if (angular.element(".accordeon-01 .input-value2").val() == "0") {
 
 			} else {
-				angular.element(".input-value2").val(angular.element(".input-value2").val() - 1);
-				angular.element(".input-value2").trigger("change");
+				angular.element(".accordeon-01 .input-value2").val(angular.element(".accordeon-01 .input-value2").val() - 1);
+				angular.element(".accordeon-01 .input-value2").trigger("change");
 			}
 		});
 
-		angular.element(".btn-add2").click(function () {
-			angular.element(".input-value2").val(parseInt(angular.element(".input-value2").val()) + 1);
-			angular.element(".input-value2").trigger("change");
+		angular.element(".accordeon-01 .btn-add2").click(function () {
+			angular.element(".accordeon-01 .input-value2").val(parseInt(angular.element(".accordeon-01 .input-value2").val()) + 1);
+			angular.element(".accordeon-01 .input-value2").trigger("change");
 		});
 
 
-		angular.element(".btn-remove3").click(function () {
-			if (angular.element(".input-value3").val() == "0") {
+		angular.element(".accordeon-01 .btn-remove3").click(function () {
+			if (angular.element(".accordeon-01 .input-value3").val() == "0") {
 
 			} else {
-				angular.element(".input-value3").val(angular.element(".input-value3").val() - 1);
-				angular.element(".input-value3").trigger("change");
+				angular.element(".accordeon-01 .input-value3").val(angular.element(".accordeon-01 .input-value3").val() - 1);
+				angular.element(".accordeon-01 .input-value3").trigger("change");
 			}
 		});
 
-		angular.element(".btn-add3").click(function () {
-			angular.element(".input-value3").val(parseInt(angular.element(".input-value3").val()) + 1);
-			angular.element(".input-value3").trigger("change");
+		angular.element(".accordeon-01 .btn-add3").click(function () {
+			angular.element(".accordeon-01 .input-value3").val(parseInt(angular.element(".accordeon-01 .input-value3").val()) + 1);
+			angular.element(".accordeon-01 .input-value3").trigger("change");
 		});
 
 
-		angular.element(".btn-remove4").click(function () {
-			if (angular.element(".input-value4").val() == "0") {
+		angular.element(".accordeon-01.btn-remove4").click(function () {
+			if (angular.element(".accordeon-01 .input-value4").val() == "0") {
 
 			} else {
-				angular.element(".input-value4").val(angular.element(".input-value4").val() - 1);
-				angular.element(".input-value4").trigger("change");
+				angular.element(".accordeon-01 .input-value4").val(angular.element(".accordeon-01 .input-value4").val() - 1);
+				angular.element(".accordeon-01 .input-value4").trigger("change");
 			}
 		});
 
-		angular.element(".btn-add4").click(function () {
-			angular.element(".input-value4").val(parseInt(angular.element(".input-value4").val()) + 1);
-			angular.element(".input-value4").trigger("change");
+		angular.element(".accordeon-01 .btn-add4").click(function () {
+			angular.element(".accordeon-01 .input-value4").val(parseInt(angular.element(".accordeon-01 .input-value4").val()) + 1);
+			angular.element(".accordeon-01 .input-value4").trigger("change");
 		});
 
 
-		angular.element(".btn-remove5").click(function () {
-			if (angular.element(".input-value5").val() == "0") {
+		angular.element(".accordeon-01 .btn-remove5").click(function () {
+			if (angular.element(".accordeon-01 .input-value5").val() == "0") {
 
 			} else {
-				angular.element(".input-value5").val(angular.element(".input-value5").val() - 1);
-				angular.element(".input-value5").trigger("change");
+				angular.element(".accordeon-01 .input-value5").val(angular.element(".accordeon-01 .input-value5").val() - 1);
+				angular.element(".accordeon-01 .input-value5").trigger("change");
 			}
 		});
 
-		angular.element(".btn-add5").click(function () {
-			angular.element(".input-value5").val(parseInt(angular.element(".input-value5").val()) + 1);
-			angular.element(".input-value5").trigger("change");
+		angular.element(".accordeon-01 .btn-add5").click(function () {
+			angular.element(".accordeon-01 .input-value5").val(parseInt(angular.element(".accordeon-01 .input-value5").val()) + 1);
+			angular.element(".accordeon-01 .input-value5").trigger("change");
+		});
+
+		angular.element(".accordeon-02 .btn-remove").click(function () {
+			if (angular.element(".accordeon-02 .input-value").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-02 .input-value").val(angular.element(".accordeon-02 .input-value").val() - 1);
+				angular.element(".accordeon-02 .input-value").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-02 .btn-add").click(function () {
+			angular.element(".accordeon-02 .input-value").val(parseInt(angular.element(".accordeon-02 .input-value").val()) + 1);
+			angular.element(".accordeon-02 .input-value").trigger("change");
+		});
+
+		angular.element(".accordeon-02 .btn-remove2").click(function () {
+			if (angular.element(".accordeon-02 .input-value2").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-02 .input-value2").val(angular.element(".accordeon-02 .input-value2").val() - 1);
+				angular.element(".accordeon-02 .input-value2").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-02 .btn-add2").click(function () {
+			angular.element(".accordeon-02 .input-value2").val(parseInt(angular.element(".accordeon-02 .input-value2").val()) + 1);
+			angular.element(".accordeon-02 .input-value2").trigger("change");
 		});
 
 
+		angular.element(".accordeon-02 .btn-remove3").click(function () {
+			if (angular.element(".accordeon-02 .input-value3").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-02 .input-value3").val(angular.element(".accordeon-02 .input-value3").val() - 1);
+				angular.element(".accordeon-02 .input-value3").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-02 .btn-add3").click(function () {
+			angular.element(".accordeon-02 .input-value3").val(parseInt(angular.element(".accordeon-02 .input-value3").val()) + 1);
+			angular.element(".accordeon-02 .input-value3").trigger("change");
+		});
+
+
+		angular.element(".accordeon-02.btn-remove4").click(function () {
+			if (angular.element(".accordeon-02 .input-value4").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-02 .input-value4").val(angular.element(".accordeon-02 .input-value4").val() - 1);
+				angular.element(".accordeon-02 .input-value4").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-02 .btn-add4").click(function () {
+			angular.element(".accordeon-02 .input-value4").val(parseInt(angular.element(".accordeon-02 .input-value4").val()) + 1);
+			angular.element(".accordeon-02 .input-value4").trigger("change");
+		});
+
+
+		angular.element(".accordeon-02 .btn-remove5").click(function () {
+			if (angular.element(".accordeon-02 .input-value5").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-02 .input-value5").val(angular.element(".accordeon-02 .input-value5").val() - 1);
+				angular.element(".accordeon-02 .input-value5").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-02 .btn-add5").click(function () {
+			angular.element(".accordeon-02 .input-value5").val(parseInt(angular.element(".accordeon-02 .input-value5").val()) + 1);
+			angular.element(".accordeon-02 .input-value5").trigger("change");
+		});
+
+		angular.element(".accordeon-03 .btn-remove").click(function () {
+			if (angular.element(".accordeon-03 .input-value").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-03 .input-value").val(angular.element(".accordeon-03 .input-value").val() - 1);
+				angular.element(".accordeon-03 .input-value").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-03 .btn-add").click(function () {
+			angular.element(".accordeon-03 .input-value").val(parseInt(angular.element(".accordeon-03 .input-value").val()) + 1);
+			angular.element(".accordeon-03 .input-value").trigger("change");
+		});
+
+		angular.element(".accordeon-03 .btn-remove2").click(function () {
+			if (angular.element(".accordeon-03 .input-value2").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-03 .input-value2").val(angular.element(".accordeon-03 .input-value2").val() - 1);
+				angular.element(".accordeon-03 .input-value2").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-03 .btn-add2").click(function () {
+			angular.element(".accordeon-03 .input-value2").val(parseInt(angular.element(".accordeon-03 .input-value2").val()) + 1);
+			angular.element(".accordeon-03 .input-value2").trigger("change");
+		});
+
+
+		angular.element(".accordeon-03 .btn-remove3").click(function () {
+			if (angular.element(".accordeon-03 .input-value3").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-03 .input-value3").val(angular.element(".accordeon-03 .input-value3").val() - 1);
+				angular.element(".accordeon-03 .input-value3").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-03 .btn-add3").click(function () {
+			angular.element(".accordeon-03 .input-value3").val(parseInt(angular.element(".accordeon-03 .input-value3").val()) + 1);
+			angular.element(".accordeon-03 .input-value3").trigger("change");
+		});
+
+
+		angular.element(".accordeon-03.btn-remove4").click(function () {
+			if (angular.element(".accordeon-03 .input-value4").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-03 .input-value4").val(angular.element(".accordeon-03 .input-value4").val() - 1);
+				angular.element(".accordeon-03 .input-value4").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-03 .btn-add4").click(function () {
+			angular.element(".accordeon-03 .input-value4").val(parseInt(angular.element(".accordeon-03 .input-value4").val()) + 1);
+			angular.element(".accordeon-03 .input-value4").trigger("change");
+		});
+
+
+		angular.element(".accordeon-03 .btn-remove5").click(function () {
+			if (angular.element(".accordeon-03 .input-value5").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-03 .input-value5").val(angular.element(".accordeon-03 .input-value5").val() - 1);
+				angular.element(".accordeon-03 .input-value5").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-03 .btn-add5").click(function () {
+			angular.element(".accordeon-03 .input-value5").val(parseInt(angular.element(".accordeon-03 .input-value5").val()) + 1);
+			angular.element(".accordeon-03 .input-value5").trigger("change");
+		});
+
+		angular.element(".accordeon-04 .btn-remove").click(function () {
+			if (angular.element(".accordeon-04 .input-value").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-04 .input-value").val(angular.element(".accordeon-04 .input-value").val() - 1);
+				angular.element(".accordeon-04 .input-value").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-04 .btn-add").click(function () {
+			angular.element(".accordeon-04 .input-value").val(parseInt(angular.element(".accordeon-04 .input-value").val()) + 1);
+			angular.element(".accordeon-04 .input-value").trigger("change");
+		});
+
+		angular.element(".accordeon-04 .btn-remove2").click(function () {
+			if (angular.element(".accordeon-04 .input-value2").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-04 .input-value2").val(angular.element(".accordeon-04 .input-value2").val() - 1);
+				angular.element(".accordeon-04 .input-value2").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-04 .btn-add2").click(function () {
+			angular.element(".accordeon-04 .input-value2").val(parseInt(angular.element(".accordeon-04 .input-value2").val()) + 1);
+			angular.element(".accordeon-04 .input-value2").trigger("change");
+		});
+
+
+		angular.element(".accordeon-04 .btn-remove3").click(function () {
+			if (angular.element(".accordeon-04 .input-value3").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-04 .input-value3").val(angular.element(".accordeon-04 .input-value3").val() - 1);
+				angular.element(".accordeon-04 .input-value3").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-04 .btn-add3").click(function () {
+			angular.element(".accordeon-04 .input-value3").val(parseInt(angular.element(".accordeon-04 .input-value3").val()) + 1);
+			angular.element(".accordeon-04 .input-value3").trigger("change");
+		});
+
+
+		angular.element(".accordeon-04.btn-remove4").click(function () {
+			if (angular.element(".accordeon-04 .input-value4").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-04 .input-value4").val(angular.element(".accordeon-04 .input-value4").val() - 1);
+				angular.element(".accordeon-04 .input-value4").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-04 .btn-add4").click(function () {
+			angular.element(".accordeon-04 .input-value4").val(parseInt(angular.element(".accordeon-04 .input-value4").val()) + 1);
+			angular.element(".accordeon-04 .input-value4").trigger("change");
+		});
+
+
+		angular.element(".accordeon-04 .btn-remove5").click(function () {
+			if (angular.element(".accordeon-04 .input-value5").val() == "0") {
+
+			} else {
+				angular.element(".accordeon-04 .input-value5").val(angular.element(".accordeon-04 .input-value5").val() - 1);
+				angular.element(".accordeon-04 .input-value5").trigger("change");
+			}
+		});
+
+		angular.element(".accordeon-04 .btn-add5").click(function () {
+			angular.element(".accordeon-04 .input-value5").val(parseInt(angular.element(".accordeon-04 .input-value5").val()) + 1);
+			angular.element(".accordeon-04 .input-value5").trigger("change");
+		});
 
 	})
 
@@ -2439,7 +2684,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display", "none");
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
-		angular.element(".menu-requests").css("display","none");
+		angular.element(".menu-requests").css("display", "none");
 
 		angular.element(".lbl-pedido-cliente").click(function () {
 			angular.element(".form-pedido-cliente").toggle();

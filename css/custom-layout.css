@@ -2614,10 +2614,10 @@ button[disabled] {
 }
 
 .list-notes li {
-    margin-bottom: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
     background: #f7f7f7;
-    padding: 10px;
+    padding: 5px;
 }
 
 .list-notes .col-xs-6 {
@@ -2643,12 +2643,12 @@ button[disabled] {
 .accordeon-default{height: 65px; overflow: hidden;}
 
 .item-notes-comodatos .no-active {
-    transition: height 1s;
+    transition: height 0.5s;
     height: 65px;
 }
 .item-notes-comodatos .active {
-    transition: height 1s;
-    height: 514px;
+    transition: height 0.5s;
+    height: 450px;
 }
 
 .item-notes-comodatos .btn-enviar {
