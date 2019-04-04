@@ -1260,18 +1260,24 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".action-accordeon-01").click(function () {
 			angular.element(".accordeon-01").toggleClass("active");
+			angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
+			
+
 		});
 
 		angular.element(".action-accordeon-02").click(function () {
 			angular.element(".accordeon-02").toggleClass("active");
+			angular.element(".accordeon-02 .acc-arrow-down").toggleClass("deg-180");
 		});
 
 		angular.element(".action-accordeon-03").click(function () {
 			angular.element(".accordeon-03").toggleClass("active");
+			angular.element(".accordeon-03 .acc-arrow-down").toggleClass("deg-180");
 		});
 
 		angular.element(".action-accordeon-04").click(function () {
 			angular.element(".accordeon-04").toggleClass("active");
+			angular.element(".accordeon-04 .acc-arrow-down").toggleClass("deg-180");
 		});
 
 		angular.element(".add-product").click(function () {

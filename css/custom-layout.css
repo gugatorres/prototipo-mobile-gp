@@ -2656,6 +2656,17 @@ button[disabled] {
     margin: 0;
 }
 
+.acc-arrow-down {
+    width: 12px;
+    margin-right: 2px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.acc-arrow-down.deg-180 {
+    transform: rotate(-180deg);
+}
+
 /* Element input Mobile */
 
 
