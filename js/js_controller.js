@@ -593,7 +593,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -689,7 +693,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -782,7 +790,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -861,7 +873,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -985,7 +1001,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -1007,7 +1027,7 @@ app.controller("defaultController", function ($scope) {
 
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-modal").not('.cart-clean').css("display", "block");
+			angular.element(".modal-selecao").css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
@@ -1078,7 +1098,11 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
 		});
@@ -1111,7 +1135,7 @@ app.controller("defaultController", function ($scope) {
 
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-modal").not('.cart-clean').css("display", "block");
+			angular.element(".modal-selecao").css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
@@ -1182,9 +1206,25 @@ app.controller("defaultController", function ($scope) {
 			$(this).attr("src", "images/loading.gif");
 			setTimeout(function () {
 				angular.element(".img-sync").attr("src", "images/cloud_b.svg");
+<<<<<<< HEAD
 				angular.element(".txt-estoque span").html("Disponibilidade de estoque: 58724");
+=======
+				angular.element(".txt-estoque span").html("Estoque: 422024");
+>>>>>>> f6473a5618a3eb45ee035dfc6fc00c73bca7367a
 			}, 3000);
 
+		});
+
+		angular.element(".btn-ped-sim").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-ped-nao").removeClass("active");
+			angular.element(".num-pedido").css("display", "block");
+		});
+
+		angular.element(".btn-ped-nao").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(".btn-ped-sim").removeClass("active");
+			angular.element(".num-pedido").css("display", "none");
 		});
 
 	})
