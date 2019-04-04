@@ -1449,6 +1449,7 @@ a .card-product {
 
 .status-pago{border-left: solid 4px #7fc317 !important; }
 .status-pendente{border-left: solid 4px #eeee00 !important; }
+.status-nao-sync{border-left: solid 4px #f00 !important; }
 .status-nao-pago{border-left: solid 4px #cc0808 !important;}
 .status-nao{border-left: solid 4px #999999 !important;}
 
@@ -2838,6 +2839,12 @@ button[disabled] {
     border-color: #dcd10f !important;
 }
 
+.alerta-red {
+    background: #f00 !important;
+    color: #FFF !important;
+    border-color: #f00 !important;
+}
+
 .line-traking{position: relative;}
 
 .line-traking ul {
@@ -2855,6 +2862,10 @@ button[disabled] {
     display: inline-block;
     margin-right: 62px;
     border-radius: 40px;
+}
+
+.sync-traking li {
+    background: #f00 !important;
 }
 
 .bloq-traking li {

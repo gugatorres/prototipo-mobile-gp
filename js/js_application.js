@@ -74,6 +74,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/detalhes_pedido_bloqueado.html",
             controller: "DetalhesPedidoBloqueadoController"
         })
+        .when("/detalhes_pedido_nao_sincronizado", {
+            templateUrl: "./templates/detalhes_pedido_nao_sincronizado.html",
+            controller: "DetalhesPedidoBloqueadoController"
+        })
         .when("/carrinho", {
             templateUrl: "./templates/carrinho.html",
             controller: "carrinhoController"
