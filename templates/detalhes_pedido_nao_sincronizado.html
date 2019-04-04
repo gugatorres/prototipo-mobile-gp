@@ -11,30 +11,29 @@
     </div>
 </div>
 
-<div class="gerar-pedido formas-pagamento" style="padding-top:70px;">
+<div class="gerar-pedido formas-pagamento" style="padding-top:70px; color: #00000059;">
 
-    <div class="row line-traking">
-        <span class="line-hor-trak"> <div class="value-trak"></div> </span>
+    <div class="row line-traking sync-traking">
+        <span class="line-hor-trak"> <div class="value-trak value-bloq"></div> </span>
         <ul>
-            <li> <span>Enviado</span> </li>
-            <li style="background: #ccc;"> <span>Validado</span> </li>
-            <li style="background: #ccc;"> <span>Faturado</span> </li>
-            <li style="background: #ccc;" class="gray-cl"> <span>Em Transito</span> </li>
-            <li style="background: #ccc;" class="gray-cl"> <span>Entregue</span> </li>
+            <li> <span>Realizado</span> </li>
+            <li style="background: #ccc !important;"> <span>Faturado</span> <i class="no-x">X</i> </li>
+            <li style="background: #ccc !important;" class="gray-cl"> <span>Em Transito</span><i class="no-x">X</i> </li>
+            <li style="background: #ccc !important;" class="gray-cl"> <span>Entregue</span> <i class="no-x">X</i> </li>
         </ul>
 
     </div>
 
     <div class="row alerta-home" style="margin-bottom: 15px;">
         <div>
-            <div style="height: auto;" class="box-tile white text-center alerta-green">  
-                LIBERADO
+            <div style="height: auto;" class="box-tile white text-center alerta-red" >  
+                NÃO SINCRONIZADO
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="box-tile white data-entrega status-pago" style="height:auto; margin-bottom: 15px;">
+        <div class="box-tile white data-entrega status-nao-sync" style="height:auto; margin-bottom: 15px;">
 
             <div class="data-input">
                 <div class="row">
