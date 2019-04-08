@@ -194,6 +194,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/fechamento_comodato.html",
             controller: "fechamentoComodatoController"
         })
+        .when("/remuneracao_variavel", {
+            templateUrl: "./templates/remuneracao_variavel.html",
+            controller: "remuneracaoVariavelController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

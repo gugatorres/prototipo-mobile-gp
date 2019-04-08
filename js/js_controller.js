@@ -2711,3 +2711,49 @@ app.controller("defaultController", function ($scope) {
 		});
 
 	})
+
+	/* Remuneração Variavel Controller */
+	.controller("remuneracaoVariavelController", function ($scope) {
+
+		$scope.titulo = "Remuneração Variável"
+		angular.element(".title-app").html("Remuneração Variável");
+
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".cart").addClass("cart");
+		angular.element(".cart").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".search").css("display", "none");
+		angular.element(".cart").append("<span class='ind-number'></span>");
+		angular.element("#mySidenav").css("display", "none");
+		angular.element("#mySidenav").css("left", "-310px");
+		angular.element(".back-menu").css("display", "none");
+		angular.element(".back-menu").css("left", "-310px");
+		angular.element(".back-menu").css("background", "none");
+		angular.element(".menu-requests").css("display", "none");
+
+		angular.element("#btn-competencia").click(function(){
+			angular.element(".competencia-mode").css("display","block");
+			angular.element(".txt-selected").html("02/2019");
+		});
+
+		angular.element(".btn-sele-competencia").click(function(){
+			angular.element(".competencia-mode").css("display","none");
+		});
+
+		angular.element(".modal-custom .close-modal").click(function(){
+			angular.element(".competencia-mode").css("display","none");
+		});
+
+		angular.element(".link-clientes-ruptura").click(function(){
+			angular.element(".ruptura-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+		
+		angular.element(".close-modal").click(function(){
+			angular.element(".ruptura-mode").css("display","none");
+			angular.element("body").css("overflow-y", "auto");
+		});
+
+		
+	})

@@ -937,14 +937,11 @@ nav.navbar {
     left: 0px;
 }
 
-
 /* Histórico de pedidos */
 
 .tab-page-hist-1 {display: block}
 .tab-page-hist-1 a{color:#000000;}
 .tab-page-hist-2 a{color:#000000;}
-
-
 
 .nav-tab-custom-hist {
     list-style: none;
@@ -2650,6 +2647,12 @@ button[disabled] {
 
 #comentarios-notes::placeholder{color:#999999;}
 .accordeon-default{height: 65px; overflow: hidden;}
+.accordeon-default .data-comodato {
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    font-size: 10px;
+}
 
 .item-notes-comodatos .no-active {
     transition: height 0.5s;
@@ -3197,3 +3200,143 @@ button[disabled] {
     width: 100%;
     border: solid 1px #999;
 }
+
+/* Remuneração Variável */
+
+#btn-competencia {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #FFF;
+    border: solid 1px #CCC;
+}
+
+
+.remuneracao-variavel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tile-remunecao {
+    height: 120px;
+    padding: 15px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.name-title {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.value-variavel {
+    font-size: 22px;
+    color: #0d0d9e;
+    margin-top: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.indica-variavel {
+    float: right;
+    height: 32px;
+    padding-top: 18px;
+}
+
+.progress-bar-vrl {
+    width: 100%;
+    height: 8px;
+    background: #efefef;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.val-progress {
+    background-image: linear-gradient(to right, #2b0d9e , #efefef00);
+    display: block;
+    width: 40%;
+    height: 8px;
+}
+
+.status-variavel {
+    float: left;
+    font-size: 16px;
+    color: #999;
+}
+
+.percent-variavel {
+    float: right;
+    font-size: 16px;
+    color: #999;
+}
+
+.list-competencia {
+    list-style: none;
+    padding: 0;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.list-competencia li {
+    padding: 10px;
+    margin-bottom: 2px;
+    background: #F5F5F5;
+    font-size: 12px;
+}
+
+.list-competencia li:hover {
+    background: #CCC;
+}
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid;
+}
+
+.arrow.down {
+    transform: rotate(0deg);
+    border-top-color: #f00
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+    border-top-color: #2b0e9e;
+}
+
+.arrow.no {
+    transform: none;
+    border-bottom-color: yellow;
+    border: none;
+    height: 10px;
+    width: 20px;
+    color: yellow;
+    border-bottom: solid 4px;
+}
+
+.modal-remuneracao-variavel ul {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    height: 350px;
+}
+
+.modal-remuneracao-variavel .tile-modal {
+    padding: 15px;
+    background: #F5F5F5;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.modal-remuneracao-variavel .tile-modal .col-xs-12 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .tile-modal .col-xs-6 {
+    padding: 0;
+}
+
