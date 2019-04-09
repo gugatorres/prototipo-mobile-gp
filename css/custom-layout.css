@@ -3380,5 +3380,13 @@ button[disabled] {
     padding: 0;
 }
 
+.modal-remuneracao-variavel .tile-modal .col-xs-4 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .tile-modal .col-xs-3 {
+    padding: 0;
+}
+
 
 

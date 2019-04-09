@@ -2749,6 +2749,37 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".ruptura-mode").css("display","block");
 			angular.element("body").css("overflow-y", "hidden");
 		});
+
+		angular.element(".link-minha-variavel").click(function(){
+			angular.element(".minha-variavel-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+		angular.element(".link-faturamento-meta").click(function(){
+			angular.element(".faturamento-meta-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+		angular.element(".link-inadimplencia").click(function(){
+			angular.element(".inadimplencia-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+		angular.element(".link-giro-material-pesado").click(function(){
+			angular.element(".giro-material-pesado-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+		angular.element(".link-giro-vasilhame").click(function(){
+			angular.element(".giro-vasilhame-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+		angular.element(".link-comissao-recebida").click(function(){
+			angular.element(".comissao-recebida-mode").css("display","block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
 		
 		angular.element(".close-modal").click(function(){
 			angular.element(".ruptura-mode").css("display","none");
@@ -2757,6 +2788,7 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".btn-fechar-modal").click(function(){
 			angular.element(".modal-remuneracao-variavel").css("display","none");
+			angular.element("body").css("overflow-y", "auto");
 		});
 
 		
