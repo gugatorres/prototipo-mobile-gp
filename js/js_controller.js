@@ -2791,8 +2791,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y", "auto");
 		});
 
-		
-
 		angular.element(".giro-material-pesado-mode .tile-modal").append("<img class=img-thumb-like src=images/thumb-down.svg>");
 		angular.element(".giro-material-pesado-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumbs-up2.svg");
 		angular.element(".giro-material-pesado-mode ul li:nth-child(8) .img-thumb-like").attr("src","images/thumbs-up2.svg");
@@ -2809,8 +2807,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".minha-variavel-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
 		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
-		
-		
-
+		angular.element(".img-thumb-like").click(function(){
+			angular.element(this).parent('.tile-modal').toggleClass("tile-142");
+			});
 		
 	})

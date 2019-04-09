@@ -3371,6 +3371,9 @@ button[disabled] {
     margin-bottom: 10px;
     font-size: 12px;
     position: relative;
+    height: 60px;
+    overflow: hidden;
+    transition: height 0.3s;
 }
 
 .modal-remuneracao-variavel .tile-modal .col-xs-12 {
@@ -3396,5 +3399,6 @@ button[disabled] {
     top: 10px;
 }
 
+.tile-142{height:142px !important}
 
 
