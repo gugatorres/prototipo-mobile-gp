@@ -3370,6 +3370,7 @@ button[disabled] {
     padding: 15px;
     margin-bottom: 10px;
     font-size: 12px;
+    position: relative;
 }
 
 .modal-remuneracao-variavel .tile-modal .col-xs-12 {
@@ -3386,6 +3387,13 @@ button[disabled] {
 
 .modal-remuneracao-variavel .tile-modal .col-xs-3 {
     padding: 0;
+}
+
+.img-thumb-like {
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 
