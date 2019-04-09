@@ -2794,18 +2794,18 @@ app.controller("defaultController", function ($scope) {
 		
 
 		angular.element(".giro-material-pesado-mode .tile-modal").append("<img class=img-thumb-like src=images/thumb-down.svg/>");
-		angular.element(".giro-material-pesado-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumbs-up.svg");
-		angular.element(".giro-material-pesado-mode ul li:nth-child(8) .img-thumb-like").attr("src","images/thumbs-up.svg");
+		angular.element(".giro-material-pesado-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumbs-up2.svg");
+		angular.element(".giro-material-pesado-mode ul li:nth-child(8) .img-thumb-like").attr("src","images/thumbs-up2.svg");
 
-		angular.element(".giro-vasilhame-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up.svg/>");
+		angular.element(".giro-vasilhame-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg/>");
 		angular.element(".giro-vasilhame-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
 		angular.element(".giro-vasilhame-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
-		angular.element(".faturamento-meta-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up.svg/>");
+		angular.element(".faturamento-meta-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg/>");
 		angular.element(".faturamento-meta-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
 		angular.element(".faturamento-meta-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
-		angular.element(".minha-variavel-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up.svg/>");
+		angular.element(".minha-variavel-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg/>");
 		angular.element(".minha-variavel-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
 		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
