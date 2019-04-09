@@ -3254,7 +3254,7 @@ button[disabled] {
 }
 
 .val-progress {
-    background-image: linear-gradient(to right, #2b0d9e , #efefef00);
+    background: #2b0d9e;
     display: block;
     width: 40%;
     height: 8px;
@@ -3318,11 +3318,51 @@ button[disabled] {
     border-bottom: solid 4px;
 }
 
+.modal-remuneracao-variavel .modal-custom {
+    width: 100%;
+    min-height: auto;
+    position: fixed;
+    height: 100%;
+    margin-top: 0 !important;
+    overflow-y: auto;
+}
+
+.modal-remuneracao-variavel h2 {
+    margin: 0px 0px 10px;
+    text-align: center;
+    font-size: 20px;
+    background: #c62222;
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.search-modal-remu-variavel input {
+    padding: 10px;
+    margin: 40px 0 10px;
+    width: 100%;
+    border: solid 1px #CCC;
+}
+
+.modal-button-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
 .modal-remuneracao-variavel ul {
     list-style: none;
     padding: 0;
-    overflow-y: auto;
-    height: 350px;
 }
 
 .modal-remuneracao-variavel .tile-modal {
@@ -3339,4 +3379,6 @@ button[disabled] {
 .modal-remuneracao-variavel .tile-modal .col-xs-6 {
     padding: 0;
 }
+
+
 

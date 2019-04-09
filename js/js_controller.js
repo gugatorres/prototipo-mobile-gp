@@ -2755,5 +2755,9 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y", "auto");
 		});
 
+		angular.element(".btn-fechar-modal").click(function(){
+			angular.element(".modal-remuneracao-variavel").css("display","none");
+		});
+
 		
 	})
