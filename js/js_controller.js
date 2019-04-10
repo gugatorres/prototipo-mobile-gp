@@ -598,9 +598,9 @@ app.controller("defaultController", function ($scope) {
 
 		});
 
-
-
-
+		angular.element(".close-modal").click(function(){
+			angular.element(".overlay-modal").css("display","none");
+		});
 
 	})
 
@@ -1873,6 +1873,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search").css("display", "none");
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
+		angular.element(".menu-requests img").attr("src", "images/dot_menu_w.svg");
+		angular.element(".menu-requests img").removeClass("link-photo");
 		angular.element(".menu-requests").css("display", "block");
 		angular.element(".button-pedidos").attr("href", "#!/new_pedido");
 
@@ -2085,7 +2087,19 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("left", "-310px");
 		angular.element(".back-menu").css("background", "none");
 		angular.element(".bar-customer-back").css("display", "block");
-		angular.element(".menu-requests").css("display", "none");
+		angular.element(".menu-requests").css("display", "block");
+		angular.element(".menu-requests img").attr("src", "images/camera_w.svg");
+		angular.element(".menu-requests img").addClass("link-photo");
+
+		angular.element(".link-photo").click(function(){
+			angular.element(".screen-photo").css("display", "block");
+		});
+
+		angular.element(".close-screen-photo").click(function(){
+			angular.element(".screen-photo").css("display", "none");
+		});
+
+		
 
 	})
 
@@ -2809,6 +2823,6 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".img-thumb-like").click(function(){
 			angular.element(this).parent('.tile-modal').toggleClass("tile-142");
-			});
+		});
 		
 	})
