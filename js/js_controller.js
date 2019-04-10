@@ -2823,8 +2823,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".minha-variavel-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
 		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
-		angular.element(".img-thumb-like").click(function(){
-			angular.element(this).parent('.tile-modal').toggleClass("tile-142");
+		angular.element(".tile-modal").click(function(){
+			angular.element(this).toggleClass("tile-142");
 		});
 		
 	})
