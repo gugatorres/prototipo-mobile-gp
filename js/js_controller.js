@@ -2054,6 +2054,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".container-nome-cliente").hide();
 			angular.element(".inscri-rg").text("Inscrição Estadual");
 			angular.element(".tab-3").css("display", "none");
+			angular.element(".lbl-description-doc").html("<strong> Cliente Pessoa Jurídica:</strong> <br> Contrato Social, Comprovante de endereço e CPF, Comprovante de Endereço e RG do Fiel Depositário");
 		});
 
 		angular.element(".input-pf").click(function () {
@@ -2067,6 +2068,7 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".container-nome-cliente").show();
 			angular.element(".inscri-rg").text("RG");
 			angular.element(".tab-3").css("display", "inline-block");
+			angular.element(".lbl-description-doc").html("<strong> Cliente Pessoa Física:</strong> <br> CPF, Comprovante de Endereço e RG");
 		});
 
 		angular.element(".btn-finalizar").click(function () {
