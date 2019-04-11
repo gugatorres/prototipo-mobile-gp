@@ -3,53 +3,53 @@
     <div class="col-xs-12">
         <div class="box-tile consignados-itens white">
 
-            <ul>
+            <ul id="view_recolher_list">
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Chopp Ita Claro Bar 30L</span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput = "enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Chopp Ita Claro Bar 50L</span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput = "enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Chopp Ita Escuro Bar 30L</span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput = "enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Chopp Ita Claro Bar 50L</span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput = "enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Gás C02 9,0kg </span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput = "enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Gás C02 9,0kg </span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput ="enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="row">
                         <div class="col-xs-9"> <span class="truncate">Gás C02 9,0kg </span> </div>
-                        <div class="col-xs-3"> <input type="text"> </div>
+                        <div class="col-xs-3"> <input type="text" oninput ="enableBtnRecolha(this.value)"> </div>
                     </div>
                 </li>
 
@@ -62,7 +62,7 @@
 
 <div class="buttons-action-consignados">
 
-    <div class="col-xs-12" style="padding: 0;"> <a class="btn-consignados-recolher">RECOLHER</a> </div>
+    <div class="col-xs-12" style="padding: 0;"> <button class="btn-consignados-recolher" disabled>RECOLHER</button> </div>
 
 </div>
 
@@ -178,6 +178,44 @@
                 </li>
             </ul>
 
+        </div>
+
+
+        <a class="btn-default btn-comprovante btn-recolher"> RECOLHER </a>
+
+    </div>
+</div>
+
+
+<!-- MODAL RECOLHER CONFIRMAÇÃO-->
+
+<div class="overlay-modal modal-recolher-confirm">
+    <div class="modal-custom" style="margin-top:50px;">
+        <a class="close-modal close-recolher"> X</a>
+
+        <h4 class="text-center">Recolha de Produto</h4>
+        <p class="text-center">Deseja realmente recolher os itens abaixo:</p>
+
+        <div class="box-tile consignados-itens white">
+            <ul id="modal_recolher_list">
+                <!--<li>
+                    <div class="row">
+                        <div class="col-xs-9"> <span class="truncate">Chopp Ita Claro Bar 30L</span> </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row">
+                        <div class="col-xs-9"> <span class="truncate">Chopp Ita Claro Bar 50L</span> </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row">
+                        <div class="col-xs-9"> <span class="truncate">Chopp Ita Escuro Bar 30L</span> </div>
+                    </div>
+                </li>-->
+            </ul>
         </div>
 
 

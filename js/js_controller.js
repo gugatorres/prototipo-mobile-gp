@@ -1222,11 +1222,22 @@ app.controller("defaultController", function ($scope) {
 		})
 
 		angular.element(".close-recolher").click(function () {
-			angular.element(".modal-recolher").css("display", "none");
+			$("#modal_recolher_list li").detach();
+			angular.element(".modal-recolher-confirm").css("display", "none");
 		});
 
 		angular.element(".btn-consignados-recolher").click(function () {
-			angular.element(".modal-recolher").css("display", "block");
+			angular.element(".modal-recolher-confirm").css("display", "block");
+			$("#view_recolher_list li").each(function(i){
+				if($(this).find("input").val() != "") {
+					$("#modal_recolher_list").append(
+						"<li><div class='row'><div class='col-xs-9'>" +
+						$(this).find("span")[0].innerHTML + "</div>" +
+						"<div class='col-xs-3'>" + "Qtd:" + $(this).find("input").val() +
+						"</div></div></li>"
+					)
+				}
+			});
 		});
 
 		angular.element(".btn-recolher").click(function () {
@@ -2828,3 +2839,18 @@ app.controller("defaultController", function ($scope) {
 		});
 		
 	})
+
+function enableBtnRecolha(val){
+	var enabled = false
+		$("#view_recolher_list li").each(function(i) {
+			if ($(this).find("input").val() != "") {
+				enabled = true
+			}
+		})
+	if(enabled == false){
+		$(".btn-consignados-recolher").attr("disabled", "disabled");
+	} else {
+		$(".btn-consignados-recolher").removeAttr("disabled");
+	}
+
+}
