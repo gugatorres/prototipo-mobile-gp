@@ -907,6 +907,12 @@ nav.navbar {
     font-size: 12px;
 }
 
+.title-box-minuto-alt{
+    margin-bottom: -5px;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
 .dias-30 {
     display: block;
     font-size: 9px;
@@ -1240,6 +1246,10 @@ a .card-product {
 
 .card-product {
     margin-bottom: 10px;
+}
+
+.card-product .col-xs-3 p{
+    line-height: 70px;
 }
 
 .comodato .box-tile {
@@ -3425,4 +3435,23 @@ button[disabled] {
     margin-bottom: 15px;
 }
 
+.custom_img_padding{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.box-banners-3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.promotion_banners .col-xs-4{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.promotion_banners img{
+    width: 100%;
+}
 
