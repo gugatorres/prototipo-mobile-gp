@@ -907,6 +907,12 @@ nav.navbar {
     font-size: 12px;
 }
 
+.title-box-minuto-alt{
+    margin-bottom: -5px;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
 .dias-30 {
     display: block;
     font-size: 9px;
