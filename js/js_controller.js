@@ -2828,3 +2828,18 @@ app.controller("defaultController", function ($scope) {
 		});
 		
 	})
+
+	.controller("faqController", function ($scope) {
+
+		$scope.titulo = "FAQ"
+		angular.element(".title-app").html("FAQ");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function(){
+			angular.element(this).toggleClass("tile-auto");
+		});
+
+	})
+
+	

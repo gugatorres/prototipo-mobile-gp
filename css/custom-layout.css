@@ -3400,5 +3400,29 @@ button[disabled] {
 }
 
 .tile-142{height:142px !important}
+.tile-auto{height: auto !important}
+
+/* FAQ */
+
+.faq ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tile-faq {
+    padding: 15px;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: height 0.3s;
+}
+
+.faq h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
 
