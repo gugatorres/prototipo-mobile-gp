@@ -926,7 +926,7 @@ app.controller("defaultController", function ($scope) {
 
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-modal").not('.cart-clean').css("display", "block");
+			angular.element(".overlay-product").not('.cart-clean').css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
