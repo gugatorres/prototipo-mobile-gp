@@ -1887,7 +1887,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".menu-requests img").attr("src", "images/dot_menu_w.svg");
 		angular.element(".menu-requests img").removeClass("link-photo");
 		angular.element(".menu-requests").css("display", "block");
-		angular.element(".button-pedidos").attr("href", "#!/new_pedido");
+		angular.element(".button-pedidos").attr("href", "#!combos");
 
 		angular.element(".button-feedback").click(function () {
 			angular.element(".modal-justificativa").css("display", "block");
