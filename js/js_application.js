@@ -198,6 +198,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/remuneracao_variavel.html",
             controller: "remuneracaoVariavelController"
         })
+        .when("/faq", {
+            templateUrl: "./templates/faq.html",
+            controller: "faqController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })
