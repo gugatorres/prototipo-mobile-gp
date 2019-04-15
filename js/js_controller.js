@@ -289,9 +289,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-page-3 .box-pedidos").css("position", "relative");
 			angular.element(".tab-page-3 .box-pedidos .status-pedido").html("PENDENTE <img src=images/clock.svg>");
 		});
-
-
-
 	})
 
 	/* Detalhes Pedido Controller */
@@ -300,6 +297,31 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Detalhes Pedido"
 		angular.element(".title-app").html("Detalhes do Pedido");
 		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".open-add-comodato").css("display", "none");
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element("#modal_Det_Ped_Blq").css("display", "block");
+		});
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modal_Det_Ped_Blq").css("display", "none");
+		});
+		angular.element("#btn_open_comodato_ok").click(function () {
+			angular.element(".open-add-comodato").css("display", "block");
+		})
+		angular.element(".close-recolher").click(function () {
+			angular.element(".modal-recolher-confirm").css("display", "none");
+		});
+		/*angular.element(".btn-sim-contrato").click(function () {
+			//angular.element(".overlay-comodato").css("display","block");
+			angular.element(".buttons-comodato").css("display", "none");
+			angular.element(".modal-custom").css("display", "block");
+		});
+		angular.element(".btn-nao-contrato").click(function () {
+			angular.element(".overlay-comodato").css("display", "none");
+			angular.element(".buttons-comodato").css("display", "none");
+		});*/
 	})
 
 	/* Detalhes Pedido Bloqueado Controller */
@@ -308,6 +330,15 @@ app.controller("defaultController", function ($scope) {
 		$scope.titulo = "Detalhes Pedido"
 		angular.element(".title-app").html("Pedido Bloqueado");
 		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element("#modal_Det_Ped_Blq").css("display", "block");
+		});
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modal_Det_Ped_Blq").css("display", "none");
+		});
 	})
 
 	/* Histórico Pedidos Controller */
@@ -340,7 +371,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".tab-content > div").css("display", "none");
 			angular.element(".tab-page-3").css("display", "block");
 		});
-
 
 		$scope.tab1 = function () {
 			angular.element(".tab-hist-1").addClass("active_hist");
@@ -1226,14 +1256,14 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".modal-recolher-confirm").css("display", "none");
 		});
 
-		angular.element(".btn-consignados-recolher").click(function () {
+		angular.element("#btn_cons_rec").click(function () {
 			angular.element(".modal-recolher-confirm").css("display", "block");
 			$("#view_recolher_list li").each(function(i){
 				if($(this).find("input").val() != "") {
 					$("#modal_recolher_list").append(
-						"<li><div class='row'><div class='col-xs-9'>" +
+						"<li><div class='row'><div class='col-xs-8'>" +
 						$(this).find("span")[0].innerHTML + "</div>" +
-						"<div class='col-xs-3'>" + "Qtd:" + $(this).find("input").val() +
+						"<div class='col-xs-4'>" + $(this).find("input").val() + " Un"  +
 						"</div></div></li>"
 					)
 				}
@@ -2856,15 +2886,20 @@ app.controller("defaultController", function ($scope) {
 /**/
 function enableBtnRecolha(val){
 	var enabled = false
+	var hasChaged = false
 		$("#view_recolher_list li").each(function(i) {
 			if ($(this).find("input").val() != "") {
 				enabled = true
 			}
 		})
 	if(enabled == false){
-		$(".btn-consignados-recolher").attr("disabled", "disabled");
+		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-enable");
+		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-disable");
+		$("#btn_cons_rec").attr("disabled", "disabled");
 	} else {
-		$(".btn-consignados-recolher").removeAttr("disabled");
+		$("#btn_cons_rec").removeAttr("disabled");
+		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-enable");
+		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-disable");
 	}
 
 }

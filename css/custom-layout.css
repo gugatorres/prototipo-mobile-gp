@@ -725,6 +725,23 @@ nav.navbar {
     animation: menu-request 0.2s;
 }
 
+.buttons-request-alt {
+    position: fixed;
+    top: 55px;
+    right: 0px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    list-style: none;
+    background-color: #fff;
+    width: 250px;
+    display: none;
+    z-index: 100;
+    border-radius: 3px;
+    animation: menu-request 0.2s;
+}
+
 .buttons-request img {
     width: 25px;
     margin-left: 5px;
@@ -732,6 +749,11 @@ nav.navbar {
 }
 
 .buttons-request a{
+    color:#000;
+    margin-right: 10px;
+}
+
+.buttons-request-alt a{
     color:#000;
     margin-right: 10px;
 }
@@ -1425,6 +1447,10 @@ a .card-product {
 
 .grid-requests a {
     color: #000;
+}
+
+.box-pedidos .cod-pedido-alt{
+    font-size: 14px;
 }
 
 .box-pedidos .cod-pedido {
@@ -3185,11 +3211,31 @@ button[disabled] {
 
 .buttons-action-consignados .col-xs-6{padding: 0;}
 
-.buttons-action-consignados .btn-consignados-recolher {
+/*.buttons-action-consignados .btn-consignados-recolher {
     width: 100%;
     text-decoration: none;
     color: #FFF;
     background: #999;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}*/
+
+.btn-consignados-recolher-disable {
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    background: #999;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.btn-consignados-recolher-enable {
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    background: #c62222;
     padding: 10px;
     display: block;
     text-align: center;
