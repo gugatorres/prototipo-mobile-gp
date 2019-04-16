@@ -2874,7 +2874,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
 
 		angular.element(".tile-modal").click(function(){
-			angular.element(this).toggleClass("tile-142");
+			//angular.element(this).toggleClass("tile-142");
 		});
 		
 	})
