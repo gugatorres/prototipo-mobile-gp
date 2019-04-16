@@ -314,6 +314,9 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".modal-recolher-confirm").css("display", "none");
 			angular.element(".overlay-finalizar").css("display", "block");
 		});
+		angular.element(".close-modal").click(function(){
+			angular.element(".overlay-modal").css("display","none");
+		});
 	})
 
 	/* Detalhes Pedido Bloqueado Controller */
@@ -341,6 +344,9 @@ app.controller("defaultController", function ($scope) {
 		angular.element("#btn_open_comodato_not_sinc").click(function () {
 			angular.element(".open-add-comodato").css("display", "block");
 		})
+		angular.element(".close-modal").click(function(){
+			angular.element(".overlay-modal").css("display","none");
+		});
 
 	})
 
