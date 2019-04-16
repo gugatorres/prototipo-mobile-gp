@@ -310,18 +310,10 @@ app.controller("defaultController", function ($scope) {
 		angular.element("#btn_open_comodato_ok").click(function () {
 			angular.element(".open-add-comodato").css("display", "block");
 		})
-		angular.element(".close-recolher").click(function () {
+		angular.element(".btn-comprovante").click(function () {
 			angular.element(".modal-recolher-confirm").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
 		});
-		/*angular.element(".btn-sim-contrato").click(function () {
-			//angular.element(".overlay-comodato").css("display","block");
-			angular.element(".buttons-comodato").css("display", "none");
-			angular.element(".modal-custom").css("display", "block");
-		});
-		angular.element(".btn-nao-contrato").click(function () {
-			angular.element(".overlay-comodato").css("display", "none");
-			angular.element(".buttons-comodato").css("display", "none");
-		});*/
 	})
 
 	/* Detalhes Pedido Bloqueado Controller */
@@ -339,6 +331,17 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 			angular.element("#modal_Det_Ped_Blq").css("display", "none");
 		});
+		angular.element("#btn_open_comodato_blq").click(function () {
+			angular.element(".open-add-comodato").css("display", "block");
+		})
+		angular.element(".btn-comprovante").click(function () {
+			angular.element(".modal-recolher-confirm").css("display", "none");
+			angular.element(".overlay-finalizar").css("display", "block");
+		});
+		angular.element("#btn_open_comodato_not_sinc").click(function () {
+			angular.element(".open-add-comodato").css("display", "block");
+		})
+
 	})
 
 	/* Histórico Pedidos Controller */
