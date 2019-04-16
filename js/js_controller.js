@@ -2902,13 +2902,9 @@ function enableBtnRecolha(val){
 			}
 		})
 	if(enabled == false){
-		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-enable");
-		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-disable");
 		$("#btn_cons_rec").attr("disabled", "disabled");
 	} else {
 		$("#btn_cons_rec").removeAttr("disabled");
-		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-enable");
-		$("#btn_cons_rec").toggleClass("btn-consignados-recolher-disable");
 	}
 
 }
