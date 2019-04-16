@@ -3460,7 +3460,6 @@ button[disabled] {
     margin-bottom: 10px;
     font-size: 12px;
     position: relative;
-    height: 60px;
     overflow: hidden;
     transition: height 0.3s;
 }
