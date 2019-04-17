@@ -3512,7 +3512,7 @@ button[disabled] {
 }
 
 .modal-remuneracao-variavel .regular-tile {
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 10px;
     font-size: 12px;
     position: relative;
@@ -3606,11 +3606,11 @@ small-box-like{
 
 .sorter-div{
     height: 40px;
-    width: 138px;
+    width: 180px;
 }
 
 .sorter-div p {
-    font-size: 20px;
-    margin: 5px;
+    font-size: 15px;
+    margin-top: 9px;
     color: #c62222;
 }

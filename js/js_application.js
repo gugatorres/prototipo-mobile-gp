@@ -206,6 +206,14 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/clientes_ruptura.html",
             controller: "clientesRupturaController"
         })
+        .when("/inadimplencia", {
+            templateUrl: "./templates/inadimplencia.html",
+            controller: "inadimplenciaController"
+        })
+        .when("/comissao_recebida", {
+            templateUrl: "./templates/comissao_recebida.html",
+            controller: "comissaoRecebidaController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

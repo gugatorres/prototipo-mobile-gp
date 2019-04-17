@@ -1,0 +1,128 @@
+<div class="search-clientes-ruptura">
+    <input type="text" placeholder="Pesquisar...">
+</div>
+<div class="ruptura-container">
+    <div style="float: left" class="box-tile white sorter-div">
+        <div class="col-xs-8"><p id="selectedSorterComissao">{{valor}}</p></div>
+        <div class="col-xs-4"><img src="images/sort-up-and-down-arrows-couple.svg" style="width: 20px; margin: 10px;"></div>
+    </div>
+    <div style="float: right;" class="box-tile white" id="sorterMenuComissao">
+        <img src="images/menu.svg" style="width: 40px; cursor: pointer; padding: 8px;">
+    </div>
+</div>
+<div class="modal-remuneracao-variavel ruptura-mode">
+    <ul>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile white">
+                    <div class="col-xs-12">
+                        <p><strong>12058 - Valdir Roberto da Silva </strong></p>
+                        <hr style="border-width: 2px;">
+                    </div>
+                    <div class="col-xs-12"  >
+                        <div class="col-xs-3" style="text-align: center; float: left; font-size: 11px;">
+                            <strong>Competência</strong><br>02/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Vencimento</strong> <br>15/03/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Nota Fiscal</strong> <br> 582984
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Saldo</strong> <br> R$11,10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile white">
+                    <div class="col-xs-12">
+                        <p><strong>13493 - Fabio Alves de Araujo Eireli </strong></p>
+                        <hr style="border-width: 2px;">
+                    </div>
+                    <div class="col-xs-12"  >
+                        <div class="col-xs-3" style="text-align: center; float: left; font-size: 11px;">
+                            <strong>Competência</strong><br>03/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Vencimento</strong> <br>21/03/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Nota Fiscal</strong> <br> 598204
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Saldo</strong> <br> R$1,30
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile white">
+                    <div class="col-xs-12">
+                        <p><strong>13483 - Genaldo Alves Moraes</strong></p>
+                        <hr style="border-width: 2px;">
+                    </div>
+                    <div class="col-xs-12"  >
+                        <div class="col-xs-3" style="text-align: center; float: left; font-size: 11px;">
+                            <strong>Competência</strong><br>04/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Vencimento</strong> <br>29/04/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Nota Fiscal</strong> <br> 509982
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Saldo</strong> <br> R$15,52
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile white">
+                    <div class="col-xs-12">
+                        <p><strong>13483 - Genaldo Alves Moraes</strong></p>
+                        <hr style="border-width: 2px;">
+                    </div>
+                    <div class="col-xs-12"  >
+                        <div class="col-xs-3" style="text-align: center; float: left; font-size: 11px;">
+                            <strong>Competência</strong><br>05/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Vencimento</strong> <br>15/05/2019
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Nota Fiscal</strong> <br> 598892
+                        </div>
+                        <div class="col-xs-3" style="text-align: center; float: right; font-size: 11px;">
+                            <strong>Saldo</strong> <br> R$1,12
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<!-- MODALS -->
+
+<ul class="buttons-request-sorter" id="modalComissaoSorter">
+    <li> <p style="text-align: center; font-size: 14px;">Ordenar por</p></li>
+    <li> <input type="radio" name="sorter" value="Cliente" ng-model="valor" ng-change="changeSorter(valor)"><strong>Cliente</strong></li>
+    <li> <input type="radio" name="sorter" value="Pasta" ng-model="valor" ng-change="changeSorter(valor)"><strong>Pasta</strong></li>
+    <li> <input type="radio" name="sorter" value="Vencimento" ng-model="valor" ng-change="changeSorter(valor)"><strong>Vencimento</strong></li>
+    <li> <input type="radio" name="sorter" value="Nota Fiscal" ng-model="valor" ng-change="changeSorter(valor)"><strong>Nota Fiscal</strong></li>
+    <li> <input type="radio" name="sorter" value="Saldo" ng-model="valor" ng-change="changeSorter(valor)"><strong>Saldo</strong></li>
+</ul>
+
+<div class="overlay-requests">
+
+</div>

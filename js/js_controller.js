@@ -2826,10 +2826,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y", "hidden");
 		});
 
-		angular.element(".link-inadimplencia").click(function(){
+	/*	angular.element(".link-inadimplencia").click(function(){
 			angular.element(".inadimplencia-mode").css("display","block");
 			angular.element("body").css("overflow-y", "hidden");
-		});
+		});*/
 
 		angular.element(".link-giro-material-pesado").click(function(){
 			angular.element(".giro-material-pesado-mode").css("display","block");
@@ -2917,7 +2917,63 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	/* Clientes em ruptura Controller */
+	.controller("inadimplenciaController", function ($scope) {
 
+		$scope.titulo = "Inadimplência"
+		angular.element(".title-app").html("Inadimplência");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalInadimplenciaSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenuInadimplencia").click(function(){
+			angular.element("#modalInadimplenciaSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+		$scope.valor = "Cliente";
+		$scope.changeSorterIn = function(value) {
+			angular.element("#modalInadimplenciaSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+	})
+
+	.controller("comissaoRecebidaController", function ($scope) {
+		$scope.titulo = "Comissão Recebida Saldo"
+		angular.element(".title-app").html("Comissão Recebida Saldo");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalComissaoSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenuComissao").click(function(){
+			angular.element("#modalComissaoSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+		$scope.valor = "Cliente";
+		$scope.changeSorter = function(value) {
+			angular.element("#modalComissaoSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+	})
 /**/
 
 changeSorter = function(val){
