@@ -742,6 +742,24 @@ nav.navbar {
     animation: menu-request 0.2s;
 }
 
+.buttons-request-sorter{
+    position: fixed;
+    top: 157px;
+    right: 14px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: left;
+    list-style: none;
+    background-color: #FFF;
+    width: 165px;
+    display: none;
+    z-index: 100;
+    border-radius: 0px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+    animation: menu-request 0.2s;
+}
+
 .buttons-request img {
     width: 25px;
     margin-left: 5px;
@@ -3355,6 +3373,12 @@ button[disabled] {
     color: #999;
 }
 
+.ruptura-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .percent-variavel {
     float: right;
     font-size: 16px;
@@ -3439,6 +3463,13 @@ button[disabled] {
     border: solid 1px #CCC;
 }
 
+.search-clientes-ruptura input {
+    padding: 10px;
+    margin: 10px 0 10px;
+    width: 100%;
+    border: solid 1px #CCC;
+}
+
 .modal-button-bottom {
     position: fixed;
     bottom: 0;
@@ -3477,6 +3508,40 @@ button[disabled] {
 }
 
 .modal-remuneracao-variavel .tile-modal .col-xs-3 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.regular-tile .col-xs-12 p{
+    margin: 5px 5px -10px;
+}
+
+.regular-tile .col-xs-12 hr{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.modal-remuneracao-variavel .regular-tile .col-xs-12 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile .col-xs-6 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile .col-xs-4 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile .col-xs-3 {
     padding: 0;
 }
 
@@ -3533,3 +3598,19 @@ button[disabled] {
     width: 100%;
 }
 
+small-box-like{
+    width: 50px;
+    padding: 8px;
+    background: #FFF;
+}
+
+.sorter-div{
+    height: 40px;
+    width: 138px;
+}
+
+.sorter-div p {
+    font-size: 20px;
+    margin: 5px;
+    color: #c62222;
+}

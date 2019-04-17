@@ -202,6 +202,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/faq.html",
             controller: "faqController"
         })
+        .when("/clientes_ruptura", {
+            templateUrl: "./templates/clientes_ruptura.html",
+            controller: "clientesRupturaController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

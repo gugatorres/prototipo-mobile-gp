@@ -2811,10 +2811,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".competencia-mode").css("display","none");
 		});
 
-		angular.element(".link-clientes-ruptura").click(function(){
+/*		angular.element(".link-clientes-ruptura").click(function(){
 			angular.element(".ruptura-mode").css("display","block");
 			angular.element("body").css("overflow-y", "hidden");
-		});
+		});*/
 
 		angular.element(".link-minha-variavel").click(function(){
 			angular.element(".minha-variavel-mode").css("display","block");
@@ -2876,7 +2876,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".tile-modal").click(function(){
 			//angular.element(this).toggleClass("tile-142");
 		});
-		
+
 	})
 
 	.controller("faqController", function ($scope) {
@@ -2889,10 +2889,44 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".tile-faq").click(function(){
 			angular.element(this).toggleClass("tile-auto");
 		});
+	})
+
+	/* Clientes em ruptura Controller */
+	.controller("clientesRupturaController", function ($scope) {
+
+		$scope.titulo = "Clientes em Ruptura"
+		angular.element(".title-app").html("Clientes em Ruptura");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalRupturaSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenu").click(function(){
+			angular.element("#modalRupturaSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
 
 	})
 
+
 /**/
+
+changeSorter = function(val){
+	$("#selectedSorter")[0].innerHTML = val;
+	angular.element(this).css("display", "none");
+	angular.element("#modalRupturaSorter").css("display", "none");
+	angular.element(".overlay-requests").css("display", "none");
+}
+
 function enableBtnRecolha(val){
 	var enabled = false
 	var hasChaged = false
