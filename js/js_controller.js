@@ -2836,10 +2836,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y", "hidden");
 		});
 
-		angular.element(".link-giro-vasilhame").click(function(){
+/*		angular.element(".link-giro-vasilhame").click(function(){
 			angular.element(".giro-vasilhame-mode").css("display","block");
 			angular.element("body").css("overflow-y", "hidden");
-		});
+		});*/
 
 		angular.element(".link-comissao-recebida").click(function(){
 			angular.element(".comissao-recebida-mode").css("display","block");
@@ -2915,9 +2915,15 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-requests").css("display", "block");
 		})
 
+		$scope.valor = "Cliente";
+		$scope.changeSorterIn = function(value) {
+			angular.element("#modalRupturaSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+
 	})
 
-	/* Clientes em ruptura Controller */
+	/* Inadimplência Controller */
 	.controller("inadimplenciaController", function ($scope) {
 
 		$scope.titulo = "Inadimplência"
@@ -2971,6 +2977,34 @@ app.controller("defaultController", function ($scope) {
 		$scope.valor = "Cliente";
 		$scope.changeSorter = function(value) {
 			angular.element("#modalComissaoSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+	})
+
+	.controller("giroVasilhameController", function ($scope) {
+		$scope.titulo = "Giro Vasilhame"
+		angular.element(".title-app").html("Giro Vasilhame");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalVasilhameSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenuVasilhame").click(function(){
+			angular.element("#modalVasilhameSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+		$scope.valor = "Cliente";
+		$scope.changeSorter = function(value) {
+			angular.element("#modalVasilhameSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
 	})

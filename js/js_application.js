@@ -214,6 +214,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/comissao_recebida.html",
             controller: "comissaoRecebidaController"
         })
+        .when("/giro_vasilhame", {
+            templateUrl: "./templates/giro_vasilhame.html",
+            controller: "giroVasilhameController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

@@ -3606,11 +3606,92 @@ small-box-like{
 
 .sorter-div{
     height: 40px;
-    width: 180px;
+    width: 205px;
 }
 
 .sorter-div p {
     font-size: 15px;
     margin-top: 9px;
     color: #c62222;
+}
+
+.progresso {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+#vasilhame_1 {
+    width: 85%;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    animation-name: animabar_vasilhame_1;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animabar_vasilhame_1;
+}
+@-webkit-keyframes animabar_vasilhame_1 {
+    from {width: 0%;}
+    to {width: 85%;}
+}
+
+#vasilhame_2 {
+    width: 30%;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    animation-name: animabar_vasilhame_2;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animabar_vasilhame_2;
+}
+@-webkit-keyframes animabar_vasilhame_2 {
+    from {width: 0%;}
+    to {width: 30%;}
+}
+
+#vasilhame_3 {
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
+    animation-name: animabar_vasilhame_3;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animabar_vasilhame_3;
+}
+@-webkit-keyframes animabar_vasilhame_3 {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+#vasilhame_4 {
+    width: 85%;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    animation-name: animabar_vasilhame_4;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animabar_vasilhame_4;
+}
+@-webkit-keyframes animabar_vasilhame_4 {
+    from {width: 0%;}
+    to {width: 85%;}
+}
+
+#vasilhame_5 {
+    width: 30%;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    animation-name: animabar_vasilhame_5;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animabar_vasilhame_5;
+}
+@-webkit-keyframes animabar_vasilhame_5 {
+    from {width: 0%;}
+    to {width: 30%;}
 }

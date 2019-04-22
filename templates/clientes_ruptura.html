@@ -3,7 +3,7 @@
 </div>
 <div class="ruptura-container">
     <div style="float: left" class="box-tile white sorter-div">
-        <div class="col-xs-8"><p id="selectedSorter">Pasta</p></div>
+        <div class="col-xs-8"><p id="selectedSorter">{{valor}}</p></div>
         <div class="col-xs-4"><img src="images/sort-up-and-down-arrows-couple.svg" style="width: 20px; margin: 10px;"></div>
     </div>
     <div style="float: right;" class="box-tile white" id="sorterMenu">
@@ -120,61 +120,6 @@
             </div>
         </div>
     </li>
-    <!--<li>
-        <div class="col-xs-12">
-            <div class="row box-tile tile-modal white">
-
-                <div class="col-xs-12"> <strong>Cliente</strong>
-                    <p>Jeronima Ferreira de Souza (500224)</p>
-                </div>
-                <div class="col-xs-6"> <strong>Pasta</strong> <br> Segunda (222) </div>
-                <div class="col-xs-6"> <strong>Ultima Compra</strong> <br> 21/01/2019
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="col-xs-12">
-            <div class="row box-tile tile-modal white">
-
-                <div class="col-xs-12"> <strong>Cliente</strong>
-                    <p>Marcio Cesar Pascoalino (48994)</p>
-                </div>
-                <div class="col-xs-6"> <strong>Pasta</strong> <br> Quinta (225) </div>
-                <div class="col-xs-6"> <strong>Ultima Compra</strong> <br> 13/12/2018
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="col-xs-12">
-            <div class="row box-tile tile-modal white">
-
-                <div class="col-xs-12"> <strong>Cliente</strong>
-                    <p>Silvania Flauzina da Cruz (30991)</p>
-                </div>
-                <div class="col-xs-6"> <strong>Pasta</strong> <br> Sabado (227) </div>
-                <div class="col-xs-6"> <strong>Ultima Compra</strong> <br> 26/11/2018
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="col-xs-12">
-            <div class="row box-tile tile-modal white" style="margin-bottom: 100px;">
-
-                <div class="col-xs-12"> <strong>Cliente</strong>
-                    <p>Wanderson da Silva Moreira (13505)</p>
-                </div>
-                <div class="col-xs-6"> <strong>Pasta</strong> <br> Quinta (225) </div>
-                <div class="col-xs-6"> <strong>Ultima Compra</strong> <br> 31/10/2018
-                </div>
-            </div>
-        </div>
-    </li>-->
 </ul>
 
 </div>
@@ -183,9 +128,9 @@
 
 <ul class="buttons-request-sorter" id="modalRupturaSorter">
     <li> <p style="text-align: center; font-size: 14px;">Ordenar por</p></li>
-    <li> <input type="radio" name="sorter" value="Cliente" onchange="changeSorter(this.value)"><strong>Cliente</strong></li>
-    <li> <input type="radio" name="sorter" value="Pasta" onchange="changeSorter(this.value)"><strong>Pasta</strong></li>
-    <li> <input type="radio" name="sorter" value="Última Compra" onchange="changeSorter(this.value)"><strong>Última Compra</strong></li>
+    <li> <input type="radio" name="sorter" value="Cliente" ng-model="valor" ng-change="changeSorterIn(valor)"><strong>Cliente</strong></li>
+    <li> <input type="radio" name="sorter" value="Pasta" ng-model="valor" ng-change="changeSorterIn(valor)"><strong>Pasta</strong></li>
+    <li> <input type="radio" name="sorter" value="Última Compra" ng-model="valor" ng-change="changeSorterIn(valor)"><strong>Última Compra</strong></li>
 </ul>
 
 <div class="overlay-requests">
