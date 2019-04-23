@@ -2953,6 +2953,7 @@ app.controller("defaultController", function ($scope) {
 		}
 	})
 
+	/* Comissão Recebida Controller */
 	.controller("comissaoRecebidaController", function ($scope) {
 		$scope.titulo = "Comissão Recebida Saldo"
 		angular.element(".title-app").html("Comissão Recebida Saldo");
@@ -2981,6 +2982,7 @@ app.controller("defaultController", function ($scope) {
 		}
 	})
 
+	/* Giro Vasilhame Controller */
 	.controller("giroVasilhameController", function ($scope) {
 		$scope.titulo = "Giro Vasilhame"
 		angular.element(".title-app").html("Giro Vasilhame");
@@ -3008,6 +3010,135 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-requests").css("display", "none");
 		}
 	})
+
+	/* Giro Vasilhame Controller */
+	.controller("materialPesadoController", function ($scope) {
+		$scope.titulo = "Giro Material Pesado"
+		angular.element(".title-app").html("Giro Material Pesado");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalVasilhameSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenuVasilhame").click(function(){
+			angular.element("#modalVasilhameSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+		$scope.valor = "Cliente";
+		$scope.changeSorter = function(value) {
+			angular.element("#modalVasilhameSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+	})
+
+	/* Minha Variável Controller */
+	.controller("minhaVariavelController", function ($scope) {
+		$scope.titulo = "Minha Varíavel"
+		angular.element(".title-app").html("Minha Varíavel");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalMinhaVariavelSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenuMinhaVariavel").click(function(){
+			angular.element("#modalMinhaVariavelSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+		$scope.valor = "Indicador";
+		$scope.changeSorter = function(value) {
+			angular.element("#modalMinhaVariavelSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+	})
+
+	/* Faturamento Meta Controller */
+	.controller("faturamentoMetaController", function ($scope) {
+
+		$scope.titulo = "Faturamento Meta"
+		angular.element(".title-app").html("Faturamento Meta");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element("#modalRupturaSorter").css("display", "none");
+		});
+
+		angular.element("#sorterMenu").click(function () {
+			angular.element("#modalRupturaSorter").css("display", "block");
+			angular.element(".overlay-requests").css("display", "block");
+		})
+
+		$scope.valor = "Cód. Produto";
+		$scope.changeSorterIn = function (value) {
+			angular.element("#modalRupturaSorter").css("display", "none");
+			angular.element(".overlay-requests").css("display", "none");
+		}
+
+		/*var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						33,
+						74
+					],
+					backgroundColor: [
+						'red',
+						'#FFFFFF',
+					],
+					borderColor : ["#AAA","#AAA"	]
+				}],
+			},
+			options: {
+				responsive: false,
+				legend: {
+					position: 'top',
+				},
+				borderColor : "#EEE",
+				title: {
+					display: false,
+					text: 'Teste'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+		var ctx = document.getElementById('chart-area').getContext('2d');
+		window.myDoughnut = new Chart(ctx, config);
+		var ctx = document.getElementById('chart-area2').getContext('2d');
+		window.myDoughnut = new Chart(ctx, config);
+		var ctx = document.getElementById('chart-area3').getContext('2d');
+		window.myDoughnut = new Chart(ctx, config);
+*/
+	});
 /**/
 
 changeSorter = function(val){

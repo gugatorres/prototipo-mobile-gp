@@ -218,6 +218,18 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/giro_vasilhame.html",
             controller: "giroVasilhameController"
         })
+        .when("/giro_material_pesado", {
+            templateUrl: "./templates/giro_vasilhame.html",
+            controller: "materialPesadoController"
+        })
+        .when("/minha_variavel", {
+            templateUrl: "./templates/minha_variavel.html",
+            controller: "minhaVariavelController"
+        })
+        .when("/faturamento_meta", {
+            templateUrl: "./templates/faturamento_meta.html",
+            controller: "faturamentoMetaController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })
