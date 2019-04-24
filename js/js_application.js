@@ -230,6 +230,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/faturamento_meta.html",
             controller: "faturamentoMetaController"
         })
+        .when("/revisao_rota", {
+            templateUrl: "./templates/revisao_rota.html",
+            controller: "revisaoRotaController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

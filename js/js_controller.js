@@ -1734,6 +1734,11 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".close-modal").click(function () {
 			angular.element(".overlay-modal").css("display", "none");
+			angular.element(".search").css("display", "block");
+		});
+
+		angular.element(".search").click(function () {
+			angular.element("#modal_search").css("display", "block");
 		});
 	})
 
@@ -2821,10 +2826,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element("body").css("overflow-y", "hidden");
 		});
 
-		angular.element(".link-faturamento-meta").click(function(){
+/*		angular.element(".link-faturamento-meta").click(function(){
 			angular.element(".faturamento-meta-mode").css("display","block");
 			angular.element("body").css("overflow-y", "hidden");
-		});
+		});*/
 
 	/*	angular.element(".link-inadimplencia").click(function(){
 			angular.element(".inadimplencia-mode").css("display","block");
@@ -3131,15 +3136,40 @@ app.controller("defaultController", function ($scope) {
 			}
 		};
 
-		var ctx = document.getElementById('chart-area').getContext('2d');
-		window.myDoughnut = new Chart(ctx, config);
-		var ctx = document.getElementById('chart-area2').getContext('2d');
+		var ctx = document.getElementById('chart-area1').getContext('2d');
+		window.myDoughnut = new Chart(ctx, config);*/
+		/*var ctx = document.getElementById('chart-area2').getContext('2d');
 		window.myDoughnut = new Chart(ctx, config);
 		var ctx = document.getElementById('chart-area3').getContext('2d');
-		window.myDoughnut = new Chart(ctx, config);
-*/
-	});
-/**/
+		window.myDoughnut = new Chart(ctx, config);*/
+	})
+
+	.controller("revisaoRotaController", function ($scope) {
+		$scope.titulo = "Revisão de Rota"
+		angular.element(".title-app").html("Revisão de Rota");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".menu-request").css("display", "none");
+		angular.element(".back-menu").css("display", "none");
+		angular.element(".overlay-quest").css("display", "none");
+
+		angular.element(".menu-requests").click(function () {
+			angular.element(".overlay-requests").css("display", "block");
+			angular.element(".buttons-request").css("display", "block");
+		});
+
+		angular.element(".overlay-requests").click(function () {
+			angular.element(this).css("display", "none");
+			angular.element(".buttons-request").css("display", "none");
+		});
+        $scope.isActive = false;
+        $scope.dia = "Terça";
+
+        $scope.selectDay = function ($event, value) {
+            $($event.currentTarget).toggleClass("selected-day")
+        }
+
+
+	})
 
 changeSorter = function(val){
 	$("#selectedSorter")[0].innerHTML = val;
