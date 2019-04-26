@@ -1,214 +1,251 @@
 <div class="screen-home">
 
-<div class="row">
+	<div class="row">
 
-	<div class="col-md-12 col-xs-12" style="padding:0; margin-top: 0;">
-		<a href="#!/meus_clientes">
-			<div class="box-tile route-customer white">
+		<div class="col-md-12 col-xs-12" style="padding:0; margin-top: 0;">
+			<a href="#!/meus_clientes">
+				<div class="box-tile route-customer white">
 
-				<div class="col-xs-3">
-					<img src="images/map.svg" alt="" style="width: 45px; margin-top: 5px; margin-left: 20px;">
+					<div class="col-xs-3">
+						<img src="images/map.svg" alt="" style="width: 45px; margin-top: 5px; margin-left: 20px;">
+					</div>
+					<div class="col-xs-9">
+						<h3>Minha Rota</h3>
+						<p>14/01/2019, Segunda-feira</p>
+					</div>
+
 				</div>
-				<div class="col-xs-9">
-					<h3>Minha Rota</h3>
-					<p>14/01/2019, Segunda-feira</p>
+			</a>
+
+		</div>
+
+	</div>
+
+	<div class="row alerta-home">
+
+		<div class="col-md-12 col-xs-12">
+
+			<div class="box-tile white">
+				<img src="./images/notification.svg" class="alert-icon" />
+				FOCO NA ITAIPAVA 600ML
+
+				<img src="./images/cancel.svg" class="close-alert" />
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row carrossel-promocoes">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item item active">
+					<img class="d-block w-100" src="./images/banner_promo2.png" alt="First slide">
+				</div>
+				<div class="carousel-item item">
+					<img class="d-block w-100" src="./images/banner_promo1.png" alt="Second slide">
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="row minha-meta">
+
+		<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Eficiência de Visita</h6>
+				<img class="img-other-value" src="images/visitor-g.svg" alt="">
+				<span class="meta-total-mensal other-value pull-right">54,5%</span>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Fora de Rota</h6>
+				<img class="img-other-value" src="images/destination.svg" alt="">
+				<span class="meta-total-mensal other-value pull-right">0,7%</span>
+
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
+				<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+					<h6>Itens por Cliente (IPC)</h6>
+					<img class="img-other-value" src="images/shopping-bag.svg" alt="">
+					<span class="meta-total-mensal other-value pull-right">2,71%</span>
+				</div>
+			</div>
+	
+			<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
+				<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+					<h6>Valor Devolvido</h6>
+					<img class="img-other-value" src="images/give-money.svg" alt="">
+					<span class="meta-total-mensal other-value pull-right">R$ 2994,03</span>
+	
+				</div>
+			</div>
+
+
+		<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Renda Variável</h6>
+				<span class="meta-total-mensal">R$ 1.142,12</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+				<span class="meta-mensal">R$ 3.287,95</span>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 faturamento-meta" style="padding-left:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Faturamento/Meta</h6>
+				<span class="meta-total-mensal">R$ 78.878,21</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+				<span class="meta-mensal">R$ 119.969,80</span>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 inadimplencia" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+
+				<h6>Inadimplência</h6>
+				<span class="meta-total-mensal">R$ 6.391,77</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+				<span class="meta-mensal">R$ 5.042,42</span>
+
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 giro" style="padding-left:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Giro Material Pesado</h6>
+				<span class="meta-total-mensal">10/10</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 limite70" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Clientes com mais de 70% do limite</h6>
+				<span class="meta-total-mensal">03/30</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 inadimplentes" style="padding-left:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Clientes Inadimplentes</h6>
+				<span class="meta-total-mensal">01/30</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 semcomprar" style="padding-right:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Sem comprar há mais de 30 dias</h6>
+				<span class="meta-total-mensal">05/30</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xs-6 devolucao" style="padding-left:10px;">
+			<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
+				<h6>Efetuou devolução nos últimos 30 dias</h6>
+				<span class="meta-total-mensal">02/30</span>
+				<div class="loading-customers">
+					<div class="bar-loading"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<a class="float-button open-modal-clientes">
+
+		<img src="images/add.svg" alt="" style="margin-left: 15px; margin-top: 15px;">
+
+	</a>
+
+	<div class="overlay-add-customer">
+
+		<ul class="buttons-add">
+			<li> <a href="#!cadastro_clientes">Novo Cliente <img src="images/add.svg" alt=""> </a> </li>
+			<!--<li> <a class="btn-novo-pedido">Novo Pedido <img src="images/add.svg" alt=""> </a> </li>-->
+			<!--<li>  <a href="#">Novo Pedido <img src="images/add.svg" alt="" > </a> </li>-->
+			<li> <a href="#">Solic. visita do gestor <img src="images/add.svg" alt=""> </a> </li>
+
+		</ul>
+
+	</div>
+
+	<div class="overlay-modal">
+		<div class="modal-custom modal-select-pedidos">
+
+			<a class="close-modal"> X</a>
+
+			<div class="select-customer">
+
+				<p>Selecione um cliente:</p>
+
+				<div class="row tipos-pagamento" style="padding: 0;">
+
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquise a forma de pagamento...">
+
+					<ul id="tipos-pagamento">
+						<li><a>ABC Lanches LTDA - 32554</a></li>
+						<li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+						<li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+						<li><a>VALTER SOUZA SANTOS - 944143</a></li>
+						<li><a>ABC LANCHES LTDA - 32554</a></li>
+						<li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+						<li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+						<li><a>ABC Lanches LTDA - 32554</a></li>
+						<li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+						<li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+						<li><a>VALTER SOUZA SANTOS - 944143</a></li>
+						<li><a>ABC LANCHES LTDA - 32554</a></li>
+						<li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
+						<li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
+
+					</ul>
+
 				</div>
 
+				<a href="#!new_pedido" class="btn-default"> SELECIONAR CLIENTE </a>
+
 			</div>
-		</a>
-
-	</div>
-
-</div>
-
-<div class="row alerta-home">
-
-	<div class="col-md-12 col-xs-12">
-
-		<div class="box-tile white">
-			<img src="./images/notification.svg" class="alert-icon" />
-			FOCO NA ITAIPAVA 600ML
-
-			<img src="./images/cancel.svg" class="close-alert" />
-		</div>
-
-	</div>
-
-</div>
-
-<div class="row carrossel-promocoes">
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-		  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner">
-		  <div class="carousel-item item active">
-			<img class="d-block w-100" src="./images/banner_promo2.png" alt="First slide">
-		  </div>
-		  <div class="carousel-item item">
-			<img class="d-block w-100" src="./images/banner_promo1.png" alt="Second slide">
-		  </div>
-		</div>
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	  </div>
-</div>
-
-<div class="row minha-meta">
-
-	<div class="col-md-6 col-xs-6 renda-variavel" style="padding-right:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Renda Variável</h6>
-			<span class="meta-total-mensal">R$ 1.142,12</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-			<span class="meta-mensal">R$ 3.287,95</span>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 faturamento-meta" style="padding-left:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Faturamento/Meta</h6>
-			<span class="meta-total-mensal">R$ 78.878,21</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-			<span class="meta-mensal">R$ 119.969,80</span>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 inadimplencia" style="padding-right:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-				
-			<h6>Inadimplência</h6>
-			<span class="meta-total-mensal">R$ 6.391,77</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-			<span class="meta-mensal">R$ 5.042,42</span>
 
 		</div>
 	</div>
-
-	<div class="col-md-6 col-xs-6 giro" style="padding-left:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Giro Material Pesado</h6>
-			<span class="meta-total-mensal">10/10</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 limite70" style="padding-right:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Clientes com mais de 70% do limite</h6>
-			<span class="meta-total-mensal">03/30</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 inadimplentes" style="padding-left:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Clientes Inadimplentes</h6>
-			<span class="meta-total-mensal">01/30</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 semcomprar" style="padding-right:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Sem comprar há mais de 30 dias</h6>
-			<span class="meta-total-mensal">05/30</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-md-6 col-xs-6 devolucao" style="padding-left:10px;">
-		<div class="box-tile white" style="padding: 5px 5px; text-align: center;">
-			<h6>Efetuou devolução nos últimos 30 dias</h6>
-			<span class="meta-total-mensal">02/30</span>
-			<div class="loading-customers">
-				<div class="bar-loading"></div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-
-<a class="float-button open-modal-clientes">		
-
-	<img src="images/add.svg" alt="" style="margin-left: 15px; margin-top: 15px;">
-
-</a>
-
-<div class="overlay-add-customer">
-
-	<ul class="buttons-add">
-		<li> <a href="#!cadastro_clientes">Novo Cliente <img src="images/add.svg" alt=""> </a> </li>
-		<!--<li> <a class="btn-novo-pedido">Novo Pedido <img src="images/add.svg" alt=""> </a> </li>-->
-		<!--<li>  <a href="#">Novo Pedido <img src="images/add.svg" alt="" > </a> </li>-->
-		<li> <a href="#">Solic. visita do gestor <img src="images/add.svg" alt=""> </a> </li>
-
-	</ul>
-
-</div>
-
-<div class="overlay-modal">
-	<div class="modal-custom modal-select-pedidos">
-
-		<a class="close-modal"> X</a>
-
-		<div class="select-customer">
-
-			<p>Selecione um cliente:</p>
-
-			<div class="row tipos-pagamento" style="padding: 0;">
-
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquise a forma de pagamento...">
-
-                <ul id="tipos-pagamento">
-                    <li><a>ABC Lanches LTDA - 32554</a></li>
-                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
-                    <li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
-                    <li><a>VALTER SOUZA SANTOS - 944143</a></li>
-                    <li><a>ABC LANCHES LTDA - 32554</a></li>
-                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
-					<li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
-					<li><a>ABC Lanches LTDA - 32554</a></li>
-                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
-                    <li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
-                    <li><a>VALTER SOUZA SANTOS - 944143</a></li>
-                    <li><a>ABC LANCHES LTDA - 32554</a></li>
-                    <li><a>MARCIO GONÇALVES DE QUEIROZ - 35403</a></li>
-                    <li><a>ADEMAR FRANCISCO HEMSING - 312300</a></li>
-
-                </ul>
-
-            </div>
-
-			<a href="#!new_pedido" class="btn-default"> SELECIONAR CLIENTE </a>
-
-		</div>
-
-	</div>
-</div>
 </div>
 
 <br>
@@ -231,7 +268,7 @@
 				borderWidth: 0
 			}]
 		}
-		
+
 	});
 
 	var ctx = document.getElementById("myChart2").getContext('2d');
@@ -251,7 +288,7 @@
 				borderWidth: 0
 			}]
 		}
-		
+
 	});
-	</script>
+</script>
 <script src="js/jQuery-custom.js"></script>

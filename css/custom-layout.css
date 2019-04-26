@@ -2334,6 +2334,19 @@ p.txt-min2 {
     color: #c62222;
 }
 
+.img-other-value {
+    width: 35px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.other-value {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-right: 5px;
+}
+
 .meta-mensal {
     font-size: 10px;
     display: block;
