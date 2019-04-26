@@ -1233,6 +1233,17 @@ a .card-product {
 }
 
 .modal-custom {
+     width: 85%;
+     min-height: 250px;
+     padding: 20px;
+     background: #FFF;
+     margin: 20px auto;
+     box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+     position: relative;
+     z-index: 10;
+ }
+
+.modal-custom-search {
     width: 85%;
     min-height: 250px;
     padding: 20px;
@@ -1651,6 +1662,20 @@ a .card-product {
 .add-product {
     margin-top: 15px;
     display: block;
+}
+
+.search-cliente-modal{
+    width:100%
+}
+
+.search-cliente-modal input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: none;
+    border-bottom: solid 1px #c62222;
 }
 
 .config-product input[type="text"] {
@@ -2296,6 +2321,37 @@ p.txt-min2 {
     margin-bottom: 5px;
     border-bottom: solid 1px #333;
 }
+
+
+#week_days_list button{
+    width: 100%;
+    margin-top: 5px;
+    height: 42px;
+    background: transparent;
+    border: solid 1px #CCC;
+}
+
+#week_days_list .caret {
+    float: right;
+    right: 10px;
+    top: 23px;
+    position: absolute;
+    color: #c62222;
+}
+
+#week_days_list .dropdown-menu {
+    left: auto;
+    padding: 10px;
+    width: 220px;
+    border-radius: 0;
+    margin-top: -4px;
+}
+
+#week_days_list li {
+    padding: 5px;
+    font-size: 20px;
+}
+
 
 .txt-selected {
     color: #c62222;
@@ -3533,6 +3589,20 @@ button[disabled] {
     transition: height 0.3s;
 }
 
+.modal-remuneracao-variavel .regular-tile-2 {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.high-box{
+    height: 100px
+}
+
+
 .regular-tile .col-xs-12 p{
     margin: 5px 5px -10px;
 }
@@ -3555,6 +3625,22 @@ button[disabled] {
 }
 
 .modal-remuneracao-variavel .regular-tile .col-xs-3 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile-2 .col-xs-12 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile-2 .col-xs-6 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile-2 .col-xs-4 {
+    padding: 0;
+}
+
+.modal-remuneracao-variavel .regular-tile-2 .col-xs-3 {
     padding: 0;
 }
 
@@ -3633,6 +3719,32 @@ small-box-like{
     background-color: #ddd;
     border-radius: 10px;
 }
+
+.week-day-cells{
+    border-width: thin;
+    text-align: center;
+    border-style: groove;
+    padding: 0;
+    height: 30px;
+    background-color: #FFFFFF;
+}
+
+.week-day-cells p {
+    margin-left: 1px;
+    margin-top: 4px;
+}
+
+.selected-day{
+    font-weight:bold;
+    color: #FFF;
+    background-color: #c62222;
+}
+
+.day-selected{
+    background-color: #c62222;
+}
+
+/*ANIMAÇÕES*/
 
 #vasilhame_1 {
     width: 85%;

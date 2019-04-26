@@ -1,0 +1,112 @@
+<div class="modal-remuneracao-variavel">
+
+    <div class="col-xs-12">
+        <p><strong>Carrefour ltda</strong> </p>
+    </div>
+    <ul>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile-2 white high-box">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6" style="float: left; text-align: center;">
+                            <p style="margin-top: 7px;"><strong>Dias de Visita</strong></p>
+                        </div>
+                        <div class="col-xs-6" style="float: right; padding: 0; text-align: center; background-color: lightgray; height: 30px">
+                            <p style="margin-top: 7px;">{{dia}}</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12"  style="margin-top: 20px">
+                        <input type="button" class="col-xs-2 week-day-cells" value="Segunda" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <input type="button" class="col-xs-2 week-day-cells selected-day" value="Terça" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <input type="button" class="col-xs-2 week-day-cells" value="Quarta" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <input type="button" class="col-xs-2 week-day-cells" value="Quinta" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <input type="button" class="col-xs-2 week-day-cells" value="Sexta" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <input type="button" class="col-xs-2 week-day-cells" value="Sábado" ng-model="dia" ng-click="selectDay($event, dia)">
+                        <!--<div class="col-xs-2 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>Terça</p>
+                        </div>-->
+                        <!--<div class="col-xs-2 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>Quarta</p>
+                        </div>
+                        <div class="col-xs-2 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>Quinta</p>
+                        </div>
+                        <div class="col-xs-2 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>Sexta</p>
+                        </div>
+                        <div class="col-xs-2 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>Sábado</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile-2 white high-box">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6" style="float: left; text-align: center;">
+                            <p style="margin-top: 7px;"><strong>Frequência de Visita</strong></p>
+                        </div>
+                        <div class="col-xs-6" style="float: right; padding: 0; text-align: center; background-color: lightgray; height: 30px">
+                            <p style="margin-top: 7px;">14 Dias</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12"  style="margin-top: 20px">
+                        <input type="button" class="col-xs-3 week-day-cells selected-day" value="7 Dias" ng-model="week" ng-click="selectDay($event, week)">
+                        <input type="button" class="col-xs-3 week-day-cells" value="14 Dias" ng-model="week" ng-click="selectDay($event, week)">
+                        <input type="button" class="col-xs-3 week-day-cells" value="21 Dias" ng-model="week" ng-click="selectDay($event, week)">
+                        <input type="button" class="col-xs-3 week-day-cells" value="28 Dias" ng-model="week" ng-click="selectDay($event, week)">
+                        <!--<div class="col-xs-3 week-day-cells">
+                            <p></p>
+                        </div>
+                        <div class="col-xs-3 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>14 Dias</p>
+                        </div>
+                        <div class="col-xs-3 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>21 Dias</p>
+                        </div>
+                        <div class="col-xs-3 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>28 Dias</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="col-xs-12">
+                <div class="row box-tile regular-tile-2 white high-box">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6" style="float: left; align-content: center;">
+                            <p style="margin-top: 7px;"><strong>Frequência de Visita</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12"  style="margin-top: 20px;">
+                        <div class="col-xs-5 week-day-cells" >
+                            <p>10</p>
+                        </div>
+                        <div class="col-xs-2" style="margin-top: 5px; padding-left: 19px;">
+                            <img src="images\play-arrow.svg" alt="" style="width: 20px;">
+                        </div>
+                        <div class="col-xs-5 week-day-cells" style="border-style: groove; padding: 0">
+                            <p>12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<div class="overlay-requests">
+
+</div>
+<ul class="buttons-request">
+    <li> <a href="#!solicitar_inativacao">Solic. inativação </a> </li>
+    <li> <a href="#!solicitar_alteracao_financ">Solic. alteração financeira </a> </li>
+    <li> <a href="#!historico_pedidos">Histórico de Pedidos</a> </li>
+    <li> <a href="#!lista_comodatos">Comodatos em Aberto</a> </li>
+    <li> <a href="#!comodatos_barril">Recolha (Barril e Cilindro) </a> </li>
+    <li> <a href="#!consignacoes">Consignações em Aberto</a> </li>
+</ul>
