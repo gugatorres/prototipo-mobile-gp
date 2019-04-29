@@ -3555,6 +3555,11 @@ button[disabled] {
     padding: 0;
 }
 
+.lista-relatorio ul {
+    list-style: none;
+    padding: 0;
+}
+
 .modal-remuneracao-variavel .tile-modal {
     padding: 15px;
     margin-bottom: 10px;
@@ -3580,6 +3585,194 @@ button[disabled] {
     padding: 0;
 }
 
+.calendar-do-figma{
+    /* calendar (2) */
+
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    left: 25px;
+    top: 90px;
+
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 0%;
+    right: 7.59%;
+    top: 1.76%;
+    bottom: 26.99%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 0%;
+    right: 81.95%;
+    top: 76.76%;
+    bottom: 10.43%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 9.98%;
+    right: 82%;
+    top: 33.16%;
+    bottom: 63.91%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 25.63%;
+    right: 66.35%;
+    top: 33.16%;
+    bottom: 63.91%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 41.27%;
+    right: 50.7%;
+    top: 33.16%;
+    bottom: 63.91%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 56.92%;
+    right: 35.06%;
+    top: 33.16%;
+    bottom: 63.91%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 72.57%;
+    right: 19.41%;
+    top: 33.16%;
+    bottom: 63.91%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 9.98%;
+    right: 82%;
+    top: 40.52%;
+    bottom: 56.55%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 25.63%;
+    right: 66.35%;
+    top: 40.52%;
+    bottom: 56.55%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 41.27%;
+    right: 50.7%;
+    top: 40.52%;
+    bottom: 56.55%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 56.92%;
+    right: 35.06%;
+    top: 40.52%;
+    bottom: 56.55%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 72.57%;
+    right: 19.41%;
+    top: 40.52%;
+    bottom: 56.55%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 25.44%;
+    right: 34.87%;
+    top: 49.27%;
+    bottom: 18.57%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 21.79%;
+    right: 0%;
+    top: 50.2%;
+    bottom: 1.82%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 66.18%;
+    right: 5.05%;
+    top: 64.36%;
+    bottom: 6.86%;
+
+    background: #000000;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 79.1%;
+    right: 14.74%;
+    top: 74.32%;
+    bottom: 19.79%;
+
+    background: #000000;
+
+}
+
 .modal-remuneracao-variavel .regular-tile {
     padding: 8px;
     margin-bottom: 10px;
@@ -3590,6 +3783,15 @@ button[disabled] {
 }
 
 .modal-remuneracao-variavel .regular-tile-2 {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.lista-relatorio .regular-tile {
     padding: 8px;
     margin-bottom: 10px;
     font-size: 12px;
@@ -3897,7 +4099,23 @@ small-box-like{
     to {width: 39%;}
 }
 
-.vl {
+.high-vl {
     border-right: 3px groove lightgoldenrodyellow;
     height: 90px;
+}
+
+.vl {
+    border-right: 2px groove lightgoldenrodyellow;
+}
+
+.light-shadow{
+    box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
+}
+
+.desc-relatorio{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-top: 5%;
 }

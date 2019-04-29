@@ -1743,7 +1743,6 @@ app.controller("defaultController", function ($scope) {
 	})
 
 
-
 	/* Acompanhar Pedido Controller */
 	.controller("AcompanharPedidoController", function ($scope) {
 		$scope.titulo = "Acompanhar Pedido"
