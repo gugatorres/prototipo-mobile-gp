@@ -4105,7 +4105,7 @@ small-box-like{
 }
 
 .vl {
-    border-right: 2px groove lightgoldenrodyellow;
+    border-right: 2px groove #c3c3c3;
 }
 
 .light-shadow{
@@ -4117,5 +4117,5 @@ small-box-like{
     font-size: 17px;
     font-weight: bold;
     vertical-align: middle;
-    padding-top: 5%;
+    padding-top: 8%;
 }
