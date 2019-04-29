@@ -965,7 +965,19 @@ app.controller("defaultController", function ($scope) {
 
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-product").not('.cart-clean').css("display", "block");
+			angular.element("#promocaoCombo1").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoCacilds").click(function () {
+			angular.element("#promocaoCombo2").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoTNT").click(function () {
+			angular.element("#promocaoCombo3").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoCrystal").click(function () {
+			angular.element("#promocaoCombo4").not('.cart-clean').css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
@@ -1148,7 +1160,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "#!carrinho");
 
-
 		angular.element(".add-product").click(function () {
 			angular.element(".modal-selecao").css("display", "block");
 		});
@@ -1192,8 +1203,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
 			angular.element(".total-box").css("z-index", "9");
 			angular.element(".brand-itaipava").removeAttr("href", "");
-
-
 		});
 
 		angular.element(".overlay-filter").click(function () {

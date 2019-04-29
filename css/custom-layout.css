@@ -1619,6 +1619,18 @@ a .card-product {
     box-shadow: #00000024 0px 5px 6px;
 }
 
+.box-promotion .add-product-alt {
+    background: #FFF;
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin-top: 0;
+    border-radius: 50px;
+    box-shadow: #00000024 0px 5px 6px;
+}
+
 .gerar-pedido .col-xs-2 img {
     margin-top: 6px;
 }
@@ -1660,6 +1672,11 @@ a .card-product {
 }
 
 .add-product {
+    margin-top: 15px;
+    display: block;
+}
+
+.add-product-alt {
     margin-top: 15px;
     display: block;
 }
