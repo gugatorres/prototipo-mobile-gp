@@ -968,6 +968,10 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#promocaoCombo1").not('.cart-clean').css("display", "block");
 		});
 
+		angular.element(".add-product-tabela").click(function () {
+			angular.element("#promocaoComboTabelaFlex").not('.cart-clean').css("display", "block");
+		});
+
 		angular.element("#comboPromoCacilds").click(function () {
 			angular.element("#promocaoCombo2").not('.cart-clean').css("display", "block");
 		});
@@ -3177,6 +3181,19 @@ app.controller("defaultController", function ($scope) {
         }
 
 
+	})
+
+	.controller("roteiroVisaoClienteController", function($scope){
+		$scope.titulo = "Roteiro - Visão do CLiente"
+		angular.element(".title-app").html("Roteiro - Visão do CLiente");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
 	})
 
 changeSorter = function(val){

@@ -238,6 +238,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/diaria_comercial.html",
             controller: "diariaComercialController"
         })
+        .when("/roteiro_visao_cliente", {
+            templateUrl: "./templates/roteiro_visao_cliente.html",
+            controller: "roteiroVisaoClienteController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })
