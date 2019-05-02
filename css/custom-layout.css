@@ -2852,6 +2852,41 @@ button[disabled] {
     margin: 0;
 }
 
+.items-visão-cliente .no-active {
+    transition: height 0.5s;
+    height: 53px;
+}
+
+.items-visão-cliente .active-high{
+    transition: height 0.5s;
+    height: 252px;
+}
+
+.items-visão-cliente .active-med{
+    transition: height 0.5s;
+    height: 206px;
+}
+
+.items-visão-cliente .active-small{
+    transition: height 0.5s;
+    height: 252px;
+}
+
+.items-visão-cliente .active-VH{
+    transition: height 0.5s;
+    height: 272px;
+}
+
+.items-visão-cliente .active-pes{
+    transition: height 0.5s;
+    height: 180px;
+}
+
+.items-visão-cliente .active-pos{
+    transition: height 0.5s;
+    height: 120px;
+}
+
 .acc-arrow-down {
     width: 12px;
     margin-right: 2px;
