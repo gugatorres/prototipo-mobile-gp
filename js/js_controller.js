@@ -3350,8 +3350,8 @@ app.controller("defaultController", function ($scope) {
 
 	/* Roteiro - Visão do CLiente Controller */
 	.controller("roteiroVisaoClienteController", function($scope){
-		$scope.titulo = "Roteiro - Visão do CLiente"
-		angular.element(".title-app").html("Roteiro - Visão do CLiente");
+		$scope.titulo = "Roteiro - Visão de Clientes"
+		angular.element(".title-app").html("Roteiro - Visão de Clientes");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").addClass("search");
 		angular.element(".search").css("display", "block");
