@@ -177,6 +177,143 @@ app.controller("defaultController", function ($scope) {
 	});
 })
 
+
+
+	/* Tela de Sincronização Controller */
+	.controller("syncController", function ($scope) {
+
+		$scope.titulo = "Sincronização de Dados"
+		angular.element(".title-app").html("Sincronização de Dados");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".menu-requests img").attr("src", "images/cloud.svg");
+		angular.element(".menu-requests").addClass("sync-all");
+
+
+		//Sync All
+
+		angular.element(".sync-all").click(function () {
+			angular.element(".type1 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type1 .txt-sync").css("display", "block");
+			angular.element(".type1 .txt-sync").addClass("anime-txt");
+			angular.element(".type1.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type1 .bar-sync").css("background", "#78f112");
+				angular.element(".type1 .txt-sync").css("display", "none");
+				angular.element(".type1.sync-type").css("height", "70px");
+				angular.element(".type1 .sync-dados").html("Enviado!");
+				angular.element(".type1 .sync-dados").css("color", "#78f112");
+			}, 6000);
+
+			angular.element(".type2 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type2 .txt-sync").css("display", "block");
+			angular.element(".type2 .txt-sync").addClass("anime-txt");
+			angular.element(".type2.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type2 .bar-sync").css("background", "#ffcd00");
+				angular.element(".type2 .txt-sync").removeClass("anime-txt");
+				angular.element(".type2 .txt-sync").css("color", "#ffcd00");
+				angular.element(".type2 .txt-sync").html("Ocorreram alguns Erros na Transmissão de Dados.");
+				angular.element(".type2 .txt-sync").addClass("btn-modal-error");
+				angular.element(".type2.sync-type").css("height", "90px");
+				angular.element(".type2 .sync-dados").html("Retransmitir");
+			}, 6000);
+
+			angular.element(".type3 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type3 .txt-sync").css("display", "block");
+			angular.element(".type3 .txt-sync").addClass("anime-txt");
+			angular.element(".type3.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type3 .bar-sync").css("background", "#78f112");
+				angular.element(".type3 .txt-sync").css("display", "none");
+				angular.element(".type3.sync-type").css("height", "70px");
+				angular.element(".type3 .sync-dados").html("Enviado!");
+				angular.element(".type3 .sync-dados").css("color", "#78f112");
+			}, 6000);
+			angular.element(".type4 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type4 .txt-sync").css("display", "block");
+			angular.element(".type4 .txt-sync").addClass("anime-txt");
+			angular.element(".type4.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type4 .bar-sync").css("background", "#78f112");
+				angular.element(".type4 .txt-sync").css("display", "none");
+				angular.element(".type4.sync-type").css("height", "70px");
+				angular.element(".type4 .sync-dados").html("Enviado!");
+				angular.element(".type4 .sync-dados").css("color", "#78f112");
+			}, 6000);
+		});
+
+
+		//Sync 01
+		angular.element(".type1 .sync-dados").click(function () {
+			angular.element(".type1 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type1 .txt-sync").css("display", "block");
+			angular.element(".type1 .txt-sync").addClass("anime-txt");
+			angular.element(".type1.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type1 .bar-sync").css("background", "#78f112");
+				angular.element(".type1 .txt-sync").css("display", "none");
+				angular.element(".type1.sync-type").css("height", "70px");
+				angular.element(".type1 .sync-dados").html("Enviado!");
+				angular.element(".type1 .sync-dados").css("color", "#78f112");
+			}, 6000);
+
+		});
+
+		//Sync 02
+		angular.element(".type2 .sync-dados").click(function () {
+			angular.element(".type2 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type2 .txt-sync").css("display", "block");
+			angular.element(".type2 .txt-sync").addClass("anime-txt");
+			angular.element(".type2.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type2 .bar-sync").css("background", "#ffcd00");
+				angular.element(".type2 .txt-sync").removeClass("anime-txt");
+				angular.element(".type2 .txt-sync").css("color", "#ffcd00");
+				angular.element(".type2 .txt-sync").html("Ocorreram alguns Erros na Transmissão de Dados.");
+				angular.element(".type2 .txt-sync").addClass("btn-modal-error");
+				angular.element(".type2.sync-type").css("height", "90px");
+				angular.element(".type2 .sync-dados").html("Retransmitir");
+			}, 6000);
+		});
+
+		//Sync 03
+		angular.element(".type3 .sync-dados").click(function () {
+			angular.element(".type3 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type3 .txt-sync").css("display", "block");
+			angular.element(".type3 .txt-sync").addClass("anime-txt");
+			angular.element(".type3.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type3 .bar-sync").css("background", "#78f112");
+				angular.element(".type3 .txt-sync").css("display", "none");
+				angular.element(".type3.sync-type").css("height", "70px");
+				angular.element(".type3 .sync-dados").html("Enviado!");
+				angular.element(".type3 .sync-dados").css("color", "#78f112");
+			}, 6000);
+		});
+
+		//Sync 04
+		angular.element(".type4 .sync-dados").click(function () {
+			angular.element(".type4 .bar-sync").addClass("move-bar-sync");
+			angular.element(".type4 .txt-sync").css("display", "block");
+			angular.element(".type4 .txt-sync").addClass("anime-txt");
+			angular.element(".type4.sync-type").css("height", "90px");
+			setTimeout(function () {
+				angular.element(".type4 .bar-sync").css("background", "#78f112");
+				angular.element(".type4 .txt-sync").css("display", "none");
+				angular.element(".type4.sync-type").css("height", "70px");
+				angular.element(".type4 .sync-dados").html("Enviado!");
+				angular.element(".type4 .sync-dados").css("color", "#78f112");
+			}, 6000);
+		});
+
+
+
+	})
+
 	/* minha Rota Controller */
 	.controller("minhaRotaController", function ($scope) {
 
@@ -314,8 +451,8 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".modal-recolher-confirm").css("display", "none");
 			angular.element(".overlay-finalizar").css("display", "block");
 		});
-		angular.element(".close-modal").click(function(){
-			angular.element(".overlay-modal").css("display","none");
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
 		});
 	})
 
@@ -344,8 +481,8 @@ app.controller("defaultController", function ($scope) {
 		angular.element("#btn_open_comodato_not_sinc").click(function () {
 			angular.element(".open-add-comodato").css("display", "block");
 		})
-		angular.element(".close-modal").click(function(){
-			angular.element(".overlay-modal").css("display","none");
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
 		});
 
 	})
@@ -637,8 +774,8 @@ app.controller("defaultController", function ($scope) {
 
 		});
 
-		angular.element(".close-modal").click(function(){
-			angular.element(".overlay-modal").css("display","none");
+		angular.element(".close-modal").click(function () {
+			angular.element(".overlay-modal").css("display", "none");
 		});
 
 	})
@@ -1267,12 +1404,12 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element("#btn_cons_rec").click(function () {
 			angular.element(".modal-recolher-confirm").css("display", "block");
-			$("#view_recolher_list li").each(function(i){
-				if($(this).find("input").val() != "") {
+			$("#view_recolher_list li").each(function (i) {
+				if ($(this).find("input").val() != "") {
 					$("#modal_recolher_list").append(
 						"<li><div class='row'><div class='col-xs-8'>" +
 						$(this).find("span")[0].innerHTML + "</div>" +
-						"<div class='col-xs-4'>" + $(this).find("input").val() + " Un"  +
+						"<div class='col-xs-4'>" + $(this).find("input").val() + " Un" +
 						"</div></div></li>"
 					)
 				}
@@ -1311,7 +1448,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".action-accordeon-01").click(function () {
 			angular.element(".accordeon-01").toggleClass("active");
 			angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
-			
+
 
 		});
 
@@ -2147,15 +2284,15 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".menu-requests img").attr("src", "images/camera_w.svg");
 		angular.element(".menu-requests img").addClass("link-photo");
 
-		angular.element(".link-photo").click(function(){
+		angular.element(".link-photo").click(function () {
 			angular.element(".screen-photo").css("display", "block");
 		});
 
-		angular.element(".close-screen-photo").click(function(){
+		angular.element(".close-screen-photo").click(function () {
 			angular.element(".screen-photo").css("display", "none");
 		});
 
-		
+
 
 	})
 
@@ -2802,82 +2939,82 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("background", "none");
 		angular.element(".menu-requests").css("display", "none");
 
-		angular.element("#btn-competencia").click(function(){
-			angular.element(".competencia-mode").css("display","block");
+		angular.element("#btn-competencia").click(function () {
+			angular.element(".competencia-mode").css("display", "block");
 			angular.element(".txt-selected").html("02/2019");
 		});
 
-		angular.element(".btn-sele-competencia").click(function(){
-			angular.element(".competencia-mode").css("display","none");
+		angular.element(".btn-sele-competencia").click(function () {
+			angular.element(".competencia-mode").css("display", "none");
 		});
 
-		angular.element(".modal-custom .close-modal").click(function(){
-			angular.element(".competencia-mode").css("display","none");
+		angular.element(".modal-custom .close-modal").click(function () {
+			angular.element(".competencia-mode").css("display", "none");
 		});
 
-/*		angular.element(".link-clientes-ruptura").click(function(){
-			angular.element(".ruptura-mode").css("display","block");
-			angular.element("body").css("overflow-y", "hidden");
-		});*/
+		/*		angular.element(".link-clientes-ruptura").click(function(){
+					angular.element(".ruptura-mode").css("display","block");
+					angular.element("body").css("overflow-y", "hidden");
+				});*/
 
-		angular.element(".link-minha-variavel").click(function(){
-			angular.element(".minha-variavel-mode").css("display","block");
-			angular.element("body").css("overflow-y", "hidden");
-		});
-
-/*		angular.element(".link-faturamento-meta").click(function(){
-			angular.element(".faturamento-meta-mode").css("display","block");
-			angular.element("body").css("overflow-y", "hidden");
-		});*/
-
-	/*	angular.element(".link-inadimplencia").click(function(){
-			angular.element(".inadimplencia-mode").css("display","block");
-			angular.element("body").css("overflow-y", "hidden");
-		});*/
-
-		angular.element(".link-giro-material-pesado").click(function(){
-			angular.element(".giro-material-pesado-mode").css("display","block");
+		angular.element(".link-minha-variavel").click(function () {
+			angular.element(".minha-variavel-mode").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 		});
 
-/*		angular.element(".link-giro-vasilhame").click(function(){
-			angular.element(".giro-vasilhame-mode").css("display","block");
-			angular.element("body").css("overflow-y", "hidden");
-		});*/
+		/*		angular.element(".link-faturamento-meta").click(function(){
+					angular.element(".faturamento-meta-mode").css("display","block");
+					angular.element("body").css("overflow-y", "hidden");
+				});*/
 
-		angular.element(".link-comissao-recebida").click(function(){
-			angular.element(".comissao-recebida-mode").css("display","block");
+		/*	angular.element(".link-inadimplencia").click(function(){
+				angular.element(".inadimplencia-mode").css("display","block");
+				angular.element("body").css("overflow-y", "hidden");
+			});*/
+
+		angular.element(".link-giro-material-pesado").click(function () {
+			angular.element(".giro-material-pesado-mode").css("display", "block");
 			angular.element("body").css("overflow-y", "hidden");
 		});
 
-		
-		angular.element(".close-modal").click(function(){
-			angular.element(".ruptura-mode").css("display","none");
+		/*		angular.element(".link-giro-vasilhame").click(function(){
+					angular.element(".giro-vasilhame-mode").css("display","block");
+					angular.element("body").css("overflow-y", "hidden");
+				});*/
+
+		angular.element(".link-comissao-recebida").click(function () {
+			angular.element(".comissao-recebida-mode").css("display", "block");
+			angular.element("body").css("overflow-y", "hidden");
+		});
+
+
+		angular.element(".close-modal").click(function () {
+			angular.element(".ruptura-mode").css("display", "none");
 			angular.element("body").css("overflow-y", "auto");
 		});
 
-		angular.element(".btn-fechar-modal").click(function(){
-			angular.element(".modal-remuneracao-variavel").css("display","none");
+		angular.element(".btn-fechar-modal").click(function () {
+			angular.element(".modal-remuneracao-variavel").css("display", "none");
 			angular.element("body").css("overflow-y", "auto");
 		});
 
 		angular.element(".giro-material-pesado-mode .tile-modal").append("<img class=img-thumb-like src=images/thumb-down.svg>");
-		angular.element(".giro-material-pesado-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumbs-up2.svg");
-		angular.element(".giro-material-pesado-mode ul li:nth-child(8) .img-thumb-like").attr("src","images/thumbs-up2.svg");
+		angular.element(".giro-material-pesado-mode ul li:nth-child(3) .img-thumb-like").attr("src", "images/thumbs-up2.svg");
+		angular.element(".giro-material-pesado-mode ul li:nth-child(8) .img-thumb-like").attr("src", "images/thumbs-up2.svg");
 
 		angular.element(".giro-vasilhame-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg>");
-		angular.element(".giro-vasilhame-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
-		angular.element(".giro-vasilhame-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
+		angular.element(".giro-vasilhame-mode ul li:nth-child(3) .img-thumb-like").attr("src", "images/thumb-down.svg");
+		angular.element(".giro-vasilhame-mode ul li:nth-child(5) .img-thumb-like").attr("src", "images/thumb-down.svg");
 
 		angular.element(".faturamento-meta-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg>");
-		angular.element(".faturamento-meta-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
-		angular.element(".faturamento-meta-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
+		angular.element(".faturamento-meta-mode ul li:nth-child(3) .img-thumb-like").attr("src", "images/thumb-down.svg");
+		angular.element(".faturamento-meta-mode ul li:nth-child(5) .img-thumb-like").attr("src", "images/thumb-down.svg");
 
 		angular.element(".minha-variavel-mode .tile-modal").append("<img class=img-thumb-like src=images/thumbs-up2.svg>");
-		angular.element(".minha-variavel-mode ul li:nth-child(3) .img-thumb-like").attr("src","images/thumb-down.svg");
-		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src","images/thumb-down.svg");
+		angular.element(".minha-variavel-mode ul li:nth-child(3) .img-thumb-like").attr("src", "images/thumb-down.svg");
+		angular.element(".minha-variavel-mode ul li:nth-child(5) .img-thumb-like").attr("src", "images/thumb-down.svg");
 
-		angular.element(".tile-modal").click(function(){
+		angular.element(".tile-modal").click(function () {
 			//angular.element(this).toggleClass("tile-142");
 		});
 
@@ -2890,7 +3027,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 
-		angular.element(".tile-faq").click(function(){
+		angular.element(".tile-faq").click(function () {
 			angular.element(this).toggleClass("tile-auto");
 		});
 	})
@@ -2914,13 +3051,13 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalRupturaSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenu").click(function(){
+		angular.element("#sorterMenu").click(function () {
 			angular.element("#modalRupturaSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 
 		$scope.valor = "Cliente";
-		$scope.changeSorterIn = function(value) {
+		$scope.changeSorterIn = function (value) {
 			angular.element("#modalRupturaSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -2946,12 +3083,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalInadimplenciaSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenuInadimplencia").click(function(){
+		angular.element("#sorterMenuInadimplencia").click(function () {
 			angular.element("#modalInadimplenciaSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 		$scope.valor = "Cliente";
-		$scope.changeSorterIn = function(value) {
+		$scope.changeSorterIn = function (value) {
 			angular.element("#modalInadimplenciaSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -2975,12 +3112,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalComissaoSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenuComissao").click(function(){
+		angular.element("#sorterMenuComissao").click(function () {
 			angular.element("#modalComissaoSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 		$scope.valor = "Cliente";
-		$scope.changeSorter = function(value) {
+		$scope.changeSorter = function (value) {
 			angular.element("#modalComissaoSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -3004,12 +3141,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalVasilhameSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenuVasilhame").click(function(){
+		angular.element("#sorterMenuVasilhame").click(function () {
 			angular.element("#modalVasilhameSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 		$scope.valor = "Cliente";
-		$scope.changeSorter = function(value) {
+		$scope.changeSorter = function (value) {
 			angular.element("#modalVasilhameSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -3033,12 +3170,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalVasilhameSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenuVasilhame").click(function(){
+		angular.element("#sorterMenuVasilhame").click(function () {
 			angular.element("#modalVasilhameSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 		$scope.valor = "Cliente";
-		$scope.changeSorter = function(value) {
+		$scope.changeSorter = function (value) {
 			angular.element("#modalVasilhameSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -3062,12 +3199,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element("#modalMinhaVariavelSorter").css("display", "none");
 		});
 
-		angular.element("#sorterMenuMinhaVariavel").click(function(){
+		angular.element("#sorterMenuMinhaVariavel").click(function () {
 			angular.element("#modalMinhaVariavelSorter").css("display", "block");
 			angular.element(".overlay-requests").css("display", "block");
 		})
 		$scope.valor = "Indicador";
-		$scope.changeSorter = function(value) {
+		$scope.changeSorter = function (value) {
 			angular.element("#modalMinhaVariavelSorter").css("display", "none");
 			angular.element(".overlay-requests").css("display", "none");
 		}
@@ -3160,32 +3297,32 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).css("display", "none");
 			angular.element(".buttons-request").css("display", "none");
 		});
-        $scope.isActive = false;
-        $scope.dia = "Terça";
+		$scope.isActive = false;
+		$scope.dia = "Terça";
 
-        $scope.selectDay = function ($event, value) {
-            $($event.currentTarget).toggleClass("selected-day")
-        }
+		$scope.selectDay = function ($event, value) {
+			$($event.currentTarget).toggleClass("selected-day")
+		}
 
 
 	})
 
-changeSorter = function(val){
+changeSorter = function (val) {
 	$("#selectedSorter")[0].innerHTML = val;
 	angular.element(this).css("display", "none");
 	angular.element("#modalRupturaSorter").css("display", "none");
 	angular.element(".overlay-requests").css("display", "none");
 }
 
-function enableBtnRecolha(val){
+function enableBtnRecolha(val) {
 	var enabled = false
 	var hasChaged = false
-		$("#view_recolher_list li").each(function(i) {
-			if ($(this).find("input").val() != "") {
-				enabled = true
-			}
-		})
-	if(enabled == false){
+	$("#view_recolher_list li").each(function (i) {
+		if ($(this).find("input").val() != "") {
+			enabled = true
+		}
+	})
+	if (enabled == false) {
 		$("#btn_cons_rec").attr("disabled", "disabled");
 	} else {
 		$("#btn_cons_rec").removeAttr("disabled");

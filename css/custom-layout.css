@@ -317,6 +317,12 @@ a:hover{text-decoration: none;}
 
 .menu-principal ul li a{font-size: 16px; color: #000;}
 
+.btn-sincronizar {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
 .header-nav h3 {
     margin: 0;
     color: #FFF;
@@ -4119,3 +4125,79 @@ small-box-like{
     vertical-align: middle;
     padding-top: 5%;
 }
+
+/* Tela de Sincronização SYNC */
+
+.sync-type {
+    padding: 15px;
+    height: 70px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sync-dados {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    font-size: 12px;
+}
+
+.ind-sync{width: 20px; margin-top: -5px;}
+
+.sync-screen ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Standard syntax */
+@keyframes animasync {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.bar-sync {
+    width: 0%;
+    height: 8px;
+    background: #c62222;
+}
+
+.move-bar-sync {
+    -webkit-animation-name: animasync; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: animasync;
+    animation-duration: 6s;
+    width: 100%;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .txt-sync {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #CCCCCC;
+  }
+  .anime-txt{
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+     animation: flickerAnimation 1s infinite;
+  }

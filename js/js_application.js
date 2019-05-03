@@ -6,6 +6,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/home.html",
             controller: "defaultController"
         })
+        .when("/sync", {
+            templateUrl: "./templates/sync.html",
+            controller: "syncController"
+        })
         .when("/minha_rota", {
             templateUrl: "./templates/minha_rota.html",
             controller: "minhaRotaController"
