@@ -2481,32 +2481,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display", "none");
 
 	})
-
-	/* roteiro visao Controller */
-	.controller("roteiroVisaoController", function ($scope) {
-
-		$scope.titulo = "Roteiro Visão de Clientes"
-		angular.element(".title-app").html("Roteiro Visão de Clientes");
-		angular.element(".search").css("display", "none");
-		angular.element(".sync").css("display", "none");
-		angular.element(".cart").css("display", "none");
-		angular.element(".menu-request").css("display", "none");
-		angular.element(".back-menu").css("display", "none");
-
-	})
-
-	/* roteiro visao Detalhe Controller */
-	.controller("roteiroVisaoDetalheController", function ($scope) {
-
-		$scope.titulo = "Roteiro Visão de Clientes - Detalhe"
-		angular.element(".title-app").html("Roteiro Visão de Clientes - Detalhe");
-		angular.element(".search").css("display", "none");
-		angular.element(".sync").css("display", "none");
-		angular.element(".cart").css("display", "none");
-		angular.element(".menu-request").css("display", "none");
-		angular.element(".back-menu").css("display", "none");
-
-	})
 	
 
 	/* Pesquisa Controller */
