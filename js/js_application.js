@@ -50,6 +50,14 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/relatorios.html",
             controller: "relatoriosController"
         })
+        .when("/roteiro_visao", {
+            templateUrl: "./templates/roteiro_visao.html",
+            controller: "roteiroVisaoController"
+        })
+        .when("/roteiro_visao_detalhe", {
+            templateUrl: "./templates/roteiro_visao_detalhe.html",
+            controller: "roteiroVisaoDetalheController"
+        })
         .when("/agendar_visita", {
             templateUrl: "./templates/agendar_visita.html",
             controller: "agendarVisitaController"
