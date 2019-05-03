@@ -1102,7 +1102,23 @@ app.controller("defaultController", function ($scope) {
 
 
 		angular.element(".add-product").click(function () {
-			angular.element(".overlay-product").not('.cart-clean').css("display", "block");
+			angular.element("#promocaoCombo1").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element(".add-product-tabela").click(function () {
+			angular.element("#promocaoComboTabelaFlex").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoCacilds").click(function () {
+			angular.element("#promocaoCombo2").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoTNT").click(function () {
+			angular.element("#promocaoCombo3").not('.cart-clean').css("display", "block");
+		});
+
+		angular.element("#comboPromoCrystal").click(function () {
+			angular.element("#promocaoCombo4").not('.cart-clean').css("display", "block");
 		});
 
 		angular.element(".close-modal").click(function () {
@@ -1285,7 +1301,6 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".cart").removeClass("search, sync");
 		angular.element(".cart").attr("href", "#!carrinho");
 
-
 		angular.element(".add-product").click(function () {
 			angular.element(".modal-selecao").css("display", "block");
 		});
@@ -1329,8 +1344,6 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".filter-products .col-xs-6:nth-child(13)").css("margin-bottom", "100px");
 			angular.element(".total-box").css("z-index", "9");
 			angular.element(".brand-itaipava").removeAttr("href", "");
-
-
 		});
 
 		angular.element(".overlay-filter").click(function () {
@@ -2465,6 +2478,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".sync").css("display", "none");
 		angular.element(".cart").css("display", "none");
 		angular.element(".menu-request").css("display", "none");
+		angular.element(".back-menu").css("display", "none");
 
 	})
 
@@ -3280,6 +3294,7 @@ app.controller("defaultController", function ($scope) {
 		window.myDoughnut = new Chart(ctx, config);*/
 	})
 
+	/* Revisão Rota Controller */
 	.controller("revisaoRotaController", function ($scope) {
 		$scope.titulo = "Revisão de Rota"
 		angular.element(".title-app").html("Revisão de Rota");
@@ -3304,6 +3319,71 @@ app.controller("defaultController", function ($scope) {
 			$($event.currentTarget).toggleClass("selected-day")
 		}
 
+	})
+
+	/* Roteiro - Visão do CLiente Controller */
+	.controller("roteiroVisaoClienteController", function($scope){
+		$scope.titulo = "Roteiro - Visão do CLiente"
+		angular.element(".title-app").html("Roteiro - Visão do CLiente");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element("#mySidenav").css("display", "block");
+		angular.element("#mySidenav").css("left", "-310");
+		angular.element(".back-menu").css("display", "none");
+	})
+
+	/* Roteiro - Visão do CLiente - DETALHES Controller */
+	.controller("roteiroVisaoClienteDetalheController", function($scope){
+		$scope.titulo = "Roteiro - Visão do CLiente"
+		angular.element(".title-app").html("Roteiro - Visão do CLiente");
+		angular.element(".bar-customer-back").css("display", "block");
+		angular.element(".search").addClass("search");
+		angular.element(".search").css("display", "block");
+		angular.element(".sync").css("display", "none");
+		angular.element(".cart").css("display", "none");
+		angular.element(".back-menu").css("left", "-310");
+		angular.element(".back-menu").css("background", "#000000b3");
+		angular.element(".menu-request").css("display", "none");
+
+		angular.element(".accordeon-01").addClass("no-active");
+		angular.element(".accordeon-02").addClass("no-active");
+		angular.element(".accordeon-03").addClass("no-active");
+		angular.element(".accordeon-04").addClass("no-active");
+		angular.element(".accordeon-05").addClass("no-active");
+		angular.element(".accordeon-06").addClass("no-active");
+
+		angular.element(".action-accordeon-01").click(function () {
+			angular.element(".accordeon-01").toggleClass("active-high");
+			angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
+		});
+
+		angular.element(".action-accordeon-02").click(function () {
+			angular.element(".accordeon-02").toggleClass("active-med");
+			angular.element(".accordeon-02 .acc-arrow-down").toggleClass("deg-180");
+		});
+
+		angular.element(".action-accordeon-03").click(function () {
+			angular.element(".accordeon-03").toggleClass("active-VH");
+			angular.element(".accordeon-03 .acc-arrow-down").toggleClass("deg-180");
+		});
+
+		angular.element(".action-accordeon-04").click(function () {
+			angular.element(".accordeon-04").toggleClass("active-VH");
+			angular.element(".accordeon-04 .acc-arrow-down").toggleClass("deg-180");
+		});
+
+		angular.element(".action-accordeon-05").click(function () {
+			angular.element(".accordeon-05").toggleClass("active-pes");
+			angular.element(".accordeon-05 .acc-arrow-down").toggleClass("deg-180");
+		});
+
+		angular.element(".action-accordeon-06").click(function () {
+			angular.element(".accordeon-06").toggleClass("active-pos");
+			angular.element(".accordeon-06 .acc-arrow-down").toggleClass("deg-180");
+		});
 
 	})
 
