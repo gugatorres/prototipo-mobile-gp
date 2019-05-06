@@ -258,6 +258,14 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/roteiro_visao_cliente_detalhe.html",
             controller: "roteiroVisaoClienteDetalheController"
         })
+        .when("/linha_sku_proxima_bater", {
+            templateUrl: "./templates/linha_sku_proxima_bater.html",
+            controller: "linhaSkuProximaBaterController"
+        })
+        .when("/positivacao_geral", {
+            templateUrl: "./templates/positivacao_geral.html",
+            controller: "positivacaoGeralController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

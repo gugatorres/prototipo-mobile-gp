@@ -3134,7 +3134,7 @@ button[disabled] {
     position: relative;
     background: #7dc350;
     display: inline-block;
-    margin-right: 62px;
+    margin-right: 45px;
     border-radius: 40px;
 }
 
@@ -3477,7 +3477,7 @@ button[disabled] {
 .remuneracao_100 {
     width: 100%;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     animation-name: animabar_remuneracao_1;
     animation-duration: 2s;
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -3487,7 +3487,7 @@ button[disabled] {
 .remuneracao_75 {
     width: 75%;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     animation-name: animabar_remuneracao_2;
     animation-duration: 2s;
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -3497,7 +3497,7 @@ button[disabled] {
 .remuneracao_10 {
     width: 10%;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     animation-name: animabar_remuneracao_3;
     animation-duration: 2s;
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -4359,3 +4359,55 @@ small-box-like{
      animation: flickerAnimation 1s infinite;
   }
 
+  /* Linha SKU */
+
+  .linha-sku-header {
+    display: inline-table;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.linha-sku-body {
+    display: inline-table;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.linha-sku-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linha-sku-body div {
+    padding: 0;
+}
+
+.header-list-sku {
+    border-bottom: solid 1px #CCC;
+    display: -webkit-box;
+    height: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.linha-sku-header div{padding: 0;}
+
+.linha-sku-body li {
+    margin-bottom: 10px;
+    display: -webkit-box;
+}
+
+.retro-descar {
+    background: #dadada;
+    padding: 10px;
+    margin: 0px -10px 0px -10px !important;
+}
+
+.retro-descar:last-child {
+    margin-bottom: -10px !important;
+}

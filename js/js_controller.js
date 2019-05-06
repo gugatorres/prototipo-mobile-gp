@@ -3061,6 +3061,30 @@ app.controller("defaultController", function ($scope) {
 
 	})
 
+	.controller("linhaSkuProximaBaterController", function ($scope) {
+
+		$scope.titulo = "Linha SKU Próxima a Bater"
+		angular.element(".title-app").html("Linha SKU Próxima a Bater");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function () {
+			angular.element(this).toggleClass("tile-auto");
+		});
+	})
+	.controller("positivacaoGeralController", function ($scope) {
+
+		$scope.titulo = "Positivação Geral"
+		angular.element(".title-app").html("Positivação Geral");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function () {
+			angular.element(this).toggleClass("tile-auto");
+		});
+	})
+	
+
 	.controller("faqController", function ($scope) {
 
 		$scope.titulo = "FAQ"
