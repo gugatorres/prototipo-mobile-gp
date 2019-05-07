@@ -266,6 +266,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/positivacao_geral.html",
             controller: "positivacaoGeralController"
         })
+        .when("/informacao_faturamento_prazo", {
+            templateUrl: "./templates/informacao_faturamento_prazo.html",
+            controller: "informacaoFaturamentoPrazoController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

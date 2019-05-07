@@ -105,7 +105,9 @@ a:hover{text-decoration: none;}
 .white{background-color: #FFFFFF}
 .light-red{color: #721c24;}
 .red{background-color: #c62222}
+.text-red{color: #c62222}
 .red-dark-alpha{background-color: #97878791}
+.light-grey{background-color:#fcfcfc91 }
 .blue{background-color: #00BCD4}
 .light-green{color: #155724;}
 .green{background-color: #4CAF50}
@@ -3497,7 +3499,6 @@ button[disabled] {
 .remuneracao_10 {
     width: 10%;
     height: 10px;
-    border-radius: 0px;
     animation-name: animabar_remuneracao_3;
     animation-duration: 2s;
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -3563,7 +3564,7 @@ button[disabled] {
     font-size: 12.5px;
     font-weight: bold;
     vertical-align: middle;
-    padding-top: 7.5%;
+    padding-top: 20px;
     color: #000;
 }
 
@@ -3574,6 +3575,7 @@ button[disabled] {
     margin-top: 5px;
     margin-bottom: 5px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .val-progress {
@@ -4410,4 +4412,91 @@ small-box-like{
 
 .retro-descar:last-child {
     margin-bottom: -10px !important;
+}
+
+/* Informação de Faturamento por Prazo */
+.faturamento-preco{
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.faturamento-dias{
+    font-size: 12px;
+    padding: 0px;
+}
+
+.faturamento-prazo{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.faturamento-desc{
+    margin: 0;
+    font-size: 12px;
+    padding:0px 20px;
+}
+
+.card-itens-faturamento{
+    padding: 0px;
+}
+
+.list-group-box{
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+/* Faturamento Meta */
+
+.faturamento-preco-linha{
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.preco-linha-thumb-down{
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.preco-linha-thumb-down::before{
+    content:url('../images/chart_fisrt.png'); /* with class ModalCarrot ??*/
+    position:relative; /*or absolute*/
+    z-index:100000; /*a number that's more than the modal box*/
+    left:-50px;
+    top:10px;
+}
+
+.accordeon-faturamento{
+    padding: 15px 10px 10px 10px;
+    margin: 0 0 10px 0 ;
+}
+
+.linha-faturamento .no-active{
+    transition: height 0.5s;
+    height: 45px;
+}
+
+.linha-faturamento .active-small{
+    transition: height 0.5s;
+    height: 150px;
+}
+
+.accordeon-faturamento-header{
+    border-bottom: 1px solid #e7e7e791;
+    height: 30px;
+}
+
+.accordeon-faturamento{
+    padding: 15px 10px 10px 10px;
+    margin: 0 0 10px 0 ;
+}
+
+.accordeon-faturamento-body div:nth-child(){
+    margin-top: 10px;
 }
