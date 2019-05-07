@@ -4472,7 +4472,7 @@ small-box-like{
     top:10px;
 }
 
-.accordeon-faturamento{
+.accordion-faturamento{
     padding: 15px 10px 10px 10px;
     margin: 0 0 10px 0 ;
 }
@@ -4484,19 +4484,20 @@ small-box-like{
 
 .linha-faturamento .active-small{
     transition: height 0.5s;
-    height: 150px;
+    height: 160px;
 }
 
-.accordeon-faturamento-header{
+.accordion-faturamento-header{
     border-bottom: 1px solid #e7e7e791;
     height: 30px;
 }
 
-.accordeon-faturamento{
+.accordion-faturamento{
     padding: 15px 10px 10px 10px;
     margin: 0 0 10px 0 ;
 }
 
-.accordeon-faturamento-body div:nth-child(){
-    margin-top: 10px;
+.accordion-faturamento-body div:nth-child(-n+2){
+    margin-top: 15px;
 }
+
