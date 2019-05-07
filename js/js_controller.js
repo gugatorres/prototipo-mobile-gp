@@ -3279,7 +3279,7 @@ app.controller("defaultController", function ($scope) {
 	.controller("faturamentoMetaController", function ($scope) {
 
 		$scope.titulo = "Faturamento Meta"
-		angular.element(".title-app").html("Faturamento Meta");
+		angular.element(".title-app").html("Faturamento / Linha a Linha");
 		angular.element(".bar-customer-back").css("display", "block");
 		angular.element(".search").addClass("search");
 		angular.element(".search").css("display", "block");
@@ -3305,6 +3305,12 @@ app.controller("defaultController", function ($scope) {
 			angular.element(".overlay-requests").css("display", "none");
 		}
 
+		angular.element(".accordeon-01").addClass("no-active");
+        
+        angular.element(".action-accordeon-01").click(function () {
+            angular.element(".accordeon-01").toggleClass("active-small");
+            angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
+        });
 		/*var config = {
 			type: 'doughnut',
 			data: {
@@ -3437,6 +3443,12 @@ app.controller("defaultController", function ($scope) {
 		});
 
 	})
+
+	.controller("informacaoFaturamentoPrazoController", function ($scope) {
+		$scope.titulo = "Informação de Faturamento por Prazo"
+		angular.element(".title-app").html("Faturamento por Prazo");
+	})
+
 
 changeSorter = function (val) {
 	$("#selectedSorter")[0].innerHTML = val;
