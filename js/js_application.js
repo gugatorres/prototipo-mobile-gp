@@ -270,6 +270,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/informacao_faturamento_prazo.html",
             controller: "informacaoFaturamentoPrazoController"
         })
+        .when("/hectolitro_geral", {
+            templateUrl: "./templates/hectolitro_geral.html",
+            controller: "hectolitroGeralController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

@@ -4500,3 +4500,58 @@ small-box-like{
 .accordeon-faturamento-body div:nth-child(){
     margin-top: 10px;
 }
+
+.hectolitro-body h3 {
+    font-size: 20px;
+}
+
+.hectolitro-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-hectolitro {
+    display: table;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.value-h {
+    font-weight: bold;
+    color: #000000;
+}
+
+.loading-hecto {
+    height: 8px;
+    width: 90%;
+    background: #e2e2e2;
+    margin: 5px auto 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.bg-green{background: #0ed11d;}
+.font-green{color:#0ed11d;}
+.border-green {border-left: solid 4px #0ed11d;}
+
+.bg-yellow{background: #FFEA28;}
+.font-yellow{color:#FFEA28;}
+.border-yellow {border-left: solid 4px #FFEA28;}
+
+.bg-red{background: Red;}
+.font-red{color:red;}
+.border-red {border-left: solid 4px Red;}
+
+.bar-loading-hecto {
+    height: 8px;
+    width: 30%;
+}
+
+.fonts-large {
+    font-size: 18px;
+}
+

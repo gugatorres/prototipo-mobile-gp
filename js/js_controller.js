@@ -3083,6 +3083,19 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).toggleClass("tile-auto");
 		});
 	})
+
+	.controller("hectolitroGeralController", function ($scope) {
+
+		$scope.titulo = "Hectolitro Geral"
+		angular.element(".title-app").html("Hectolitro Geral");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function () {
+			angular.element(this).toggleClass("tile-auto");
+		});
+	})
+	
 	
 
 	.controller("faqController", function ($scope) {
