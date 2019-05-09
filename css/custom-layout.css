@@ -4566,11 +4566,20 @@ small-box-like{
 .linha-produtos {
     display: grid;
     margin: 10px auto;
+    overflow: hidden;
+    height: 45px;
+    transition: height 0.5s;
+}
+
+.linha-produtos-visible {
+    height: 453px;
 }
 
 .linha-produtos h3 {
     font-size: 16px;
     font-weight: bold;
+    padding: 15px;
+    margin-top: 0;
 }
 
 .linha-produtos ul {

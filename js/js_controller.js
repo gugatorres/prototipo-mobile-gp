@@ -3118,6 +3118,10 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".tile-faq").click(function () {
 			angular.element(this).toggleClass("tile-auto");
 		});
+
+		angular.element(".title-name-product").click(function(){
+			angular.element(this).parent().toggleClass("linha-produtos-visible");
+		});
 	})
 	
 
