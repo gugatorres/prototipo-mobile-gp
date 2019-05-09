@@ -274,6 +274,14 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/hectolitro_geral.html",
             controller: "hectolitroGeralController"
         })
+        .when("/preco_medio_hectolitro", {
+            templateUrl: "./templates/preco_medio_hectolitro.html",
+            controller: "precoMedioHectolitroController"
+        })
+        .when("/linha_produtos", {
+            templateUrl: "./templates/linha_produtos.html",
+            controller: "linhaProdutosController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

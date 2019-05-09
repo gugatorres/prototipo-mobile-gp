@@ -3095,7 +3095,30 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).toggleClass("tile-auto");
 		});
 	})
-	
+
+	.controller("precoMedioHectolitroController", function ($scope) {
+
+		$scope.titulo = "Preço Médio por Hectolitro"
+		angular.element(".title-app").html("Preço Médio por Hectolitro");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function () {
+			angular.element(this).toggleClass("tile-auto");
+		});
+	})
+
+	.controller("linhaProdutosController", function ($scope) {
+
+		$scope.titulo = "Linha de Produtos"
+		angular.element(".title-app").html("Linha de Produtos");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".tile-faq").click(function () {
+			angular.element(this).toggleClass("tile-auto");
+		});
+	})
 	
 
 	.controller("faqController", function ($scope) {

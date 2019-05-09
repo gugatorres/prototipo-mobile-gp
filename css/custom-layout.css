@@ -4019,7 +4019,7 @@ button[disabled] {
 
 .tile-faq {
     padding: 15px;
-    height: 48px;
+    height: 45px;
     overflow: hidden;
     margin-bottom: 10px;
     transition: height 0.3s;
@@ -4561,4 +4561,25 @@ small-box-like{
 
 .accordion-faturamento-body div:nth-child(-n+2){
     margin-top: 15px;
+}
+
+.linha-produtos {
+    display: grid;
+    margin: 10px auto;
+}
+
+.linha-produtos h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.linha-produtos ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.linha-produtos span {
+    font-size: 11px;
+    color: #999;
 }
