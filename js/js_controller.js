@@ -3115,6 +3115,38 @@ app.controller("defaultController", function ($scope) {
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 
+		angular.element(".tab-1").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-page-1").css("display", "block");
+			angular.element(".tab-page-2, .tab-page-3, .tab-page-4").css("display", "none");
+		});
+
+		angular.element(".tab-2").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-page-2").css("display", "block");
+			angular.element(".tab-page-1, .tab-page-3, .tab-page-4").css("display", "none");
+		});
+
+		angular.element(".tab-3").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-2,.tab-4").removeClass("active");
+			angular.element(".tab-page-3").css("display", "block");
+			angular.element(".tab-page-1, .tab-page-2, .tab-page-4").css("display", "none");
+		});
+
+		angular.element(".tab-4").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-2,.tab-3").removeClass("active");
+			angular.element(".tab-page-4").css("display", "block");
+			angular.element(".tab-page-1, .tab-page-2, .tab-page-3").css("display", "none");
+		});
+
 		angular.element(".tile-faq").click(function () {
 			angular.element(this).toggleClass("tile-auto");
 		});

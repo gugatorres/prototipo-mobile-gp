@@ -4571,8 +4571,20 @@ small-box-like{
     transition: height 0.5s;
 }
 
-.linha-produtos-visible {
-    height: 453px;
+.tab-page-1 .linha-produtos-visible {
+    height: 910px;
+}
+
+.tab-page-2 .linha-produtos-visible {
+    height: 710px;
+}
+
+.tab-page-3 .linha-produtos-visible {
+    height: 710px;
+}
+
+.tab-page-4 .linha-produtos-visible {
+    height: 710px;
 }
 
 .linha-produtos h3 {
