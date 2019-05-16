@@ -4677,15 +4677,15 @@ small-box-like{
 .indicadores ul {
     list-style: none;
     padding: 0;
-    width: 320px;
+    width: 300px;
     margin: 0px auto 10px;
 }
 
 .indicadores li {
     display: inline-block;
     text-align: center;
-    font-size: 10px;
-    width: 60px;
+    font-size: 9px;
+    width: 55px;
 }
 
 .tipos-produto {
