@@ -2507,7 +2507,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".back-menu").css("display", "none");
 
 	})
-	
+
 
 	/* Pesquisa Controller */
 	.controller("pesquisaController", function ($scope) {
@@ -3151,11 +3151,11 @@ app.controller("defaultController", function ($scope) {
 			angular.element(this).toggleClass("tile-auto");
 		});
 
-		angular.element(".title-name-product").click(function(){
+		angular.element(".title-name-product").click(function () {
 			angular.element(this).parent().toggleClass("linha-produtos-visible");
 		});
 	})
-	
+
 
 	.controller("faqController", function ($scope) {
 
@@ -3177,17 +3177,17 @@ app.controller("defaultController", function ($scope) {
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 
-		angular.element(".title-name-product-h3").click(function(){
-			angular.element(this).parent().parent().toggleClass("active-li");	
-			});
+		angular.element(".title-name-product-h3").click(function () {
+			angular.element(this).parent().parent().toggleClass("active-li");
+		});
 
-			angular.element(".title-name-product-h33").click(function(){
-				angular.element(this).parent().toggleClass("active-li2");
-			});
-			
-			angular.element(".title-name-product-h4").click(function(){
-				angular.element(this).parent().toggleClass("active-li");
-			});
+		angular.element(".title-name-product-h33").click(function () {
+			angular.element(this).parent().toggleClass("active-li2");
+		});
+
+		angular.element(".title-name-product-h4").click(function () {
+			angular.element(this).parent().toggleClass("active-li");
+		});
 	})
 
 	/* Contas a Receber Controller */
@@ -3198,11 +3198,11 @@ app.controller("defaultController", function ($scope) {
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
 
-		angular.element("h2").click(function(){
+		angular.element("h2").click(function () {
 			angular.element(this).parent().toggleClass("active-li2");
-			});
+		});
 	})
-	
+
 
 	/* Clientes em ruptura Controller */
 	.controller("clientesRupturaController", function ($scope) {
@@ -3413,11 +3413,11 @@ app.controller("defaultController", function ($scope) {
 		}
 
 		angular.element(".accordeon-01").addClass("no-active");
-        
-        angular.element(".action-accordeon-01").click(function () {
-            angular.element(".accordeon-01").toggleClass("active-small");
-            angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
-        });
+
+		angular.element(".action-accordeon-01").click(function () {
+			angular.element(".accordeon-01").toggleClass("active-small");
+			angular.element(".accordeon-01 .acc-arrow-down").toggleClass("deg-180");
+		});
 		/*var config = {
 			type: 'doughnut',
 			data: {
@@ -3486,7 +3486,7 @@ app.controller("defaultController", function ($scope) {
 	})
 
 	/* Roteiro - Visão do CLiente Controller */
-	.controller("roteiroVisaoClienteController", function($scope){
+	.controller("roteiroVisaoClienteController", function ($scope) {
 		$scope.titulo = "Roteiro - Visão de Clientes"
 		angular.element(".title-app").html("Roteiro - Visão de Clientes");
 		angular.element(".bar-customer-back").css("display", "block");
@@ -3500,7 +3500,7 @@ app.controller("defaultController", function ($scope) {
 	})
 
 	/* Roteiro - Visão do CLiente - DETALHES Controller */
-	.controller("roteiroVisaoClienteDetalheController", function($scope){
+	.controller("roteiroVisaoClienteDetalheController", function ($scope) {
 		$scope.titulo = "Roteiro - Visão do CLiente"
 		angular.element(".title-app").html("Roteiro - Visão do CLiente");
 		angular.element(".bar-customer-back").css("display", "block");
