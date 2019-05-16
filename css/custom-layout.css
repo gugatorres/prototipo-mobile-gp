@@ -4614,6 +4614,7 @@ small-box-like{
 
 .visao-produtos {
     padding: 10px 0;
+    overflow: hidden;
 }
 
 .visao-produtos h3 {
@@ -4688,7 +4689,7 @@ small-box-like{
 }
 
 .tipos-produto {
-    width: 95%;
+    width: 98%;
     margin: auto;
     border: solid 1px #CCC;
     padding: 10px;
