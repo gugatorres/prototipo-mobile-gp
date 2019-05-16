@@ -282,6 +282,14 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/linha_produtos.html",
             controller: "linhaProdutosController"
         })
+        .when("/visao_produto", {
+            templateUrl: "./templates/visao_produto.html",
+            controller: "visaoProdutoController"
+        })
+        .when("/contas_receber", {
+            templateUrl: "./templates/contas_receber.html",
+            controller: "contasReceberController"
+        })
         .otherwise({ redirectTo: "/meus_clientes" })
     
     })

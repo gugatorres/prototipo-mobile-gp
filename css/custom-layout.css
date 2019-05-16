@@ -3475,6 +3475,11 @@ button[disabled] {
     margin-bottom: 15px;
 }
 
+.card-image-txt img {
+    width: 60px;
+    margin: 5px auto;
+}
+
 
 .remuneracao_100 {
     width: 100%;
@@ -4603,4 +4608,133 @@ small-box-like{
 .linha-produtos span {
     font-size: 11px;
     color: #999;
+}
+
+/* Visão por Produto */
+
+.visao-produtos {
+    padding: 10px 0;
+}
+
+.visao-produtos h3 {
+    margin-top: 0;
+    font-size: 16px;
+    padding: 10px 10px 20px;
+    border-bottom: solid 1px #CCC;
+}
+
+.list-first-vision {
+    list-style: none;
+    padding: 10px;
+}
+
+.list-first-vision li {
+    padding: 5px 0;
+}
+
+.header-top-10-proximos-bater {
+    list-style: none;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.list-top-10-proximos-bater {
+    list-style: none;
+    padding: 0 10px;
+}
+.list-top-10-proximos-bater li {
+    margin-bottom: 10px;
+}
+
+.screen-visao-produto h2 {
+    font-size: 20px;
+}
+
+.loading-visao {
+    margin: 0;
+    font-size: 12px;
+}
+
+.loading-base {
+    width: 100%;
+    height: 5px;
+    background: #CCC;
+    overflow: hidden;
+}
+
+.loading-value {
+    width: 90%;
+    height: 10px;
+    background: #1FCC03;
+}
+
+.indicadores {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.indicadores ul {
+    list-style: none;
+    padding: 0;
+    width: 320px;
+    margin: 0px auto 10px;
+}
+
+.indicadores li {
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    width: 60px;
+}
+
+.tipos-produto {
+    width: 95%;
+    margin: auto;
+    border: solid 1px #CCC;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.tipos-produto h4 {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.active-li {
+    height: 35px;
+    overflow: hidden;
+}
+
+.active-li2 {
+    height: 54px;
+    overflow: hidden;
+}
+.search-product-vision {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-product-vision input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #c62222;
+}
+
+.search-product-vision img {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Contas a Receber */
+
+.contas-receber-screen h2 {
+    font-size: 18px;
+}
+
+.contas-receber-screen .box-tile {
+    padding: 10px;
 }

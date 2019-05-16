@@ -3169,6 +3169,41 @@ app.controller("defaultController", function ($scope) {
 		});
 	})
 
+	/* Visão por Produto Controller */
+	.controller("visaoProdutoController", function ($scope) {
+
+		$scope.titulo = "Visão por Produto"
+		angular.element(".title-app").html("Visão por Produto");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element(".title-name-product-h3").click(function(){
+			angular.element(this).parent().parent().toggleClass("active-li");	
+			});
+
+			angular.element(".title-name-product-h33").click(function(){
+				angular.element(this).parent().toggleClass("active-li2");
+			});
+			
+			angular.element(".title-name-product-h4").click(function(){
+				angular.element(this).parent().toggleClass("active-li");
+			});
+	})
+
+	/* Contas a Receber Controller */
+	.controller("contasReceberController", function ($scope) {
+
+		$scope.titulo = "Contas a Receber"
+		angular.element(".title-app").html("Contas a Receber");
+		angular.element("body").css("overflow-y", "auto");
+		angular.element(".bar-customer-back").css("display", "block");
+
+		angular.element("h2").click(function(){
+			angular.element(this).parent().toggleClass("active-li2");
+			});
+	})
+	
+
 	/* Clientes em ruptura Controller */
 	.controller("clientesRupturaController", function ($scope) {
 
