@@ -1890,6 +1890,7 @@ app.controller("defaultController", function ($scope) {
 		angular.element(".search").click(function () {
 			angular.element("#modal_search").css("display", "block");
 		});
+
 	})
 
 
@@ -2963,8 +2964,8 @@ app.controller("defaultController", function ($scope) {
 	/* Remuneração Variavel Controller */
 	.controller("remuneracaoVariavelController", function ($scope) {
 
-		$scope.titulo = "Remuneração Variável"
-		angular.element(".title-app").html("Remuneração Variável");
+		$scope.titulo = "Remuneração / Relatórios"
+		angular.element(".title-app").html("Remuneração / Relatórios");
 
 		angular.element("body").css("overflow-y", "auto");
 		angular.element(".bar-customer-back").css("display", "block");
@@ -3057,6 +3058,30 @@ app.controller("defaultController", function ($scope) {
 
 		angular.element(".tile-modal").click(function () {
 			//angular.element(this).toggleClass("tile-142");
+		});
+
+		angular.element(".tab-1").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-2,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-1").css("display", "block");
+		});
+
+		angular.element(".tab-2").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-3,.tab-4").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-2").css("display", "block");
+		});
+
+		angular.element(".tab-3").click(function () {
+			angular.element(this).addClass("active");
+			angular.element(this).css("display", "inline-block");
+			angular.element(".tab-1,.tab-2,.tab-4").removeClass("active");
+			angular.element(".tab-content > div").css("display", "none");
+			angular.element(".tab-page-3").css("display", "block");
 		});
 
 	})
